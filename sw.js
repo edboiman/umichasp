@@ -1,5 +1,5 @@
 // Offline cache. Bump VERSION whenever you replace data/content.json or app files.
-const VERSION = "asp-guide-202611032349";
+const VERSION = "asp-guide-ui-20261103-v2";
 const FILES = ["./", "index.html", "app.js", "styles.css", "manifest.webmanifest",
   "data/content.json", "data/drugs.json", "data/taxonomy.json", "icons/icon-192.png", "icons/apple-touch-icon.png"];
 

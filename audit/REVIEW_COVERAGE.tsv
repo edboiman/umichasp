@@ -1,0 +1,320 @@
+Route	Title	Review / implementation	Browser matrix	Content verification
+#/p/guidelines~adult	Inpatient Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric	Inpatient Peds	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient	Outpatient Adult & Peds	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~surgical-prophylaxis	Surgical Prophylaxis	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~hiv	HIV	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~transplant	Transplant	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/copat	COpAT	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/pharmacokinetics	Pharmacokinetics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/patient-education	Patient Education	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~Diarrhea-home	Infectious Diarrhea Home	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~dosing-adult	Antimicrobial Dosing - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~PD-Dosing-Adult	Peritoneal Dialysis Dosing - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/pharmacokinetics~vancomycin-adult	Vancomycin - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/pharmacokinetics~aminoglycoside-adult	Aminoglycoside - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~Dosing-Obesity	Antimicrobial Dosing in Obesity	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~blaes-guideline	BLAES Guideline	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~PST-Procedure	Penicillin Skin Testing Procedure	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~cation-interactions	Cation Interactions	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~drug-induced-qt-prolongation-adult	Drug-induced QT Prolongation - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~midline-catheters	Midline Catheters	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~renal-dosing-equations	Renal Dosing Equations	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~Sertonin-Linezolid	Serotonin Syndrome with Linezolid	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~Antifungal-TDM	Antifungal Therapeutic Drug Monitoring	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~Linezolid-TDM	Linezolid Therapeutic Drug Monitoring	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~Warfarin-DDI	Warfarin - Antimicrobial Interactions	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~t1-adult	Tier 1 Restricted Antimicrobials - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~tier-2-restricted-antimicrobials-adult	Tier 2 Restricted Antimicrobials - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~blood-stream-infections-adult	Blood Stream Infections - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~s-aureus-pocketcard	S. aureus Pocketcard	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~bone-and-joint-adult	Bone and Joint - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~PJI-dental-ppx	Prosthetic Joint Infection Dental Prophylaxis	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~open-fractures-adult	Open Fractures - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~VAD	Ventricular Assist Device Infections	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~native-valve-endocarditis-treatment	Native Valve Endocarditis Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~prosthetic-valve-endocarditis-treatment	Prosthetic Valve Endocarditis Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~endocarditis-algorithm	Endocarditis Algorithm	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~aspergillosis-treatment	Aspergillosis Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~candidemia-adult	Candidemia - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~cryptococcus-treatment-adult	Cryptococcus Treatment - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~infectious-diarrhea-treatment-adult	Infectious Diarrhea Treatment - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~CDI-treatment	CDI Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~h-pylori-treatment	H. Pylori Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~intrabdominal-infections-adult	Intrabdominal Infections - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~bacterial-meningitis-adult	Bacterial Meningitis - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~GAS-adult	Group A Streptococcus Pharyngitis - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~ocular-infections-adult	Ocular Infections - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~odontogenic-infections	Odontogenic Infections	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~head-neck-penicillin-allergy	Head & Neck Penicillin Allergy	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~leech-information	Leech Information	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~Antimicrobial-lock	Antimicrobial Lock Therapy	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~ethanol-lock-therapy	Ethanol Lock Therapy	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~hiv-prep	HIV PrEP	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~Measles-PEP	Measles Post-exposure Prophylaxis	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~obstetrics-gyencologic-treatment	Obstetrics & Gyencologic Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~obstetrics-allergy	Obstetrics Allergy	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~malaria-treatment	Malaria Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~covid-19-treatment	COVID-19 Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~ambulatory-covid-19-treatment	Ambulatory COVID-19 Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~paxlovid-drug-drug-interactions	Paxlovid Drug-drug Interactions	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~covid-19-vaccination-timing	COVID-19 Vaccination Timing	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~pneumonia-treatment	Pneumonia Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~ICU-PNA	ICU Pneumonia Treatment Algorithm	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~procalcitonin-guideline	Procalcitonin Guideline	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~RSV-Treatment	Respiratory Syncytial Virus Treatment	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~influenza-adult	Influenza - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~animal-bite-adult	Animal Bite - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~SSTI-adult	Skin and Soft Tissue Infections - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~ambulatory-dalbavancin-protocol	Ambulatory Dalbavancin Protocol	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~uUTI-workflow_ID	ID uUTI Workflow	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~UTI-Adult	Urinary Tract Infections - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~CDI-diagnostics	CDI Diagnostics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~BCx-algorithm	Blood Culture Algorithm	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~meningitis-film-array	Meningitis Film Array	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~bmt-prophylaxis	BMT Prophylaxis	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~hematology-prophylaxis	Hematology Prophylaxis	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~car-t-prophylaxis	CAR-T Prophylaxis	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~antimicrobial-dosing-pediatrics	Antimicrobial Dosing - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/pharmacokinetics~vancomycin-pediatrics	Vancomycin - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/pharmacokinetics~aminoglycoside-pediatrics	Aminoglycoside - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~t1-pediatric	Tier 1 Restricted Antimicrobials - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~t2-pediatric	Tier 2 Restricted Antimicrobials - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~pediatric-procalcitonin-usage-guidelines	Pediatric Procalcitonin Usage Guidelines	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~blood-stream-infections-pediatric	Blood Stream Infections - Pediatric	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~bone-and-joint-pediatrics	Bone and Joint - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~native-valve-endocarditis-pediatrics	Native Valve Endocarditis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~prosthetic-valve-endocarditis-pediatrics	Prosthetic Valve Endocarditis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~aspergillosis-and-mucormycosis-pediatrics	Aspergillosis and Mucormycosis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~candidiasis-pediatrics	Candidiasis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~intra-abdominal-infections-pediatrics	Intra-abdominal Infections - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~clostridiodies-difficile-pediatric	Clostridiodies difficile - Pediatric	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~infectious-diarrhea-pediatrics	Infectious Diarrhea - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~ambulatory-pediatric-acute-otitis-media	Ambulatory Pediatric Acute Otitis Media	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~deep-neck-space-infections	Deep Neck Space Infections	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~GAS-peds	Group A Streptococcus Pharyngitis - Pediatric	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~ethanol-lock-therapy-pediatrics	Ethanol Lock Therapy - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~bacterial-meningitis-pediatrics	Bacterial Meningitis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~TPOXX	Tecovirimat Process	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~Lyme-Pediatrics	Ambulatory Pediatric Lyme Disease	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~perinatal-hiv-pediatrics	Perinatal HIV - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~necrotizing-enterocolitis-pediatrics	Necrotizing Enterocolitis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~pneumonia-pediatrics	Pneumonia - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~cystic-fibrosis-pediatrics	Cystic Fibrosis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~influenza-pediatrics	Influenza - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~undifferentiated-sepsis-pediatrics	Undifferentiated Sepsis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~animal-bite-pediatrics	Animal Bite - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~skin-and-soft-tissue-infections-pediatrics	Skin and Soft Tissue Infections - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~urinary-tract-infections-pediatrics	Urinary Tract Infections - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics	Hematology/Oncology Prophylaxis - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~ambulatory-rhinosinusitis	Ambulatory Rhinosinusitis	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~Lyme-Adult	Ambulatory Adult Lyme Disease	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~amb-CAP	Ambulatory Community-acquired Pneumonia	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~pemivibart-step-by-step-process	Pemivibart Step-by-step Process	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~ambulatory-evisit-cough-and-flu	Ambulatory eVisit Cough and Flu	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~ambulatory-diabetic-foot-protocol	Ambulatory Diabetic Foot Protocol	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~ambulatory-skin-and-soft-tissue-infections-adult	Ambulatory Skin and Soft Tissue Infections - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~uUTI-workflow_URO	URO uUTI Workflow	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~outpatient~ambulatory-urinary-tract-infections-adult	Ambulatory Urinary Tract Infections - Adult	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~pediatric~nirsevimab-pediatrics	Nirsevimab - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~adult~navigating-tableau-tips	Navigating Tableau Tips	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~surgical-prophylaxis~adult-surgical-prophylaxis	Adult Surgical Prophylaxis	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~surgical-prophylaxis~patients-50-kg	Patients > 50 kg	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~surgical-prophylaxis~patients-50-kg_1	Patients </= 50 kg	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~surgical-prophylaxis~pediatric-head-and-neck	Pediatric Head and Neck	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines	Pediatric Surgical Prophylaxis Guidelines	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/guidelines~transplant~donor-cx_txp	Positive Donor Cultures	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/pharmacokinetics~pharmacokinetic-workflow	Pharmacokinetic Workflow	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/pharmacokinetics~pharmacokinetic-review-pediatrics	Pharmacokinetic Review - Pediatrics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/patient-education~get-smart-about-antibiotics	Get Smart about Antibiotics	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/patient-education~snort-sniffle-sneeze	Snort. Sniffle. Sneeze	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/patient-education~youve-been-given-an-antibiotic-now-what	You've been given an Antibiotic, now what?	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/patient-education~antibiotics-are-not-always-the-answer	Antibiotics are not always the answer	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/patient-education~penicillin-skin-testing-are-you-still-allergic	Penicillin Skin Testing: Are you Still Allergic?	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/patient-education~what-you-need-to-know-when-your-child-is-prescribed-an-antibiotic	What you need to know when your child is prescribed an antibiotic	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/p/patient-education~what-you-need-to-know-when-you-are-prescribed-an-antibiotic	What you need to know when you are prescribed an antibiotic	Complete	6 widths × 2 themes; collapsed/expanded	Source bytes unchanged; original text fragments present
+#/c/bsi	Bloodstream infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/sab	S. aureus bacteremia	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/endo	Endocarditis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/vad	VAD infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/lock	Catheter lock therapy	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/sepsis	Undifferentiated sepsis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/bji	Bone & joint infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/fracture	Open fractures	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/pjidental	PJI dental prophylaxis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/dfi	Diabetic foot infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/mening	Bacterial meningitis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/cap	Pneumonia	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/flu	Influenza	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/rsv	RSV	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/covid	COVID-19	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/cf	Cystic fibrosis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/sinus	Rhinosinusitis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/gas	Strep pharyngitis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/aom	Acute otitis media	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/eye	Ocular infections	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/dental	Odontogenic infections	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/neck	Deep neck space infections	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/hnallergy	Head & neck surgery with penicillin allergy	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/iai	Intra-abdominal infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/cdi	C. difficile infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/diarrhea	Infectious diarrhea	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/hpylori	H. pylori	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/nec	Necrotizing enterocolitis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/uti	Urinary tract infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/ssti	Skin & soft tissue infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/bite	Animal bites	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/leech	Medicinal leech therapy	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/dalba	Outpatient dalbavancin	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/asp	Aspergillosis & mucormycosis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/candida	Candidemia & candidiasis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/crypto	Cryptococcus	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/hiv	HIV	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/measles	Measles exposure	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/mpox	Mpox (tecovirimat)	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/malaria	Malaria	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/lyme	Lyme disease	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/ob	Obstetric & gynecologic infection	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/bmt	BMT & cellular therapy prophylaxis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/heme	Hematology/oncology prophylaxis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/c/txp	Solid organ transplant	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/r/edu	Patient education	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/r/dosing	Dosing & monitoring	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/r/allergy	β-lactam allergy	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/r/restricted	Restricted antimicrobials	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/r/diag	Diagnostic stewardship	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/r/surg	Surgical prophylaxis	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/r/other	Other resources	Complete	6 widths × 2 themes; adult/peds at 320px	Original guideline targets retained
+#/d/Penicillin G	Penicillin G	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Penicillin VK	Penicillin VK	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Amoxicillin	Amoxicillin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Amoxicillin-clavulanate	Amoxicillin-clavulanate	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ampicillin	Ampicillin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ampicillin-sulbactam	Ampicillin-sulbactam	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Piperacillin-tazobactam	Piperacillin-tazobactam	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Nafcillin	Nafcillin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Oxacillin	Oxacillin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Dicloxacillin	Dicloxacillin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefazolin	Cefazolin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cephalexin	Cephalexin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefadroxil	Cefadroxil	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefuroxime	Cefuroxime	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefoxitin	Cefoxitin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefotetan	Cefotetan	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefpodoxime	Cefpodoxime	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefdinir	Cefdinir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ceftriaxone	Ceftriaxone	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefotaxime	Cefotaxime	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ceftazidime	Ceftazidime	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefepime	Cefepime	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ceftaroline	Ceftaroline	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ceftazidime-avibactam	Ceftazidime-avibactam	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ceftolozane-tazobactam	Ceftolozane-tazobactam	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cefiderocol	Cefiderocol	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Meropenem	Meropenem	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Meropenem-vaborbactam	Meropenem-vaborbactam	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Imipenem-cilastatin	Imipenem-cilastatin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Imipenem-relebactam	Imipenem-relebactam	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ertapenem	Ertapenem	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Aztreonam	Aztreonam	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Vancomycin	Vancomycin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Daptomycin	Daptomycin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Oritavancin	Oritavancin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Dalbavancin	Dalbavancin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Telavancin	Telavancin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Linezolid	Linezolid	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Tedizolid	Tedizolid	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Gentamicin	Gentamicin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Tobramycin	Tobramycin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Amikacin	Amikacin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Plazomicin	Plazomicin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ciprofloxacin	Ciprofloxacin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Levofloxacin	Levofloxacin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Moxifloxacin	Moxifloxacin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Delafloxacin	Delafloxacin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Azithromycin	Azithromycin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Clarithromycin	Clarithromycin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Erythromycin	Erythromycin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Fidaxomicin	Fidaxomicin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Doxycycline	Doxycycline	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Minocycline	Minocycline	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Tigecycline	Tigecycline	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Omadacycline	Omadacycline	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Eravacycline	Eravacycline	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Trimethoprim-sulfamethoxazole	Trimethoprim-sulfamethoxazole	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Clindamycin	Clindamycin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Metronidazole	Metronidazole	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Nitrofurantoin	Nitrofurantoin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Fosfomycin	Fosfomycin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Rifampin	Rifampin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Rifaximin	Rifaximin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Colistin	Colistin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Polymyxin B	Polymyxin B	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Chloramphenicol	Chloramphenicol	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Sulbactam-durlobactam	Sulbactam-durlobactam	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Bezlotoxumab	Bezlotoxumab	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Fluconazole	Fluconazole	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Voriconazole	Voriconazole	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Posaconazole	Posaconazole	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Isavuconazonium	Isavuconazonium	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Itraconazole	Itraconazole	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Micafungin	Micafungin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Caspofungin	Caspofungin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Anidulafungin	Anidulafungin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Rezafungin	Rezafungin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Amphotericin B	Amphotericin B	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Flucytosine	Flucytosine	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Nystatin	Nystatin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Acyclovir	Acyclovir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Valacyclovir	Valacyclovir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ganciclovir	Ganciclovir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Valganciclovir	Valganciclovir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Letermovir	Letermovir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Maribavir	Maribavir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Foscarnet	Foscarnet	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Cidofovir	Cidofovir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Oseltamivir	Oseltamivir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Baloxavir	Baloxavir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Remdesivir	Remdesivir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Nirmatrelvir-ritonavir	Nirmatrelvir-ritonavir	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Isoniazid	Isoniazid	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Rifabutin	Rifabutin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Pyrazinamide	Pyrazinamide	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ethambutol	Ethambutol	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Atovaquone	Atovaquone	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Ivermectin	Ivermectin	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/d/Pentamidine	Pentamidine	Complete	6 widths × 2 themes; adult/peds at 320px	Original mention index and passages retained
+#/	#/	Complete	6 widths × 2 themes	Source data unchanged
+#/conditions	#/conditions	Complete	6 widths × 2 themes	Source data unchanged
+#/drugs	#/drugs	Complete	6 widths × 2 themes	Source data unchanged
+#/res	#/res	Complete	6 widths × 2 themes	Source data unchanged
+#/files	#/files	Complete	6 widths × 2 themes	Source data unchanged
+#/staff	#/staff	Complete	6 widths × 2 themes	Source data unchanged
+#/search	#/search	Complete	6 widths × 2 themes	Source data unchanged
+#/saved	#/saved	Complete	6 widths × 2 themes	Source data unchanged
+#/about	#/about	Complete	6 widths × 2 themes	Source data unchanged
+#/unknown	#/unknown	Complete	6 widths × 2 themes	Source data unchanged
+#/organisms	#/organisms	Complete	6 widths × 2 themes	Source data unchanged
+#/o/enterococcus	#/o/enterococcus	Complete	6 widths × 2 themes	Source data unchanged
+#/o/enterococcus/uti	#/o/enterococcus/uti	Complete	6 widths × 2 themes	Source data unchanged
+#/o/enterococcus/endo	#/o/enterococcus/endo	Complete	6 widths × 2 themes	Source data unchanged
+#/o/staph-aureus	#/o/staph-aureus	Complete	6 widths × 2 themes	Source data unchanged
+#/o/gas	#/o/gas	Complete	6 widths × 2 themes	Source data unchanged
+#/o/candida	#/o/candida	Complete	6 widths × 2 themes	Source data unchanged
+#/o/staph-aureus/sab	#/o/staph-aureus/sab	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/o/staph-aureus/endo	#/o/staph-aureus/endo	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/o/staph-aureus/ssti	#/o/staph-aureus/ssti	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/o/staph-aureus/bsi	#/o/staph-aureus/bsi	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/o/gas/gas	#/o/gas/gas	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/o/candida/candida	#/o/candida/candida	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/o/missing	#/o/missing	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/o/enterococcus/missing	#/o/enterococcus/missing	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/conditions?f=zzzzzz	#/conditions?f=zzzzzz	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/drugs?f=zzzzzz	#/drugs?f=zzzzzz	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/search?q=zzzzzz	#/search?q=zzzzzz	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/search?q=amoxicillin	#/search?q=amoxicillin	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/search?q=penicillin%20allergy	#/search?q=penicillin%20allergy	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/p/missing	#/p/missing	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/c/missing	#/c/missing	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/d/missing	#/d/missing	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged
+#/r/missing	#/r/missing	Complete	6 widths × 2 themes; adult/peds at 320px	Source data unchanged

@@ -1,0 +1,49 @@
+{
+  "viewportChecks": 12,
+  "routeChecks": 5810,
+  "contentPages": 134,
+  "failures": [],
+  "warnings": [],
+  "linksChecked": 138673,
+  "tableChecks": 11260,
+  "detailsChecked": 4824,
+  "interactionChecks": [
+    "Save/remove bookmark",
+    "Text-size cycle",
+    "Search results/highlights",
+    "Search passage deep link",
+    "Appearance control",
+    "Enterococcus \u2192 infection \u2192 guideline",
+    "All/adult/pediatric radio controls",
+    "Condition, agent, global, file, and staff filters; Escape reset",
+    "Disclosure open/close",
+    "All four reading text sizes at 320px",
+    "Five bottom navigation links through hashchange router",
+    "Clear recent history"
+  ],
+  "startedAt": "2026-11-04T00:35:46.658Z",
+  "completedAt": "2026-11-04T00:36:30.990Z",
+  "status": "complete",
+  "widths_css_px": [
+    320,
+    375,
+    390,
+    430,
+    768,
+    1440
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "all_routes_all_widths_population": "all",
+  "additional_population_coverage": {
+    "width": 320,
+    "populations": [
+      "adult",
+      "peds"
+    ],
+    "routes": "all non-document routes"
+  },
+  "method": "Browser-rendered same-origin iframe viewports. The full matrix calls the application router directly to avoid browser navigation-rate limits; bottom tabs are additionally tested through real link clicks and hashchange. DOM/layout/content checks cover all pages, with details expanded. Screenshots are manual samples, not screenshots of every page."
+}

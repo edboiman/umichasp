@@ -55,3 +55,16 @@ data/drugs.json                  antibiotic names, classes, aliases
 data/taxonomy.json               conditions, body systems, resource groups
 tools/                           capture and PDF conversion scripts
 ```
+
+## Mobile interface redesign
+
+The interface has been redesigned across every route. Clinical source files in `data/`, chart images, and capture/conversion tools are unchanged.
+
+- Consistent mobile typography, spacing, navigation, touch targets, and light/dark themes. Appearance is available under About.
+- Semantic regimen tables switch to labelled rows on narrow screens; complex matrices retain their columns inside a scrollable table.
+- Source paragraphs, footnotes, warnings, references, revision history, and expandable chart text remain available.
+- Conditions → By organism → Enterococcus → Urinary tract infection or Endocarditis → complete existing guideline.
+- The adult GAS page uses a presentation adapter that renders the original text runs, doses, qualifiers, and sequence.
+- Existing search, population filters, saved items, recents, text-size settings, source links, install, and offline chart download remain available.
+
+`audit/` contains the full UI inventory, exact source-content comparison, per-page review coverage, and browser QA results. The supplied app is buildless: publish the files in this folder directly to GitHub Pages; there is no package installation or build step.

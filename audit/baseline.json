@@ -1,0 +1,5414 @@
+{
+  "pages": [
+    {
+      "id": "guidelines~adult",
+      "route": "#/p/guidelines~adult",
+      "title": "Inpatient Adult",
+      "native": false,
+      "block_types": {
+        "h": 6,
+        "p": 23,
+        "li": 95
+      },
+      "tables": [],
+      "links": 82
+    },
+    {
+      "id": "guidelines~pediatric",
+      "route": "#/p/guidelines~pediatric",
+      "title": "Inpatient Peds",
+      "native": false,
+      "block_types": {
+        "h": 6,
+        "p": 21,
+        "li": 77
+      },
+      "tables": [],
+      "links": 71
+    },
+    {
+      "id": "guidelines~outpatient",
+      "route": "#/p/guidelines~outpatient",
+      "title": "Outpatient Adult & Peds",
+      "native": false,
+      "block_types": {
+        "h": 5,
+        "p": 21,
+        "li": 63
+      },
+      "tables": [],
+      "links": 49
+    },
+    {
+      "id": "guidelines~surgical-prophylaxis",
+      "route": "#/p/guidelines~surgical-prophylaxis",
+      "title": "Surgical Prophylaxis",
+      "native": false,
+      "block_types": {
+        "h": 3,
+        "li": 10
+      },
+      "tables": [],
+      "links": 6
+    },
+    {
+      "id": "guidelines~hiv",
+      "route": "#/p/guidelines~hiv",
+      "title": "HIV",
+      "native": false,
+      "block_types": {
+        "h": 7,
+        "li": 38
+      },
+      "tables": [],
+      "links": 27
+    },
+    {
+      "id": "guidelines~transplant",
+      "route": "#/p/guidelines~transplant",
+      "title": "Transplant",
+      "native": false,
+      "block_types": {
+        "h": 7,
+        "p": 7,
+        "li": 22
+      },
+      "tables": [],
+      "links": 20
+    },
+    {
+      "id": "copat",
+      "route": "#/p/copat",
+      "title": "COpAT",
+      "native": false,
+      "block_types": {
+        "h": 4,
+        "p": 7,
+        "li": 1
+      },
+      "tables": [],
+      "links": 1
+    },
+    {
+      "id": "pharmacokinetics",
+      "route": "#/p/pharmacokinetics",
+      "title": "Pharmacokinetics",
+      "native": false,
+      "block_types": {
+        "h": 3,
+        "p": 1,
+        "li": 7
+      },
+      "tables": [],
+      "links": 7
+    },
+    {
+      "id": "patient-education",
+      "route": "#/p/patient-education",
+      "title": "Patient Education",
+      "native": false,
+      "block_types": {
+        "h": 3,
+        "li": 9
+      },
+      "tables": [],
+      "links": 9
+    },
+    {
+      "id": "guidelines~Diarrhea-home",
+      "route": "#/p/guidelines~Diarrhea-home",
+      "title": "Infectious Diarrhea Home",
+      "native": false,
+      "block_types": {
+        "h": 3,
+        "p": 2
+      },
+      "tables": [],
+      "links": 2
+    },
+    {
+      "id": "guidelines~adult~dosing-adult",
+      "route": "#/p/guidelines~adult~dosing-adult",
+      "title": "Antimicrobial Dosing - Adult",
+      "native": true,
+      "block_types": {
+        "table": 13,
+        "h": 11,
+        "rec": 2,
+        "p": 9,
+        "li": 6
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 14,
+          "columns": 4,
+          "longest_cell": 45
+        },
+        {
+          "block": 1,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 30
+        },
+        {
+          "block": 2,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 28
+        },
+        {
+          "block": 5,
+          "rows": 26,
+          "columns": 6,
+          "longest_cell": 103
+        },
+        {
+          "block": 7,
+          "rows": 19,
+          "columns": 11,
+          "longest_cell": 109
+        },
+        {
+          "block": 9,
+          "rows": 21,
+          "columns": 6,
+          "longest_cell": 130
+        },
+        {
+          "block": 11,
+          "rows": 25,
+          "columns": 7,
+          "longest_cell": 100
+        },
+        {
+          "block": 13,
+          "rows": 27,
+          "columns": 9,
+          "longest_cell": 158
+        },
+        {
+          "block": 15,
+          "rows": 22,
+          "columns": 10,
+          "longest_cell": 162
+        },
+        {
+          "block": 18,
+          "rows": 29,
+          "columns": 6,
+          "longest_cell": 130
+        },
+        {
+          "block": 21,
+          "rows": 29,
+          "columns": 14,
+          "longest_cell": 192
+        },
+        {
+          "block": 23,
+          "rows": 25,
+          "columns": 13,
+          "longest_cell": 79
+        },
+        {
+          "block": 38,
+          "rows": 4,
+          "columns": 2,
+          "longest_cell": 19
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~PD-Dosing-Adult",
+      "route": "#/p/guidelines~adult~PD-Dosing-Adult",
+      "title": "Peritoneal Dialysis Dosing - Adult",
+      "native": true,
+      "block_types": {
+        "table": 2,
+        "p": 4
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 15,
+          "columns": 4,
+          "longest_cell": 55
+        },
+        {
+          "block": 5,
+          "rows": 9,
+          "columns": 3,
+          "longest_cell": 307
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "pharmacokinetics~vancomycin-adult",
+      "route": "#/p/pharmacokinetics~vancomycin-adult",
+      "title": "Vancomycin - Adult",
+      "native": true,
+      "block_types": {
+        "p": 13,
+        "table": 7,
+        "h": 3,
+        "li": 8
+      },
+      "tables": [
+        {
+          "block": 5,
+          "rows": 2,
+          "columns": 18,
+          "longest_cell": 125
+        },
+        {
+          "block": 12,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 14,
+          "rows": 2,
+          "columns": 2,
+          "longest_cell": 244
+        },
+        {
+          "block": 18,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 293
+        },
+        {
+          "block": 20,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 22,
+          "rows": 2,
+          "columns": 2,
+          "longest_cell": 246
+        },
+        {
+          "block": 29,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 104
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "pharmacokinetics~aminoglycoside-adult",
+      "route": "#/p/pharmacokinetics~aminoglycoside-adult",
+      "title": "Aminoglycoside - Adult",
+      "native": true,
+      "block_types": {
+        "h": 23,
+        "p": 63,
+        "table": 5,
+        "li": 26
+      },
+      "tables": [
+        {
+          "block": 29,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 109
+        },
+        {
+          "block": 78,
+          "rows": 4,
+          "columns": 5,
+          "longest_cell": 64
+        },
+        {
+          "block": 87,
+          "rows": 7,
+          "columns": 2,
+          "longest_cell": 42
+        },
+        {
+          "block": 98,
+          "rows": 10,
+          "columns": 3,
+          "longest_cell": 46
+        },
+        {
+          "block": 115,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~Dosing-Obesity",
+      "route": "#/p/guidelines~adult~Dosing-Obesity",
+      "title": "Antimicrobial Dosing in Obesity",
+      "native": true,
+      "block_types": {
+        "p": 11,
+        "li": 1,
+        "table": 1,
+        "rec": 1
+      },
+      "tables": [
+        {
+          "block": 11,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 180
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~blaes-guideline",
+      "route": "#/p/guidelines~adult~blaes-guideline",
+      "title": "BLAES Guideline",
+      "native": true,
+      "block_types": {
+        "p": 23,
+        "li": 7,
+        "table": 6,
+        "rec": 1,
+        "fig": 1
+      },
+      "tables": [
+        {
+          "block": 7,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 202
+        },
+        {
+          "block": 8,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 14,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 28,
+          "rows": 2,
+          "columns": 3,
+          "longest_cell": 77
+        },
+        {
+          "block": 33,
+          "rows": 27,
+          "columns": 28,
+          "longest_cell": 19
+        },
+        {
+          "block": 35,
+          "rows": 10,
+          "columns": 3,
+          "longest_cell": 112
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~PST-Procedure",
+      "route": "#/p/guidelines~adult~PST-Procedure",
+      "title": "Penicillin Skin Testing Procedure",
+      "native": true,
+      "block_types": {
+        "p": 10,
+        "li": 63,
+        "h": 4,
+        "rec": 1,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 78,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~cation-interactions",
+      "route": "#/p/guidelines~adult~cation-interactions",
+      "title": "Cation Interactions",
+      "native": true,
+      "block_types": {
+        "p": 5,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 4,
+          "rows": 7,
+          "columns": 2,
+          "longest_cell": 251
+        },
+        {
+          "block": 6,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 274
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~drug-induced-qt-prolongation-adult",
+      "route": "#/p/guidelines~adult~drug-induced-qt-prolongation-adult",
+      "title": "Drug-induced QT Prolongation - Adult",
+      "native": true,
+      "block_types": {
+        "p": 28,
+        "li": 20,
+        "h": 2,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 49,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 145
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~midline-catheters",
+      "route": "#/p/guidelines~adult~midline-catheters",
+      "title": "Midline Catheters",
+      "native": true,
+      "block_types": {
+        "h": 8,
+        "p": 11,
+        "li": 14,
+        "table": 4
+      },
+      "tables": [
+        {
+          "block": 20,
+          "rows": 16,
+          "columns": 8,
+          "longest_cell": 23
+        },
+        {
+          "block": 21,
+          "rows": 13,
+          "columns": 7,
+          "longest_cell": 62
+        },
+        {
+          "block": 33,
+          "rows": 13,
+          "columns": 5,
+          "longest_cell": 388
+        },
+        {
+          "block": 34,
+          "rows": 30,
+          "columns": 3,
+          "longest_cell": 229
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~renal-dosing-equations",
+      "route": "#/p/guidelines~adult~renal-dosing-equations",
+      "title": "Renal Dosing Equations",
+      "native": true,
+      "block_types": {
+        "p": 7,
+        "li": 20,
+        "h": 2,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 28,
+          "rows": 11,
+          "columns": 3,
+          "longest_cell": 447
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~Sertonin-Linezolid",
+      "route": "#/p/guidelines~adult~Sertonin-Linezolid",
+      "title": "Serotonin Syndrome with Linezolid",
+      "native": true,
+      "block_types": {
+        "h": 4,
+        "li": 24,
+        "p": 28,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 56,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~Antifungal-TDM",
+      "route": "#/p/guidelines~adult~Antifungal-TDM",
+      "title": "Antifungal Therapeutic Drug Monitoring",
+      "native": true,
+      "block_types": {
+        "h": 6,
+        "li": 9,
+        "table": 6,
+        "p": 2
+      },
+      "tables": [
+        {
+          "block": 3,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 494
+        },
+        {
+          "block": 7,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 549
+        },
+        {
+          "block": 11,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 644
+        },
+        {
+          "block": 16,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 818
+        },
+        {
+          "block": 19,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 378
+        },
+        {
+          "block": 22,
+          "rows": 5,
+          "columns": 3,
+          "longest_cell": 56
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~Linezolid-TDM",
+      "route": "#/p/guidelines~adult~Linezolid-TDM",
+      "title": "Linezolid Therapeutic Drug Monitoring",
+      "native": true,
+      "block_types": {
+        "p": 3,
+        "li": 18,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 20,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 22
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~Warfarin-DDI",
+      "route": "#/p/guidelines~adult~Warfarin-DDI",
+      "title": "Warfarin - Antimicrobial Interactions",
+      "native": true,
+      "block_types": {
+        "p": 11,
+        "li": 4,
+        "table": 6
+      },
+      "tables": [
+        {
+          "block": 6,
+          "rows": 6,
+          "columns": 5,
+          "longest_cell": 150
+        },
+        {
+          "block": 9,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 130
+        },
+        {
+          "block": 12,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 285
+        },
+        {
+          "block": 18,
+          "rows": 13,
+          "columns": 3,
+          "longest_cell": 230
+        },
+        {
+          "block": 19,
+          "rows": 25,
+          "columns": 2,
+          "longest_cell": 205
+        },
+        {
+          "block": 20,
+          "rows": 18,
+          "columns": 3,
+          "longest_cell": 205
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~t1-adult",
+      "route": "#/p/guidelines~adult~t1-adult",
+      "title": "Tier 1 Restricted Antimicrobials - Adult",
+      "native": true,
+      "block_types": {
+        "p": 4,
+        "h": 2,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 6,
+          "rows": 33,
+          "columns": 2,
+          "longest_cell": 880
+        },
+        {
+          "block": 7,
+          "rows": 10,
+          "columns": 3,
+          "longest_cell": 81
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~tier-2-restricted-antimicrobials-adult",
+      "route": "#/p/guidelines~adult~tier-2-restricted-antimicrobials-adult",
+      "title": "Tier 2 Restricted Antimicrobials - Adult",
+      "native": true,
+      "block_types": {
+        "p": 7,
+        "h": 1,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 6,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 13
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~blood-stream-infections-adult",
+      "route": "#/p/guidelines~adult~blood-stream-infections-adult",
+      "title": "Blood Stream Infections - Adult",
+      "native": true,
+      "block_types": {
+        "flow": 8,
+        "rec": 1
+      },
+      "tables": [],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~s-aureus-pocketcard",
+      "route": "#/p/guidelines~adult~s-aureus-pocketcard",
+      "title": "S. aureus Pocketcard",
+      "native": true,
+      "block_types": {
+        "li": 8,
+        "p": 21,
+        "fig": 1,
+        "h": 1,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 18,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 13
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~bone-and-joint-adult",
+      "route": "#/p/guidelines~adult~bone-and-joint-adult",
+      "title": "Bone and Joint - Adult",
+      "native": true,
+      "block_types": {
+        "table": 10,
+        "h": 1,
+        "li": 10,
+        "p": 8
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 61
+        },
+        {
+          "block": 12,
+          "rows": 11,
+          "columns": 4,
+          "longest_cell": 241
+        },
+        {
+          "block": 14,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 986
+        },
+        {
+          "block": 16,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 1584
+        },
+        {
+          "block": 18,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 1027
+        },
+        {
+          "block": 20,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 1167
+        },
+        {
+          "block": 22,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 1439
+        },
+        {
+          "block": 24,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 1956
+        },
+        {
+          "block": 26,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 1004
+        },
+        {
+          "block": 28,
+          "rows": 21,
+          "columns": 3,
+          "longest_cell": 253
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~PJI-dental-ppx",
+      "route": "#/p/guidelines~outpatient~PJI-dental-ppx",
+      "title": "Prosthetic Joint Infection Dental Prophylaxis",
+      "native": true,
+      "block_types": {
+        "p": 14,
+        "li": 13,
+        "h": 3,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 24,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 131
+        },
+        {
+          "block": 30,
+          "rows": 14,
+          "columns": 3,
+          "longest_cell": 383
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~open-fractures-adult",
+      "route": "#/p/guidelines~adult~open-fractures-adult",
+      "title": "Open Fractures - Adult",
+      "native": true,
+      "block_types": {
+        "p": 5,
+        "h": 2,
+        "li": 6,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 12,
+          "rows": 6,
+          "columns": 3,
+          "longest_cell": 180
+        },
+        {
+          "block": 13,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 343
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~VAD",
+      "route": "#/p/guidelines~adult~VAD",
+      "title": "Ventricular Assist Device Infections",
+      "native": true,
+      "block_types": {
+        "h": 8,
+        "p": 45,
+        "li": 12,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 37,
+          "rows": 5,
+          "columns": 8,
+          "longest_cell": 1077
+        },
+        {
+          "block": 65,
+          "rows": 10,
+          "columns": 3,
+          "longest_cell": 305
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~native-valve-endocarditis-treatment",
+      "route": "#/p/guidelines~adult~native-valve-endocarditis-treatment",
+      "title": "Native Valve Endocarditis Treatment",
+      "native": true,
+      "block_types": {
+        "h": 3,
+        "p": 4,
+        "li": 23,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 22,
+          "rows": 1,
+          "columns": 9,
+          "longest_cell": 631
+        },
+        {
+          "block": 23,
+          "rows": 2,
+          "columns": 9,
+          "longest_cell": 1804
+        },
+        {
+          "block": 31,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 217
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~prosthetic-valve-endocarditis-treatment",
+      "route": "#/p/guidelines~adult~prosthetic-valve-endocarditis-treatment",
+      "title": "Prosthetic Valve Endocarditis Treatment",
+      "native": true,
+      "block_types": {
+        "h": 2,
+        "p": 4,
+        "li": 21,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 21,
+          "rows": 6,
+          "columns": 10,
+          "longest_cell": 571
+        },
+        {
+          "block": 27,
+          "rows": 9,
+          "columns": 3,
+          "longest_cell": 193
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~endocarditis-algorithm",
+      "route": "#/p/guidelines~adult~endocarditis-algorithm",
+      "title": "Endocarditis Algorithm",
+      "native": true,
+      "block_types": {
+        "h": 5,
+        "li": 33,
+        "p": 4,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 42,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~aspergillosis-treatment",
+      "route": "#/p/guidelines~adult~aspergillosis-treatment",
+      "title": "Aspergillosis Treatment",
+      "native": true,
+      "block_types": {
+        "table": 3,
+        "p": 1,
+        "h": 8,
+        "li": 37
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 1307
+        },
+        {
+          "block": 24,
+          "rows": 1,
+          "columns": 7,
+          "longest_cell": 600
+        },
+        {
+          "block": 48,
+          "rows": 9,
+          "columns": 3,
+          "longest_cell": 264
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~candidemia-adult",
+      "route": "#/p/guidelines~adult~candidemia-adult",
+      "title": "Candidemia - Adult",
+      "native": true,
+      "block_types": {
+        "h": 2,
+        "li": 19,
+        "table": 3,
+        "rec": 1
+      },
+      "tables": [
+        {
+          "block": 12,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 152
+        },
+        {
+          "block": 13,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 440
+        },
+        {
+          "block": 15,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 1243
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~cryptococcus-treatment-adult",
+      "route": "#/p/guidelines~adult~cryptococcus-treatment-adult",
+      "title": "Cryptococcus Treatment - Adult",
+      "native": true,
+      "block_types": {
+        "table": 3,
+        "h": 4,
+        "p": 4,
+        "li": 13
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 4,
+          "columns": 5,
+          "longest_cell": 609
+        },
+        {
+          "block": 1,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 1926
+        },
+        {
+          "block": 22,
+          "rows": 13,
+          "columns": 3,
+          "longest_cell": 275
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~infectious-diarrhea-treatment-adult",
+      "route": "#/p/guidelines~adult~infectious-diarrhea-treatment-adult",
+      "title": "Infectious Diarrhea Treatment - Adult",
+      "native": true,
+      "block_types": {
+        "p": 5,
+        "table": 3,
+        "h": 14,
+        "li": 25
+      },
+      "tables": [
+        {
+          "block": 2,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 65
+        },
+        {
+          "block": 43,
+          "rows": 19,
+          "columns": 5,
+          "longest_cell": 2000
+        },
+        {
+          "block": 45,
+          "rows": 6,
+          "columns": 3,
+          "longest_cell": 81
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~CDI-treatment",
+      "route": "#/p/guidelines~adult~CDI-treatment",
+      "title": "CDI Treatment",
+      "native": true,
+      "block_types": {
+        "flow": 1,
+        "rec": 1,
+        "fig": 1,
+        "table": 3,
+        "h": 4,
+        "li": 30,
+        "p": 24
+      },
+      "tables": [
+        {
+          "block": 3,
+          "rows": 4,
+          "columns": 6,
+          "longest_cell": 250
+        },
+        {
+          "block": 7,
+          "rows": 4,
+          "columns": 7,
+          "longest_cell": 502
+        },
+        {
+          "block": 63,
+          "rows": 16,
+          "columns": 3,
+          "longest_cell": 338
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~h-pylori-treatment",
+      "route": "#/p/guidelines~adult~h-pylori-treatment",
+      "title": "H. Pylori Treatment",
+      "native": true,
+      "block_types": {
+        "h": 6,
+        "table": 2,
+        "p": 2,
+        "li": 11
+      },
+      "tables": [
+        {
+          "block": 6,
+          "rows": 1,
+          "columns": 6,
+          "longest_cell": 1362
+        },
+        {
+          "block": 19,
+          "rows": 12,
+          "columns": 3,
+          "longest_cell": 235
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~intrabdominal-infections-adult",
+      "route": "#/p/guidelines~adult~intrabdominal-infections-adult",
+      "title": "Intrabdominal Infections - Adult",
+      "native": true,
+      "block_types": {
+        "table": 8,
+        "h": 1,
+        "p": 3,
+        "li": 2
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 4,
+          "columns": 2,
+          "longest_cell": 160
+        },
+        {
+          "block": 1,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 1368
+        },
+        {
+          "block": 2,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 1909
+        },
+        {
+          "block": 3,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 897
+        },
+        {
+          "block": 4,
+          "rows": 8,
+          "columns": 4,
+          "longest_cell": 2076
+        },
+        {
+          "block": 5,
+          "rows": 4,
+          "columns": 8,
+          "longest_cell": 858
+        },
+        {
+          "block": 6,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 862
+        },
+        {
+          "block": 13,
+          "rows": 10,
+          "columns": 3,
+          "longest_cell": 76
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~bacterial-meningitis-adult",
+      "route": "#/p/guidelines~adult~bacterial-meningitis-adult",
+      "title": "Bacterial Meningitis - Adult",
+      "native": true,
+      "block_types": {
+        "table": 3,
+        "p": 3
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 1110
+        },
+        {
+          "block": 1,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 1166
+        },
+        {
+          "block": 2,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 47
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~GAS-adult",
+      "route": "#/p/guidelines~outpatient~GAS-adult",
+      "title": "Group A Streptococcus Pharyngitis - Adult",
+      "native": true,
+      "block_types": {
+        "h": 4,
+        "table": 2,
+        "p": 5
+      },
+      "tables": [
+        {
+          "block": 2,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 2283
+        },
+        {
+          "block": 9,
+          "rows": 12,
+          "columns": 3,
+          "longest_cell": 300
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~ocular-infections-adult",
+      "route": "#/p/guidelines~adult~ocular-infections-adult",
+      "title": "Ocular Infections - Adult",
+      "native": true,
+      "block_types": {
+        "table": 2,
+        "p": 3
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 6,
+          "columns": 4,
+          "longest_cell": 1336
+        },
+        {
+          "block": 4,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 38
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~odontogenic-infections",
+      "route": "#/p/guidelines~adult~odontogenic-infections",
+      "title": "Odontogenic Infections",
+      "native": true,
+      "block_types": {
+        "table": 2,
+        "p": 3,
+        "li": 9
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 837
+        },
+        {
+          "block": 12,
+          "rows": 5,
+          "columns": 3,
+          "longest_cell": 38
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~head-neck-penicillin-allergy",
+      "route": "#/p/guidelines~adult~head-neck-penicillin-allergy",
+      "title": "Head & Neck Penicillin Allergy",
+      "native": true,
+      "block_types": {
+        "h": 2,
+        "p": 7,
+        "li": 8,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 17,
+          "rows": 17,
+          "columns": 3,
+          "longest_cell": 269
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~leech-information",
+      "route": "#/p/guidelines~adult~leech-information",
+      "title": "Leech Information",
+      "native": true,
+      "block_types": {
+        "p": 7,
+        "li": 5,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 11,
+          "rows": 5,
+          "columns": 3,
+          "longest_cell": 20
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~Antimicrobial-lock",
+      "route": "#/p/guidelines~adult~Antimicrobial-lock",
+      "title": "Antimicrobial Lock Therapy",
+      "native": true,
+      "block_types": {
+        "h": 3,
+        "li": 11,
+        "table": 5,
+        "p": 1
+      },
+      "tables": [
+        {
+          "block": 14,
+          "rows": 7,
+          "columns": 7,
+          "longest_cell": 25
+        },
+        {
+          "block": 16,
+          "rows": 6,
+          "columns": 10,
+          "longest_cell": 31
+        },
+        {
+          "block": 17,
+          "rows": 5,
+          "columns": 7,
+          "longest_cell": 31
+        },
+        {
+          "block": 18,
+          "rows": 5,
+          "columns": 7,
+          "longest_cell": 31
+        },
+        {
+          "block": 19,
+          "rows": 5,
+          "columns": 5,
+          "longest_cell": 43
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~ethanol-lock-therapy",
+      "route": "#/p/guidelines~adult~ethanol-lock-therapy",
+      "title": "Ethanol Lock Therapy",
+      "native": true,
+      "block_types": {
+        "p": 17,
+        "li": 38,
+        "h": 6,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 61,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 58
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~hiv-prep",
+      "route": "#/p/guidelines~adult~hiv-prep",
+      "title": "HIV PrEP",
+      "native": true,
+      "block_types": {
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 1469
+        },
+        {
+          "block": 1,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 1019
+        },
+        {
+          "block": 2,
+          "rows": 5,
+          "columns": 2,
+          "longest_cell": 18
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~Measles-PEP",
+      "route": "#/p/guidelines~adult~Measles-PEP",
+      "title": "Measles Post-exposure Prophylaxis",
+      "native": true,
+      "block_types": {
+        "p": 9,
+        "h": 8,
+        "li": 17,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 23,
+          "rows": 7,
+          "columns": 4,
+          "longest_cell": 207
+        },
+        {
+          "block": 26,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 24
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~obstetrics-gyencologic-treatment",
+      "route": "#/p/guidelines~adult~obstetrics-gyencologic-treatment",
+      "title": "Obstetrics & Gyencologic Treatment",
+      "native": true,
+      "block_types": {
+        "table": 3,
+        "p": 2
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 858
+        },
+        {
+          "block": 3,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 38
+        },
+        {
+          "block": 4,
+          "rows": 3,
+          "columns": 2,
+          "longest_cell": 48
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~obstetrics-allergy",
+      "route": "#/p/guidelines~adult~obstetrics-allergy",
+      "title": "Obstetrics Allergy",
+      "native": true,
+      "block_types": {
+        "p": 4,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 4,
+          "rows": 12,
+          "columns": 3,
+          "longest_cell": 183
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~malaria-treatment",
+      "route": "#/p/guidelines~adult~malaria-treatment",
+      "title": "Malaria Treatment",
+      "native": true,
+      "block_types": {
+        "p": 15,
+        "h": 2,
+        "li": 8,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 23,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 42
+        },
+        {
+          "block": 24,
+          "rows": 5,
+          "columns": 8,
+          "longest_cell": 1280
+        },
+        {
+          "block": 27,
+          "rows": 6,
+          "columns": 3,
+          "longest_cell": 158
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~covid-19-treatment",
+      "route": "#/p/guidelines~adult~covid-19-treatment",
+      "title": "COVID-19 Treatment",
+      "native": true,
+      "block_types": {
+        "p": 4,
+        "h": 3,
+        "li": 2,
+        "table": 4
+      },
+      "tables": [
+        {
+          "block": 7,
+          "rows": 7,
+          "columns": 2,
+          "longest_cell": 221
+        },
+        {
+          "block": 9,
+          "rows": 6,
+          "columns": 6,
+          "longest_cell": 1767
+        },
+        {
+          "block": 10,
+          "rows": 58,
+          "columns": 4,
+          "longest_cell": 303
+        },
+        {
+          "block": 11,
+          "rows": 9,
+          "columns": 2,
+          "longest_cell": 145
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~ambulatory-covid-19-treatment",
+      "route": "#/p/guidelines~outpatient~ambulatory-covid-19-treatment",
+      "title": "Ambulatory COVID-19 Treatment",
+      "native": true,
+      "block_types": {
+        "p": 29,
+        "h": 15,
+        "table": 4,
+        "li": 71
+      },
+      "tables": [
+        {
+          "block": 5,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 39
+        },
+        {
+          "block": 8,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 993
+        },
+        {
+          "block": 116,
+          "rows": 34,
+          "columns": 3,
+          "longest_cell": 337
+        },
+        {
+          "block": 117,
+          "rows": 22,
+          "columns": 2,
+          "longest_cell": 93
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~paxlovid-drug-drug-interactions",
+      "route": "#/p/guidelines~outpatient~paxlovid-drug-drug-interactions",
+      "title": "Paxlovid Drug-drug Interactions",
+      "native": true,
+      "block_types": {
+        "h": 3,
+        "p": 4,
+        "table": 6,
+        "li": 4
+      },
+      "tables": [
+        {
+          "block": 3,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 60
+        },
+        {
+          "block": 4,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 56
+        },
+        {
+          "block": 5,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 46
+        },
+        {
+          "block": 6,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 47
+        },
+        {
+          "block": 14,
+          "rows": 6,
+          "columns": 3,
+          "longest_cell": 36
+        },
+        {
+          "block": 15,
+          "rows": 17,
+          "columns": 3,
+          "longest_cell": 74
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~covid-19-vaccination-timing",
+      "route": "#/p/guidelines~adult~covid-19-vaccination-timing",
+      "title": "COVID-19 Vaccination Timing",
+      "native": true,
+      "block_types": {
+        "table": 4,
+        "h": 1,
+        "p": 1
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 6,
+          "columns": 6,
+          "longest_cell": 348
+        },
+        {
+          "block": 1,
+          "rows": 3,
+          "columns": 6,
+          "longest_cell": 598
+        },
+        {
+          "block": 2,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 468
+        },
+        {
+          "block": 5,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 159
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~pneumonia-treatment",
+      "route": "#/p/guidelines~adult~pneumonia-treatment",
+      "title": "Pneumonia Treatment",
+      "native": true,
+      "block_types": {
+        "p": 11,
+        "table": 7,
+        "h": 5,
+        "li": 14
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 43
+        },
+        {
+          "block": 2,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 1867
+        },
+        {
+          "block": 4,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 1987
+        },
+        {
+          "block": 6,
+          "rows": 35,
+          "columns": 4,
+          "longest_cell": 100
+        },
+        {
+          "block": 7,
+          "rows": 36,
+          "columns": 4,
+          "longest_cell": 429
+        },
+        {
+          "block": 11,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 533
+        },
+        {
+          "block": 35,
+          "rows": 11,
+          "columns": 3,
+          "longest_cell": 92
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~ICU-PNA",
+      "route": "#/p/guidelines~adult~ICU-PNA",
+      "title": "ICU Pneumonia Treatment Algorithm",
+      "native": true,
+      "block_types": {
+        "h": 1,
+        "table": 1,
+        "p": 1
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 0,
+          "columns": 1,
+          "longest_cell": 0
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~procalcitonin-guideline",
+      "route": "#/p/guidelines~adult~procalcitonin-guideline",
+      "title": "Procalcitonin Guideline",
+      "native": true,
+      "block_types": {
+        "h": 2,
+        "li": 17,
+        "p": 5,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 11,
+          "rows": 3,
+          "columns": 2,
+          "longest_cell": 29
+        },
+        {
+          "block": 23,
+          "rows": 16,
+          "columns": 3,
+          "longest_cell": 265
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~RSV-Treatment",
+      "route": "#/p/guidelines~adult~RSV-Treatment",
+      "title": "Respiratory Syncytial Virus Treatment",
+      "native": true,
+      "block_types": {
+        "li": 20,
+        "h": 3,
+        "p": 5,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 28,
+          "rows": 8,
+          "columns": 2,
+          "longest_cell": 64
+        },
+        {
+          "block": 29,
+          "rows": 6,
+          "columns": 3,
+          "longest_cell": 191
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~influenza-adult",
+      "route": "#/p/guidelines~adult~influenza-adult",
+      "title": "Influenza - Adult",
+      "native": true,
+      "block_types": {
+        "h": 1,
+        "p": 4,
+        "table": 5
+      },
+      "tables": [
+        {
+          "block": 3,
+          "rows": 0,
+          "columns": 3,
+          "longest_cell": 0
+        },
+        {
+          "block": 4,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 1123
+        },
+        {
+          "block": 6,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 784
+        },
+        {
+          "block": 7,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 813
+        },
+        {
+          "block": 9,
+          "rows": 17,
+          "columns": 3,
+          "longest_cell": 264
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~animal-bite-adult",
+      "route": "#/p/guidelines~adult~animal-bite-adult",
+      "title": "Animal Bite - Adult",
+      "native": true,
+      "block_types": {
+        "table": 4,
+        "h": 1,
+        "li": 16,
+        "p": 5
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 845
+        },
+        {
+          "block": 1,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 373
+        },
+        {
+          "block": 2,
+          "rows": 3,
+          "columns": 8,
+          "longest_cell": 694
+        },
+        {
+          "block": 23,
+          "rows": 17,
+          "columns": 3,
+          "longest_cell": 216
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~SSTI-adult",
+      "route": "#/p/guidelines~adult~SSTI-adult",
+      "title": "Skin and Soft Tissue Infections - Adult",
+      "native": true,
+      "block_types": {
+        "table": 8,
+        "p": 7,
+        "h": 3,
+        "fig": 1,
+        "li": 9
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 1,
+          "columns": 7,
+          "longest_cell": 957
+        },
+        {
+          "block": 8,
+          "rows": 1,
+          "columns": 7,
+          "longest_cell": 946
+        },
+        {
+          "block": 9,
+          "rows": 1,
+          "columns": 7,
+          "longest_cell": 489
+        },
+        {
+          "block": 10,
+          "rows": 2,
+          "columns": 7,
+          "longest_cell": 840
+        },
+        {
+          "block": 11,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 662
+        },
+        {
+          "block": 12,
+          "rows": 1,
+          "columns": 8,
+          "longest_cell": 1080
+        },
+        {
+          "block": 14,
+          "rows": 1,
+          "columns": 6,
+          "longest_cell": 672
+        },
+        {
+          "block": 25,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 240
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~ambulatory-dalbavancin-protocol",
+      "route": "#/p/guidelines~outpatient~ambulatory-dalbavancin-protocol",
+      "title": "Ambulatory Dalbavancin Protocol",
+      "native": true,
+      "block_types": {
+        "h": 8,
+        "p": 4,
+        "li": 50,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 36,
+          "rows": 5,
+          "columns": 3,
+          "longest_cell": 28
+        },
+        {
+          "block": 62,
+          "rows": 6,
+          "columns": 3,
+          "longest_cell": 34
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~uUTI-workflow_ID",
+      "route": "#/p/guidelines~outpatient~uUTI-workflow_ID",
+      "title": "ID uUTI Workflow",
+      "native": true,
+      "block_types": {
+        "h": 1,
+        "table": 1,
+        "p": 1
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 58
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~UTI-Adult",
+      "route": "#/p/guidelines~adult~UTI-Adult",
+      "title": "Urinary Tract Infections - Adult",
+      "native": true,
+      "block_types": {
+        "h": 4,
+        "li": 13,
+        "p": 19,
+        "table": 10
+      },
+      "tables": [
+        {
+          "block": 21,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 46
+        },
+        {
+          "block": 23,
+          "rows": 3,
+          "columns": 6,
+          "longest_cell": 200
+        },
+        {
+          "block": 24,
+          "rows": 1,
+          "columns": 8,
+          "longest_cell": 762
+        },
+        {
+          "block": 25,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 1591
+        },
+        {
+          "block": 26,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 393
+        },
+        {
+          "block": 27,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 858
+        },
+        {
+          "block": 28,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 419
+        },
+        {
+          "block": 37,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 45
+        },
+        {
+          "block": 41,
+          "rows": 2,
+          "columns": 3,
+          "longest_cell": 23
+        },
+        {
+          "block": 44,
+          "rows": 15,
+          "columns": 3,
+          "longest_cell": 299
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~CDI-diagnostics",
+      "route": "#/p/guidelines~adult~CDI-diagnostics",
+      "title": "CDI Diagnostics",
+      "native": true,
+      "block_types": {
+        "fig": 1,
+        "table": 2,
+        "p": 2,
+        "li": 2
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 5,
+          "columns": 6,
+          "longest_cell": 247
+        },
+        {
+          "block": 5,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 39
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~BCx-algorithm",
+      "route": "#/p/guidelines~adult~BCx-algorithm",
+      "title": "Blood Culture Algorithm",
+      "native": true,
+      "block_types": {
+        "flow": 1,
+        "p": 3
+      },
+      "tables": [],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~meningitis-film-array",
+      "route": "#/p/guidelines~adult~meningitis-film-array",
+      "title": "Meningitis Film Array",
+      "native": true,
+      "block_types": {
+        "p": 19,
+        "fig": 1,
+        "li": 108,
+        "table": 1,
+        "h": 39
+      },
+      "tables": [
+        {
+          "block": 10,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 181
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~bmt-prophylaxis",
+      "route": "#/p/guidelines~adult~bmt-prophylaxis",
+      "title": "BMT Prophylaxis",
+      "native": true,
+      "block_types": {
+        "fig": 1,
+        "p": 21,
+        "table": 8,
+        "h": 41,
+        "li": 46
+      },
+      "tables": [
+        {
+          "block": 2,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 152
+        },
+        {
+          "block": 4,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 829
+        },
+        {
+          "block": 6,
+          "rows": 5,
+          "columns": 5,
+          "longest_cell": 528
+        },
+        {
+          "block": 7,
+          "rows": 4,
+          "columns": 5,
+          "longest_cell": 362
+        },
+        {
+          "block": 9,
+          "rows": 4,
+          "columns": 6,
+          "longest_cell": 718
+        },
+        {
+          "block": 33,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 457
+        },
+        {
+          "block": 115,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 13
+        },
+        {
+          "block": 116,
+          "rows": 11,
+          "columns": 3,
+          "longest_cell": 261
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~hematology-prophylaxis",
+      "route": "#/p/guidelines~adult~hematology-prophylaxis",
+      "title": "Hematology Prophylaxis",
+      "native": true,
+      "block_types": {
+        "table": 3,
+        "p": 6,
+        "h": 7,
+        "li": 5
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 4,
+          "columns": 7,
+          "longest_cell": 940
+        },
+        {
+          "block": 3,
+          "rows": 4,
+          "columns": 2,
+          "longest_cell": 166
+        },
+        {
+          "block": 20,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~car-t-prophylaxis",
+      "route": "#/p/guidelines~adult~car-t-prophylaxis",
+      "title": "CAR-T Prophylaxis",
+      "native": true,
+      "block_types": {
+        "h": 3,
+        "table": 6,
+        "p": 4
+      },
+      "tables": [
+        {
+          "block": 3,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 25
+        },
+        {
+          "block": 4,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 315
+        },
+        {
+          "block": 6,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 419
+        },
+        {
+          "block": 8,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 263
+        },
+        {
+          "block": 9,
+          "rows": 4,
+          "columns": 5,
+          "longest_cell": 157
+        },
+        {
+          "block": 11,
+          "rows": 9,
+          "columns": 3,
+          "longest_cell": 314
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~antimicrobial-dosing-pediatrics",
+      "route": "#/p/guidelines~pediatric~antimicrobial-dosing-pediatrics",
+      "title": "Antimicrobial Dosing - Pediatrics",
+      "native": true,
+      "block_types": {
+        "h": 6,
+        "table": 17,
+        "p": 12,
+        "li": 5
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 21,
+          "columns": 5,
+          "longest_cell": 28
+        },
+        {
+          "block": 2,
+          "rows": 7,
+          "columns": 8,
+          "longest_cell": 313
+        },
+        {
+          "block": 3,
+          "rows": 8,
+          "columns": 5,
+          "longest_cell": 59
+        },
+        {
+          "block": 4,
+          "rows": 11,
+          "columns": 7,
+          "longest_cell": 166
+        },
+        {
+          "block": 5,
+          "rows": 3,
+          "columns": 8,
+          "longest_cell": 92
+        },
+        {
+          "block": 6,
+          "rows": 15,
+          "columns": 10,
+          "longest_cell": 133
+        },
+        {
+          "block": 7,
+          "rows": 20,
+          "columns": 9,
+          "longest_cell": 175
+        },
+        {
+          "block": 8,
+          "rows": 77,
+          "columns": 8,
+          "longest_cell": 186
+        },
+        {
+          "block": 9,
+          "rows": 2,
+          "columns": 3,
+          "longest_cell": 49
+        },
+        {
+          "block": 10,
+          "rows": 6,
+          "columns": 7,
+          "longest_cell": 43
+        },
+        {
+          "block": 11,
+          "rows": 7,
+          "columns": 7,
+          "longest_cell": 43
+        },
+        {
+          "block": 12,
+          "rows": 9,
+          "columns": 8,
+          "longest_cell": 53
+        },
+        {
+          "block": 13,
+          "rows": 3,
+          "columns": 7,
+          "longest_cell": 97
+        },
+        {
+          "block": 14,
+          "rows": 5,
+          "columns": 8,
+          "longest_cell": 179
+        },
+        {
+          "block": 15,
+          "rows": 26,
+          "columns": 8,
+          "longest_cell": 94
+        },
+        {
+          "block": 29,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 174
+        },
+        {
+          "block": 39,
+          "rows": 23,
+          "columns": 3,
+          "longest_cell": 225
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "pharmacokinetics~vancomycin-pediatrics",
+      "route": "#/p/pharmacokinetics~vancomycin-pediatrics",
+      "title": "Vancomycin - Pediatrics",
+      "native": true,
+      "block_types": {
+        "table": 8,
+        "h": 7,
+        "li": 8,
+        "p": 6
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 8,
+          "columns": 2,
+          "longest_cell": 657
+        },
+        {
+          "block": 2,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 276
+        },
+        {
+          "block": 9,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 11,
+          "rows": 3,
+          "columns": 2,
+          "longest_cell": 220
+        },
+        {
+          "block": 14,
+          "rows": 5,
+          "columns": 2,
+          "longest_cell": 312
+        },
+        {
+          "block": 16,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 18,
+          "rows": 2,
+          "columns": 2,
+          "longest_cell": 246
+        },
+        {
+          "block": 28,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 215
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "pharmacokinetics~aminoglycoside-pediatrics",
+      "route": "#/p/pharmacokinetics~aminoglycoside-pediatrics",
+      "title": "Aminoglycoside - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 10,
+        "table": 7
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 9,
+          "columns": 4,
+          "longest_cell": 44
+        },
+        {
+          "block": 5,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 898
+        },
+        {
+          "block": 7,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 553
+        },
+        {
+          "block": 9,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 466
+        },
+        {
+          "block": 11,
+          "rows": 4,
+          "columns": 6,
+          "longest_cell": 304
+        },
+        {
+          "block": 13,
+          "rows": 5,
+          "columns": 6,
+          "longest_cell": 49
+        },
+        {
+          "block": 14,
+          "rows": 7,
+          "columns": 7,
+          "longest_cell": 622
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~t1-pediatric",
+      "route": "#/p/guidelines~pediatric~t1-pediatric",
+      "title": "Tier 1 Restricted Antimicrobials - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 2,
+        "h": 3,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 5,
+          "rows": 11,
+          "columns": 4,
+          "longest_cell": 25
+        },
+        {
+          "block": 6,
+          "rows": 30,
+          "columns": 2,
+          "longest_cell": 1308
+        },
+        {
+          "block": 7,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 79
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~t2-pediatric",
+      "route": "#/p/guidelines~pediatric~t2-pediatric",
+      "title": "Tier 2 Restricted Antimicrobials - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 5,
+        "h": 1,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 5,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 23
+        },
+        {
+          "block": 6,
+          "rows": 8,
+          "columns": 4,
+          "longest_cell": 1107
+        },
+        {
+          "block": 8,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~pediatric-procalcitonin-usage-guidelines",
+      "route": "#/p/guidelines~pediatric~pediatric-procalcitonin-usage-guidelines",
+      "title": "Pediatric Procalcitonin Usage Guidelines",
+      "native": true,
+      "block_types": {
+        "h": 2,
+        "li": 19,
+        "p": 5,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 14,
+          "rows": 3,
+          "columns": 2,
+          "longest_cell": 37
+        },
+        {
+          "block": 26,
+          "rows": 4,
+          "columns": 5,
+          "longest_cell": 17
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~blood-stream-infections-pediatric",
+      "route": "#/p/guidelines~pediatric~blood-stream-infections-pediatric",
+      "title": "Blood Stream Infections - Pediatric",
+      "native": true,
+      "block_types": {
+        "p": 92,
+        "h": 37,
+        "flow": 1,
+        "rec": 1,
+        "table": 5
+      },
+      "tables": [
+        {
+          "block": 25,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 811
+        },
+        {
+          "block": 49,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 924
+        },
+        {
+          "block": 93,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 920
+        },
+        {
+          "block": 113,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 1342
+        },
+        {
+          "block": 120,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 799
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~bone-and-joint-pediatrics",
+      "route": "#/p/guidelines~pediatric~bone-and-joint-pediatrics",
+      "title": "Bone and Joint - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 18,
+        "h": 6,
+        "li": 46,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 60,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 780
+        },
+        {
+          "block": 71,
+          "rows": 12,
+          "columns": 3,
+          "longest_cell": 545
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~native-valve-endocarditis-pediatrics",
+      "route": "#/p/guidelines~pediatric~native-valve-endocarditis-pediatrics",
+      "title": "Native Valve Endocarditis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "h": 2,
+        "p": 2,
+        "li": 9,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 8,
+          "rows": 10,
+          "columns": 6,
+          "longest_cell": 180
+        },
+        {
+          "block": 9,
+          "rows": 11,
+          "columns": 6,
+          "longest_cell": 637
+        },
+        {
+          "block": 15,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 44
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~prosthetic-valve-endocarditis-pediatrics",
+      "route": "#/p/guidelines~pediatric~prosthetic-valve-endocarditis-pediatrics",
+      "title": "Prosthetic Valve Endocarditis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "fig": 1,
+        "h": 1,
+        "p": 3,
+        "li": 11,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 12,
+          "rows": 7,
+          "columns": 7,
+          "longest_cell": 203
+        },
+        {
+          "block": 13,
+          "rows": 6,
+          "columns": 5,
+          "longest_cell": 390
+        },
+        {
+          "block": 18,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 44
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~aspergillosis-and-mucormycosis-pediatrics",
+      "route": "#/p/guidelines~pediatric~aspergillosis-and-mucormycosis-pediatrics",
+      "title": "Aspergillosis and Mucormycosis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "table": 3,
+        "h": 5,
+        "li": 36
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 2,
+          "columns": 3,
+          "longest_cell": 977
+        },
+        {
+          "block": 25,
+          "rows": 5,
+          "columns": 2,
+          "longest_cell": 715
+        },
+        {
+          "block": 43,
+          "rows": 9,
+          "columns": 3,
+          "longest_cell": 264
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~candidiasis-pediatrics",
+      "route": "#/p/guidelines~pediatric~candidiasis-pediatrics",
+      "title": "Candidiasis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "h": 2,
+        "li": 13,
+        "table": 4
+      },
+      "tables": [
+        {
+          "block": 11,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 310
+        },
+        {
+          "block": 12,
+          "rows": 4,
+          "columns": 5,
+          "longest_cell": 421
+        },
+        {
+          "block": 13,
+          "rows": 4,
+          "columns": 6,
+          "longest_cell": 956
+        },
+        {
+          "block": 18,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 197
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~intra-abdominal-infections-pediatrics",
+      "route": "#/p/guidelines~pediatric~intra-abdominal-infections-pediatrics",
+      "title": "Intra-abdominal Infections - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 22,
+        "table": 8,
+        "h": 3,
+        "li": 5
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 5,
+          "columns": 2,
+          "longest_cell": 165
+        },
+        {
+          "block": 3,
+          "rows": 3,
+          "columns": 6,
+          "longest_cell": 869
+        },
+        {
+          "block": 5,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 871
+        },
+        {
+          "block": 7,
+          "rows": 1,
+          "columns": 6,
+          "longest_cell": 929
+        },
+        {
+          "block": 9,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 882
+        },
+        {
+          "block": 11,
+          "rows": 3,
+          "columns": 6,
+          "longest_cell": 682
+        },
+        {
+          "block": 31,
+          "rows": 4,
+          "columns": 2,
+          "longest_cell": 65
+        },
+        {
+          "block": 35,
+          "rows": 4,
+          "columns": 2,
+          "longest_cell": 65
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~clostridiodies-difficile-pediatric",
+      "route": "#/p/guidelines~pediatric~clostridiodies-difficile-pediatric",
+      "title": "Clostridiodies difficile - Pediatric",
+      "native": true,
+      "block_types": {
+        "fig": 1,
+        "h": 14,
+        "table": 3,
+        "p": 50,
+        "li": 38
+      },
+      "tables": [
+        {
+          "block": 2,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 73,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 156
+        },
+        {
+          "block": 82,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 978
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~infectious-diarrhea-pediatrics",
+      "route": "#/p/guidelines~pediatric~infectious-diarrhea-pediatrics",
+      "title": "Infectious Diarrhea - Pediatrics",
+      "native": true,
+      "block_types": {
+        "table": 6,
+        "p": 6,
+        "h": 4,
+        "li": 97
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 14,
+          "columns": 6,
+          "longest_cell": 28
+        },
+        {
+          "block": 1,
+          "rows": 5,
+          "columns": 3,
+          "longest_cell": 65
+        },
+        {
+          "block": 103,
+          "rows": 9,
+          "columns": 5,
+          "longest_cell": 923
+        },
+        {
+          "block": 104,
+          "rows": 5,
+          "columns": 6,
+          "longest_cell": 512
+        },
+        {
+          "block": 105,
+          "rows": 5,
+          "columns": 5,
+          "longest_cell": 665
+        },
+        {
+          "block": 111,
+          "rows": 13,
+          "columns": 3,
+          "longest_cell": 243
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~ambulatory-pediatric-acute-otitis-media",
+      "route": "#/p/guidelines~outpatient~ambulatory-pediatric-acute-otitis-media",
+      "title": "Ambulatory Pediatric Acute Otitis Media",
+      "native": true,
+      "block_types": {
+        "p": 5,
+        "table": 2,
+        "h": 2
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 953
+        },
+        {
+          "block": 7,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 396
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~deep-neck-space-infections",
+      "route": "#/p/guidelines~pediatric~deep-neck-space-infections",
+      "title": "Deep Neck Space Infections",
+      "native": true,
+      "block_types": {
+        "p": 4,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 2,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 966
+        },
+        {
+          "block": 3,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 1218
+        },
+        {
+          "block": 6,
+          "rows": 22,
+          "columns": 3,
+          "longest_cell": 300
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~GAS-peds",
+      "route": "#/p/guidelines~outpatient~GAS-peds",
+      "title": "Group A Streptococcus Pharyngitis - Pediatric",
+      "native": true,
+      "block_types": {
+        "h": 3,
+        "table": 2,
+        "p": 5
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 2239
+        },
+        {
+          "block": 8,
+          "rows": 12,
+          "columns": 3,
+          "longest_cell": 300
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+      "route": "#/p/guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+      "title": "Ethanol Lock Therapy - Pediatrics",
+      "native": true,
+      "block_types": {
+        "h": 41,
+        "p": 46,
+        "li": 75,
+        "table": 6
+      },
+      "tables": [
+        {
+          "block": 19,
+          "rows": 21,
+          "columns": 5,
+          "longest_cell": 25
+        },
+        {
+          "block": 54,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 49
+        },
+        {
+          "block": 56,
+          "rows": 4,
+          "columns": 6,
+          "longest_cell": 28
+        },
+        {
+          "block": 59,
+          "rows": 6,
+          "columns": 2,
+          "longest_cell": 61
+        },
+        {
+          "block": 149,
+          "rows": 3,
+          "columns": 2,
+          "longest_cell": 226
+        },
+        {
+          "block": 167,
+          "rows": 17,
+          "columns": 3,
+          "longest_cell": 217
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~bacterial-meningitis-pediatrics",
+      "route": "#/p/guidelines~pediatric~bacterial-meningitis-pediatrics",
+      "title": "Bacterial Meningitis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "table": 2,
+        "p": 1
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 9,
+          "columns": 6,
+          "longest_cell": 827
+        },
+        {
+          "block": 2,
+          "rows": 5,
+          "columns": 3,
+          "longest_cell": 120
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~TPOXX",
+      "route": "#/p/guidelines~adult~TPOXX",
+      "title": "Tecovirimat Process",
+      "native": true,
+      "block_types": {
+        "h": 1,
+        "p": 3,
+        "li": 18,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 21,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 71
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~Lyme-Pediatrics",
+      "route": "#/p/guidelines~outpatient~Lyme-Pediatrics",
+      "title": "Ambulatory Pediatric Lyme Disease",
+      "native": true,
+      "block_types": {
+        "table": 4,
+        "p": 1
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 1,
+          "columns": 7,
+          "longest_cell": 343
+        },
+        {
+          "block": 1,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 2158
+        },
+        {
+          "block": 2,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 894
+        },
+        {
+          "block": 3,
+          "rows": 5,
+          "columns": 3,
+          "longest_cell": 297
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~perinatal-hiv-pediatrics",
+      "route": "#/p/guidelines~pediatric~perinatal-hiv-pediatrics",
+      "title": "Perinatal HIV - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 27,
+        "h": 12,
+        "li": 70,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 88,
+          "rows": 4,
+          "columns": 16,
+          "longest_cell": 45
+        },
+        {
+          "block": 91,
+          "rows": 9,
+          "columns": 6,
+          "longest_cell": 84
+        },
+        {
+          "block": 108,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 44
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+      "route": "#/p/guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+      "title": "Necrotizing Enterocolitis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 17,
+        "li": 32,
+        "h": 3,
+        "table": 5,
+        "rec": 1
+      },
+      "tables": [
+        {
+          "block": 47,
+          "rows": 0,
+          "columns": 9,
+          "longest_cell": 0
+        },
+        {
+          "block": 49,
+          "rows": 1,
+          "columns": 9,
+          "longest_cell": 72
+        },
+        {
+          "block": 51,
+          "rows": 3,
+          "columns": 9,
+          "longest_cell": 125
+        },
+        {
+          "block": 53,
+          "rows": 1,
+          "columns": 9,
+          "longest_cell": 98
+        },
+        {
+          "block": 57,
+          "rows": 15,
+          "columns": 3,
+          "longest_cell": 250
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~pneumonia-pediatrics",
+      "route": "#/p/guidelines~pediatric~pneumonia-pediatrics",
+      "title": "Pneumonia - Pediatrics",
+      "native": true,
+      "block_types": {
+        "h": 4,
+        "p": 16,
+        "table": 9,
+        "li": 5
+      },
+      "tables": [
+        {
+          "block": 2,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 601
+        },
+        {
+          "block": 3,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 1455
+        },
+        {
+          "block": 4,
+          "rows": 1,
+          "columns": 8,
+          "longest_cell": 682
+        },
+        {
+          "block": 5,
+          "rows": 2,
+          "columns": 3,
+          "longest_cell": 1039
+        },
+        {
+          "block": 6,
+          "rows": 1,
+          "columns": 7,
+          "longest_cell": 868
+        },
+        {
+          "block": 7,
+          "rows": 1,
+          "columns": 6,
+          "longest_cell": 819
+        },
+        {
+          "block": 18,
+          "rows": 1,
+          "columns": 1,
+          "longest_cell": 17
+        },
+        {
+          "block": 22,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 26
+        },
+        {
+          "block": 32,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 218
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~cystic-fibrosis-pediatrics",
+      "route": "#/p/guidelines~pediatric~cystic-fibrosis-pediatrics",
+      "title": "Cystic Fibrosis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 31,
+        "h": 15,
+        "li": 128,
+        "table": 4
+      },
+      "tables": [
+        {
+          "block": 139,
+          "rows": 1,
+          "columns": 7,
+          "longest_cell": 465
+        },
+        {
+          "block": 145,
+          "rows": 4,
+          "columns": 6,
+          "longest_cell": 151
+        },
+        {
+          "block": 147,
+          "rows": 3,
+          "columns": 2,
+          "longest_cell": 279
+        },
+        {
+          "block": 173,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 42
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~influenza-pediatrics",
+      "route": "#/p/guidelines~pediatric~influenza-pediatrics",
+      "title": "Influenza - Pediatrics",
+      "native": true,
+      "block_types": {
+        "h": 1,
+        "p": 6,
+        "table": 4
+      },
+      "tables": [
+        {
+          "block": 3,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 1484
+        },
+        {
+          "block": 5,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 1247
+        },
+        {
+          "block": 6,
+          "rows": 2,
+          "columns": 8,
+          "longest_cell": 829
+        },
+        {
+          "block": 8,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 120
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+      "route": "#/p/guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+      "title": "Undifferentiated Sepsis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 11,
+        "table": 2,
+        "h": 4,
+        "li": 8
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 3,
+          "columns": 6,
+          "longest_cell": 909
+        },
+        {
+          "block": 24,
+          "rows": 9,
+          "columns": 5,
+          "longest_cell": 219
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~animal-bite-pediatrics",
+      "route": "#/p/guidelines~pediatric~animal-bite-pediatrics",
+      "title": "Animal Bite - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 8,
+        "li": 33,
+        "table": 3,
+        "h": 2
+      },
+      "tables": [
+        {
+          "block": 10,
+          "rows": 6,
+          "columns": 6,
+          "longest_cell": 975
+        },
+        {
+          "block": 11,
+          "rows": 3,
+          "columns": 8,
+          "longest_cell": 692
+        },
+        {
+          "block": 45,
+          "rows": 21,
+          "columns": 3,
+          "longest_cell": 228
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~skin-and-soft-tissue-infections-pediatrics",
+      "route": "#/p/guidelines~pediatric~skin-and-soft-tissue-infections-pediatrics",
+      "title": "Skin and Soft Tissue Infections - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 2,
+        "table": 3,
+        "h": 1
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 82
+        },
+        {
+          "block": 2,
+          "rows": 7,
+          "columns": 6,
+          "longest_cell": 1262
+        },
+        {
+          "block": 5,
+          "rows": 19,
+          "columns": 3,
+          "longest_cell": 352
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~urinary-tract-infections-pediatrics",
+      "route": "#/p/guidelines~pediatric~urinary-tract-infections-pediatrics",
+      "title": "Urinary Tract Infections - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 9,
+        "table": 3
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 3,
+          "columns": 5,
+          "longest_cell": 563
+        },
+        {
+          "block": 2,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 648
+        },
+        {
+          "block": 11,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 302
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+      "route": "#/p/guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+      "title": "Hematology/Oncology Prophylaxis - Pediatrics",
+      "native": true,
+      "block_types": {
+        "p": 8,
+        "table": 5,
+        "li": 69,
+        "h": 1
+      },
+      "tables": [
+        {
+          "block": 3,
+          "rows": 5,
+          "columns": 9,
+          "longest_cell": 144
+        },
+        {
+          "block": 16,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 67
+        },
+        {
+          "block": 18,
+          "rows": 5,
+          "columns": 5,
+          "longest_cell": 118
+        },
+        {
+          "block": 62,
+          "rows": 3,
+          "columns": 5,
+          "longest_cell": 160
+        },
+        {
+          "block": 82,
+          "rows": 14,
+          "columns": 3,
+          "longest_cell": 293
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~ambulatory-rhinosinusitis",
+      "route": "#/p/guidelines~outpatient~ambulatory-rhinosinusitis",
+      "title": "Ambulatory Rhinosinusitis",
+      "native": true,
+      "block_types": {
+        "table": 2,
+        "p": 2
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 1280
+        },
+        {
+          "block": 2,
+          "rows": 6,
+          "columns": 3,
+          "longest_cell": 136
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~Lyme-Adult",
+      "route": "#/p/guidelines~outpatient~Lyme-Adult",
+      "title": "Ambulatory Adult Lyme Disease",
+      "native": true,
+      "block_types": {
+        "table": 4,
+        "p": 1
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 1,
+          "columns": 7,
+          "longest_cell": 342
+        },
+        {
+          "block": 1,
+          "rows": 2,
+          "columns": 6,
+          "longest_cell": 2221
+        },
+        {
+          "block": 2,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 1205
+        },
+        {
+          "block": 3,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 297
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~amb-CAP",
+      "route": "#/p/guidelines~outpatient~amb-CAP",
+      "title": "Ambulatory Community-acquired Pneumonia",
+      "native": true,
+      "block_types": {
+        "table": 2,
+        "p": 2
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 1033
+        },
+        {
+          "block": 2,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 255
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~pemivibart-step-by-step-process",
+      "route": "#/p/guidelines~outpatient~pemivibart-step-by-step-process",
+      "title": "Pemivibart Step-by-step Process",
+      "native": true,
+      "block_types": {
+        "p": 6,
+        "li": 14,
+        "table": 1,
+        "rec": 1
+      },
+      "tables": [
+        {
+          "block": 18,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~ambulatory-evisit-cough-and-flu",
+      "route": "#/p/guidelines~outpatient~ambulatory-evisit-cough-and-flu",
+      "title": "Ambulatory eVisit Cough and Flu",
+      "native": true,
+      "block_types": {
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+      "route": "#/p/guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+      "title": "Ambulatory Diabetic Foot Protocol",
+      "native": true,
+      "block_types": {
+        "p": 21,
+        "li": 47,
+        "table": 2
+      },
+      "tables": [
+        {
+          "block": 56,
+          "rows": 5,
+          "columns": 5,
+          "longest_cell": 13
+        },
+        {
+          "block": 69,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~ambulatory-skin-and-soft-tissue-infections-adult",
+      "route": "#/p/guidelines~outpatient~ambulatory-skin-and-soft-tissue-infections-adult",
+      "title": "Ambulatory Skin and Soft Tissue Infections - Adult",
+      "native": true,
+      "block_types": {
+        "table": 3,
+        "p": 6
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 2,
+          "columns": 7,
+          "longest_cell": 988
+        },
+        {
+          "block": 1,
+          "rows": 3,
+          "columns": 8,
+          "longest_cell": 872
+        },
+        {
+          "block": 7,
+          "rows": 11,
+          "columns": 3,
+          "longest_cell": 240
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~uUTI-workflow_URO",
+      "route": "#/p/guidelines~outpatient~uUTI-workflow_URO",
+      "title": "URO uUTI Workflow",
+      "native": true,
+      "block_types": {
+        "p": 48,
+        "h": 30,
+        "li": 54,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 122,
+          "rows": 8,
+          "columns": 3,
+          "longest_cell": 299
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~outpatient~ambulatory-urinary-tract-infections-adult",
+      "route": "#/p/guidelines~outpatient~ambulatory-urinary-tract-infections-adult",
+      "title": "Ambulatory Urinary Tract Infections - Adult",
+      "native": true,
+      "block_types": {
+        "table": 6,
+        "p": 25,
+        "h": 3,
+        "li": 14
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 2,
+          "columns": 3,
+          "longest_cell": 75
+        },
+        {
+          "block": 2,
+          "rows": 3,
+          "columns": 6,
+          "longest_cell": 150
+        },
+        {
+          "block": 40,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 821
+        },
+        {
+          "block": 41,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 1479
+        },
+        {
+          "block": 42,
+          "rows": 2,
+          "columns": 5,
+          "longest_cell": 742
+        },
+        {
+          "block": 46,
+          "rows": 12,
+          "columns": 3,
+          "longest_cell": 308
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~pediatric~nirsevimab-pediatrics",
+      "route": "#/p/guidelines~pediatric~nirsevimab-pediatrics",
+      "title": "Nirsevimab - Pediatrics",
+      "native": true,
+      "block_types": {
+        "h": 13,
+        "table": 5,
+        "p": 7,
+        "li": 28
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 0,
+          "columns": 3,
+          "longest_cell": 0
+        },
+        {
+          "block": 3,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 595
+        },
+        {
+          "block": 4,
+          "rows": 4,
+          "columns": 5,
+          "longest_cell": 595
+        },
+        {
+          "block": 8,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 116
+        },
+        {
+          "block": 50,
+          "rows": 10,
+          "columns": 8,
+          "longest_cell": 617
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~adult~navigating-tableau-tips",
+      "route": "#/p/guidelines~adult~navigating-tableau-tips",
+      "title": "Navigating Tableau Tips",
+      "native": true,
+      "block_types": {
+        "p": 41,
+        "li": 10,
+        "h": 1
+      },
+      "tables": [],
+      "links": 0
+    },
+    {
+      "id": "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+      "route": "#/p/guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+      "title": "Adult Surgical Prophylaxis",
+      "native": true,
+      "block_types": {
+        "h": 20,
+        "table": 47,
+        "p": 53,
+        "li": 26
+      },
+      "tables": [
+        {
+          "block": 1,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 2,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 3,
+          "rows": 6,
+          "columns": 2,
+          "longest_cell": 29
+        },
+        {
+          "block": 4,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 20,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 165
+        },
+        {
+          "block": 21,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 530
+        },
+        {
+          "block": 30,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 457
+        },
+        {
+          "block": 31,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 205
+        },
+        {
+          "block": 32,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 433
+        },
+        {
+          "block": 33,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 476
+        },
+        {
+          "block": 34,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 350
+        },
+        {
+          "block": 35,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 491
+        },
+        {
+          "block": 36,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 423
+        },
+        {
+          "block": 37,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 350
+        },
+        {
+          "block": 38,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 205
+        },
+        {
+          "block": 42,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 202
+        },
+        {
+          "block": 43,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 797
+        },
+        {
+          "block": 47,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 538
+        },
+        {
+          "block": 48,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 40
+        },
+        {
+          "block": 52,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 170
+        },
+        {
+          "block": 56,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 667
+        },
+        {
+          "block": 60,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 269
+        },
+        {
+          "block": 64,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 184
+        },
+        {
+          "block": 68,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 344
+        },
+        {
+          "block": 69,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 70,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 390
+        },
+        {
+          "block": 75,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 487
+        },
+        {
+          "block": 76,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 77,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 390
+        },
+        {
+          "block": 78,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 79,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 385
+        },
+        {
+          "block": 86,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 258
+        },
+        {
+          "block": 94,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 365
+        },
+        {
+          "block": 99,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 279
+        },
+        {
+          "block": 100,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 101,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 708
+        },
+        {
+          "block": 102,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 456
+        },
+        {
+          "block": 103,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 486
+        },
+        {
+          "block": 104,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 957
+        },
+        {
+          "block": 105,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 299
+        },
+        {
+          "block": 106,
+          "rows": 7,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 108,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 109,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 110,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 170
+        },
+        {
+          "block": 111,
+          "rows": 17,
+          "columns": 5,
+          "longest_cell": 93
+        },
+        {
+          "block": 112,
+          "rows": 2,
+          "columns": 16,
+          "longest_cell": 287
+        },
+        {
+          "block": 113,
+          "rows": 2,
+          "columns": 16,
+          "longest_cell": 413
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~surgical-prophylaxis~patients-50-kg",
+      "route": "#/p/guidelines~surgical-prophylaxis~patients-50-kg",
+      "title": "Patients > 50 kg",
+      "native": true,
+      "block_types": {
+        "table": 2,
+        "h": 9,
+        "li": 17,
+        "p": 29
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 18,
+          "columns": 5,
+          "longest_cell": 93
+        },
+        {
+          "block": 55,
+          "rows": 24,
+          "columns": 5,
+          "longest_cell": 199
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~surgical-prophylaxis~patients-50-kg_1",
+      "route": "#/p/guidelines~surgical-prophylaxis~patients-50-kg_1",
+      "title": "Patients </= 50 kg",
+      "native": true,
+      "block_types": {
+        "table": 3,
+        "h": 9,
+        "li": 17,
+        "p": 29
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 3,
+          "columns": 16,
+          "longest_cell": 399
+        },
+        {
+          "block": 1,
+          "rows": 2,
+          "columns": 16,
+          "longest_cell": 419
+        },
+        {
+          "block": 56,
+          "rows": 24,
+          "columns": 5,
+          "longest_cell": 199
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~surgical-prophylaxis~pediatric-head-and-neck",
+      "route": "#/p/guidelines~surgical-prophylaxis~pediatric-head-and-neck",
+      "title": "Pediatric Head and Neck",
+      "native": true,
+      "block_types": {
+        "flow": 1,
+        "rec": 1,
+        "table": 1,
+        "p": 1
+      },
+      "tables": [
+        {
+          "block": 2,
+          "rows": 5,
+          "columns": 2,
+          "longest_cell": 279
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+      "route": "#/p/guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+      "title": "Pediatric Surgical Prophylaxis Guidelines",
+      "native": true,
+      "block_types": {
+        "p": 39,
+        "h": 6,
+        "li": 19,
+        "table": 16
+      },
+      "tables": [
+        {
+          "block": 16,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 205
+        },
+        {
+          "block": 17,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 499
+        },
+        {
+          "block": 18,
+          "rows": 1,
+          "columns": 5,
+          "longest_cell": 858
+        },
+        {
+          "block": 22,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 797
+        },
+        {
+          "block": 26,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 457
+        },
+        {
+          "block": 30,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 344
+        },
+        {
+          "block": 31,
+          "rows": 1,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 33,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 34,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 392
+        },
+        {
+          "block": 35,
+          "rows": 7,
+          "columns": 4,
+          "longest_cell": 279
+        },
+        {
+          "block": 36,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 708
+        },
+        {
+          "block": 37,
+          "rows": 5,
+          "columns": 4,
+          "longest_cell": 487
+        },
+        {
+          "block": 38,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 1216
+        },
+        {
+          "block": 39,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 40,
+          "rows": 3,
+          "columns": 4,
+          "longest_cell": 206
+        },
+        {
+          "block": 41,
+          "rows": 6,
+          "columns": 4,
+          "longest_cell": 206
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "guidelines~transplant~donor-cx_txp",
+      "route": "#/p/guidelines~transplant~donor-cx_txp",
+      "title": "Positive Donor Cultures",
+      "native": true,
+      "block_types": {
+        "h": 4,
+        "p": 4,
+        "li": 27,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 34,
+          "rows": 3,
+          "columns": 3,
+          "longest_cell": 16
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "pharmacokinetics~pharmacokinetic-workflow",
+      "route": "#/p/pharmacokinetics~pharmacokinetic-workflow",
+      "title": "Pharmacokinetic Workflow",
+      "native": true,
+      "block_types": {
+        "table": 2,
+        "h": 100,
+        "li": 82,
+        "fig": 1,
+        "p": 2
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 40
+        },
+        {
+          "block": 3,
+          "rows": 7,
+          "columns": 3,
+          "longest_cell": 83
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "pharmacokinetics~pharmacokinetic-review-pediatrics",
+      "route": "#/p/pharmacokinetics~pharmacokinetic-review-pediatrics",
+      "title": "Pharmacokinetic Review - Pediatrics",
+      "native": true,
+      "block_types": {
+        "table": 12,
+        "h": 32,
+        "p": 101,
+        "li": 116,
+        "fig": 1
+      },
+      "tables": [
+        {
+          "block": 0,
+          "rows": 5,
+          "columns": 3,
+          "longest_cell": 44
+        },
+        {
+          "block": 2,
+          "rows": 5,
+          "columns": 2,
+          "longest_cell": 15
+        },
+        {
+          "block": 93,
+          "rows": 3,
+          "columns": 2,
+          "longest_cell": 152
+        },
+        {
+          "block": 190,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 116
+        },
+        {
+          "block": 193,
+          "rows": 1,
+          "columns": 1,
+          "longest_cell": 9
+        },
+        {
+          "block": 215,
+          "rows": 1,
+          "columns": 3,
+          "longest_cell": 191
+        },
+        {
+          "block": 219,
+          "rows": 2,
+          "columns": 4,
+          "longest_cell": 193
+        },
+        {
+          "block": 222,
+          "rows": 4,
+          "columns": 4,
+          "longest_cell": 300
+        },
+        {
+          "block": 225,
+          "rows": 0,
+          "columns": 2,
+          "longest_cell": 0
+        },
+        {
+          "block": 227,
+          "rows": 2,
+          "columns": 2,
+          "longest_cell": 246
+        },
+        {
+          "block": 255,
+          "rows": 10,
+          "columns": 2,
+          "longest_cell": 229
+        },
+        {
+          "block": 261,
+          "rows": 22,
+          "columns": 3,
+          "longest_cell": 414
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "patient-education~get-smart-about-antibiotics",
+      "route": "#/p/patient-education~get-smart-about-antibiotics",
+      "title": "Get Smart about Antibiotics",
+      "native": true,
+      "block_types": {
+        "p": 50,
+        "li": 44,
+        "h": 86,
+        "fig": 3,
+        "table": 3,
+        "flow": 2,
+        "rec": 1
+      },
+      "tables": [
+        {
+          "block": 77,
+          "rows": 2,
+          "columns": 2,
+          "longest_cell": 54
+        },
+        {
+          "block": 96,
+          "rows": 1,
+          "columns": 2,
+          "longest_cell": 8
+        },
+        {
+          "block": 127,
+          "rows": 4,
+          "columns": 3,
+          "longest_cell": 37
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "patient-education~snort-sniffle-sneeze",
+      "route": "#/p/patient-education~snort-sniffle-sneeze",
+      "title": "Snort. Sniffle. Sneeze",
+      "native": true,
+      "block_types": {
+        "fig": 1,
+        "p": 3,
+        "h": 1
+      },
+      "tables": [],
+      "links": 0
+    },
+    {
+      "id": "patient-education~youve-been-given-an-antibiotic-now-what",
+      "route": "#/p/patient-education~youve-been-given-an-antibiotic-now-what",
+      "title": "You've been given an Antibiotic, now what?",
+      "native": true,
+      "block_types": {
+        "p": 9,
+        "li": 15,
+        "h": 3
+      },
+      "tables": [],
+      "links": 0
+    },
+    {
+      "id": "patient-education~antibiotics-are-not-always-the-answer",
+      "route": "#/p/patient-education~antibiotics-are-not-always-the-answer",
+      "title": "Antibiotics are not always the answer",
+      "native": true,
+      "block_types": {
+        "h": 10,
+        "p": 34,
+        "li": 11,
+        "table": 1
+      },
+      "tables": [
+        {
+          "block": 31,
+          "rows": 8,
+          "columns": 4,
+          "longest_cell": 64
+        }
+      ],
+      "links": 0
+    },
+    {
+      "id": "patient-education~penicillin-skin-testing-are-you-still-allergic",
+      "route": "#/p/patient-education~penicillin-skin-testing-are-you-still-allergic",
+      "title": "Penicillin Skin Testing: Are you Still Allergic?",
+      "native": true,
+      "block_types": {
+        "h": 9,
+        "p": 46,
+        "li": 21
+      },
+      "tables": [],
+      "links": 0
+    },
+    {
+      "id": "patient-education~what-you-need-to-know-when-your-child-is-prescribed-an-antibiotic",
+      "route": "#/p/patient-education~what-you-need-to-know-when-your-child-is-prescribed-an-antibiotic",
+      "title": "What you need to know when your child is prescribed an antibiotic",
+      "native": true,
+      "block_types": {
+        "p": 45,
+        "h": 4,
+        "li": 12
+      },
+      "tables": [],
+      "links": 0
+    },
+    {
+      "id": "patient-education~what-you-need-to-know-when-you-are-prescribed-an-antibiotic",
+      "route": "#/p/patient-education~what-you-need-to-know-when-you-are-prescribed-an-antibiotic",
+      "title": "What you need to know when you are prescribed an antibiotic",
+      "native": true,
+      "block_types": {
+        "p": 47,
+        "h": 4,
+        "li": 11
+      },
+      "tables": [],
+      "links": 0
+    }
+  ],
+  "conditions": [
+    {
+      "id": "bsi",
+      "name": "Bloodstream infection",
+      "system": "blood",
+      "match": "blood-stream-infections",
+      "synonyms": [
+        "bacteremia",
+        "BSI",
+        "sepsis"
+      ]
+    },
+    {
+      "id": "sab",
+      "name": "S. aureus bacteremia",
+      "system": "blood",
+      "match": "s-aureus",
+      "synonyms": [
+        "SAB",
+        "MRSA bacteremia",
+        "MSSA",
+        "staph aureus"
+      ]
+    },
+    {
+      "id": "endo",
+      "name": "Endocarditis",
+      "system": "blood",
+      "match": "endocarditis",
+      "synonyms": [
+        "IE",
+        "valve infection"
+      ]
+    },
+    {
+      "id": "vad",
+      "name": "VAD infection",
+      "system": "blood",
+      "match": "/vad$",
+      "synonyms": [
+        "LVAD",
+        "ventricular assist device"
+      ]
+    },
+    {
+      "id": "lock",
+      "name": "Catheter lock therapy",
+      "system": "blood",
+      "match": "-lock",
+      "synonyms": [
+        "ethanol lock",
+        "antibiotic lock",
+        "CLABSI"
+      ]
+    },
+    {
+      "id": "sepsis",
+      "name": "Undifferentiated sepsis",
+      "system": "blood",
+      "match": "undifferentiated-sepsis",
+      "synonyms": [
+        "sepsis",
+        "septic shock"
+      ]
+    },
+    {
+      "id": "bji",
+      "name": "Bone & joint infection",
+      "system": "bone",
+      "match": "bone-and-joint",
+      "synonyms": [
+        "osteomyelitis",
+        "septic arthritis",
+        "PJI",
+        "prosthetic joint"
+      ]
+    },
+    {
+      "id": "fracture",
+      "name": "Open fractures",
+      "system": "bone",
+      "match": "open-fractures",
+      "synonyms": [
+        "trauma"
+      ]
+    },
+    {
+      "id": "pjidental",
+      "name": "PJI dental prophylaxis",
+      "system": "bone",
+      "match": "pji-dental",
+      "synonyms": [
+        "dental prophylaxis",
+        "prosthetic joint"
+      ]
+    },
+    {
+      "id": "dfi",
+      "name": "Diabetic foot infection",
+      "system": "bone",
+      "match": "diabetic-foot",
+      "synonyms": [
+        "DFI",
+        "foot ulcer"
+      ]
+    },
+    {
+      "id": "mening",
+      "name": "Bacterial meningitis",
+      "system": "cns",
+      "match": "bacterial-meningitis",
+      "synonyms": [
+        "meningitis",
+        "CNS infection"
+      ]
+    },
+    {
+      "id": "cap",
+      "name": "Pneumonia",
+      "system": "resp",
+      "match": "pneumonia|icu-pna|amb-cap",
+      "synonyms": [
+        "CAP",
+        "HAP",
+        "VAP",
+        "lung infection"
+      ]
+    },
+    {
+      "id": "flu",
+      "name": "Influenza",
+      "system": "resp",
+      "match": "influenza|cough-and-flu",
+      "synonyms": [
+        "flu",
+        "oseltamivir"
+      ]
+    },
+    {
+      "id": "rsv",
+      "name": "RSV",
+      "system": "resp",
+      "match": "rsv|nirsevimab",
+      "synonyms": [
+        "respiratory syncytial virus"
+      ]
+    },
+    {
+      "id": "covid",
+      "name": "COVID-19",
+      "system": "resp",
+      "match": "covid|paxlovid|pemivibart",
+      "synonyms": [
+        "SARS-CoV-2",
+        "coronavirus"
+      ]
+    },
+    {
+      "id": "cf",
+      "name": "Cystic fibrosis",
+      "system": "resp",
+      "match": "cystic-fibrosis",
+      "synonyms": [
+        "CF"
+      ]
+    },
+    {
+      "id": "sinus",
+      "name": "Rhinosinusitis",
+      "system": "resp",
+      "match": "rhinosinusitis",
+      "synonyms": [
+        "sinusitis"
+      ]
+    },
+    {
+      "id": "gas",
+      "name": "Strep pharyngitis",
+      "system": "resp",
+      "match": "/gas-",
+      "synonyms": [
+        "group A strep",
+        "GAS",
+        "sore throat",
+        "pharyngitis"
+      ]
+    },
+    {
+      "id": "aom",
+      "name": "Acute otitis media",
+      "system": "resp",
+      "match": "otitis-media",
+      "synonyms": [
+        "AOM",
+        "ear infection"
+      ]
+    },
+    {
+      "id": "eye",
+      "name": "Ocular infections",
+      "system": "headneck",
+      "match": "ocular",
+      "synonyms": [
+        "endophthalmitis",
+        "keratitis",
+        "eye"
+      ]
+    },
+    {
+      "id": "dental",
+      "name": "Odontogenic infections",
+      "system": "headneck",
+      "match": "odontogenic",
+      "synonyms": [
+        "dental infection",
+        "tooth"
+      ]
+    },
+    {
+      "id": "neck",
+      "name": "Deep neck space infections",
+      "system": "headneck",
+      "match": "deep-neck",
+      "synonyms": [
+        "retropharyngeal",
+        "peritonsillar"
+      ]
+    },
+    {
+      "id": "hnallergy",
+      "name": "Head & neck surgery with penicillin allergy",
+      "system": "headneck",
+      "match": "head-neck-penicillin",
+      "synonyms": []
+    },
+    {
+      "id": "iai",
+      "name": "Intra-abdominal infection",
+      "system": "gi",
+      "match": "intra-?abdominal|intrabdominal",
+      "synonyms": [
+        "IAI",
+        "peritonitis",
+        "appendicitis",
+        "cholangitis"
+      ]
+    },
+    {
+      "id": "cdi",
+      "name": "C. difficile infection",
+      "system": "gi",
+      "match": "cdi-|clostridiodies|clostridioides",
+      "synonyms": [
+        "CDI",
+        "C diff",
+        "C. diff",
+        "clostridium"
+      ]
+    },
+    {
+      "id": "diarrhea",
+      "name": "Infectious diarrhea",
+      "system": "gi",
+      "match": "diarrhea",
+      "synonyms": [
+        "gastroenteritis",
+        "cyclospora",
+        "GIPAN"
+      ]
+    },
+    {
+      "id": "hpylori",
+      "name": "H. pylori",
+      "system": "gi",
+      "match": "h-pylori",
+      "synonyms": [
+        "helicobacter"
+      ]
+    },
+    {
+      "id": "nec",
+      "name": "Necrotizing enterocolitis",
+      "system": "gi",
+      "match": "necrotizing-enterocolitis",
+      "synonyms": [
+        "NEC"
+      ]
+    },
+    {
+      "id": "uti",
+      "name": "Urinary tract infection",
+      "system": "uro",
+      "match": "uti-|uuti|urinary-tract",
+      "synonyms": [
+        "UTI",
+        "cystitis",
+        "pyelonephritis",
+        "CAUTI"
+      ]
+    },
+    {
+      "id": "ssti",
+      "name": "Skin & soft tissue infection",
+      "system": "skin",
+      "match": "ssti|skin-and-soft-tissue",
+      "synonyms": [
+        "cellulitis",
+        "abscess",
+        "SSTI"
+      ]
+    },
+    {
+      "id": "bite",
+      "name": "Animal bites",
+      "system": "skin",
+      "match": "animal-bite",
+      "synonyms": [
+        "dog bite",
+        "cat bite"
+      ]
+    },
+    {
+      "id": "leech",
+      "name": "Medicinal leech therapy",
+      "system": "skin",
+      "match": "leech",
+      "synonyms": [
+        "leeches"
+      ]
+    },
+    {
+      "id": "dalba",
+      "name": "Outpatient dalbavancin",
+      "system": "skin",
+      "match": "dalbavancin",
+      "synonyms": []
+    },
+    {
+      "id": "asp",
+      "name": "Aspergillosis & mucormycosis",
+      "system": "fungal",
+      "match": "aspergillosis",
+      "synonyms": [
+        "aspergillus",
+        "mucor"
+      ]
+    },
+    {
+      "id": "candida",
+      "name": "Candidemia & candidiasis",
+      "system": "fungal",
+      "match": "candid",
+      "synonyms": [
+        "candida",
+        "yeast"
+      ]
+    },
+    {
+      "id": "crypto",
+      "name": "Cryptococcus",
+      "system": "fungal",
+      "match": "cryptococcus",
+      "synonyms": [
+        "cryptococcal meningitis"
+      ]
+    },
+    {
+      "id": "hiv",
+      "name": "HIV",
+      "system": "viral",
+      "match": "hiv",
+      "synonyms": [
+        "PrEP",
+        "PEP",
+        "perinatal HIV"
+      ]
+    },
+    {
+      "id": "measles",
+      "name": "Measles exposure",
+      "system": "viral",
+      "match": "measles",
+      "synonyms": [
+        "rubeola",
+        "PEP"
+      ]
+    },
+    {
+      "id": "mpox",
+      "name": "Mpox (tecovirimat)",
+      "system": "viral",
+      "match": "tpoxx",
+      "synonyms": [
+        "monkeypox",
+        "tecovirimat"
+      ]
+    },
+    {
+      "id": "malaria",
+      "name": "Malaria",
+      "system": "viral",
+      "match": "malaria",
+      "synonyms": [
+        "plasmodium"
+      ]
+    },
+    {
+      "id": "lyme",
+      "name": "Lyme disease",
+      "system": "viral",
+      "match": "lyme",
+      "synonyms": [
+        "borrelia",
+        "tick"
+      ]
+    },
+    {
+      "id": "ob",
+      "name": "Obstetric & gynecologic infection",
+      "system": "obgyn",
+      "match": "obstetrics",
+      "synonyms": [
+        "pregnancy",
+        "chorioamnionitis",
+        "endometritis",
+        "GBS"
+      ]
+    },
+    {
+      "id": "bmt",
+      "name": "BMT & cellular therapy prophylaxis",
+      "system": "immuno",
+      "match": "bmt-|car-t",
+      "synonyms": [
+        "bone marrow transplant",
+        "stem cell",
+        "CAR-T"
+      ]
+    },
+    {
+      "id": "heme",
+      "name": "Hematology/oncology prophylaxis",
+      "system": "immuno",
+      "match": "hematology",
+      "synonyms": [
+        "neutropenia",
+        "chemotherapy"
+      ]
+    },
+    {
+      "id": "txp",
+      "name": "Solid organ transplant",
+      "system": "immuno",
+      "match": "/transplant/",
+      "synonyms": [
+        "donor culture",
+        "transplant"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "edu",
+      "name": "Patient education",
+      "desc": "Handouts for patients and families",
+      "match": "/patient-education/"
+    },
+    {
+      "id": "dosing",
+      "name": "Dosing & monitoring",
+      "desc": "Dosing tables, renal and obesity dosing, PK and drug levels",
+      "match": "dosing|/pharmacokinetics/|tdm|cation-interactions|warfarin|qt-prolongation|sertonin|serotonin|midline"
+    },
+    {
+      "id": "allergy",
+      "name": "\u03b2-lactam allergy",
+      "desc": "Allergy evaluation, skin testing and desensitization",
+      "match": "blaes|pst-procedure"
+    },
+    {
+      "id": "restricted",
+      "name": "Restricted antimicrobials",
+      "desc": "Tier I and Tier II approval criteria",
+      "match": "/t1-|/t2-|tier-2"
+    },
+    {
+      "id": "diag",
+      "name": "Diagnostic stewardship",
+      "desc": "Procalcitonin, blood cultures and rapid panels",
+      "match": "procalcitonin|bcx-algorithm|film-array"
+    },
+    {
+      "id": "surg",
+      "name": "Surgical prophylaxis",
+      "desc": "Pre-operative antibiotic selection",
+      "match": "/surgical-prophylaxis/"
+    },
+    {
+      "id": "other",
+      "name": "Other resources",
+      "desc": "",
+      "match": "tableau|copat"
+    }
+  ],
+  "drugs": [
+    "Penicillin G",
+    "Penicillin VK",
+    "Amoxicillin",
+    "Amoxicillin-clavulanate",
+    "Ampicillin",
+    "Ampicillin-sulbactam",
+    "Piperacillin-tazobactam",
+    "Nafcillin",
+    "Oxacillin",
+    "Dicloxacillin",
+    "Cefazolin",
+    "Cephalexin",
+    "Cefadroxil",
+    "Cefuroxime",
+    "Cefoxitin",
+    "Cefotetan",
+    "Cefpodoxime",
+    "Cefdinir",
+    "Ceftriaxone",
+    "Cefotaxime",
+    "Ceftazidime",
+    "Cefepime",
+    "Ceftaroline",
+    "Ceftazidime-avibactam",
+    "Ceftolozane-tazobactam",
+    "Cefiderocol",
+    "Meropenem",
+    "Meropenem-vaborbactam",
+    "Imipenem-cilastatin",
+    "Imipenem-relebactam",
+    "Ertapenem",
+    "Aztreonam",
+    "Vancomycin",
+    "Daptomycin",
+    "Oritavancin",
+    "Dalbavancin",
+    "Telavancin",
+    "Linezolid",
+    "Tedizolid",
+    "Gentamicin",
+    "Tobramycin",
+    "Amikacin",
+    "Plazomicin",
+    "Ciprofloxacin",
+    "Levofloxacin",
+    "Moxifloxacin",
+    "Delafloxacin",
+    "Azithromycin",
+    "Clarithromycin",
+    "Erythromycin",
+    "Fidaxomicin",
+    "Doxycycline",
+    "Minocycline",
+    "Tigecycline",
+    "Omadacycline",
+    "Eravacycline",
+    "Trimethoprim-sulfamethoxazole",
+    "Clindamycin",
+    "Metronidazole",
+    "Nitrofurantoin",
+    "Fosfomycin",
+    "Rifampin",
+    "Rifaximin",
+    "Colistin",
+    "Polymyxin B",
+    "Chloramphenicol",
+    "Sulbactam-durlobactam",
+    "Bezlotoxumab",
+    "Fluconazole",
+    "Voriconazole",
+    "Posaconazole",
+    "Isavuconazonium",
+    "Itraconazole",
+    "Micafungin",
+    "Caspofungin",
+    "Anidulafungin",
+    "Rezafungin",
+    "Amphotericin B",
+    "Flucytosine",
+    "Nystatin",
+    "Acyclovir",
+    "Valacyclovir",
+    "Ganciclovir",
+    "Valganciclovir",
+    "Letermovir",
+    "Maribavir",
+    "Foscarnet",
+    "Cidofovir",
+    "Oseltamivir",
+    "Baloxavir",
+    "Remdesivir",
+    "Nirmatrelvir-ritonavir",
+    "Isoniazid",
+    "Rifabutin",
+    "Pyrazinamide",
+    "Ethambutol",
+    "Atovaquone",
+    "Ivermectin",
+    "Pentamidine"
+  ],
+  "files_sha256": {
+    "sw.js": "64953fae044823f6a0841d85300bf1a5bc0fea64418955eb9211902ef5dd328c",
+    ".gitignore": "9addeec56619685bab330ff2184db9f205a1b4628f551ededcb97800b269ca3e",
+    "styles.css": "d4817a83ca66a03916dbc7ba211d62c940254488ccdef8077279e642c0e6fc79",
+    "README.md": "a87248b3b28352128f05812124cca6b8ce703ef4932125eff2c6f3fe0678fbe3",
+    "manifest.webmanifest": "ee4ef1b51f3c818a10d12693768b2f4e656fd47358b30720fd723ee6abeef745",
+    "index.html": "ea6e5546115b46f51a46bf3796459e7bf24c4b485dd805bf0e01ef37d8bea698",
+    "app.js": "98d1f95f4908272612c93a55d790559edd009173e2db621a5700d09978c81193",
+    ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/content.json": "fb52cf1dec3be2953850e81975c3215bdfc0c7051d2cf28f6820ae94bcb1f423",
+    "data/drugs.json": "48795958720d5f9147f7a2a86894150c794ee88353b8cd4a9e187127b04f2c99",
+    "data/taxonomy.json": "3a395ae89666fab9c6fcd3d582efc1d1c4ad461606c8c934cee1c2169f447d05",
+    "tools/capture.py": "ecd2834f394b97c413929cb111ea30cf87380559c70c48ca93fd8cbc7f011e3f",
+    "icons/apple-touch-icon.png": "02231554e2685288f4ab8bb54c5db30a1729a12a6dfe5b8ed3be4c3b36d51502",
+    "icons/icon-512.png": "fa811ad12f2d987ff5505b675f8b23eef3e4bd816b69f14d6f4033f1bdac3573",
+    "icons/icon-512-maskable.png": "ffdf305e8a1bc824a17b247aa5964ed07fd85104df27ef5929a0f4f91cd9f4b6",
+    "icons/icon-192.png": "f28d3f03f6ab0a41b2e4e5012f14cd596b7b49e2f4e71512b9a211ff158375db",
+    "data/fig/pharmacokinetics-pharmacokinetic-review-pediatrics-p7.webp": "8eb716066b79fc8b59218b0afa6ab143df2806260725b2b062bc4a176a8ccee9",
+    "data/fig/patient-education-get-smart-about-antibiotics-p12.webp": "feb7537f4a0c2c2d928653a51a73e7d315dfa3f027764577bd1209f03686738a",
+    "data/fig/guidelines-adult-meningitis-film-array-p2.webp": "9292882bf33f6f67a07e0837a7149f5756da2829a101f123da0543f74f840e97",
+    "data/fig/guidelines-adult-BCx-algorithm-p1.webp": "c89194af3670b2231cc26c911601b527ba11d8d1a156c7aa8c547beb521b8576",
+    "data/fig/patient-education-get-smart-about-antibiotics-p9.webp": "f8a573aa070d1ee3f1abc06f34133d509fef2cfebbbd11350e9f2daf5a740723",
+    "data/fig/guidelines-surgical-prophylaxis-pediatric-head-and-neck-p1.webp": "e7f1ba33d577c7a2bbb89245da3c2d13099d1343308d0da18854d625073f3976",
+    "data/fig/guidelines-adult-blood-stream-infections-adult-p7.webp": "13c765b95aa6793ec29cdcd9c9fcaf3a8fd06fdb5653e88be70e5fcece409647",
+    "data/fig/guidelines-adult-blood-stream-infections-adult-p8.webp": "bca3c571cb14ec6a5e85534b07b4bf453d706a6a7c3a7aee90a6a7e72296c75b",
+    "data/fig/guidelines-adult-blood-stream-infections-adult-p1.webp": "9e60572583a5ce140aa2b5919903caa725b97a8685c681dad50749ffdb8a931b",
+    "data/fig/guidelines-adult-s-aureus-pocketcard-p2.webp": "55f00309bd824bd328d897db0bdc16009626937e1fa48289616a2bb82351281a",
+    "data/fig/guidelines-pediatric-clostridiodies-difficile-pediatric-p1.webp": "2e0c9dee5b50c7f1d7ce082d0f73330ff7742f5233fa55293b55b61496784015",
+    "data/fig/patient-education-get-smart-about-antibiotics-p15.webp": "b83906fbac60d69af8621a962ccd4e7fd14de5499e2d2c494ef200a555267c99",
+    "data/fig/guidelines-adult-blood-stream-infections-adult-p3.webp": "cb140bd040df935d99124438fdfd791791e916157f6ca63f154f0bf27c1ca53c",
+    "data/fig/patient-education-snort-sniffle-sneeze-p1.webp": "5e004ad78b240d39eda3e7f8f9edf89e4a5a4fb206a951cf448f2a92eba179d3",
+    "data/fig/patient-education-get-smart-about-antibiotics-p24.webp": "a2e7b9e1af888609c0f53a3fbb3a2b7c5bd328fcec13bd0e571074fdb8d90663",
+    "data/fig/guidelines-adult-CDI-treatment-p1.webp": "33acd2786b946001dd16f08e7f9778f905c3b5e75d10608a176a84c50c767a84",
+    "data/fig/guidelines-adult-blood-stream-infections-adult-p4.webp": "4baf58a8756e694451b9cd2afca7fb4c95ca521c62bef14cb514983bf0260d4c",
+    "data/fig/guidelines-adult-blood-stream-infections-adult-p2.webp": "33985d0211be18bc766463cb9e926088ebf0ba65b9370266635549672ee604c0",
+    "data/fig/guidelines-adult-blaes-guideline-p5.webp": "ebbb81bff5d79b1fcb68c6db6e8c23fa884aa378074794612c60df4733ce591f",
+    "data/fig/guidelines-pediatric-prosthetic-valve-endocarditis-pediatrics-p1.webp": "2f827f6ff84e6d2fda687083d9778f24b3c3d44d02b6e20ca7af28c7b0d4e7b6",
+    "data/fig/guidelines-adult-SSTI-adult-p8.webp": "20189d05dfc89ed7ce4f0dcca89dbbe7bc9a438965f2c16c52113936d4ed5adf",
+    "data/fig/guidelines-adult-blood-stream-infections-adult-p6.webp": "b7bdf9d403d7f2d884575bed2f74f2b4610c07143cbccf224777bc593e732955",
+    "data/fig/guidelines-adult-CDI-diagnostics-p1.webp": "b60c6dbdb2c033b90e675d3c2fcc731f749236e6d1ed8ef372b0fd5b771c103e",
+    "data/fig/guidelines-adult-CDI-treatment-p2.webp": "3fc40648667fc5d3a8e78ab5845534ca809c3240080a641dc6a396c638a47899",
+    "data/fig/guidelines-pediatric-blood-stream-infections-pediatric-p2.webp": "1303c0fc984dd80d7a7b5a78e0805ac944c2ea9bed03136d90c7a73c2fffa6e0",
+    "data/fig/guidelines-adult-blood-stream-infections-adult-p5.webp": "03d1b8fc0c3970d971f2c7e97e30fa566a65488df2e8d28e895badb8c2f90f8e",
+    "data/fig/guidelines-adult-bmt-prophylaxis-p1.webp": "ef439099808050836ad84d34d467744b33867fa38ca57055525127c917cf0672",
+    "data/fig/patient-education-get-smart-about-antibiotics-p23.webp": "d0c97829f065b996ba2fec382acdd495e1423e12969c2942af6acaab07025d38",
+    "data/fig/pharmacokinetics-pharmacokinetic-workflow-p27.webp": "dfafa9af4f5dec73e02fc3401af853e271c2069e27d9948654986cfb4081c7b0",
+    "tools/pdf/runall.py": "934b72b9ac263cbc57ae04f4544a82b433859ada1a17fafdc6135a077da384dd",
+    "tools/pdf/final_check.py": "6cd30ca4589a0797237ce93d2963c89aa93d95e97ce787fd360cc35a7912d31c",
+    "tools/pdf/coverage.py": "b42a1f539ecceed0f8e6f74a91cc4334d159586b69347ac6adc42c229d05fa09",
+    "tools/pdf/flow.py": "f087495fdf0d3a0f7866f7709cab30afe828294c5ab59fd847c65eede73bfd7a",
+    "tools/pdf/figures.py": "16e10c1bbf1b6f44cd715c7b27207cd30123e11c79c5065790aa08e79046b3f8",
+    "tools/pdf/coverage3.py": "bcf6b5ab9a93f84dc4efe624a49b3175758ea61616df01fd7842ffd9fdb74213",
+    "tools/pdf/convert.py": "2fbbbba456c9b809c3c267267ae99991551b5dbad622a96bf025ff7dc670a678",
+    "tools/pdf/build_content.py": "89f548e6a5cddffc06a70dee0160bcddbad84bd877301867be3c787ab1f19317"
+  }
+}

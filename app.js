@@ -1,6 +1,7 @@
 "use strict";
 // ASP Guide: offline phone reference built from a one-time capture.
 // Captured text is only ever inserted with textContent (never innerHTML).
+// Clinical data files are read-only; presentation adapters retain source runs.
 
 const $ = (id) => document.getElementById(id);
 /* ---------- storage (never required) ---------- */
@@ -133,7 +134,7 @@ const sysName = (id) => S.tax.systems.find((s) => s.id === id)?.name || "";
 
 /* ---------- shared UI ---------- */
 function setBar(title, { back = false, save = null, large = false, textSize = false } = {}) {
-  $("bar-title").textContent = large ? "" : title;
+  $("bar-title").textContent = large ? "ASP Guide" : title;
   $("bar").classList.toggle("bar-large", large);
   $("back").hidden = !back;
   $("aa").hidden = !textSize;
@@ -199,11 +200,15 @@ function viewHome() {
   const recents = S.recent.map(keyItem).filter(Boolean).slice(0, 5);
   const alert = S.data.alert && S.data.alert.text;
   mount(
-    largeTitle("ASP Guide", `Michigan Medicine stewardship guidelines · captured ${fmtDate(S.data.captured_at)}`),
-    el("a", { class: "search fake", href: "#/search" }, "Search conditions, drugs, anything"),
+    el("p", {class:"eyebrow",text:"Antimicrobial stewardship"}),
+    largeTitle("Clinical reference", `Michigan Medicine guidelines · captured ${fmtDate(S.data.captured_at)}`),
+    el("a", { class: "search fake", href: "#/search" }, "Search guidelines & drugs"),
     popSwitch(viewHome),
     alert ? el("a", { class: "alert", href: S.data.alert.path && S.byPath.get(S.data.alert.path.toLowerCase()) ? `#/p/${enc(S.byPath.get(S.data.alert.path.toLowerCase()).id)}` : "#/about" },
       el("strong", { text: "Site alert · " }), alert, S.data.alert.link ? el("span", { class: "alert-link", text: " " + S.data.alert.link + " ›" }) : null) : null,
+    section("Browse guidelines", el("div",{class:"browse-grid"},
+      el("a",{href:"#/conditions",class:"browse-card"},el("span",{class:"eyebrow",text:"Clinical syndrome"}),el("strong",{},"By condition"),el("span",{class:"muted",text:"Browse infections by body system"}),chev()),
+      el("a",{href:"#/organisms",class:"browse-card"},el("span",{class:"eyebrow",text:"Pathogen index"}),el("strong",{},"By organism"),el("span",{class:"muted",text:"Choose an organism, then an infection"}),chev()))),
     section("Quick access", el("div", { class: "qa-grid" }, qa)),
     recents.length ? section("Recently viewed", list(...recents.map((i) => row(i)))) : null,
     section("", list(row({ href: "#/about", title: "About & disclaimer", sub: S.data.demo ? "Demo data loaded" : `${S.pages.length} pages captured` }))));
@@ -228,7 +233,7 @@ function viewConditions(params) {
     holder.replaceChildren(...(out.length ? out : [emptyState("No matching conditions", "Try Search to look inside the guideline text.")]));
   };
   paint();
-  mount(searchField("Filter conditions", f, (v) => { f = v; paint(); history.replaceState(null, "", "#/conditions" + (v ? "?f=" + enc(v) : "")); }),
+  mount(largeTitle("Conditions", "Browse by infection or clinical syndrome."), browseSwitch("conditions"), searchField("Filter conditions", f, (v) => { f = v; paint(); history.replaceState(null, "", "#/conditions" + (v ? "?f=" + enc(v) : "")); }),
     popSwitch(() => viewConditions(new URLSearchParams(f ? "f=" + f : ""))), holder);
 }
 
@@ -236,7 +241,7 @@ function viewCondition(id) {
   const c = S.cond.get(id);
   if (!c) return viewMissing();
   const pages = condPages(c);
-  if (pages.length === 1) { location.replace(`#/p/${enc(pages[0].id)}`); return; }
+  if (pages.length === 1) { history.replaceState(null, "", `#/p/${enc(pages[0].id)}`); return viewPage(pages[0].id, new URLSearchParams()); }
   setBar(sysName(c.system), { back: true, save: "cond:" + c.id }); setTab("cond");
   pushRecent("cond:" + c.id);
   const groups = new Map();
@@ -332,30 +337,10 @@ function isGrid(b) {
   return cols >= 5 && avg < 28 || cols >= 4 && avg < 14;
 }
 
-function tableEl(b, gi, unitOf, terms) {
-  const cap = b.caption ? el("h3", { class: "tb-cap", id: `g${gi}` }, highlight(b.caption, terms)) : null;
-  if (isGrid(b)) {
-    return el("div", { class: "tb-wrap" }, cap, el("div", { class: "rd-table", tabindex: "0", role: "region", "aria-label": (b.caption || "Table") + ", scrolls sideways" },
-      el("table", {}, b.head ? el("thead", {}, el("tr", {}, b.head.map((h) => el("th", {}, highlight(h, terms))))) : null,
-        el("tbody", {}, b.rows.map((r, ri) => el("tr", { "data-u": unitOf(gi, ri) }, r.map((c, ci) => (ci === 0 ? el("th", { scope: "row" }, paras(c, terms)) : el("td", {}, paras(c, terms))))))))));
-  }
-  // Cards: one per row. First column is the card title when there is a header; other columns get labels.
-  const head = b.head || [];
-  const cards = b.rows.map((r, ri) => {
-    const filled = r.map((c, ci) => [c, ci]).filter(([c]) => parasText(c).trim());
-    if (!filled.length) return null;
-    const titled = head.length && r.length > 1;
-    const [first, ...rest] = titled ? filled : [[null, -1], ...filled];
-    return el("div", { class: "card-row", "data-u": unitOf(gi, ri) },
-      titled && first[0] ? el("div", { class: "card-title" }, paras(first[0], terms)) : null,
-      rest.map(([c, ci]) => el("div", { class: "card-cell" },
-        head[ci] ? el("div", { class: "card-label", text: head[ci] }) : null,
-        el("div", { class: "card-val" }, paras(c, terms)))));
-  });
-  return el("section", { class: "tb-cards" }, cap, cards);
-}
+const tableEl = (...args) => clinicalTable(...args);
 
-function renderGuide(p, terms) {
+function renderGuide(p, terms, genericOnly = false) {
+  if (!genericOnly) { const layout = gasPresentation(p, terms); if (layout) return layout; }
   const g = p.guide, out = [];
   let ul = null, hiddenPg = null, hiddenBox = null;
   const units = p._units, idx = new Map(units.map((u, i) => [u.ri != null ? `${u.gi}:${u.ri}` : `${u.gi}`, i]));
@@ -377,8 +362,14 @@ function renderGuide(p, terms) {
         b.lines.map((l) => el("p", {}, highlight(l, terms))))); return;
     }
     const target = b.hide && hiddenBox ? hiddenBox : null;
-    if (b.t === "h") node = el(`h${b.l || 3}`, { class: "rd-h", id: `g${gi}`, "data-u": unitOf(gi) }, runsEl(b.r, terms));
-    else if (b.t === "p") node = el("p", { "data-u": unitOf(gi) }, runsEl(b.r, terms));
+    if (b.t === "h") node = el(plainRuns(b.r).length > 180 ? "p" : `h${Math.min(4, Math.max(2, b.l || 3))}`, { class: plainRuns(b.r).length > 180 ? "scope-panel" : "rd-h", id: `g${gi}`, "data-u": unitOf(gi) }, runsEl(b.r, terms));
+    else if (b.t === "p") {
+      const text = plainRuns(b.r);
+      if (/^1Low-risk allergies/.test(text) && / 2High-risk allergies/.test(text) && / 3Non-IgE/.test(text)) {
+        const cuts=[0,text.indexOf(' 2High-risk'),text.indexOf(' 3Non-IgE'),text.length];
+        node=el('section',{class:'allergy-footnotes','data-u':unitOf(gi)},cuts.slice(0,-1).map((start,i)=>el('p',{},highlight(text.slice(start,cuts[i+1]),terms))));
+      } else node = el("p", { "data-u": unitOf(gi) }, runsEl(b.r, terms));
+    }
     else if (b.t === "li") {
       const li = el("li", { class: b.d ? `d${Math.min(b.d, 3)}` : null, "data-u": unitOf(gi) }, runsEl(b.r, terms));
       const host = target ? "fig" + hiddenPg : "main";
@@ -434,7 +425,7 @@ function guideExtras(p) {
   const g = p.guide;
   return [
     g.refs && g.refs.length ? el("details", { class: "extra" }, el("summary", {}, `References (${g.refs.length})`),
-      el("ol", { class: "refs" }, g.refs.map((r) => el("li", { text: r.replace(/^\d+\s+/, "") })))) : null,
+      el("ol", { class: "refs" }, g.refs.map((r) => el("li", { text: r })))) : null,
     g.history && g.history.length ? el("details", { class: "extra" }, el("summary", {}, "Revision history"),
       el("ul", { class: "refs" }, g.history.map((h) => el("li", {}, el("strong", { text: h[0] }), " " + h.slice(1).join(" "))))) : null,
   ];
@@ -461,10 +452,11 @@ function viewPage(id, params) {
     el("div", { class: "rd-badges" },
       p.kind !== "section" ? el("span", { class: "pill", text: popLabel(p) }) : null,
       p.kind !== "section" ? el("span", { class: "pill pill-q", text: p.setting }) : null),
+    el("nav",{class:"breadcrumbs","aria-label":"Breadcrumb"},el("a",{href:p.cond?`#/c/${p.cond}`:p.res?`#/r/${p.res}`:"#/res",text:p.cond?S.cond.get(p.cond).name:p.res?S.res.get(p.res).name:"Resources"})),
     el("h1", { class: "rd-title", text: p.title }),
     sub ? el("p", { class: "rd-sub", text: sub }) : null,
     p.guide ? guideMeta(p) : null,
-    siblings.length ? el("div", { class: "versions" }, el("span", { class: "versions-label", text: "Other versions" }),
+    siblings.length ? el("details", { class: "versions" }, el("summary", { class: "versions-label", text: `Other versions (${siblings.length})` }),
       el("div", { class: "hscroll" }, siblings.map((s) => el("a", { class: "chip chip-out", href: `#/p/${enc(s.id)}` },
         el("span", { class: "chip-k", text: versionLabel(s) }), el("span", { text: s.title }))))) : null,
     toc.length >= 3 ? el("nav", { class: "toc", "aria-label": "On this page" }, el("div", { class: "hscroll" },
@@ -480,9 +472,10 @@ function viewPage(id, params) {
       el("p", { class: "muted", text: "Unofficial copy captured " + fmtDate(S.data.captured_at) + ". Guidance changes: confirm on the source before acting." }),
       el("a", { class: "btn", href: safeUrl(p.url), target: "_blank", rel: "noopener noreferrer", text: "Open original on source site ↗" }))));
 
+  readerContents(document.querySelector(".reader"));
   const b = params.get("b");
   let target = b != null ? document.querySelector(`[data-u="${CSS.escape(b)}"]`) : null;
-  if (target) { const det = target.closest("details"); if (det) det.open = true; }
+  if (target) { let det = target.parentElement; while(det) { if(det.tagName === "DETAILS") det.open=true; det=det.parentElement; } }
   target = target || (q && document.querySelector(".rd-body mark"));
   if (target) requestAnimationFrame(() => { target.classList.add("flash"); target.scrollIntoView({ block: "center" }); });
 }
@@ -508,7 +501,7 @@ function viewDrugs(params) {
       : [emptyState("No matching agents", "Names, brand names and abbreviations all work, e.g. Zosyn or TMP-SMX.")]));
   };
   paint();
-  mount(searchField("Find an antibiotic or class", f, (v) => { f = v; paint(); history.replaceState(null, "", "#/drugs" + (v ? "?f=" + enc(v) : "")); }),
+  mount(largeTitle("Antibiotics", "Find guideline mentions by agent, brand name, or drug class."), searchField("Find an antibiotic or class", f, (v) => { f = v; paint(); history.replaceState(null, "", "#/drugs" + (v ? "?f=" + enc(v) : "")); }),
     popSwitch(() => viewDrugs(new URLSearchParams(f ? "f=" + f : ""))),
     el("p", { class: "hint", text: "Number = guideline pages that mention the agent." }), holder);
 }
@@ -650,7 +643,7 @@ function viewSaved() {
   setBar("Saved"); setTab("saved");
   const saved = [...S.saved].map(keyItem).filter(Boolean);
   const recent = S.recent.map(keyItem).filter(Boolean);
-  mount(saved.length ? section("Saved", list(...saved.map((i) => row(i))))
+  mount(largeTitle("Saved", "Your bookmarks and recently viewed guidelines."), saved.length ? section("Saved", list(...saved.map((i) => row(i))))
       : emptyState("Nothing saved yet", "Tap the star on any condition, guideline or antibiotic to keep it here."),
     recent.length ? section("Recently viewed", list(...recent.map((i) => row(i)))) : null,
     recent.length ? el("button", { type: "button", class: "btn btn-quiet", onclick: () => { S.recent = []; store.set("recent", []); viewSaved(); } }, "Clear history") : null);
@@ -665,6 +658,7 @@ function viewAbout() {
       `, captured once on ${fmtDate(S.data.captured_at)}. Text and tables were extracted word for word from the program's PDF guidelines and checked against them automatically; flowcharts are shown as pathways with the original chart available. It is not affiliated with or endorsed by Michigan Medicine and is not updated automatically.`),
     el("h2", { class: "rd-h", text: "Source disclaimer" }),
     el("p", { text: S.data.disclaimer || "No disclaimer was captured. See the source site." }),
+    el("h2", { class: "rd-h", text: "Appearance" }), appearanceControl(),
     el("h2", { class: "rd-h", text: "Install on your phone" }),
     el("p", { text: "iPhone: open in Safari → Share → Add to Home Screen. Android: open in Chrome → ⋮ → Install app. After the first launch it works offline." }),
     el("h2", { class: "rd-h", text: "Use offline" }),
@@ -693,17 +687,131 @@ function viewMissing() { setBar("Not found", { back: true }); mount(emptyState("
 const SIZES = [0.94, 1, 1.12, 1.25];
 function applySize() { document.documentElement.style.setProperty("--rd-scale", SIZES[S.size] ?? 1); }
 
+/* Presentation adapters. Source JSON is read-only; original runs are rendered verbatim. */
+const ORGANISMS = [
+  { id: 'enterococcus', name: 'Enterococcus', sub: 'UTI · endocarditis', re: /enterococc/i, conditions: ['uti', 'endo'] },
+  { id: 'staph-aureus', name: 'Staphylococcus aureus', sub: 'Bacteremia · endocarditis · skin & soft tissue', re: /aureus|\bMRSA\b|\bMSSA\b/i, conditions: ['sab', 'endo', 'ssti', 'bsi'] },
+  { id: 'gas', name: 'Group A Streptococcus', sub: 'Pharyngitis', re: /group A strep|streptococcal pharyngitis/i, conditions: ['gas'] },
+  { id: 'candida', name: 'Candida', sub: 'Candidemia & candidiasis', re: /candida/i, conditions: ['candida'] },
+];
+function organismPages(o, condition) {
+  return S.pages.filter(p => popOk(p) && p.kind !== 'section' && o.conditions.includes(p.cond) && (!condition || p.cond === condition) && o.re.test(p.title + ' ' + p._text.join(' ')));
+}
+function browseSwitch(active) {
+  return el('nav', {class:'browse-switch', 'aria-label':'Browse guidelines by'},
+    el('a', {href:'#/conditions', 'aria-current':active==='conditions'?'page':null}, 'By condition'),
+    el('a', {href:'#/organisms', 'aria-current':active==='organisms'?'page':null}, 'By organism'));
+}
+function viewOrganisms() {
+  setBar('Organisms'); setTab('cond');
+  mount(largeTitle('Organisms', 'Choose an organism, then an infection and guideline.'), browseSwitch('organisms'),
+    popSwitch(viewOrganisms), section('Organism index', list(...ORGANISMS.map(o => row({href:'#/o/'+o.id,title:o.name,sub:o.sub,right:el('span',{class:'count',text:String(organismPages(o).length)})})))),
+    el('p',{class:'hint',text:'This index links to existing guidelines. Search the full text for other organisms.'}),
+    el('a',{class:'btn btn-secondary',href:'#/search'},'Search all guideline text'));
+}
+function viewOrganism(id, condition) {
+  const o = ORGANISMS.find(x=>x.id===id); if(!o) return viewMissing();
+  setBar(o.name,{back:true}); setTab('cond');
+  const pages = organismPages(o, condition);
+  if(condition) {
+    const c=S.cond.get(condition); if(!c || !o.conditions.includes(condition)) return viewMissing();
+    mount(el('nav',{class:'breadcrumbs','aria-label':'Breadcrumb'},el('a',{href:'#/organisms'},'Organisms'),el('span',{},'/'),el('a',{href:'#/o/'+o.id},o.name)),
+      largeTitle(c.name, o.name), popSwitch(()=>viewOrganism(id,condition)),
+      pages.length ? section('Choose a guideline',list(...pages.map(p=>row({href:`#/p/${enc(p.id)}?organism=${o.id}&infection=${condition}`,title:p.title,sub:versionLabel(p)})))) : emptyState('No guideline for this population','Switch to All to see the available guidelines.'));
+  } else {
+    mount(el('nav',{class:'breadcrumbs','aria-label':'Breadcrumb'},el('a',{href:'#/organisms'},'Organisms')),largeTitle(o.name,'Choose an infection to view the available guidelines.'),popSwitch(()=>viewOrganism(id)),
+      section('Infection',list(...o.conditions.map(cid=>{const c=S.cond.get(cid), ps=organismPages(o,cid);return row({href:`#/o/${o.id}/${cid}`,title:c.name,sub:ps.length?`${plural(ps.length,'guideline')} available`:'No guidelines for this population'});}))),
+      el('p',{class:'hint',text:'Organism mentions link to the complete source guideline, including its qualifying statements.'}));
+  }
+}
+function sourceParagraphs(cell, terms) {
+  return (cell||[]).map(r=>{
+    const text=plainRuns(r), trimmed=text.trim();
+    const cls=/^(OR|AND|AND\/OR|PLUS|\+)$/i.test(trimmed)?'conj':/^[•▪]/.test(trimmed)?'source-bullet':/^o\s/.test(trimmed)?'source-bullet source-nested':
+      trimmed.length<100 && (/:$/.test(trimmed) || r.every(x=>!x[0].trim()||(x[1]||'').includes('b')))?'lbl':null;
+    return el('p',{class:cls},runsEl(r,terms));
+  });
+}
+function clinicalTable(b,gi,unitOf,terms) {
+  const head=b.head||[], cols=Math.max(head.length,...b.rows.map(r=>r.length));
+  const grid=isGrid(b), complex=b.rows.some(row=>row.some(c=>parasText(c).length>1500));
+  const result = el('section',{class:'clinical-table '+(grid||complex?'table-scroll':'table-responsive'),id:`g${gi}`},
+    b.caption?el('h3',{class:'tb-cap'},highlight(b.caption,terms)):null,
+    grid||complex?el('p',{class:'table-hint',text:'Scroll within the table to view all columns.'}):null,
+    el('div',{class:'table-viewport',tabindex:'0',role:'region','aria-label':(b.caption||'Guideline table')+', horizontally scrollable'},
+      el('table',{},head.length?el('thead',{},el('tr',{},Array.from({length:cols},(_,ci)=>el('th',{scope:'col'},highlight(head[ci]||'',terms))))):null,
+        el('tbody',{},b.rows.map((row,ri)=>el('tr',{'data-u':unitOf(gi,ri)},Array.from({length:cols},(_,ci)=>{
+          const tag=ci===0?'th':'td';
+          return el(tag,{scope:ci===0?'row':null,'data-label':head[ci]||null},sourceParagraphs(row[ci],terms));
+        })))))));
+  if(head.some(h=>/^(References|Revision history)$/i.test(h?.trim()||''))) { result.removeAttribute('id'); return el('details',{class:'extra source-references',id:`g${gi}`},el('summary',{},head.filter(Boolean).join(' · ')),result); }
+  return result;
+}
+// An explicit layout for the supplied adult GAS example. It consumes the original runs
+// in their original sequence and falls back to the generic reader if the shape changes.
+function gasPresentation(p, terms) {
+  if(p.id!=='guidelines~outpatient~GAS-adult') return null;
+  const bs=p.guide.blocks, b=bs[2], a=b?.rows?.[0]?.[0], d=b?.rows?.[0]?.[2];
+  if(a?.length!==22 || d?.length!==28 || plainRuns(a[1])!=='Penicillin V' || plainRuns(d[25])!=='Comments') return null;
+  const unit=p._units.findIndex(u=>u.gi===2&&u.ri===0);
+  const para=(r)=>el('p',{},runsEl(r,terms));
+  const heading=(id,r)=>el('h2',{id,class:'rd-h'},runsEl(r,terms));
+  const regimen=(label,body)=>el('tr',{},el('th',{scope:'row'},runsEl(label,terms)),el('td',{},sourceParagraphs(body,terms)));
+  const alternative=(r)=>el('tr',{class:'regimen-or'},el('td',{colspan:'2'},runsEl(r,terms)));
+  const out=[el('section',{class:'scope-panel',id:'gas-scope','data-u':0},el('div',{class:'eyebrow',text:'Guideline scope'}),para(bs[0].r)),
+    el('aside',{class:'clinical-note','data-u':1},para(bs[1].r)),
+    el('section',{class:'gas-treatment',id:'g2','data-u':unit},
+      el('h2',{class:'rd-h',id:'gas-treatment',text:b.head[1]}),
+      el('h3',{class:'treatment-group'},runsEl(a[0],terms)),
+      el('div',{class:'clinical-table regimen-table table-responsive'},el('div',{class:'table-viewport'},el('table',{},
+        el('thead',{},el('tr',{},el('th',{scope:'col',text:'Medication'}),el('th',{scope:'col',text:'Regimen'}))),
+        el('tbody',{},regimen(a[1],a.slice(2,8)),alternative(a[8]),regimen(a[9],a.slice(10,14)),alternative(a[14]),regimen(a[15],a.slice(16,17)))))),
+      el('section',{class:'allergy-regimens'},el('h3',{class:'treatment-group'},runsEl(a[17],terms)),para(a[18])),
+      el('section',{class:'allergy-regimens'},el('h3',{class:'treatment-group'},runsEl(a[19].slice(0,3),terms)),para(a[19].slice(3)),para(a[20]),para(a[21])),
+      el('div',{class:'eyebrow source-column-title',text:b.head[3]}),
+      heading('gas-duration',d[0]),para(d[1]),
+      el('section',{class:'guidance-panel'},el('h3',{},runsEl(d[2],terms)),sourceParagraphs(d.slice(3,8),terms)),
+      el('section',{class:'guidance-panel'},el('h3',{},runsEl(d[8],terms)),sourceParagraphs(d.slice(9,25),terms)),
+      el('section',{class:'comments-panel'},heading('gas-comments',d[25]),sourceParagraphs(d.slice(26),terms)))];
+  // All remaining blocks, footnotes, references, and revision information still use the shared reader.
+  out.push(...renderGuide({...p,guide:{...p.guide,blocks:bs.map((x,i)=>i<3?{t:'skip'}:x)}},terms,true));
+  return out;
+}
+function readerContents(article) {
+  const versions=article.querySelector('.versions'), agents=article.querySelector('.agents');
+  if(versions || agents) { const tools=el('div',{class:'reader-tools'}); const first=versions||agents; first.before(tools); if(versions) tools.append(versions); if(agents) tools.append(agents); }
+  const nav=article.querySelector('.toc');
+  if(nav) nav.remove();
+  const headings=[...article.querySelectorAll('.rd-body h2[id],.rd-body h3[id],.rd-body .tb-cap')].filter(n=>n.textContent.length<160);
+  if(!headings.length) return;
+  headings.forEach((n,i)=>{if(!n.id)n.id='section-'+i;});
+  const contents=el('details',{class:'reader-contents'},el('summary',{},`On this page · ${plural(headings.length,'section')}`),
+    el('nav',{'aria-label':'On this page'},headings.map(n=>el('button',{type:'button',onclick:()=>{let d=n.parentElement;while(d){if(d.tagName==='DETAILS')d.open=true;d=d.parentElement;}n.scrollIntoView({behavior:'smooth',block:'start'});}},n.textContent))));
+  article.querySelector('.rd-body').before(contents);
+}
+function applyTheme(theme=store.get('theme','system')) {
+  document.documentElement.dataset.theme=theme;
+}
+function appearanceControl() {
+  const wrap=el('div',{class:'appearance-control',role:'group','aria-label':'Appearance'});
+  ['system','light','dark'].forEach(t=>wrap.append(el('button',{type:'button','aria-pressed':String((store.get('theme','system'))===t),onclick:()=>{store.set('theme',t);applyTheme(t);wrap.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.textContent.toLowerCase()===t)));}},t[0].toUpperCase()+t.slice(1))));
+  return wrap;
+}
+
 /* ---------- router ---------- */
-function route() {
-  const [path, qs] = (location.hash.slice(1) || "/").split("?");
+function route(requestedHash) {
+  const currentHash = typeof requestedHash === "string" ? requestedHash : location.hash;
+  const [path, qs] = (currentHash.slice(1) || "/").split("?");
   const params = new URLSearchParams(qs || "");
-  const [, a, b] = path.split("/").map((x) => x && decodeURIComponent(x));
+  const [, a, b, c] = path.split("/").map((x) => x && decodeURIComponent(x));
   const keep = a === "p" && params.get("b");
   if (!keep) window.scrollTo(0, 0);
-  ({ "": viewHome, undefined: viewHome, conditions: () => viewConditions(params), c: () => viewCondition(b), p: () => viewPage(b, params),
+  ({ "": viewHome, undefined: viewHome, conditions: () => viewConditions(params), organisms: viewOrganisms, o: () => viewOrganism(b,c), c: () => viewCondition(b), p: () => viewPage(b, params),
     drugs: () => viewDrugs(params), d: () => viewDrug(b), res: viewResources, r: () => viewResource(b), files: () => viewLinks("files"),
     staff: () => viewLinks("staff"), search: () => viewSearch(params), saved: viewSaved, about: viewAbout }[a] || viewMissing)();
   $("view").focus({ preventScroll: true });
+  document.title = (document.querySelector("#view h1")?.textContent || $("bar-title").textContent || "ASP Guide") + " · ASP Guide";
+  window.dispatchEvent(new Event("asp:route"));
 }
 
 $("back").addEventListener("click", () => (history.length > 1 ? history.back() : (location.hash = "#/")));
@@ -712,6 +820,7 @@ $("searchbtn").addEventListener("click", () => (location.hash = "#/search"));
 
 (async function start() {
   applySize();
+  applyTheme(["light","dark"].includes(new URLSearchParams(location.search).get("theme")) ? new URLSearchParams(location.search).get("theme") : store.get("theme","system"));
   try { await load(); }
   catch (e) {
     mount(emptyState("Guidelines not loaded", "data/content.json is missing or unreadable. Run the capture script, or reconnect and reload."));
