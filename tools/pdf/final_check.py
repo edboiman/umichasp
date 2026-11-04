@@ -6,17 +6,19 @@ drugs = json.load(open(sys.argv[2], encoding="utf-8"))
 drug_words = {w.lower() for x in drugs for n in [x["name"], *x["aliases"]] for w in re.findall(r"[A-Za-z]{5,}", n)}
 def runs(r): return "".join(x[0] for x in r or [])
 def paras(c): return " ".join(runs(p) for p in c or [])  # paragraphs separated by spaces
-def app_text(g):
+def app_text_old(g):
     out = [g.get("title") or "", g.get("revised") or ""] + list(g.get("refs") or []) + [" ".join(h) for h in g.get("history") or []]
     for b in g["blocks"]:
         if b["t"] == "table":
             out += b.get("head") or []; out.append(b.get("caption") or "")
-            out += [paras(c) for r in b["rows"] for c in r]
+            out += [paras(c) for r in b["rows"] for c in r] + [paras(s["p"]) for s in b.get("shared", [])]
         elif b["t"] == "flow":
             out += [ (c.get("head") or "") + " " + paras(n["p"]) for c in b["cols"] for n in c["nodes"]] + [paras(n) for n in b.get("notes", [])]
         elif b["t"] == "rec": out += b["lines"]
         elif "r" in b: out.append(runs(b["r"]))
     return " ".join(out)
+import sys as _s; _s.path.insert(0, "/home/claude/pdfwork")
+from textdiff import text as app_text
 SUPMAP = str.maketrans("⁰¹²³⁴⁵⁶⁷⁸⁹", "0123456789")
 def toks(s):
     s = re.sub(r"(?i)page\s*\d+\s*of\s*\d+|\b\d+\s+of\s+\d+\b", " ", s.translate(SUPMAP))

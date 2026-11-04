@@ -521,3 +521,71 @@ main > * {min-width:0;}
 @media (max-width:359px) {.reader-tools {grid-template-columns:1fr;}}
 .bar.bar-large .bar-right {justify-self:end;}
 :root[data-theme="dark"] .qa-icon {filter:brightness(2.4) saturate(.6);}
+
+/* ===== v3 additions ===== */
+.sr-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
+/* header: saved-items button */
+#savedbtn svg {width:22px;height:22px;}
+.bar {grid-template-columns:minmax(44px,auto) 1fr minmax(44px,auto);}
+.bar-right {flex-wrap:nowrap;}
+
+/* guideline meta */
+.rd-meta-wrap {margin:0 0 14px;}
+.rd-meta {display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:0;font-size:14px;}
+.rd-meta a {display:inline-flex;align-items:center;min-height:44px;font-weight:600;}
+.rd-approvals {margin:2px 0 0;font-size:12px;color:var(--muted);line-height:1.5;}
+.pill-ok {background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent);}
+
+/* pocket-card steps */
+.step {display:grid;grid-template-columns:32px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line);}
+.step:first-of-type {border-top:0;}
+.step-n {width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:700;font-size:15px;}
+.step-title {margin:4px 0 0;font-weight:650;line-height:1.4;}
+.step-sub {margin:8px 0 0;padding-left:1.1em;}
+.step-sub li {margin:4px 0;}
+.step-sub li::marker {color:var(--accent);}
+.step-kv {margin:10px 0 0;display:grid;gap:6px;}
+.step-kv div {display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);}
+.step-kv dt {margin:0;font-size:.94em;}
+.step-kv dd {margin:0;font-weight:700;white-space:nowrap;text-align:right;}
+@media (max-width:380px) { .step-kv div {grid-template-columns:1fr;} .step-kv dd {text-align:left;} }
+.step-jump {display:inline-flex;align-items:center;min-height:44px;font-weight:600;font-size:14px;}
+.footnotes {margin:18px 0;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);font-size:.9em;}
+.fn-h {margin:0 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);}
+.footnotes ol {margin:0;padding-left:1.4em;}
+.footnotes li {margin:6px 0;line-height:1.5;}
+
+/* table: column that applies to every row */
+.shared-note {margin:8px 0 12px;padding:12px 14px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;background:var(--card);}
+.shared-h {font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+.shared-label {font-weight:700;margin:6px 0 2px;}
+.shared-item + .shared-item {margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);}
+.shared-item p {margin:.2em 0;}
+
+/* figures */
+.fig-open {display:block;}
+.fig figcaption {display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;}
+.fig figcaption a, .fig-links a {display:inline-flex;align-items:center;min-height:44px;font-weight:600;}
+.fig-text p {margin:.25em 0;font-size:.95em;}
+.flow-top {display:flex;justify-content:space-between;align-items:center;gap:8px;}
+.flow-src {font-size:13px;font-weight:600;display:inline-flex;align-items:center;min-height:44px;}
+
+/* flowcharts index + chart view */
+.chart-row .row-pg {font-weight:500;color:var(--muted);}
+.chart-meta {display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+.chart-links {margin:4px 0 14px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);}
+.chart-links-h {display:block;font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--muted);margin-bottom:8px;}
+.chart-links .chip {min-height:44px;display:inline-flex;align-items:center;}
+.chart-actions {display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:4px 0 18px;}
+.chart-actions .btn {margin:0;min-height:44px;display:inline-flex;align-items:center;}
+.offline-panel {margin:4px 0 8px;}
+.offline-panel .btn {margin-top:8px;}
+
+/* tabs: five tabs fit a 320px screen */
+.tabs a span {white-space:nowrap;letter-spacing:-.01em;}
+@media (max-width:340px) { .tabs a {font-size:9.5px;} }
+
+/* numbered / lettered list items keep the source's own enumerator instead of a bullet */
+.rd-ul li.li-n { list-style: none; }
+.rd-ul li.li-n .li-num { font-weight: 600; margin-right: .4em; font-variant-numeric: tabular-nums; }
+.rd-body p.source-disc { font-size: .82em; color: var(--muted); line-height: 1.5; }

@@ -1,0 +1,4772 @@
+[
+[
+"guidelines~adult~dosing-adult",
+"li",
+"1.",
+"Cockcroft-Gault; 𝐶𝑟𝐶𝑙 ( ) ="
+],
+[
+"guidelines~adult~dosing-adult",
+"li",
+"2.",
+"Schedule dose after hemodialysis; if dosed multiple times da"
+],
+[
+"guidelines~adult~dosing-adult",
+"li",
+"3.",
+"Dosing may be different for more aggressive CRRT flow rates."
+],
+[
+"guidelines~adult~dosing-adult",
+"li",
+"4.",
+"Based on trimethoprim component."
+],
+[
+"guidelines~adult~dosing-adult",
+"li",
+"5.",
+"Manufacturer recommendations for cefiderocol dosing in CRRT:"
+],
+[
+"guidelines~adult~dosing-adult",
+"li",
+"6.",
+"Cefepime dosing: could consider higher dose of 2 g q8h in di"
+],
+[
+"pharmacokinetics~vancomycin-adult",
+"li",
+"1.",
+"If patient recently received vancomycin, review the previous"
+],
+[
+"pharmacokinetics~vancomycin-adult",
+"li",
+"2.",
+"Do not check vancomycin concentrations within the first 72 h"
+],
+[
+"pharmacokinetics~vancomycin-adult",
+"li",
+"3.",
+"AUC is the preferred method of vancomycin monitoring. Trough"
+],
+[
+"pharmacokinetics~vancomycin-adult",
+"li",
+"1.",
+"Use the following table to guide monitoring of vancomycin ba"
+],
+[
+"pharmacokinetics~vancomycin-adult",
+"li",
+"2.",
+"ID consult should be ordered for all patients with S. aureus"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"p",
+"A.",
+"Determine patient’s dosing weight: (SEE FORMULAS BELOW)-"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"1.",
+"Dose is based on ideal body weight (IBW) unless either of th"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"a.",
+"IF less than their IBW; use total body weight (TBW)."
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"b.",
+"IF total body weight (TBW) exceeding ideal body weight (IBW)"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"c.",
+"If patient is pregnant use adjusted body weight (ABW)"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"p",
+"A.",
+"Empiric therapy: Aminoglycosides are as almost never necessa"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"p",
+"B.",
+"Definitive Therapy: Given the availability of safer and more"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"1.",
+"In general, 2 levels are encouraged, with the goal of target"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"a.",
+"In patients with renal insufficiency, this may not be possib"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"b.",
+"ICU patients have profound shifts in fluid status and renal "
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"c.",
+"Cystic fibrosis patients on aminoglycoside definitive therap"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"p",
+"C.",
+"Patients with acute renal insufficiency or dialysis. Patient"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"1.",
+"Recommend obtaining levels every 1-3 days in patients with c"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"p",
+"A.",
+"Determine patient’s dosing weight: (SEE FORMULAS BELOW)"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"1.",
+"Dose is based on ideal body weight (IBW) unless either of th"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"a.",
+"IF less than their IBW; use total body weight (TBW)."
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"b.",
+"IF total body weight (TBW) exceeding ideal body weight (IBW)"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"p",
+"B.",
+"Dose based on dosing weight:"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"1.",
+"For synergistic treatment for gram-positive infections:"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"li",
+"c.",
+"For amikacin 5 mg/kg (per dosing weight) – round dose to the"
+],
+[
+"pharmacokinetics~aminoglycoside-adult",
+"p",
+"C.",
+"Dosing Interval Determination:"
+],
+[
+"guidelines~adult~Dosing-Obesity",
+"p",
+"I.",
+"Adjusted Body Weight should be utilized when calculating dos"
+],
+[
+"guidelines~adult~Dosing-Obesity",
+"li",
+"30)",
+"patients. In non-obese patients, Total Body Weight should be"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"1.",
+"Patients recently on antihistamines. The service may re-eval"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"2.",
+"Patients with active mental status changes or a patient who "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"3.",
+"Patients who are enrolled for hospice care"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"4.",
+"Patients with certain medications such as: those who are act"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"1.",
+"This procedure is often performed after a negative penicilli"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"2.",
+"Obtain baseline vital signs (blood pressure, heart rate, res"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"3.",
+"As ordered by the provider, confirm the following medication"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"b.",
+"diphenhydramine (PO & IV)"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"c.",
+"albuterol"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"d.",
+"hydrocortisone"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"e.",
+"glucagon (if patient is on a beta-blocker)"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"4.",
+"Peripheral or central IV access must be available during the"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"5.",
+"One dose of the drug will be ordered by beta lactam allergy "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"6.",
+"Bedside RN will be administering medication as directed by o"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"7.",
+"Vital signs (specifically heart rate, blood pressure, O2 sat"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"8.",
+"If any of the following signs and symptoms are noted during "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"a.",
+"Hives or rash"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"b.",
+"Swelling of the throat triggering shortness of breath or dif"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"c.",
+"coughing, wheezing, shortness of breath"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"d.",
+"Sudden drop in the oxygen saturation below 90% with coincidi"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"e.",
+"abdominal pain with or without vomiting"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"f.",
+"Hypotension – less than 80 mm Hg systolic or symptomatic cha"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"g.",
+"Loss of consciousness."
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"9.",
+"If no symptoms develop after the one-hour observation period"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"10.",
+"If symptoms develop and the patient requires treatment, the "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"1.",
+"A provider must be available in house or available by phone "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"2.",
+"1:1 nursing is required."
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"3.",
+"Vital signs including RR, BP, HR and pulse ox should be moni"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"4.",
+"An anaphylaxis treatment kit containing epinephrine and diph"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"a.",
+"During treatment for anaphylaxis always give Epi first, but "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"5.",
+"Oxygen and suction setup must be at the bedside."
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"6.",
+"The patient is initially administered 10% of the dose (i.e.,"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"7.",
+"If no clinical symptoms develop, the patient will be adminis"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"8.",
+"If the patient has a reaction during challenge, please docum"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"a.",
+"For warm sensations or rash, stop the challenge, notify the "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"b.",
+"For respiratory distress, generalized hives, hypotension, or"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"c.",
+"The Rapid Response Team should be notified if the patient do"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"1.",
+"Negative Control: Sodium chloride solution without preservat"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"2.",
+"Penicillin G 10,000 units/mL (a minor determinant)"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"3.",
+"Pre PEN (benzylpenicilloyl polylysine) full strength (major "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"4.",
+"Positive Control: Histamine base 1 mg/mL (histamine phosphat"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"1.",
+"Visualize the volar aspect of the forearm and upper arm for "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"2.",
+"Clean the volar aspect of one forearm with an alcohol swab."
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"3.",
+"Using the marker provided, label the forearm as follows:"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"a.",
+"PRP, PG, - , and + (PRP refer to PrePen, PG refers to Penici"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"4.",
+"Drop test material on the volar aspect of the forearm, match"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"5.",
+"Press down and twist through each drop using a different der"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"6.",
+"After 15 minutes, measure the widest diameter of the bump (w"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"a.",
+"If the positive control wheal size measures at least 3 mm gr"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"b.",
+"If the positive control wheal is less than 3 mm greater than"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"7.",
+"The Intradermal test is applied to the outer aspect of the u"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"8.",
+"Clean the designated testing area with an alcohol swab."
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"9.",
+"Using the marker provided, label the outer aspect of the upp"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"a.",
+"PRP, PRP, PG, PG, and - (PRP refer to PrePen, PG refers to P"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"10.",
+"Apply each of the five testing agents intradermally, making "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"11.",
+"After 15 minutes, measure the widest diameter for the bump ("
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"a.",
+"If the reading of any of skin tests at 15 minutes reveals an"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"b.",
+"Matching positive results: If both PRP skin tests and/or bot"
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"c.",
+"Mismatching results: If only one out of the two PRP or only "
+],
+[
+"guidelines~adult~PST-Procedure",
+"li",
+"d.",
+"Matching negative results: If the skin test to all four skin"
+],
+[
+"guidelines~adult~Sertonin-Linezolid",
+"li",
+"1.",
+"A review of serotonin syndrome associated with linezolid ide"
+],
+[
+"guidelines~adult~Sertonin-Linezolid",
+"li",
+"a.",
+"Mean age: 50.9 years (range 4-85)"
+],
+[
+"guidelines~adult~Sertonin-Linezolid",
+"li",
+"b.",
+"Female: 20/32 (62.5%)"
+],
+[
+"guidelines~adult~Sertonin-Linezolid",
+"li",
+"c.",
+"22/32 (69%) involved an SSRI. 16/32 (50%) cases involved ≥2 "
+],
+[
+"guidelines~adult~Sertonin-Linezolid",
+"li",
+"d.",
+"Onset of symptoms: Median time 60 hours (range 30 minutes to"
+],
+[
+"guidelines~adult~Sertonin-Linezolid",
+"li",
+"e.",
+"Medical management was applied in 5 cases; 3 patients died ("
+],
+[
+"guidelines~adult~Sertonin-Linezolid",
+"li",
+"2.",
+"There were no contraindicated medications in initial licensi"
+],
+[
+"guidelines~adult~Sertonin-Linezolid",
+"li",
+"3.",
+"A retrospective review at the Mayo Clinic of 72 patients who"
+],
+[
+"guidelines~adult~s-aureus-pocketcard",
+"li",
+"1.",
+"Timely initiation of effective antibiotics following gram st"
+],
+[
+"guidelines~adult~s-aureus-pocketcard",
+"li",
+"2.",
+"Timely change to β-lactam therapy if MSSA"
+],
+[
+"guidelines~adult~s-aureus-pocketcard",
+"li",
+"3.",
+"Therapeutic vancomycin level"
+],
+[
+"guidelines~adult~s-aureus-pocketcard",
+"li",
+"4.",
+"Obtain repeat blood cultures every 24 – 48 hours until docum"
+],
+[
+"guidelines~adult~s-aureus-pocketcard",
+"li",
+"5.",
+"Identify and control source of bacteremia"
+],
+[
+"guidelines~adult~s-aureus-pocketcard",
+"li",
+"6.",
+"Echocardiography"
+],
+[
+"guidelines~adult~s-aureus-pocketcard",
+"li",
+"7.",
+"Assess for potential treatment failure and adjust antibiotic"
+],
+[
+"guidelines~adult~s-aureus-pocketcard",
+"li",
+"8.",
+"Treatment Duration"
+],
+[
+"guidelines~adult~bone-and-joint-adult",
+"li",
+"1.",
+"Clinically stable (hemodynamically stable, and stable at the"
+],
+[
+"guidelines~adult~bone-and-joint-adult",
+"li",
+"2.",
+"Adequate source control (i.e., not requiring drainage, no pe"
+],
+[
+"guidelines~adult~bone-and-joint-adult",
+"li",
+"3.",
+"Able to absorb oral medications from a functioning GI tract."
+],
+[
+"guidelines~adult~bone-and-joint-adult",
+"li",
+"4.",
+"Have an available regimen used in published studies to cover"
+],
+[
+"guidelines~adult~bone-and-joint-adult",
+"li",
+"5.",
+"Have no psychosocial reasons that preclude the safe use of o"
+],
+[
+"guidelines~adult~open-fractures-adult",
+"li",
+"1.",
+"Additional Preoperative IV antibiotic dose should be given 1"
+],
+[
+"guidelines~adult~open-fractures-adult",
+"li",
+"a.",
+"Preferred: Cefazolin 2g IV (3g if ≥ 120 kg)"
+],
+[
+"guidelines~adult~open-fractures-adult",
+"li",
+"b.",
+"Cephalosporin allergy or severe non-IgE penicillin allergy: "
+],
+[
+"guidelines~adult~open-fractures-adult",
+"li",
+"2.",
+"Antisepsis with 0.7% iodine povacrylex in 74% isopropyl alco"
+],
+[
+"guidelines~adult~open-fractures-adult",
+"li",
+"3.",
+"Continue algorithm antibiotics for 24 hours after index debr"
+],
+[
+"guidelines~adult~open-fractures-adult",
+"li",
+"4.",
+"Continue antibiotics for 24 hours after definitive wound clo"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"A.",
+"This guideline provides recommendations for clinicians carin"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"A.",
+"Epidemiology: infection is a common complication following L"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"B.",
+"Definitions:"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"i.",
+"VAD-specific infection – may involve any aspect of the devic"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"v.",
+"SIRS (systemic inflammatory response syndrome) criteria – pr"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"C.",
+"Pathogenesis: Infection may be introduced intra-operatively "
+],
+[
+"guidelines~adult~VAD",
+"p",
+"D.",
+"Risk factors may include the following: older age; diabetes;"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"A.",
+"Utilize driveline immobilization"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"i.",
+"Anchor(s) for all patients ii. Binders as determined necessa"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"B.",
+"Dressing procedures"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"i.",
+"See the following source for exit site care guideline and vi"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"a.",
+"https://cardiac-surgery.i.medicine.umich.edu/vad-program/sta"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"a.",
+"New implant driveline exit site dressing changes will occur "
+],
+[
+"guidelines~adult~VAD",
+"li",
+"b.",
+"Dressing changes will be transitioned to every 3 days and th"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"C.",
+"Hygiene/Bathing"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"i.",
+"Patients may shower once driveline is fully incorporated and"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"a.",
+"For weekly dressing changes, patients may shower up to twice"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"D.",
+"Driveline Assessment and Follow-up"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"i.",
+"Each clinic visit and as needed ii. Assessment: signs of inf"
+],
+[
+"guidelines~adult~VAD",
+"h",
+"V.",
+"Imaging considerations"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"A.",
+"Suspected purulent driveline infection:"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"i.",
+"Obtain ultrasound or CT of the abdomen and pelvis ii. Obtain"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"B.",
+"Suspected pocket, pump or cannula infection:"
+],
+[
+"guidelines~adult~VAD",
+"li",
+"i.",
+"Obtain CT of the chest, abdomen, and pelvis ii. Obtain TTE a"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"A.",
+"Suppressive antimicrobial therapy should be implemented for "
+],
+[
+"guidelines~adult~VAD",
+"p",
+"B.",
+"Suppressive antimicrobial therapy should be considered for a"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"A.",
+"If feasible, drainage should be performed if imaging demonst"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"B.",
+"Indications for pump exchange are not clear. Patients with p"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"C.",
+"The final decision for plan of care for the patient will inv"
+],
+[
+"guidelines~adult~VAD",
+"p",
+"A.",
+"Authors: R. Hasan, MD; E. Stoneman, MD; K. Knott, PA-C; A. R"
+],
+[
+"guidelines~adult~native-valve-endocarditis-treatment",
+"li",
+"1.",
+"Refer to Antimicrobial Dosing Recommendations for dose adjus"
+],
+[
+"guidelines~adult~native-valve-endocarditis-treatment",
+"li",
+"2.",
+"If candidate for outpatient therapy, may consider administra"
+],
+[
+"guidelines~adult~native-valve-endocarditis-treatment",
+"li",
+"3.",
+"Please refer to the Aminoglycoside Dosing in Adult Patients "
+],
+[
+"guidelines~adult~native-valve-endocarditis-treatment",
+"li",
+"4.",
+"Please refer to the Vancomycin Nomogram for guidance on vanc"
+],
+[
+"guidelines~adult~native-valve-endocarditis-treatment",
+"li",
+"5.",
+"Because of the requirement for frequent dosing and the inabi"
+],
+[
+"guidelines~adult~native-valve-endocarditis-treatment",
+"li",
+"6.",
+"The risk of gentamicin and rifampin toxicity outweighs poten"
+],
+[
+"guidelines~adult~prosthetic-valve-endocarditis-treatment",
+"li",
+"1.",
+"Refer to Antimicrobial Dosing Recommendations for dose adjus"
+],
+[
+"guidelines~adult~prosthetic-valve-endocarditis-treatment",
+"li",
+"2.",
+"If candidate for outpatient therapy, may consider administra"
+],
+[
+"guidelines~adult~prosthetic-valve-endocarditis-treatment",
+"li",
+"3.",
+"Please refer to the Vancomycin Nomogram for guidance on vanc"
+],
+[
+"guidelines~adult~prosthetic-valve-endocarditis-treatment",
+"li",
+"4.",
+"The risk of gentamicin and rifampin toxicity outweighs poten"
+],
+[
+"guidelines~adult~endocarditis-algorithm",
+"li",
+"1.",
+"Splinter hemorrhages"
+],
+[
+"guidelines~adult~endocarditis-algorithm",
+"li",
+"2.",
+"Janeway lesions"
+],
+[
+"guidelines~adult~endocarditis-algorithm",
+"li",
+"3.",
+"Osler’s nodes)"
+],
+[
+"guidelines~adult~candidemia-adult",
+"li",
+"2.",
+"Micafungin-resistant C. glabrata is emerging at UMHS. Prior "
+],
+[
+"guidelines~adult~candidemia-adult",
+"li",
+"3.",
+"Micafungin should not be used for the treatment of meningiti"
+],
+[
+"guidelines~adult~candidemia-adult",
+"li",
+"4.",
+"Micafungin and systemic amphotericin B are not recommended f"
+],
+[
+"guidelines~adult~candidemia-adult",
+"li",
+"5.",
+"Voriconazole should only be used as empiric therapy if addit"
+],
+[
+"guidelines~adult~candidemia-adult",
+"li",
+"6.",
+"Oral voriconazole should be administered on an empty stomach"
+],
+[
+"guidelines~adult~candidemia-adult",
+"li",
+"8.",
+"Voriconazole should be dosed based on adjusted body weight i"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"1.",
+"Failure is defined as no improvement or worsening symptoms a"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"2.",
+"Randomized trials have all utilized 10-day durations of ther"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"3.",
+"Parenteral administration of metronidazole has poor intralum"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"4.",
+"Consider the use of vancomycin prophylaxis in patients that "
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"5.",
+"The choice of fidaxomicin or vancomycin for initial episode "
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"6.",
+"Alternative and/or adjunctive agents:"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"a.",
+"Vancomycin tapers should begin after the treatment course is"
+],
+[
+"guidelines~adult~CDI-treatment",
+"p",
+"i.",
+". Recurrent CDI. FMT should be administered in the outpatien"
+],
+[
+"guidelines~adult~CDI-treatment",
+"p",
+"ii.",
+". CDI failing current therapy. See note 1 above. Infectious "
+],
+[
+"guidelines~adult~CDI-treatment",
+"p",
+"iii.",
+". Fulminant CDI. Infectious Diseases, Gastroenterology, and "
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"d.",
+"The role of probiotics in prevention and treatment of C. dif"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"e.",
+"Cholestyramine binds PO vancomycin and may decrease its effi"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"7.",
+"A patient assistance program is available for fidaxomicin (h"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"8.",
+"For fidaxomicin use, outpatient coverage should be verified "
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"9.",
+"For VOWST, financial assistance may be available for eligibl"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"10.",
+"Intracolonic vancomycin 500 mg in 500 mL of normal saline ev"
+],
+[
+"guidelines~adult~CDI-treatment",
+"li",
+"11.",
+"Postoperative diverting loop ileostomy regimen consists of a"
+],
+[
+"guidelines~adult~h-pylori-treatment",
+"li",
+"a.",
+"Pylera branded product. 3 capsules (bismuth subcitrate 420 m"
+],
+[
+"guidelines~adult~h-pylori-treatment",
+"li",
+"b.",
+"Component regimen: Bismuth subsalicylate (most commonly usin"
+],
+[
+"guidelines~adult~h-pylori-treatment",
+"li",
+"c.",
+"Component regimen is an appropriate substitution for combina"
+],
+[
+"guidelines~adult~h-pylori-treatment",
+"li",
+"a.",
+"Talicia branded product 4 capsules (omeprazole 40 mg, amoxic"
+],
+[
+"guidelines~adult~h-pylori-treatment",
+"li",
+"b.",
+"Rifabutin 300 mg QD, Amoxicillin 1 g BID*, PPI standard dose"
+],
+[
+"guidelines~adult~h-pylori-treatment",
+"li",
+"c.",
+"Given greater rifabutin intragastric exposure, and higher am"
+],
+[
+"guidelines~adult~h-pylori-treatment",
+"li",
+"a.",
+"Voquezna DualPak branded product: Vonoprazan 20 mg BID and A"
+],
+[
+"guidelines~adult~odontogenic-infections",
+"li",
+"1.",
+"Anaphylaxis"
+],
+[
+"guidelines~adult~odontogenic-infections",
+"li",
+"2.",
+"Cardiovascular symptoms (syncope/passing out, arrhythmia)"
+],
+[
+"guidelines~adult~odontogenic-infections",
+"li",
+"3.",
+"Angioedema/swelling"
+],
+[
+"guidelines~adult~odontogenic-infections",
+"li",
+"4.",
+"Respiratory distress"
+],
+[
+"guidelines~adult~head-neck-penicillin-allergy",
+"li",
+"1.",
+"Ask for a description of the reaction."
+],
+[
+"guidelines~adult~head-neck-penicillin-allergy",
+"li",
+"a.",
+"To clarify if this may be labeled on non-severe allergy, and"
+],
+[
+"guidelines~adult~head-neck-penicillin-allergy",
+"li",
+"2.",
+"As them if they’ve ever received a penicillin or a cephalosp"
+],
+[
+"guidelines~adult~head-neck-penicillin-allergy",
+"li",
+"a.",
+"It is often helpful to name some specifically (i.e., amoxici"
+],
+[
+"guidelines~adult~head-neck-penicillin-allergy",
+"li",
+"3.",
+"Consider referring them to Michigan Medicine Allergy and Imm"
+],
+[
+"guidelines~adult~head-neck-penicillin-allergy",
+"li",
+"a.",
+"In the setting of planning a non-emergent procedure."
+],
+[
+"guidelines~adult~head-neck-penicillin-allergy",
+"li",
+"4.",
+"Use all of this information to decide the best antibiotic ch"
+],
+[
+"guidelines~adult~head-neck-penicillin-allergy",
+"li",
+"a.",
+"Refer to the Odontogenic Infections Guideline."
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"1.",
+"All of the following criteria must be met:"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"a.",
+"Patient has a history of recurrent CVAD related bloodstream "
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"b.",
+"Patient who is at risk of limited venous access (venous acce"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"c.",
+"The patient has an ethanol compatible CVAD (see Attachment A"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"d.",
+"A dwell time of a minimum of two hours with the ethanol-lock"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"e.",
+"Patient and/or caregiver is capable of performing lock thera"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"f.",
+"Antibiotic lock therapy is not feasible (due to history of p"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"1.",
+"The patient has an ethanol incompatible central venous acces"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"2.",
+"Heparin or citrate of any type are injected through, or inst"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"3.",
+"Documented allergy to ethyl alcohol or thrombolytic agents"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"4.",
+"Central venous access devices used for hemodialysis treatmen"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"5.",
+"Patient or caregiver objects to the use of ethanol-lock ther"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"1.",
+"Patients who received drugs with potential interaction with "
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"2.",
+"For patients with active or past substance abuse, review and"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"1.",
+"Patients who are smokers should be advised for the risk of f"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"2.",
+"Ethanol concentration of 30% and higher may be associated wi"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"3.",
+"Ethanol lock may be associated with protein precipitation wh"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"1.",
+"Discharge planning: discharge planners should discuss with H"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"a.",
+"Service provider is required to notify case management of an"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"b.",
+"Patients and/or caregivers need to have a plan in place for "
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"c.",
+"Upon request information regarding IVAD (e.g., type of cathe"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"2.",
+"Measurement of the Lumen for Ethanol-Lock Administration (Ap"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"a.",
+"To estimate the volume of the venous access device, a practi"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"a.",
+"Prepare a 3 mL syringe filled with 1 mL of Normal Saline"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"b.",
+"Attach syringe to hub on the end of the catheter (hub must b"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"c.",
+"Draw back on plunger until drops of blood enter the syringe"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"d.",
+"Subtract 1 mL from the volume on the syringe when blood ente"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"e.",
+"Clamp tubing and record this volume"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"f.",
+"Flush tubing"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"g.",
+"Document findings in the “lines, drains and airway” MiChart "
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"h.",
+"Communicate volume to ordering prescriber"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"1.",
+"Hickman catheter 9.6 Fr single lumen ingrowth/4 antimicrobia"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"2.",
+"Broviac 6.6 Fr single lumen ingrowth cuff w/peel stylet Sili"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"3.",
+"Hickman catheter 10 Fr. double lumen ingrowth cuff, Silicone"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"4.",
+"Hickman catheter 10 Fr. triple lumen ingrowth cuff, Silicone"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"a.",
+"Other ethanol compatible catheter venous access devices that"
+],
+[
+"guidelines~adult~ethanol-lock-therapy",
+"li",
+"b.",
+"Polyurethane CVAD that are used at Michigan Medicine are NOT"
+],
+[
+"guidelines~adult~Measles-PEP",
+"li",
+"1.",
+"https://www.cdc.gov/mmwr/preview/mmwrhtml/rr6204a1.htm"
+],
+[
+"guidelines~adult~Measles-PEP",
+"li",
+"2.",
+"https://academic.oup.com/cid/article/65/11/1955/4004841"
+],
+[
+"guidelines~adult~Measles-PEP",
+"li",
+"3.",
+"https://redbook.solutions.aap.org/DocumentLibrary/Red%20Book"
+],
+[
+"guidelines~adult~Measles-PEP",
+"li",
+"4.",
+"https://www.cdc.gov/vaccines/hcp/acip-recs/general-recs/timi"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"2.",
+"3-Day Remdesivir:"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"3.",
+"Symptoms ≤ 7 days"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"4.",
+"Age ≥ 28 days and ≥ 3 kg (regardless of vaccination status) "
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"1.",
+"Age ≥ 12 years and ≥ 40 kg"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"5.",
+"Not received molnupiravir"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"6.",
+"Not have severe liver disease (Child-Pugh Class C)"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"7.",
+"No drug-drug interaction that are absolute contraindications"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"8.",
+"At high risk for progression to severe disease (including pr"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"1.",
+"Adults ≥ 18 years"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"4.",
+"Cannot receive COVID mAb or Redmesivir or Paxlovid"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"5.",
+"Not pregnant"
+],
+[
+"guidelines~outpatient~ambulatory-covid-19-treatment",
+"li",
+"6.",
+"At high risk for progression to severe disease1"
+],
+[
+"guidelines~outpatient~paxlovid-drug-drug-interactions",
+"li",
+"1)",
+"Contact transplant PharmD (Appendix B) to evaluate for all d"
+],
+[
+"guidelines~outpatient~paxlovid-drug-drug-interactions",
+"li",
+"2)",
+"Hold all calcineurin inhibitors and mTOR inhibitors at time "
+],
+[
+"guidelines~outpatient~paxlovid-drug-drug-interactions",
+"li",
+"3)",
+"Start Paxlovid at 24 – 48 hours from time of last dose of CN"
+],
+[
+"guidelines~outpatient~paxlovid-drug-drug-interactions",
+"li",
+"4)",
+"Check CNI or mTOR inhibitor level per table below and restar"
+],
+[
+"guidelines~adult~pneumonia-treatment",
+"li",
+"1.",
+"Anaphylaxis"
+],
+[
+"guidelines~adult~pneumonia-treatment",
+"li",
+"2.",
+"Cardiovascular symptoms (syncope/passing out, arrhythmia)"
+],
+[
+"guidelines~adult~pneumonia-treatment",
+"li",
+"3.",
+"Angioedema/swelling"
+],
+[
+"guidelines~adult~pneumonia-treatment",
+"li",
+"4.",
+"Respiratory distress"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"1.",
+"This document addresses indications for use and dosing of ri"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"2.",
+"Guidelines for the Treatment of Respiratory Syncytial Virus "
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"3.",
+"Ribavirin therapy should only be considered for infections d"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"4.",
+"Aerosolized ribavirin is contraindicated in patients receivi"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"5.",
+"Confirmed RSV infections in the following groups should gene"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"a.",
+"Patients with a prior history of Bone marrow transplant (BMT"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"i.",
+"All BMT patients with RSV infection and an Immunodeficiency "
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"b.",
+"Acute myeloid leukemia (AML)/Acute lymphoblastic leukemia (A"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"i.",
+"Oral ribavirin therapy is recommended for patients with URTI"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"c.",
+"Consideration of treatment with inhaled ribavirin requires a"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"6.",
+"The criteria in above are not absolutely comprehensive. Exce"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"7.",
+"Duration of therapy: 5-7 days in most cases"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"8.",
+"Dosing of ribavirin"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"a.",
+"Aerosolized therapy (non-intubated patients): 2 g (over 2 ho"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"b.",
+"Oral therapy:"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"i.",
+"CrCl greater than 50 mL/min: 600 mg TID ii. CrCl 31-50 mL/mi"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"c.",
+"Dose escalation may be considered in patients failing therap"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"d.",
+"Oral ribavirin has been associated with anemia and extravasc"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"i.",
+"Dose decreases may be considered in patients developing toxi"
+],
+[
+"guidelines~adult~RSV-Treatment",
+"li",
+"e.",
+"Pediatrics: Consult Pediatric Infectious Diseases for dosing"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"1.",
+"Inform the patient that the animal bite will be reported to "
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"2.",
+"All animal bites and exposures to bats should be reported to"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"3.",
+"Contact WCPHD at (734)544-6700 for advice regarding sending "
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"4.",
+"Hospital Security, Law Enforcement & Animal Control Notifica"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"a.",
+"Healthcare provider must report the bite to UMHS Hospital Se"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"b.",
+"Upon notice from health care provider, Hospital Security wil"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"i.",
+"Full Name and address of the victim; ii. Information about t"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"v.",
+"Cause, character and extent of the injury; vi. How the incid"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"c.",
+"In cases where a patient or his/her personal representative "
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"d.",
+"UMHS Hospital Security reports only the animal bite informat"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"5.",
+"Wound management:"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"a.",
+"Stabilization/Evaluation – Animal bites should be treated as"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"b.",
+"Clean wound – Appropriate local anesthesia facilitates adequ"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"c.",
+"Lacerations – To reduce the counts of bacteria present in th"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"d.",
+"Puncture wounds – Inspect wound for evidence of deep punctur"
+],
+[
+"guidelines~adult~animal-bite-adult",
+"li",
+"e.",
+"Wound closure – Closure of a bite wound may increase the ris"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"a.",
+"In general, quantitative viral PCR testing (e.g., CMV) does "
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"b.",
+"While case reports have demonstrated rare disease associated"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"c.",
+"HHV-8 is primarily associated with Kaposi’s sarcoma (0.5% of"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"d.",
+"Limited studies on the use of quantitative PCR for CMV on st"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"e.",
+"Weekly screening galactomannan levels in patients on prophyl"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"a.",
+"HHV-6 infection may result in encephalitis after allogeneic "
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"i.",
+"HHV-6 viremia should not be routinely monitored"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"1.",
+"Single value >5,000 copies/mL"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"2.",
+"Doubling of HHV-6 PCR on serial measurement and >2500 copies"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"3.",
+"Transplant ID consultation recommended if treatment consider"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"a.",
+"Adenovirus infection may result in severe respiratory diseas"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"b.",
+"Adenovirus serum PCR should be monitored weekly in high risk"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"i.",
+"Routine monitoring is not recommended in all other patients"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"c.",
+"In patients in which there is a clinical suspicion for adeno"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"i.",
+"Note: RPAN and GI PCR test for different subtypes of adenovi"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"i.",
+"Single positive PCR value or doubling of adenovirus PCR on s"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"e.",
+"Consultation to transplant ID is highly recommended to assis"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"i.",
+"Adult: Cidofovir 5 mg/kg IV weekly x2 doses then every other"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"a.",
+"Strongyloides may result in severe disseminated disease due "
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"b.",
+"Strongyloides IgG should be checked prior to transplant"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"c.",
+"All seropositive recipients should receive ivermectin 200mcg"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"a.",
+"Guidelines for Preventing Infectious Complications among Hem"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"b.",
+"Levine JE and Ferrara JLM. Practical considerations of immun"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"c.",
+"Marty FM, Ljungman P, Chemaly RF, et al. Letermovir prophyla"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"d.",
+"Maertens JA, Raad II, Marr KA, et al. Isavuconazole versus v"
+],
+[
+"guidelines~adult~bmt-prophylaxis",
+"li",
+"e.",
+"Marty FM, Ostrosky-Zeichner L, Cornely OA, et al; for the VI"
+],
+[
+"guidelines~pediatric~antimicrobial-dosing-pediatrics",
+"li",
+"2.",
+"Patients receiving Hemodialysis should have antimicrobials a"
+],
+[
+"guidelines~pediatric~antimicrobial-dosing-pediatrics",
+"li",
+"3.",
+"CRRT = Continuous renal replacement therapy; For patients on"
+],
+[
+"guidelines~pediatric~antimicrobial-dosing-pediatrics",
+"li",
+"4.",
+"All patients on vancomycin or an aminoglycoside are evaluate"
+],
+[
+"guidelines~pediatric~antimicrobial-dosing-pediatrics",
+"li",
+"5.",
+"Recommend oral formulation; IV vehicle (SCECD) can accumulat"
+],
+[
+"guidelines~pediatric~native-valve-endocarditis-pediatrics",
+"li",
+"1.",
+"Refer to Antimicrobial Dosing Recommendations for Pediatric "
+],
+[
+"guidelines~pediatric~native-valve-endocarditis-pediatrics",
+"li",
+"2.",
+"If candidate for outpatient therapy, may consider administra"
+],
+[
+"guidelines~pediatric~prosthetic-valve-endocarditis-pediatrics",
+"li",
+"1.",
+"Refer to Antimicrobial Dosing Recommendations for Pediatric "
+],
+[
+"guidelines~pediatric~prosthetic-valve-endocarditis-pediatrics",
+"li",
+"2.",
+"If candidate for outpatient therapy, may consider administra"
+],
+[
+"guidelines~pediatric~intra-abdominal-infections-pediatrics",
+"li",
+"1.",
+"Solomkin JS1, Mazuski JE, Bradley JS, et al. Diagnosis and m"
+],
+[
+"guidelines~pediatric~intra-abdominal-infections-pediatrics",
+"li",
+"2.",
+"Hamdy RF, Handy LK, Spyridakis E, et al. Comparative Effecti"
+],
+[
+"guidelines~pediatric~intra-abdominal-infections-pediatrics",
+"li",
+"3.",
+"Hurst AL, Olson D, Somme S, et al. Once-Daily Ceftriaxone Pl"
+],
+[
+"guidelines~pediatric~intra-abdominal-infections-pediatrics",
+"li",
+"4.",
+"Sawyer RG1, Claridge JA, Nathens AB, et al. Trial of short-c"
+],
+[
+"guidelines~pediatric~intra-abdominal-infections-pediatrics",
+"li",
+"5.",
+"Bu LN, Chen HL, Chang CJ, et al. Prophylactic oral antibioti"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"p",
+"B.",
+"Central Venous Access Device (CVAD): a long term, central ve"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"p",
+"C.",
+"Limited Venous Access: venous access in patients who will re"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"p",
+"D.",
+"Pediatric Patient: Patient managed by a Pediatric primary se"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"h",
+"A.",
+"Inclusion for ELT:"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"At least one of the following inclusion criteria must be met"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"Patients on long-term parenteral nutrition who receive ELT a"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"a.",
+"All inpatients who qualify for ELT should receive ethanol lo"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"2.",
+"All of the following criteria must be met:"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"Have a silicone-based CVAD (see table below) ii. Must be abl"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"h",
+"B.",
+"Exclusion for ELT:"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"If any of the following criteria are met, patients are ineli"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"Patients receiving systemic antimicrobials for suspected or "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"a.",
+"Targeted antimicrobial lock therapy can be used for catheter"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"b.",
+"Consult Pediatric Infectious Diseases for patients with poly"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"v.",
+"Patients receiving continuous renal replacement therapy (CRR"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"2.",
+"Special consideration should be given to the following popul"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"Inability to aspirate back the volume infused into the CVAD "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"h",
+"C.",
+"Prescribing Procedures and Requirements for ELT"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"If patient does not meet the inclusion criteria listed in se"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"2.",
+"An electronic order-set for ethyl alcohol 70% syringe will c"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"Acknowledgement of ELT requirements (if the statements are n"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"a.",
+"I verify that the patient’s catheter/port is ethanol compati"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"b.",
+"I verify that I have reviewed the policy of ethanol lock the"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"a.",
+"Continuation of outpatient ELT (should be given three times "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"b.",
+"Once dose for new ELT patients prior to discharge"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"c.",
+"Other – Select approving Antimicrobial Stewardship or Pediat"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"3.",
+"When prescribing parenteral nutrition (PN) for patients on E"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"4.",
+"An allergy for “Heparin and citrate containing compounds” sh"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"h",
+"D.",
+"Measurement of the Line for Ethanol Lock Administration"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"To estimate the volume of the CVAD:"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"Prepare a 3 mL syringe filled with 1 mL of normal saline. ii"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"v.",
+"Clamp tubing and record this volume. vi. Flush tubing."
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"2.",
+"Additional volume will be added to ensure the ELT covers the"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"An order should be written to inform caregivers of the estim"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"3.",
+"If unable to determine the volume of the venous access devic"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"4.",
+"If still unable to determine the volume of the venous access"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"5.",
+"Documentation of lumen volume is completed on the LDA for th"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"ELT will be administered once a day during the longest perio"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"Minimum dwell time of 2 hours, and for a maximum dwell time "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"2.",
+"If the patient has a CVAD with more than one lumen, ELT will"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"A separate order for each lumen must be entered into Epic. i"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"3.",
+"Flush CVAD with 10 mL of normal saline prior to instilling E"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"4.",
+"Withdraw ELT and flush with 10 mL of normal saline prior to "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"5.",
+"The ethanol lock is INCOMPATIBLE with heparin and citrate. A"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"NOTE: if heparin is accidentally co-infused with ethanol loc"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"6.",
+"If the patient is being switched from a heparin-containing l"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"7.",
+"Document instillation of ethanol lock in the MAR."
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"Withdraw the ethanol lock solution (equal to the volume init"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"3.",
+"Administer the ordered medication or parenteral nutrition, i"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"5.",
+"Instill the new ethanol lock solution or leave saline locked"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"6.",
+"Ensure the patient has the ethanol lock warning label sticke"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"h",
+"G.",
+"Procedure for Flushing of ELT:"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"Verify the patient meets one of the following criteria:"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"i.",
+"The caregiver is unable to withdraw the ELT from the CVAD"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"a.",
+"If the caregiver is unable to withdraw fluid, blood, or ELT "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"3.",
+"Administer the ordered medication or parenteral nutrition, i"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"5.",
+"Instill the new ethanol lock solution or leave saline locked"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"6.",
+"Ensure the patient has the ethanol lock warning label sticke"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"p",
+"A.",
+"A poster indicating that the patient is on ethanol lock ther"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"p",
+"A.",
+"Door Poster Indicating Patient is on Ethanol Lock Therapy"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"p",
+"C.",
+"Health-Care Provider Information Sheet for Ethanol Lock Ther"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"p",
+"E.",
+"Patient Identification Card"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"p",
+"F.",
+"Warning Label Stickers for Inpatient Use"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"What is ethanol lock therapy? The ethanol lock is a solution"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"2.",
+"How is ethanol lock therapy given to my child? The ethanol l"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"5.",
+"Can the ethanol lock therapy be used at home? Yes. You will "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"6.",
+"How do I store the ethanol lock therapy at home? The ethanol"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"7.",
+"Are there any restrictions in my child’s activity while on e"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"What is ethanol lock therapy? Ethanol lock is a solution tha"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"2.",
+"How is ethanol lock therapy given to a patient? Ethanol lock"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"3.",
+"Are there compatibility and stability issues with the ethano"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"6.",
+"Can ethanol lock therapy be used at home? Yes. Parents/careg"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"7.",
+"How should the ethanol lock therapy be stored in the hospita"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"8.",
+"Are there any restrictions in a patient’s activity while on "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"1.",
+"After finishing other IV medications/PN, flush the patient’s"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"2.",
+"Inject ____ mL of 70% ethanol lock into the patient’s IV cat"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"3.",
+"Allow the ethanol lock to dwell in the patient’s line for 2 "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"4.",
+"Prior to administration of other IV medications/PN, withdraw"
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"5.",
+"Flush the patient’s line with ____ mL of normal saline. (DO "
+],
+[
+"guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+"li",
+"6.",
+"Administer other IV medications/PN."
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"1.",
+"Patient provides verbal consent for personal data, including"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"2.",
+"Inpatient: Consult Infectious Diseases for all adult or pedi"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"3.",
+"Outpatient: Non-ID providers initiating outpatient Tecovirim"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"a.",
+"Adult Outpatients: Place an E-consult, or for more time-sens"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"b.",
+"Pediatric Outpatients: Place an E-consult, or for more time-"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"4.",
+"Send an email to UM-Expanded-Access-Request@med.umich.edu wi"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"a.",
+"Subject Line – Last Name, First Name (MRN) – TPOXX Request"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"b.",
+"Include pertinent information in body of email, including br"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"c.",
+"Include which eligibility criteria the patient meets"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"d.",
+"Attach patient intake form: LINK"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"5.",
+"If outside business hours (M-F, 0700-1700), notify Research "
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"6.",
+"Physician or designee, including APPs, must obtain informed "
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"a.",
+"This should be scanned in to MiChart as a “research consent”"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"7.",
+"Patient may be treated once consent has been signed. Researc"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"a.",
+"Paper order form (outpatient only): LINK"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"8.",
+"Confirm with Expanded Access group once treatment has begun"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"a.",
+"If the patient has had a serious adverse event that is relat"
+],
+[
+"guidelines~adult~TPOXX",
+"li",
+"b.",
+"Report life-threatening or serious adverse events associated"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"p",
+"I.",
+"Applicability"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"a)",
+"Inclusion criteria: Intended for use in preterm infants with"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"b)",
+"Exclusion criteria: Congenital GI anomalies, Term or near te"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"a)",
+"Vital signs, cardiac/respiratory/neuro status"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"b)",
+"Hemodynamic status (capillary refill, blood pressure, urine "
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"c)",
+"GI function and exam (bowel sounds, distension, color, girth"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"a)",
+"Hold enteral feedings"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"b)",
+"Gastric decompression: Replogle to continuous suction"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"c)",
+"Radiographic evaluation: anterior-posterior and left lateral"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"i)",
+"Refer to “radiologic signs” in Table 1"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"d)",
+"Serologic tests"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"i)",
+"If NEC is suspected but not definitive, consider sepsis eval"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"e)",
+"Volume resuscitation"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"i)",
+"Infants with changes in hemodynamic status or severe illness"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"f)",
+"Pediatric surgery consultation for infants with stage II or "
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"i)",
+"With serious and/or advancing disease, decisions regarding t"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"g)",
+"For NEC requiring surgical intervention5"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"i)",
+"Infants ≤1000 grams: primary drain placement ii) Infants >15"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"h)",
+"Pediatric infectious disease consultation:"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"i)",
+"In cases of bacteremia or if no improvement/worsening within"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"p",
+"V.",
+"Additional Considerations:"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"a)",
+"Laboratory testing frequency will be based on the trend and "
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"b)",
+"A systematic review of serological tests in the diagnosis of"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"c)",
+"Progression and/or perforation is most likely to occur withi"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"e)",
+"Nasogastric suction may be discontinued when output is < 3 m"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"f)",
+"Contrast studies are not indicated routinely before re-start"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"g)",
+"Antibiotic levels must be monitored closely to minimize toxi"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"a)",
+"Samir Gadepalli, MD- Pediatric Surgery"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"b)",
+"Rebecca Vartanian, MD- Neonatal-Perinatal Medicine"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"c)",
+"Alison Tribble, MD – Pediatric Infectious Disease"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"1.",
+"Systemic and intestinal signs are provided for your referenc"
+],
+[
+"guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+"li",
+"2.",
+"If bacteremia present OR persistent symptoms/worsening at 48"
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"li",
+"1.",
+"Bradley JS et al. The Management of Community-Acquired Pneum"
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"p",
+"2.",
+"Kalil AC et al. Management of Adults with Hospital-acquired "
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"p",
+"3.",
+"Metlay JP et al. Diagnosis and Treatment of Adults with Comm"
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"p",
+"4.",
+"Pernica JM et al. Short-Course Antimicrobial Therapy for Ped"
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"p",
+"5.",
+"Williams D et al. 175. Randomized Double-blind Controlled Tr"
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"p",
+"6.",
+"Bielicki JA et al. Effect of Amoxicillin Dose and Treatment "
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"p",
+"7.",
+"Same RG et al. The Association of Antibiotic Duration with S"
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"li",
+"8.",
+"Waites KB et al. Macrolide-Resistant Mycoplasma pneumoniae i"
+],
+[
+"guidelines~pediatric~pneumonia-pediatrics",
+"li",
+"9.",
+"Tamma PD et al. Ventilator-associated tracheitis in children"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"The use of some antimicrobials is restricted in all hospital"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Tier 1 antimicrobials that are commonly used for the treatme"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Tier 2 antimicrobials that are commonly used for the treatme"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Pediatric Pulmonology and Pediatric Infectious Diseases shou"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Typical airway pathogens for age"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"In young children with CF, the primary airway pathogens are "
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"An anti-pseudomonal antibiotic is not necessary for initial "
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"a.",
+"Respiratory culture positive for P. aeruginosa in the past 2"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"b.",
+"Respiratory culture positive for non-aeruginosa Pseudomonas "
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"Culture results from a patient’s sibling should not be used "
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"3.",
+"See “Incorporating P. aeruginosa susceptibility data into tr"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"v.",
+"Patient allergies and adverse effects"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"For patients with penicillin or cephalosporin allergy, refer"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"If there is a history of other complications or adverse effe"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Treatment with antibiotics based on susceptibility testing r"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Changes to an antimicrobial regimen should not be made based"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"If there has been no improvement with the initially selected"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"PREFERRED: Ampicillin/sulbactam"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Consultation to the β-lactam Allergy Evaluation Service (BLA"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"For Low/High-risk (See Figure 1) Penicillin Allergy: Ceftria"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"There are few data to support the practice of using two anti"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Ceftazidime or piperacillin/tazobactam are preferred alterna"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"Broader-spectrum agents such as carbapenems should be consid"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Consultation to the β-lactam Allergy Evaluation Service (BLA"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"For Low/High-risk (See Figure 1) Penicillin Allergy: Cefepim"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"3.",
+"For Low-risk (See Figure 1) Cephalosporin Allergy: Cefepime"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"a.",
+"unless the reaction was w/ Ceftriaxone, Cefotaxime or Cefpod"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Double coverage of Pseudomonas species other than P. aerugin"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Ceftazidime or piperacillin/tazobactam are preferred alterna"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"Broader-spectrum agents such as carbapenems should be consid"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Consultation to the β-lactam Allergy Evaluation Service (BLA"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"For Low/High-risk (See Figure 1) Penicillin Allergy: Cefepim"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"3.",
+"For Low-risk (See Figure 1) Cephalosporin Allergy: Cefepime"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"a.",
+"unless the reaction was w/ Ceftriaxone, Cefotaxime or Cefpod"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Double coverage of S. aureus is not indicated ii. Methicilli"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"PREFERRED: Cefazolin"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"If other agents with activity against MSSA (such as cefuroxi"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"3.",
+"Other options include oral, trimethoprim/sulfamethoxazole (T"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"a.",
+"The above antibiotics are highly bioavailable and there is n"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"4.",
+"Avoid vancomycin whenever possible"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"PREFERRED: Oral trimethoprim/sulfamethoxazole (TMP-SMX), dox"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"For hospitalized patients, it is reasonable to first try one"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Susceptibility results may be considered when selecting anti"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"PREFERRED: Piperacillin/tazobactam or ceftazidime;"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"ALTERNATIVES: Oral TMP-SMX or minocycline"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"ALTERNATIVES: Ampicillin/sulbactam, oral TMP-SMX (if suscept"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"v.",
+"Burkholderia species (at least two active agents are preferr"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"PREFERRED: TMP-SMX"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"ALTERNATIVES: Oral Minocycline, Meropenem, Ceftazidime or le"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"PREFERRED: TMP-SMX"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"ALTERNATIVES: Oral levofloxacin, or minocycline"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"If there is concern that NTM is contributing to current symp"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"In conjunction with Pediatric ID consult team, consider trea"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Aspergillus may contribute to pulmonary symptoms in multiple"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"If concern for Allergic Bronchopulmonary Aspergillosis (ABPA"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"If invasive Aspergillus is suspected, in conjunction with Pe"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Direct admit from clinic or home: pediatric CF clinical phar"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"When pediatric CF clinical pharmacy specialist is out, admit"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Refer to Eradication of Initial P. aeruginosa Clinical Care "
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"If patient is not improving:"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"1.",
+"Reassess other contributing factors (such as airway clearanc"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"2.",
+"Consider further evaluation (such as bronchoscopy or chest C"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"3.",
+"Consider Pediatric ID consult to discuss changes to antimicr"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"Difficulty choosing an empiric regimen due to multi-drug res"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"i.",
+"This video visit should take place approximately 2-3 busines"
+],
+[
+"guidelines~pediatric~cystic-fibrosis-pediatrics",
+"li",
+"3.",
+"Consider baseline EKG if receiving multiple medications know"
+],
+[
+"guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+"li",
+"1.",
+"Invasive Candida infection in the past 12 months or"
+],
+[
+"guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+"li",
+"2.",
+"ICU-level patient with one of the following AND not receivin"
+],
+[
+"guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+"li",
+"a.",
+"short bowel syndrome and TPN-dependence"
+],
+[
+"guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+"li",
+"b.",
+"liver transplantation in the past 30 days"
+],
+[
+"guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+"li",
+"c.",
+"prolonged (> 7 days) neutropenia due to chemotherapy"
+],
+[
+"guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+"li",
+"d.",
+"immunosuppression for GVHD"
+],
+[
+"guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+"li",
+"1.",
+"C&W Operations Subcommittee: 03/2018"
+],
+[
+"guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+"li",
+"2.",
+"C&W Executive Committee Approval: 04/2018"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"1.",
+"Inform the patient that the animal bite will be reported to "
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"2.",
+"All animal bites and exposures to bats should be reported to"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"3.",
+"Contact WCPHD at (734)544-6700 for advice regarding sending "
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"4.",
+"Hospital Security, Law Enforcement & Animal Control Notifica"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"a.",
+"Healthcare provider must report the bite to UMHS Hospital Se"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"b.",
+"Upon notice from health care provider, Hospital Security wil"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"i.",
+"Full Name and address of the victim; ii. Information about t"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"v.",
+"Cause, character and extent of the injury; vi. How the incid"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"c.",
+"In cases where a patient or his/her personal representative "
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"d.",
+"UMHS Hospital Security reports only the animal bite informat"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"5.",
+"Wound management:"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"a.",
+"Stabilization/Evaluation – Animal bites should be treated as"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"b.",
+"Clean wound – Appropriate local anesthesia facilitates adequ"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"c.",
+"Lacerations – To reduce the counts of bacteria present in th"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"d.",
+"Puncture wounds – Inspect wound for evidence of deep punctur"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"e.",
+"Wound closure – Closure of a bite wound may increase the ris"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"1.",
+"Low-risk allergies: pruritus without rash, remote (>10 years"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"2.",
+"High-risk allergies: Anaphylaxis, respiratory symptoms, angi"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"3.",
+"Severe non-IgE reactions that are contraindications to furth"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"4.",
+"Macaque monkey bites require additional workup for Macacine "
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"5.",
+"Snake bites require contact with Michigan Poison Control (1-"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"6.",
+"IVIG can be used in place of Tetanus Immune Globulin if Teta"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"7.",
+"Bites of squirrels, hamsters, guinea pigs, gerbils, chipmunk"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"8.",
+"Rabies vaccinations should not be administered at or near th"
+],
+[
+"guidelines~pediatric~animal-bite-pediatrics",
+"li",
+"9.",
+"Patients who received post exposure prophylaxis for a previo"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"a.",
+"Consider Herpes Simplex Virus (HSV) prophylaxis for seroposi"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"b.",
+"Consider nirsevimab for Respiratory Syncytial Virus (RSV) pr"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"2.",
+"Fungal/Bacterial:"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"a.",
+"For diagnoses indicated above: Prophylaxis is indicated duri"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"b.",
+"Initiate prophylaxis when ANC < 500/µL (exception for HR B-c"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"c.",
+"Discontinue prophylaxis when ANC ≥ 200/µL and rising."
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"4.",
+"IgG: Routine monthly surveillance recommended; supplementati"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"1.",
+"Viral prophylaxis:"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"2.",
+"Fungal prophylaxis:"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"3.",
+"Bacterial prophylaxis:"
+],
+[
+"guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+"li",
+"5.",
+"Immunoglobulin Supplementation:"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"1.",
+"Lung transplant recipients"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"2.",
+"B-cell depletion for malignancy"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"1.",
+"Physician and high-risk patient have a risk/benefit discussi"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"2.",
+"If patient is interested in treatment, provider places “Refe"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"3.",
+"Order sent directly to the COVID mAb pharmD inbasket."
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"4.",
+"Trained PharmD calls the patient, discusses the treatment, o"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"5.",
+"PharmD places therapy plan for pemivibart (for every 3 month"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"6.",
+"Physician receives the order for review and to cosign in MiC"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"7.",
+"PharmD routes therapy plan to MIST for insurance review"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"8.",
+"If pemivibart is covered by the patient’s insurance, MIST wi"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"9.",
+"If pemivibart is not covered by the patient’s insurance, the"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"a.",
+"If the provider would still like to move forward with the tr"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"b.",
+"If the patient would like to move forward, MIST will connect"
+],
+[
+"guidelines~outpatient~pemivibart-step-by-step-process",
+"li",
+"10.",
+"Patients will be scheduled for every 3 months, and after 12 "
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"1.",
+"Review current/recent tissue cultures if available (previous"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"2.",
+"Review inclusion/exclusion criteria above"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"a.",
+"Any patients who do not meet criteria should not be managed "
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"3.",
+"Eligible patients can be managed using the ‘POD Diabetic Foo"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"4.",
+"Upon opening the Smartset, the following sections should be "
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"a.",
+"Diagnosis"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"b.",
+"Labs – standard labs are pre-selected"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"i.",
+"Consider alternative labs for the following scenarios:"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"1.",
+"Comprehensive metabolic panel – patients with concern for or"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"2.",
+"AFB culture – patients with recurrent DFI"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"3.",
+"Fungal culture – patients with recurrent DFI"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"d.",
+"Medications:"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"i.",
+"Current gram-positive infection only:"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"1.",
+"Consider linezolid"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"a.",
+"Review exclusions for linezolid:"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"i.",
+"Thrombocytopenia (platelets < 150) ii. Taking MAOi within th"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"1.",
+"If on one agent, discuss signs and symptoms of serotonergic "
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"2.",
+"See SSRI & Linezolid Management Guideline for further inform"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"b.",
+"If no exclusions for linezolid"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"i.",
+"Order linezolid 600 mg PO BID x7 days"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"c.",
+"If exclusions exist to linezolid"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"i.",
+"Refer to dalbavancin"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"2.",
+"Dalbavancin"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"a.",
+"Add dalbavancin therapy plan:"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"i.",
+"Select and open Therapy Plan"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"b.",
+"If dalbavancin is unavailable (after 1300 M-F, weekends, or "
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"1.",
+"Review susceptibilities, if FQ susceptible:"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"a.",
+"Review CrCl and prescribe FQ as follows:"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"2.",
+"If not FQ susceptible"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"1.",
+"Follow gram positive pathway under Process 4.d.i."
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"2.",
+"Review risk factors for gram negative infection:"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"a.",
+"Relapsed or recurrent foot infection"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"b.",
+"Freshwater exposure (lakes, rivers)"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"c.",
+"Recent hospitalization with IV antibiotics (within previous "
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"3.",
+"If gram negative risk factors present, follow gram negative "
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"5.",
+"Print and provide patient education document with standard s"
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"a.",
+"Specifically, highlight the importance of leg elevation and "
+],
+[
+"guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+"li",
+"6.",
+"Patient should be scheduled for follow-up visit with Podiatr"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"1.",
+"If patient is not a current patient in our clinic and has no"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"a.",
+"Direct to local urgent care, their PCP or ER. Can offer NP a"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"b.",
+"Orders CANNOT be placed for inactive patients."
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"2.",
+"Record symptoms in acute UTI template, order UA with reflex "
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"a.",
+"If patient wants “test of cure” after a recent treatment wit"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"b.",
+"If patient wants to discuss UTI prevention or change their c"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"3.",
+"Patient with fever/vomiting/flank pain/inability to take ora"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"a.",
+"Send to ED"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"4.",
+"Patient with recent urologic surgery within last 30 days (ot"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"a.",
+"Contact provider who performed the procedure"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"b.",
+"If no available MD/DO in your clinic, contact MD/DO on call."
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"c.",
+"Likely empiric antibiotics will be ordered once urine sample"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"5.",
+"Ensure allergies are correct and up to date"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"6.",
+"Ensure pharmacy is correct and up to date"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"7.",
+"Instructions while waiting for results: can use dot phrase c"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"a.",
+"“While awaiting results, you may use the following over-the-"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"8.",
+"Result: UA negative for nitrites and leukocyte esterase = NE"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"9.",
+"Culture positive with symptoms of UTI (dysuria, urgency, fre"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"1.",
+"For women or men with no retention or catheter use and no re"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"1.",
+"For women or men in retention, recent surgery, CIC or foley "
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"1.",
+"Nitrofurantoin (do not use for CrCl < 30)"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"2.",
+"TMP/SMX (do not use if on ACE/ARB/spironolactone or if CrCl "
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"3.",
+"Fosfomycin (E. coli or E. faecalis ONLY)"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"4.",
+"Cephalexin"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"5.",
+"Amoxicillin-clavulanate"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"6.",
+"Fluoroquinolone"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"7.",
+"Pivmecillinam (NOT for Pseudomonas or Enterococcus, PCN alle"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"1.",
+"If patient has allergies (with or without resistance) that p"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"2.",
+"Can consider gentamicin bladder instillation per protocol 30"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"3.",
+"If no oral options exist: Refer to Urology Rapid UTI clinic "
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"p",
+"i.",
+"If Mon-Thurs: place therapy plan for aminoglycoside (gentami"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"li",
+"1.",
+"APP can order IV abx via “Antibiotics for MDR / Allergy Unco"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"h",
+"ii.",
+"If Friday-Sunday: refer to the ED for one time aminoglycosid"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"h",
+"i.",
+"If Mon-Thurs: place therapy plan for 3 days of ceftriaxone o"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"h",
+"i.",
+"1 g IV q24h"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"h",
+"i.",
+"1 g IV q24h"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"h",
+"i.",
+"CrCl ≥ 30: 1 g IV q24h; CrCl < 30: 500 mg IV q24h"
+],
+[
+"guidelines~outpatient~uUTI-workflow_URO",
+"h",
+"ii.",
+"If Friday-Sunday: refer to the ED for observation admission "
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"1.",
+"Nirsevimab administration should only occur during or shortl"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"2.",
+"Administration will begin October 1st and conclude no later "
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"a.",
+"***Note that for RSV season 2025/2026 nirsevimab administrat"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"3.",
+"Outside of the typical RSV season, nirsevimab administration"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"1.",
+"For healthy newborns, a single dose of nirsevimab should be "
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"2.",
+"Patients with extended birth hospitalizations should receive"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"3.",
+"Eligible patients who have not previously received nirsevima"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"1.",
+"In accordance with the CDC’s general best practices for immu"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"2.",
+"In clinical trials, when nirsevimab was administered concomi"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"3.",
+"When concomitantly administered, nirsevimab is not expected "
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"1.",
+"The duration of effect of nirsevimab has been verified in cl"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"1.",
+"2024 AAP Red Book guidelines supersede previous palivizumab "
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"2.",
+"Page Antimicrobial Stewardship (pager: 36149) for discussion"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"1.",
+"Nirsevimab is preferred over palivizumab for protection agai"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"2.",
+"If nirsevimab is administered, palivizumab should not be adm"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"3.",
+"If palivizumab was administered initially for the season and"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"4.",
+"If palivizumab was administered in season 1 and the child is"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"5.",
+"If nirsevimab is not available, palivizumab should be admini"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"1.",
+"Infants born to pregnant people who may not mount an adequat"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"2.",
+"Infants who have undergone cardiopulmonary bypass or extraco"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"3.",
+"Infants with substantial increased risk for severe RSV disea"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"1.",
+"Born < 29 weeks gestation"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"2.",
+"Hemodynamically significant congenital heart disease"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"a.",
+"Pulmonary hypertension requiring ≥ 1 of the following:"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"a.",
+"Sildenafil, tadalafil, bosentan, ambrisentan, or prostacycli"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"b.",
+"Receiving ≥ 1 of the following for pulmonary overcirculation"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"a.",
+"Maintenance diuretics, digoxin, or angiotensin converting en"
+],
+[
+"guidelines~pediatric~nirsevimab-pediatrics",
+"li",
+"3.",
+"Anatomical or neuromuscular abnormality impairing ability to"
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"i.",
+"Clean procedures are defined as those with no acute inflamma"
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"b.",
+"The activity of the chosen prophylactic agent(s) should enco"
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"c.",
+"The prophylactic agent must be administered in a dose which "
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"i.",
+"In most instances, a single intravenous dose of an antimicro"
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"2.",
+"In adult patients, cefazolin (2 g if < 120 kg, 3 g if ≥ 120 "
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"a.",
+"Data have not supported subsequent doses after surgical clos"
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"b.",
+"A longer duration of antimicrobials may be indicated, if con"
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"1.",
+"Bratzler DW, et al. Am J Health-Syst Pharm 2013; 70:195-283."
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"2.",
+"Schweizer ML et al. JAMA 2015; 313:2162-2171."
+],
+[
+"guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+"li",
+"3.",
+"Rodriguez L et al. J Trauma Acute Care Surg 2013;77:400-408."
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg",
+"li",
+"i.",
+"Clean procedures are defined as those with no acute inflamma"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg",
+"li",
+"b.",
+"The activity of the chosen prophylactic agent(s) should enco"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg",
+"li",
+"c.",
+"The prophylactic agent must be administered in a dose which "
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg",
+"li",
+"i.",
+"In most instances, a single intravenous dose of an antimicro"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg",
+"li",
+"a.",
+"Data have not supported subsequent doses after surgical clos"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg",
+"li",
+"b.",
+"A longer duration of antimicrobials may be indicated, if con"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg_1",
+"li",
+"a.",
+"Antimicrobial prophylaxis should be administered if there is"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg_1",
+"li",
+"i.",
+"Clean procedures are defined as those with no acute inflamma"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg_1",
+"li",
+"b.",
+"The activity of the chosen prophylactic agent(s) should enco"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg_1",
+"li",
+"c.",
+"The prophylactic agent must be administered in a dose which "
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg_1",
+"li",
+"i.",
+"In most instances, a single intravenous dose of an antimicro"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg_1",
+"li",
+"1.",
+"Antimicrobial agent infusion should begin 15-60 minutes befo"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg_1",
+"li",
+"a.",
+"Data have not supported subsequent doses after surgical clos"
+],
+[
+"guidelines~surgical-prophylaxis~patients-50-kg_1",
+"li",
+"b.",
+"A longer duration of antimicrobials may be indicated, if con"
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"h",
+"I.",
+"INTRODUCTION"
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"a.",
+"Antimicrobial prophylaxis should be administered if there is"
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"i.",
+"Clean procedures are defined as those with no acute inflamma"
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"b.",
+"The activity of the chosen prophylactic agent(s) should enco"
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"c.",
+"The prophylactic agent must be administered in a dose which "
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"i.",
+"In most instances, a single intravenous dose of an antimicro"
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"1.",
+"Antimicrobial agent infusion should begin 15-60 minutes befo"
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"2.",
+"In adult patients, cefazolin (2 g if < 120 kg, 3 g if ≥ 120 "
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"3.",
+"Infusion duration and time to redosing for recommended proph"
+],
+[
+"guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+"li",
+"a.",
+"Data have not supported subsequent doses after surgical clos"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"1.",
+"See Transplant Center Post-Procurement Communication of Dono"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"1.",
+"Staph aureus, gram negative bacilli, Candida species and oth"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"a.",
+"14-day treatment course"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"b.",
+"Oral route or long active IV route preferred if available"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"c.",
+"Micafungin/rezafungin an option for Candida species likely t"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"2.",
+"Less virulent or resistant organisms"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"a.",
+"7-day treatment course"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"1.",
+"Bacterial organisms from donor or recipient cultures"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"a.",
+"14-day treatment course"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"b.",
+"Decisions made in discussion with lung transplant rounding t"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"2.",
+"Cystic Fibrosis patients"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"a.",
+"Referral to transplant ID during evaluation period"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"b.",
+"Treatment started as peri-operative prophylaxis optimally pr"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"3.",
+"Candida species resistant to routine posaconazole or recipie"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"a.",
+"14-day treatment course"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"b.",
+"Micafungin or rezafungin (if discharged)"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"c.",
+"Discussion with transplant ID regarding ongoing mold prophyl"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"1.",
+"GPC in clusters without further identification"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"a.",
+"Vancomycin or Daptomycin pending further information"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"2.",
+"Staph aureus, Candida species and more resistant or virulent"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"a.",
+"14-day treatment course"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"b.",
+"Oral or long acting IV route preferred after discharge"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"c.",
+"If donor with high-grade bacteremia or concern for endocardi"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"3.",
+"Most other organisms (e.g., non-MDRO gram negative organisms"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"a.",
+"7-day treatment course"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"4.",
+"Coagulase negative staphylococcus (1 of 2) positive blood cu"
+],
+[
+"guidelines~transplant~donor-cx_txp",
+"li",
+"1.",
+"Ivermectin 200 mcg/kg daily for two days, repeated at two we"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"a.",
+"If already ordered, assess ordered levels for appropriatenes"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"iv.",
+"NOTE: For patients on pediatric service lines, ALL levels mu"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"1.",
+"In Clinical Scoring Tool, daily documentation is required in"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"2.",
+"Assess serum concentration and revise PK Care Plan, as appro"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"a.",
+"If dose change is necessary, discontinue currently ordered d"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"i.",
+"Note type should be “Medication Management”. F2 will bring u"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"4.",
+"Ensure that appropriate follow-up vancomycin and/or aminogly"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"a.",
+"If already ordered, assess ordered levels for appropriatenes"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"5.",
+"If previous Rx Follow-Up or Day Shift Follow-Up iVent starte"
+],
+[
+"pharmacokinetics~pharmacokinetic-workflow",
+"li",
+"6.",
+"Initiate new Rx Follow-Up or Day Shift Follow-Up iVent, as a"
+],
+[
+"pharmacokinetics~pharmacokinetic-review-pediatrics",
+"li",
+"1.",
+"Advanced age"
+],
+[
+"pharmacokinetics~pharmacokinetic-review-pediatrics",
+"li",
+"2.",
+"Previous aminoglycoside administration"
+],
+[
+"pharmacokinetics~pharmacokinetic-review-pediatrics",
+"li",
+"3.",
+"Concurrent use of loop diuretics or other nephrotoxic agents"
+],
+[
+"pharmacokinetics~pharmacokinetic-review-pediatrics",
+"li",
+"4.",
+"Chronic diuretic therapy"
+],
+[
+"pharmacokinetics~pharmacokinetic-review-pediatrics",
+"li",
+"5.",
+"Pre-existing kidney disease"
+],
+[
+"pharmacokinetics~pharmacokinetic-review-pediatrics",
+"li",
+"6.",
+"Prolonged courses of aminoglycoside therapy"
+],
+[
+"pharmacokinetics~pharmacokinetic-review-pediatrics",
+"li",
+"7.",
+"Administration of IV contrast"
+],
+[
+"patient-education~get-smart-about-antibiotics",
+"li",
+"1.",
+"Chang HT et al. Infect Control Hosp Epidemiol2007; 28:926–93"
+],
+[
+"patient-education~get-smart-about-antibiotics",
+"li",
+"1.",
+"Clin. Infect. Dis.36(1),53–59 (2003)."
+],
+[
+"patient-education~get-smart-about-antibiotics",
+"li",
+"2.",
+"Infect. Control Hosp. Epidemiol.28(3),273–279 (2007)."
+],
+[
+"patient-education~get-smart-about-antibiotics",
+"li",
+"1.",
+"ShehabN et al. Clinical Infectious Diseases 2008; 15:735-43"
+],
+[
+"patient-education~penicillin-skin-testing-are-you-still-allergic",
+"li",
+"1.",
+"Allergy Specialty Clinic and Food Allergy Clinic at Domino's"
+],
+[
+"patient-education~penicillin-skin-testing-are-you-still-allergic",
+"li",
+"2.",
+"Brighton Center for Specialty Care 7500 Challis Road, Bright"
+],
+[
+"patient-education~penicillin-skin-testing-are-you-still-allergic",
+"li",
+"3.",
+"Northville Health Center Suite 210, 39901 Traditions Way, No"
+],
+[
+"patient-education~penicillin-skin-testing-are-you-still-allergic",
+"li",
+"4.",
+"West Ann Arbor Health Center – Parkland Plaza 380 Parkland P"
+]
+]

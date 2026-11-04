@@ -1,0 +1,1217 @@
+[
+ [
+  "guidelines~adult~dosing-adult",
+  2,
+  "2.67 g (aztreonam 2 g - avibactam 0.67 g) x1, then 1 g (aztreonam 0.75 g - avibactam 0.25 | g) q6h"
+ ],
+ [
+  "guidelines~adult~dosing-adult",
+  3,
+  "CrCl < 10 mL/min or | iHD"
+ ],
+ [
+  "guidelines~adult~dosing-adult",
+  3,
+  "CrCl 60-119 | mL/min"
+ ],
+ [
+  "guidelines~adult~Warfarin-DDI",
+  1,
+  "Metronidazole | Sulfamethoxazole- | trimethoprim"
+ ],
+ [
+  "guidelines~adult~Warfarin-DDI",
+  1,
+  "If patient was on a stable regimen prior to | drug interaction, resume previous"
+ ],
+ [
+  "guidelines~adult~Warfarin-DDI",
+  1,
+  "If patient was on a stable regimen prior to | drug interaction, resume previous | maintenance dose."
+ ],
+ [
+  "guidelines~adult~Warfarin-DDI",
+  2,
+  "If dose was reduced, resume dose | from prior to interaction."
+ ],
+ [
+  "guidelines~adult~Warfarin-DDI",
+  2,
+  "Nafcillin/Oxacillin | Rifampin | Rifabutin | Ritonavir or any | protease inhibitor for | HIV with ritonavir"
+ ],
+ [
+  "guidelines~adult~Warfarin-DDI",
+  2,
+  "If patient was on a stable regimen prior to | drug interaction, resume previous | maintenance dose. | Otherwise, monitor INR and adjust as | needed."
+ ],
+ [
+  "guidelines~adult~bone-and-joint-adult",
+  9,
+  "Consider holding antibiotics until deep tissue cultures can be obtained in hemodynamically stable patients | Preferred; can be used in patients with low-risk ce"
+ ],
+ [
+  "guidelines~adult~prosthetic-valve-endocarditis-treatment",
+  1,
+  "• For Enterococci strains resistant to vancomycin, | aminoglycosides, and penicillin, > 6 weeks of therapy is | recommended (for all other Enterococci strains 6"
+ ],
+ [
+  "guidelines~adult~prosthetic-valve-endocarditis-treatment",
+  2,
+  "• Follow baseline and weekly CK with daptomycin | therapy | • Cefazolin and daptomycin should be used with caution | in MSSA-associated CNS infection. Oxacillin"
+ ],
+ [
+  "guidelines~adult~prosthetic-valve-endocarditis-treatment",
+  2,
+  "• Follow baseline and weekly CK with daptomycin | therapy | • Consider dalbavancin in patients unable to receive | recommended oral or IV antibiotic therapy | •"
+ ],
+ [
+  "guidelines~adult~prosthetic-valve-endocarditis-treatment",
+  2,
+  "Culture negative, early | (≤ 1 year since valve | replacement, pending | definitive diagnosis)"
+ ],
+ [
+  "guidelines~adult~aspergillosis-treatment",
+  3,
+  "• Please note that voriconazole IS NOT ACTIVE against mucormycosis | • See above (Invasive Aspergillosis) section for dosing | recommendations. Complete dosing "
+ ],
+ [
+  "guidelines~adult~cryptococcus-treatment-adult",
+  1,
+  "large lesions (≥ 2 cm), lobar consolidation, | cavitation, multi-lobar involvement, or"
+ ],
+ [
+  "guidelines~adult~cryptococcus-treatment-adult",
+  1,
+  "may be suboptimal; Consult ID pharmacy prior | to adjustment: | Liposomal amphotericin B intolerance:  | Fluconazole 1200 mg/day* with | flucytosine 25 mg/kg* P"
+ ],
+ [
+  "guidelines~adult~cryptococcus-treatment-adult",
+  1,
+  "Fluconazole 200 mg* PO daily x1 year or until | immune restoration (in patients with HIV, | defined as undetectable viral load on ART with | CD4> 100 cells/mm3)"
+ ],
+ [
+  "guidelines~adult~cryptococcus-treatment-adult",
+  1,
+  "Preferred in patients without C. gattii or cryptococcoma: | Liposomal Amphotericin B 3 mg/kg IV daily | ×14 days | + | Flucytosine 25 mg/kg* PO QID ×14 days | P"
+ ],
+ [
+  "guidelines~adult~infectious-diarrhea-treatment-adult",
+  3,
+  "Uncomplicated: | - Supportive care, including oral rehydration, recommended for all patients. | - Antibiotics not recommended unless indication present* | Antib"
+ ],
+ [
+  "guidelines~adult~infectious-diarrhea-treatment-adult",
+  3,
+  "Region-specific recommendations: | - If patient acquired severe infection after travel to Pakistan, recommended first line agent is meropenem given ongoing outb"
+ ],
+ [
+  "guidelines~adult~CDI-treatment",
+  2,
+  "Recommendation | Treatment: Not recommended, the ne gative | pCroendtiacctitv Per veaclauue toiof tnhsi-sD t:e Nsto fto rr erquulinirge-dou t C. diff-"
+ ],
+ [
+  "guidelines~adult~CDI-treatment",
+  2,
+  "Treatment: Clinically correlate to determine if | treatment is warranted. Consider treatment wi th | sCeovnetraec, tn Porne-rceasuotlivoinngs,- Dor:  Yotehse, r"
+ ],
+ [
+  "guidelines~adult~CDI-treatment",
+  3,
+  "Surgery and Infectious Diseases Consultation are strongly recommended | Vancomycin 500 mg PO QID | + Metronidazole 500 mg IV | q8h3 | If ileus, bowel obstructio"
+ ],
+ [
+  "guidelines~adult~odontogenic-infections",
+  1,
+  "1st line: | Vancomycin IV (see | nomogram)* | + Piperacillin-Tazobactam 4.5 g IV | q6h | Low-to-High Risk PCN Allergy**:: | Vancomycin IV (see | nomogram)* + Ce"
+ ],
+ [
+  "guidelines~adult~odontogenic-infections",
+  1,
+  "• ID consult strongly recommended. | • When osteomyelitis is suspected, it is advised to attempt surgical debridement of necrotic bone, and to | send purulence "
+ ],
+ [
+  "guidelines~adult~hiv-prep",
+  1,
+  "A) Sexually Active Adults and Adolescents (> 35 kg) who have had anal or vaginal sex in the past 6 | months AND any of the  following: | 1) A sexual partner wit"
+ ],
+ [
+  "guidelines~adult~hiv-prep",
+  1,
+  "Emtricitabine 200 mg PO daily | + tenofovir disoproxil fumarate 300 | mg PO Daily (TRUVADA)2 (requires CrCl > 60 mL/min) | OR | Emtricitabine 200 mg-tenofovir |"
+ ],
+ [
+  "guidelines~adult~hiv-prep",
+  2,
+  "years old with CrCl > 606 | within 72 hours of known or"
+ ],
+ [
+  "guidelines~adult~hiv-prep",
+  2,
+  "unknown status | partners6"
+ ],
+ [
+  "guidelines~adult~hiv-prep",
+  2,
+  "• Other episodic | exposure to blood, | semen, vaginal | secretions, or body | fluids with visible | blood | contamination | • Sexual assault"
+ ],
+ [
+  "guidelines~adult~hiv-prep",
+  2,
+  "4-6 weeks | - HIV Antigen/Antibody | - RPR | - Basic Metabolic Panel | - Gonorrhea/Chlamydia NAAT if presumptive treatment not | previously administered | 3 mon"
+ ],
+ [
+  "guidelines~adult~hiv-prep",
+  2,
+  "if partner is known HIV | positive with"
+ ],
+ [
+  "guidelines~adult~hiv-prep",
+  2,
+  "Laboratory testing for source (if available) | - HIV antigen/antibody test AND | - HIV quantitative PCR if risk for acute HIV | - Do NOT wait for results to sta"
+ ],
+ [
+  "guidelines~adult~Measles-PEP",
+  1,
+  "Pregnant women, regardless of | evidence of immunity"
+ ],
+ [
+  "guidelines~adult~Measles-PEP",
+  1,
+  "Immunocompromised individuals, any | age, regardless of evidence of immunity"
+ ],
+ [
+  "guidelines~adult~malaria-treatment",
+  2,
+  "Continue treatment with | artesunate IV | q24h until parasitemia is < 1% and able to tolerate oral medications. | Maximum duration of IV | artesunate: | 7 days "
+ ],
+ [
+  "guidelines~adult~malaria-treatment",
+  2,
+  "If patient used Malarone™ as chemoprophylaxis then use an another treatment option | IV quinine is not available in the US. | Delayed hemolysis can occur ~1 wee"
+ ],
+ [
+  "guidelines~adult~covid-19-treatment",
+  2,
+  "Remdesivir (3-day regimen) | Note the eligibility criteria below. This 3-day regimen is indicated for patients with mild-moderate COVID- | 19 (not hypoxic) | El"
+ ],
+ [
+  "guidelines~adult~covid-19-treatment",
+  2,
+  "Baricitinib Adult Dosing | (NOTE: renal dosing uses MDRD equation, which is not available in MiChart. MDRD calculator is available here:) | eGFR ≥ 60 mL/min/1.7"
+ ],
+ [
+  "guidelines~outpatient~ambulatory-covid-19-treatment",
+  1,
+  "Symptom onset range (to | start therapy within)"
+ ],
+ [
+  "guidelines~outpatient~ambulatory-covid-19-treatment",
+  1,
+  "2CDC risk factors include (not all inclusive): Age ≥ 50 years, immunosuppression, chronic lung disease, chronic kidney disease, chronic liver disease, | neurolo"
+ ],
+ [
+  "guidelines~outpatient~paxlovid-drug-drug-interactions",
+  1,
+  "Non-transplant patient with pharmacist covering the | care area"
+ ],
+ [
+  "guidelines~adult~covid-19-vaccination-timing",
+  2,
+  "o People who completed a COVID-19 vaccination series with a vaccine that has | o been authorized for emergency use by the World Health Organization (WHO) | do n"
+ ],
+ [
+  "guidelines~adult~covid-19-vaccination-timing",
+  2,
+  "• Va ccination prior to transplant: ≥2 weeks prior to transplant. | • Vaccination post –  transplan t: | beginning 1 to 6 months after transplant. | • If patien"
+ ],
+ [
+  "guidelines~adult~pneumonia-treatment",
+  2,
+  "Preferred: | Ampicillin-sulbactam* | 3 g IV q6h  | + Azithromycin 500 | mg IV/PO x1 day, then 250 mg q24h x4 days | Low/high risk PCN allergy***: | Ceftriaxone "
+ ],
+ [
+  "guidelines~adult~pneumonia-treatment",
+  3,
+  "Inpatient, non-ICU community- acquired pneumonia with  risk factors for MDRO (below) | Patients presenting with any of  the following risk factors for drug- res"
+ ],
+ [
+  "guidelines~adult~pneumonia-treatment",
+  4,
+  "bacterial pneumonia would be | expected. Antimicrobials are not"
+ ],
+ [
+  "guidelines~adult~pneumonia-treatment",
+  5,
+  "new or increased sputum production, positive | endotracheal aspirate culture, and no radiographic"
+ ],
+ [
+  "guidelines~adult~pneumonia-treatment",
+  5,
+  "clinical improvement OR discontinue when patient is | no longer ICU status, whichever is shorter"
+ ],
+ [
+  "guidelines~adult~pneumonia-treatment",
+  5,
+  "should be continued for gram-positive coverage | regardless of a negative MRSA screen until a | microbiological diagnosis is confirmed. | See Appendix (page 7) "
+ ],
+ [
+  "guidelines~adult~pneumonia-treatment",
+  7,
+  "Early clinical improvement: | • Community-onset without risk factors (i.e. empiric cefepime): | o Change to | ampicillin/sulbactam | o Step-down to PO amoxicill"
+ ],
+ [
+  "guidelines~adult~influenza-adult",
+  2,
+  "Preferred: | Oseltamivir* 75 mg PO (or via tube) | BID | Alternative | Baloxavir | 40 - 79 kg: 40 mg x1 | ≥ 80 kg: 80 mg x1 | Restricted alternative for patient"
+ ],
+ [
+  "guidelines~adult~influenza-adult",
+  4,
+  "Preferred: | Oseltamivir* 75 mg PO (or via tube) once daily for 7 days | Alternative for patients with a documented intolerance to | oseltamivir or an influenza"
+ ],
+ [
+  "guidelines~adult~animal-bite-adult",
+  1,
+  "Preferred | Amoxicillin-clavulanate | 875-125 mg PO BID | Mild PCN Allergy (rash) Cefuroxime 500 mg PO BID | + Clindamycin 450 mg | PO TID | Severe PCN Allergy "
+ ],
+ [
+  "guidelines~adult~animal-bite-adult",
+  1,
+  "Preferred | Ampicillin-sulbactam 3 g | IV q6h | Mild PCN Allergy (rash) Ceftriaxone 1 g IV q24h + Clindamycin 600 mg IV q8h | Severe PCN Allergy | Levofloxacin "
+ ],
+ [
+  "guidelines~adult~animal-bite-adult",
+  2,
+  "Preferred | Amoxicillin-clavulanate | 875-125 mg PO BID | Mild PCN Allergy (rash) | Cefpodoxime 400 mg | PO BID | + Metronidazole 500 | mg PO TID | Severe PCN A"
+ ],
+ [
+  "guidelines~adult~animal-bite-adult",
+  2,
+  "Preferred | Amoxicillin-clavulanate | 875-125 mg PO BID | + Ciprofloxacin 750 mg | PO BID | PCN Allergy | Linezolid 600 mg PO BID | + Ciprofloxacin 750 mg | PO "
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  1,
+  "Clinical Setting | Minor Skin | Infections | Impetigo | • Secondarily | infected skin | lesions such | eczema, ulcers, | or lacerations"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  1,
+  "Comments | • Close clinical follow-up is | recommended, especially in | patients no receiving antibiotic | therapy | • Cultures and susceptibility are | recomme"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  2,
+  "Non-Purulent  Cellulitis | (Absence of purulent drainage or exudate, ulceration, and no associated abscess) | Empiric therapy for β-hemolytic streptococcus is r"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  2,
+  "Non-Purulent | Cellulitis | (Absence of purulent | drainage or exudate, | ulceration, and no | associated abscess) | Empiric therapy for | β-hemolytic | strepto"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  2,
+  "EMPIRIC IV ANTIBIOTIC THERAPY FOR | HOSPITALIZED PATIENTS, INCLUDING PATIENTS | LOW-TO-HIGH RISK PCN ALLERGY***: | Preferred: | Cefazolin*2 g IV q8h | EMPIRIC O"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  2,
+  "5 days for | patients with | rapid clinical | response. | Longer duration | of therapy is | indicated if | infection has | not improved"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  2,
+  "• Blood cultures and cultures from | purulent SSTI are recommended | for patients with fever, rapidly | progressive cellulitis, or signs of | systemic illness |"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  3,
+  "Purulent Cellulitis | (Purulent drainage | or exudate without a | drainable abscess) | Empiric therapy for | CA-MRSA is | recommended | Therapy for β- | hemolyt"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  3,
+  "EMPIRIC ANTIBIOTIC THERAPY FOR HOSPITALIZED | PATIENTS:  | Preferred: | Vancomycin* IV (see nomogram) | Alternative for vancomycin, if | documented allergy or i"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  3,
+  "5-10 days | Longer duration | of therapy is | indicated if | infection has | not improved"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  3,
+  "• Blood cultures and cultures from | purulent SSTI are recommended | for patients with fever, rapidly | progressive cellulitis, or signs of | systemic illness |"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  4,
+  "Necrotizing Fasciitis, | including Fournier’s | Gangrene | Early and aggressive | surgical exploration | and debridement is | critical | Emergent surgical | con"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  4,
+  "PREFERRED: | Piperacillin-tazobactam* 4.5 g IV q6h | + Linezolid 600 mg IV/PO q12h | ALTERNATIVE FOR PATIENTS WITH LOW-TO-HIGH | RISK PENICILLIN ALLERGY, INCLUD"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  4,
+  "Optimal | duration is | depending on | source control | and clinical | response. | Please consult | Infectious | Diseases."
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  4,
+  "• Emergent surgical and infectious | disease consultation is | recommended | • Linezolid is initiated for anti-toxin | activity for \\streptococcal and | staphyl"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  4,
+  "Superficial Surgical | Site Infections | Infections involving | the subcutaneous | tissue within 30 days | of operation | For SSI involving | deep tissue or org"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  4,
+  "All systemic antimicrobial therapy should | be used in combination with opening the | incision and evacuation of infected | material | PREFERRED EMPIRIC INPATIE"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  4,
+  "5 -7 days | Therapy may | need to be | extended based | on severity of | infection and | response to | treatment"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  4,
+  "• Risk factors for GNR include: | o Operation of axilla, GI | o tract, perineum or | female genital tract | • Risk factors for MRSA include: | o nasal colonizat"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  6,
+  "Deep tissue Surgical | Site Infections or | any SSI complicated | by sepsis/septic | shock | Infections involving | the deep fascia or | muscle within 30 | days"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  6,
+  "All systemic antimicrobial therapy should | be used in combination with opening the | incision and evacuation of infected | material | EMPIRIC INPATIENT THERAPY"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  6,
+  "7-10 days | Therapy may | need to be | extended | based on | severity of | infection and | response to | treatment"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  7,
+  "Traumatic Wound | Infections of | Extremity | Usually | polymicrobial from | environmental | contamination | If there is a concern | for necrotizing | fasciitis"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  7,
+  "PREFERRED INPATIENT THERAPY FOR | HEMODYNAMICALLY STABLE PATIENTS WITH ACUTE | INFECTION (< 5 DAYS FROM INJURY), AND NO RISK FOR | MRSA: | Ampicillin-sulbactam*"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  7,
+  "7-14 days | Therapy may need | to be extended | based on severity of | infection and | response to | treatment"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  7,
+  "• Risk factors for MRSA include: | o nasal colonization | o | o prior MRSA infection | o | o recent hospitalization | o | o recent antibiotics | • Traumatic wou"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  8,
+  "CClliinniiccaall SSeettttiinngg | Complicated SSTI | without | Osteomyelitis | Decubitus or sacral | wound infection"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  8,
+  "EEmmppiirriicc TThheerraappyy  | Obtain deep tissue culture prior to | starting antibiotic therapy if patient is | hemodynamically stable | PREFERRED EMPIRIC IN"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  8,
+  "DDuurraattiioonn  | 7- 14 days | Duration may | be longer in the | setting of poor | clinical | response"
+ ],
+ [
+  "guidelines~adult~SSTI-adult",
+  8,
+  "CCoommmmeennttss  | • Blood cultures are recommended | • When clinically indicated, | evaluate for underlying | osteomyelitis | • Cultures of purulent drainage "
+ ],
+ [
+  "guidelines~adult~UTI-Adult",
+  5,
+  "Preferred | Nitrofurantoin 100 mg | PO BID (contraindicated if CrCl < 30 mL/min) | 1st Alternative | TMP-SMX* 1 DS tab PO BID | 2nd Alternative | Cephalexin* 10"
+ ],
+ [
+  "guidelines~adult~UTI-Adult",
+  7,
+  "Preferred: | Ciprofloxacin 750 mg PO | BID | OR | Levofloxacin 750 mg PO | daily | OR | TMP-SMX 1 DS tab PO BID | Alternative for patients with E. coli or E. fa"
+ ],
+ [
+  "guidelines~adult~CDI-diagnostics",
+  2,
+  "Treatment: Not recommended, the negative | predictive value of this test for ruling-out C. diff- | associated diarrhea approaches 99% | Contact Precautions-D: N"
+ ],
+ [
+  "guidelines~adult~CDI-diagnostics",
+  2,
+  "Treatment: Clinically correlate to determine if | treatment is warranted. Consider treatment with | severe, non-resolving, or otherwise unexplained | diarrhea s"
+ ],
+ [
+  "guidelines~adult~bmt-prophylaxis",
+  4,
+  "Adults: | Micafungin 100 mg IV q24h, then Posaconazole delayed-release tabs 300 mg PO/IV◆ daily | Pediatric: | Micafungin 5 mg/kg IV q24h, then Posaconazole del"
+ ],
+ [
+  "guidelines~adult~bmt-prophylaxis",
+  6,
+  "Adult: | Letermovir^ 480 mg PO/IV daily (240 mg daily with cyclosporine) | Pediatric: | ≥30 kg: | Letermovir^ 480 mg PO/IV daily (240 mg daily with cyclosporine"
+ ],
+ [
+  "guidelines~adult~bmt-prophylaxis",
+  6,
+  "1. Continue until day +100; may extend letermovir beyond 100 days in patients with GvHD requiring significant ongoing immunosuppression or with suspicion for de"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "For patients receiving purine  analogue1: | TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly (hold through methotrexate admission until level <0.1 µM)"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly (hold through methotrexate admission until level <0.1 µM)"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~adult~hematology-prophylaxis",
+  1,
+  "TMP-SMX (Bactrim) DS 3 | times weekly"
+ ],
+ [
+  "guidelines~pediatric~blood-stream-infections-pediatric",
+  6,
+  "Gram Stain | *Gram-negative rods: | Cefepime (add metronidazole | for intra-abdominal infections) | *Evaluate if patient has history of resistance to piperacill"
+ ],
+ [
+  "guidelines~pediatric~blood-stream-infections-pediatric",
+  8,
+  "Gram Stain | *Gram-negative rods: | Cefepime (add metronidazole | for intra-abdominal infections) | *Evaluate if patient has history of resistance to piperacill"
+ ],
+ [
+  "guidelines~pediatric~native-valve-endocarditis-pediatrics",
+  3,
+  "Preferred: | Liposomal amphotericin B 3-5 | mg/kg/dose IV q24h1 + Flucytosine 25 mg/kg/dose PO q6h1 | Alternative for Intolerance to Liposomal Amphotericin B/Fl"
+ ],
+ [
+  "guidelines~pediatric~aspergillosis-and-mucormycosis-pediatrics",
+  1,
+  "Infectious Disease Consult is STRONGLY  recommended if aspergillosis is suspected (i.e., | positive biomarker or culture, radiologic findings) | Preferred (all "
+ ],
+ [
+  "guidelines~pediatric~aspergillosis-and-mucormycosis-pediatrics",
+  1,
+  "Infectious Disease Consult is STRONGLY | recommended if mucormycosis is suspected | Primary | Surgical debridement is generally necessary | Liposomal Amphoteric"
+ ],
+ [
+  "guidelines~pediatric~candidiasis-pediatrics",
+  1,
+  "Fluconazole 12 | mg/kg/dose IV daily"
+ ],
+ [
+  "guidelines~pediatric~candidiasis-pediatrics",
+  1,
+  "Patients at high risk of C. krusei or C. glabrata | should not receive empiric fluconazole: patients | with malignancies, patients with diabetes, patients | wit"
+ ],
+ [
+  "guidelines~pediatric~candidiasis-pediatrics",
+  1,
+  "Transition to fluconazole or voriconazole in patients in whom an oral option | is needed once they are clinically stable, are no longer candidemic | Preferred ("
+ ],
+ [
+  "guidelines~pediatric~candidiasis-pediatrics",
+  1,
+  "Transition to voriconazole within 5-7 days is appropriate in patients who are | clinically stable, are no longer candidemic, and who have voriconazole- | suscep"
+ ],
+ [
+  "guidelines~pediatric~candidiasis-pediatrics",
+  3,
+  "Empiric therapy for patients with | unexplained fever or other signs of | infection and who are at high risk for | invasive candidiasis: | High risk for Candida"
+ ],
+ [
+  "guidelines~pediatric~candidiasis-pediatrics",
+  3,
+  "*Lumbar puncture and a dilated retinal examination are | recommended in neonates with cultures positive for Candida | species from blood and/or urine | *Compute"
+ ],
+ [
+  "guidelines~pediatric~intra-abdominal-infections-pediatrics",
+  2,
+  "Severe sepsis or septic shock  secondary to intra-abdominal | infection (excluding NEC in neonates)"
+ ],
+ [
+  "guidelines~pediatric~intra-abdominal-infections-pediatrics",
+  2,
+  "Necrotizing enterocolitis (NEC) in | neonates, including patients with severe sepsis/septic shock"
+ ],
+ [
+  "guidelines~pediatric~clostridiodies-difficile-pediatric",
+  1,
+  "Treatment is only indicated in SYMPTOMATIC patients | ▪ Discontinue/change antibiotics if possible | ▪ Avoid PPI/H2 blockers without an appropriate indication |"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Duration: | - Azithromycin: 3 days | - Ciprofloxacin: 3-5 days | - Bacteremia: 7-14 days, in conjunction with ID consult recommendations – may be able to step d"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Duration: | - No bacteremia: 5 days | - Bacteremia: 7-10 days, in conjunction with ID consult recommendations | Pediatric Infectious Diseases consult is | recom"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Duration: | - 7-14 days, in conjunction with ID consult recommendations | - 14 days is recommended if using | amoxicillin or TMP-SMX; discuss | dosing with ID p"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Duration: | - Azithromycin: 3 days | - Ciprofloxacin: 3 days | - TMP-SMX: 5 days | - Sepsis/bacteremia/invasive disease: | 7-14 days, in conjunction with ID con"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Antibiotics recommended for ALL patients requiring admission for Vibrio infection. | Uncomplicated: | Preferred: | Doxycycline# 2.2 mg/kg/DOSE PO BID (max: 100 "
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Duration: | - Doxycycline: 5 days | - Ciprofloxacin: 5 days | - Bacteremia/invasive disease: | minimum 7 days, in conjunction with ID consult | Pediatric Infect"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Duration: | - Without bacteremia: 5 days | - With bacteremia: 21 days or in conjunction with ID consult (no clear duration recommended; literature is primarily "
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Pediatric Infectious Diseases consult is | recommended for patients with bacteremia or evidence of invasive infection. | Laboratory monitoring (including CBC, B"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  5,
+  "Duration: | - Azithromycin: 3 days | - Ciprofloxacin: 3-5 days | Pediatric Infectious Diseases consult is | recommended for patients with bacteremia or evidence"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  9,
+  "Duration: | - Azithromycin: 3 days | - Ciprofloxacin: 3-5 days | Pediatric Infectious Diseases consult is | recommended for patients with bacteremia or evidence"
+ ],
+ [
+  "guidelines~pediatric~infectious-diarrhea-pediatrics",
+  10,
+  "Duration: | - Initial course: | o Metronidazole: 7-10 days | o Tinidazole: 3-5 days | - Intraluminal agents: | o Paromomycin: 7 days | Pediatric Infectious Dise"
+ ],
+ [
+  "guidelines~outpatient~Lyme-Pediatrics",
+  2,
+  "High-risk tick exposure (all 3 | criteria): | 1. Bite was from an Ixodes  spp. vector species (or unknown spp.) | 2. It occurred in a highly endemic area (State"
+ ],
+ [
+  "guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+  3,
+  "Ampicillin, or vancomycin if | central line or MRSA colonized | and gentamicin"
+ ],
+ [
+  "guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+  3,
+  "Ampicillin, or vancomycin if | central line or MRSA colonized (change to ampicillin if cultures negative at 48hrs) | and gentamicin"
+ ],
+ [
+  "guidelines~pediatric~pneumonia-pediatrics",
+  2,
+  "Non-severe / Uncomplicated  Inpatient Community-Acquired  Pneumonia | Excludes pneumonia with: | Loculated or moderate-large effusion, abscess, necrosis, bacter"
+ ],
+ [
+  "guidelines~pediatric~pneumonia-pediatrics",
+  2,
+  "1st line: | Ampicillin* 50 | mg/kg/DOSE IV q6h (max: 2 g/DOSE) | Low/High-risk penicillin allergy2 | OR failed high-dose amoxicillin6: | Ceftriaxone 100 mg/kg o"
+ ],
+ [
+  "guidelines~pediatric~pneumonia-pediatrics",
+  2,
+  "1st line: | Amoxicillin* 30 | mg/kg/DOSE PO TID (max: 1 g/DOSE) | Penicillin allergy: | Doxycycline 2.2 mg/kg/DOSE PO BID (max: 100 mg/DOSE) | OR | Clindamycin "
+ ],
+ [
+  "guidelines~pediatric~pneumonia-pediatrics",
+  3,
+  "1st line: | Ampicillin-sulbactam* 50 mg | ampicillin/kg q6h (max: 2 g ampicillin/DOSE)  | + MRSA nasal swab | Low/high-risk penicillin allergy2: | Ceftriaxone 1"
+ ],
+ [
+  "guidelines~pediatric~pneumonia-pediatrics",
+  3,
+  "1st line: | Amoxicillin-clavulanate*5 30 | amoxicillin mg/kg/DOSE PO TID (max: 1 g amoxicillin/DOSE) | Penicillin allergy: | Levofloxacin*: | <5 years: | 10 mg/"
+ ],
+ [
+  "guidelines~pediatric~pneumonia-pediatrics",
+  4,
+  "1st line: | Ceftriaxone 100 mg/kg once, then 50 mg/kg/DOSE IV q12h (max: 2 g/DOSE)  1st line: | + Vancomycin* Amoxicillin-clavulanate*5 30 | amoxicillin mg/kg/D"
+ ],
+ [
+  "guidelines~pediatric~pneumonia-pediatrics",
+  4,
+  "• Duration: | 5 days (IV + oral) for patients who defervesce within 72 hours and have resolution of vital sign abnormalities by the time of antibiotic discontin"
+ ],
+ [
+  "guidelines~pediatric~pneumonia-pediatrics",
+  6,
+  "Empiric therapy | should be guided by previous | culture data. Patients with non- | severe CAP do NOT require | cefepime or vancomycin unless | dictated by cult"
+ ],
+ [
+  "guidelines~pediatric~influenza-pediatrics",
+  4,
+  "Preferred for Influenza A: | Oseltamivir* | Infants ≥ 3 months and < 12 months: | < 9 months: 3 mg/kg PO once daily ≥ 9 months: 3.5 mg/kg PO once daily | Childr"
+ ],
+ [
+  "guidelines~pediatric~animal-bite-pediatrics",
+  1,
+  "Preferred: | Amoxicillin-clavulanate* | 25 mg amoxicillin/kg/dose PO BID (max: 875 mg amoxicillin/dose) of a 7:1 formulation, see comments. | 1,2 | PCN allergy "
+ ],
+ [
+  "guidelines~pediatric~animal-bite-pediatrics",
+  2,
+  "Preferred: | Amoxicillin-clavulanate* | 25 mg amoxicillin/kg/dose PO BID (max: 875 mg amoxicillin/dose) of a 7:1 formulation, see comments. + Ciprofloxacin* 15 "
+ ],
+ [
+  "guidelines~pediatric~skin-and-soft-tissue-infections-pediatrics",
+  2,
+  "Duration: | 5 days | • May extend therapy up to 7- | 10 days if lack of symptom | resolution at 5 days. | Cephalexin and cefazolin provide | coverage for group "
+ ],
+ [
+  "guidelines~pediatric~skin-and-soft-tissue-infections-pediatrics",
+  4,
+  "specific skin care | recommendations are | needed | Common pathogens: | Staphylococcus aureus | (MSSA predominantly | reported in the literature)"
+ ],
+ [
+  "guidelines~pediatric~skin-and-soft-tissue-infections-pediatrics",
+  4,
+  "• Minimum of 48-72 hours | after completion of surgical | debridement"
+ ],
+ [
+  "guidelines~pediatric~skin-and-soft-tissue-infections-pediatrics",
+  4,
+  "and sensitivities. | Linezolid has in-vitro data that | demonstrates suppression of toxin | production with S. aureus and | group A streptococcus. Clinical | su"
+ ],
+ [
+  "guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+  1,
+  "ro m u T  d i | lo S"
+ ],
+ [
+  "guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+  3,
+  "Atovaquone 30 | mg/kg PO daily"
+ ],
+ [
+  "guidelines~outpatient~ambulatory-rhinosinusitis",
+  2,
+  "Uncomplicated Acute Bacterial Rhinosinusitis: | 5 days for | patients who have improvement in symptoms within 3-5 days | Acute Bacterial Rhinosinusitis after fa"
+ ],
+ [
+  "guidelines~outpatient~amb-CAP",
+  2,
+  "Preferred*: | Amoxicillin-clavulanate 875-125 mg PO twice daily | Alternatives: | Doxycycline 100 mg PO twice daily | *If high clinical suspicion for atypical p"
+ ],
+ [
+  "guidelines~outpatient~ambulatory-skin-and-soft-tissue-infections-adult",
+  2,
+  "• Close clinical follow-up is recommended | • Doxycycline is not effective against Group B Streptococcus infections and should be avoided in non-purulent cellul"
+ ],
+ [
+  "guidelines~outpatient~ambulatory-skin-and-soft-tissue-infections-adult",
+  2,
+  "• Consider inpatient admission for patients with fever, rapidly progressive cellulitis, or signs of systemic illness | • Consider culture and susceptibility of "
+ ],
+ [
+  "guidelines~outpatient~ambulatory-skin-and-soft-tissue-infections-adult",
+  2,
+  "Mild infection: | Preferred: | Amoxicillin-clavulanateα 875 | mg PO BID | Alternative (history of MRSA): | TMP-SMXα 1-2 DS tabs PO BID | Moderate infection**, o"
+ ],
+ [
+  "guidelines~outpatient~ambulatory-skin-and-soft-tissue-infections-adult",
+  2,
+  "• Diabetic Foot Infection Workflow | • Consider inpatient admission for patients with fever, rapidly progressive cellulitis, or signs of systemic illness | • Re"
+ ],
+ [
+  "guidelines~outpatient~ambulatory-urinary-tract-infections-adult",
+  3,
+  "In most circumstances, asymptomatic | bacteriuria should not be treated, | regardless of pyuria, bacterial density, or isolation of resistant organisms. | Treat"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  3,
+  "allergies, including anaphylaxis, can receive | cephalosporin-based prophylaxis"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  4,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  5,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  6,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  7,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  7,
+  "S. aureus | S. epidermidis | gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  8,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  9,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  9,
+  "Enteric gram-negative bacilli | Enterococci | anaerobes (Bacteroides spp., Clostridia) | S. aureus"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  10,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  10,
+  "Enteric gram-negative bacilli | Enterococci | anaerobes (Bacteroides spp., Clostridia) | S. aureus"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  11,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  11,
+  "Upper airway flora (aerobic, anaerobic Streptococci) | S. aureus | more rarely aerobic gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  11,
+  "Enteric gram-negative bacilli (e.g., E.  coli, Klebsiella) | Enterococci | S. aureus | anaerobes (Bacteroides spp., Clostridia) common with stents, biliary obst"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  12,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  12,
+  "Enteric gram-negative bacilli (e.g., E.  coli, Klebsiella) | Enterococci | S. aureus | anaerobes (Bacteroides spp., Clostridia) common with stents, biliary obst"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  12,
+  "Enteric gram-negative bacilli | Enterococci | anaerobes (Bacteroides spp., Clostridia) | S. aureus"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  13,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  14,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anap"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  14,
+  "Adults: | TMP-SMX (Bactrim®) 1 DS PO, | ideally 1-4 hrs prior | OR | Amoxicillin-clavulanate 875 mg PO, | ideally 2-4 hrs prior | OR | Cefazolin"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  15,
+  "S. aureus | S. epidermidis | enteric gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  18,
+  "Adrenalectomy, Retroperitoneal/pelvic  lymphadenectomy | without entering the urinary tract"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  18,
+  "Adults: | Cefuroxime  + Metronidazole | OR | Cefoxitin | Optional oral antimicrobials in combination with above prophylaxis recommendations: | neomycin sulfate "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  18,
+  "Adults: | Levofloxacin 500 mg IV/PO | + Metronidazole | If history of MRSA infection or colonization: | Daptomycin  + Gentamicin | Optional oral antimicrobials "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  19,
+  "Staphylococci | enteric gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  21,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  21,
+  "Oral anaerobes | enteric gram-negative bacilli | S. aureus | S. epidermidis | viridans streptococci"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  22,
+  "Adults: | Ampicillin-sulbactam | If history of MRSA infection or colonization: | + Vancomycin | No post-operative prophylaxis for routine | pituitary adenoma su"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  23,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies, including  anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  25,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  25,
+  "S. aureus | S. epidermidis | gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  25,
+  "Adults: | Ampicillin-sulbactam | If history of MRSA infection or colonization: | + Vancomycin | No post-operative prophylaxis for routine | pituitary adenoma su"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  26,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  26,
+  "S. aureus | S. epidermidis | Streptococci | enteric gram-negative bacilli | Pseudomonas spp."
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  27,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies, including  anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  30,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  30,
+  "Breast reconstruction (without implants), cosmetic | procedures (excluding blepharoplasty), large hand | dissections*, phalloplasty, vaginoplasty, and  general "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  30,
+  "Oral anaerobes | enteric gram-negative bacilli | S. aureus | S. epidermidis | viridans streptococci"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  31,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  32,
+  "See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anaphylaxis, can receive | "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  33,
+  "See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anaphylaxis, can receive | "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  33,
+  "NOT USUALLY INDICATED; consider in | the following instances: | • Immunosuppressed patient | • Plan to leave sheath in place | Adults: | Cefuroxime | OR | Cefox"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  34,
+  "See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anaphylaxis, can receive | "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  34,
+  "NOT USUALLY INDICATED; consider in | the following instances: | • Immunosuppressed | • Plan to place covered stent, overnight lysis, or plan to leave sheath in "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  35,
+  "See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anaphylaxis, can receive | "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  35,
+  "Not usually indicated; consider in the | following instances: | immunosuppressed, needle trajectory"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  36,
+  "See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anaphylaxis, can receive | "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  36,
+  "Not usually indicated consider in the | following instances: | immunosuppressed, needle trajectory traversing colonized organ system/fluid collection. | Antibio"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  37,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  38,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  39,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  42,
+  "q2h x2 redoses | q2h x2 redoses | q4h x2 redoses | q4h x2 redoses  | q4h x2 redoses | q2 x2 redoses | None | q4h x2 redoses | None"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~adult-surgical-prophylaxis",
+  43,
+  "Clindamycin 20 mg/kg max: 900 mg | Co-trimoxazole 5 mg/kg TMP max: 160 mg TMP | Daptomycin | max: 500 mg | Fluconazole 6 mg/kg max: 400 mg | Gentamicin/ Tobramy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  2,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  2,
+  "S. aureus | S. epidermidis | gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  3,
+  "Alternative regimenα | See footnote for optimal approach in patients with | β-lactam allergies: almost all patients with  penicillin allergies, including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  3,
+  "Enteric gram-negative bacilli | Enterococci | anaerobes (Bacteroides spp., Clostridia) | S. aureus"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  3,
+  "Pediatrics | : | Cefuroxi | me OR | Vancomycin"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  3,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies,  including anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  3,
+  "Enteric gram-negative bacilli | Enterococci | anaerobes (Bacteroides spp., Clostridia) S. aureus"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  3,
+  "Pediatrics: | Cefoxitin | Optional oral regimens: | Neomycin 20 mg/kg/dose PO + Metronidazole 10 mg/kg/dose PO OR Neomycin 20 mg/kg/dose | + | Erythromycin | ba"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  3,
+  "Enteric gram-negative bacilli Enterococci | anaerobes (Bacteroides spp., Clostridia) S. aureus"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  5,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  6,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  6,
+  "S. aureus | S. epidermidis | enteric gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  6,
+  "Staphylococci | enteric gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  7,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  8,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  9,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  9,
+  "S. aureus | S. epidermidis | gram-negative bacilli"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  10,
+  "Alternative regimenα | See footnote for optimal approach in patients with β-lactam | allergies: almost all patients with penicillin allergies, including  anaphy"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  11,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  11,
+  "Breast reconstruction (without implants), cosmetic | procedures (excluding blepharoplasty), large hand | dissections*, phalloplasty, vaginoplasty, and  general "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  11,
+  "Oral anaerobes | enteric gram-negative bacilli | S. aureus | S. epidermidis | viridans streptococci"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  13,
+  "See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anaphylaxis, can receive | "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  14,
+  "See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anaphylaxis, can receive | "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  14,
+  "NOT USUALLY INDICATED; consider in the | following instances: | • Immunosuppressed | • Plan to leave sheath in place | Pediatrics: | Cefoxitin"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  15,
+  "See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin | allergies, including anaphylaxis, can receive | "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  15,
+  "NOT USUALLY INDICATED; consider in | the following instances: | • Immunosuppressed | • Plan to place covered stent, overnight lysis, or plan to leave sheath in "
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  16,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  17,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  18,
+  "Alternative regimenα | See footnote for optimal approach in patients with β- | lactam allergies: almost all patients with penicillin  allergies, including anaph"
+ ],
+ [
+  "guidelines~surgical-prophylaxis~pediatric-surgical-prophylaxis-guidelines",
+  18,
+  "Lower extremity amputation for ischemia  Phlebectomy of varicose veins, stripping of varicose  veins, ligation of varicose veins (e.g., Saphenous Vein | strippi"
+ ]
+]

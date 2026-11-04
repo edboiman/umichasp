@@ -175,11 +175,19 @@ def strip_bullet(line):
     t = line["text"]
     m = re.match(rf"^([{re.escape(BULLETS)}]|\d{{1,2}}[.)]|[a-z][.)])\s+", t)
     if not m: return None
-    n = len(m.group(0)); runs = [dict(r) for r in line["runs"]]
-    while n > 0 and runs:
-        lead = len(runs[0]["t"]) - len(runs[0]["t"].lstrip())
-        take = min(len(runs[0]["t"]), n + lead); runs[0]["t"] = runs[0]["t"][take:]; n -= take - lead
-        if not runs[0]["t"]: runs.pop(0)
+    # remove exactly the characters of the bullet and its following whitespace, counted on the raw runs
+    full = "".join(r["t"] for r in line["runs"])
+    i, seen = 0, 0
+    target = len(m.group(0).rstrip())          # visible bullet characters
+    while i < len(full) and seen < target:
+        if not full[i].isspace(): seen += 1
+        i += 1
+    while i < len(full) and full[i].isspace(): i += 1
+    runs, cut = [], i
+    for r in line["runs"]:
+        r = dict(r)
+        if cut >= len(r["t"]): cut -= len(r["t"]); continue
+        r["t"] = r["t"][cut:]; cut = 0; runs.append(r)
     return m.group(1), runs
 
 def cell_blocks(lines, width=None):
@@ -211,15 +219,44 @@ def tidy_table(rows):
     if not rows: return rows
     width = max(len(r["cells"]) for r in rows)
     for r in rows: r["cells"] += ["H"] * (width - len(r["cells"]))
+    # Column compaction: merge adjacent grid columns when, in every row, one side is only a placeholder
+    # (part of a merged cell, or a padding sliver). Real empty cells block merging.
+    def ph(c): return c in ("H", "V")
+    def has(c): return isinstance(c, list) and bool(c)
+    i = 0
+    while i < width - 1:
+        ok = True
+        for r in rows:
+            if r["span"]: continue
+            a, b = r["cells"][i], r["cells"][i + 1]
+            if has(a) and has(b): ok = False; break
+            if not (ph(a) or ph(b)): ok = False; break
+        if ok:
+            for r in rows:
+                a, b = r["cells"][i], r["cells"][i + 1]
+                if r["span"]: nc = a if isinstance(a, list) else b
+                elif has(a) or (isinstance(a, list) and not has(b)): nc = a
+                elif has(b) or isinstance(b, list): nc = b
+                else: nc = "V" if "V" in (a, b) else "H"
+                r["cells"][i:i + 2] = [nc]
+            width -= 1
+        else:
+            i += 1
     merged = []
     for r in rows:
-        if not r["span"] and merged and not merged[-1]["span"] and any(c == "V" for c in r["cells"]):
+        nv = sum(1 for c in r["cells"] if c == "V")
+        nreal = sum(1 for c in r["cells"] if isinstance(c, list) and c)
+        # Fold into the row above only for sub-rows of one cell (e.g. weight bands inside a dose cell).
+        # Rows with their own content in several columns are separate rows; spanning cells are inherited.
+        if not r["span"] and merged and not merged[-1]["span"] and nv and nreal <= 1:
             prev = merged[-1]
             for i, c in enumerate(r["cells"]):
                 if isinstance(c, list) and c:
                     if isinstance(prev["cells"][i], list): prev["cells"][i] = prev["cells"][i] + c
                     else: prev["cells"][i] = c
             continue
+        if not r["span"]:
+            r["v"] = [i for i, c in enumerate(r["cells"]) if c == "V"]
         merged.append(r)
     keep = [i for i in range(width) if any(isinstance(r["cells"][i], list) and cell_text(r["cells"][i]) for r in merged if not r["span"])] or [0]
     out = []
@@ -227,6 +264,7 @@ def tidy_table(rows):
         if r["span"]:
             r["cells"] = [next(c for c in r["cells"] if isinstance(c, list))]
         else:
+            r["v"] = [keep.index(i) for i in r.get("v", []) if i in keep]
             r["cells"] = [r["cells"][i] if isinstance(r["cells"][i], list) else [] for i in keep]
         t = cell_text(r["cells"][0]) if r["cells"] else ""
         if r["span"] and out and not out[-1]["span"]:
@@ -309,9 +347,22 @@ def page_blocks(page, body_size):
         return n
     tables = [t for t in tables if not (area(t.bbox) > .55 * W * H and text_cells(t) <= 1)]
     tables = [t for t in tables if not any(contains(o.bbox, t.bbox) for o in tables if o is not t)]  # nested: keep the outer
+    # Words that overflow a cell border stay whole: every character is placed using its word's first character.
+    anchor = {}
+    seq = sorted([c for c in page.chars if c["text"].strip()], key=lambda c: (round(c["bottom"]), c["x0"]))
+    prev = None
+    for c in seq:
+        if prev is not None and abs(c["bottom"] - prev["bottom"]) < 1.2 and -1.5 <= c["x0"] - prev["x1"] < .25 * c["size"]:
+            anchor[id(c)] = anchor[id(prev)]
+        else:
+            anchor[id(c)] = c
+        prev = c
+    A = lambda c: anchor.get(id(c), c)
     cell_boxes = [cb for t in tables for r in t.rows for cb in r.cells if cb]
     def in_cell(c, cb): return cb[0] - 1 <= (c["x0"] + c["x1"]) / 2 <= cb[2] + 1 and cb[1] - 1 <= (c["top"] + c["bottom"]) / 2 <= cb[3] + 1
-    def in_tables(c): return any(in_cell(c, cb) for cb in cell_boxes)
+    def in_tables(c):
+        c = A(c)
+        return any(in_cell(c, cb) for cb in cell_boxes) or any(t.bbox[0] <= (c["x0"] + c["x1"]) / 2 <= t.bbox[2] and t.bbox[1] <= (c["top"] + c["bottom"]) / 2 <= t.bbox[3] for t in tables)
     chars = [c for c in page.chars if c["text"] not in ("​",)]
     free = chars_to_lines([c for c in chars if not in_tables(c)], split_gaps=layout_boxes(page) or None)
     items = [("line", L["top"], L, (L["x0"], L["top"], L["x1"], L["bottom"])) for L in free] + \
@@ -324,9 +375,31 @@ def page_blocks(page, body_size):
             col_boxes = [c.bbox for c in obj.columns]
             for row in obj.rows:
                 cells = []
+                wide = [cb for cb in row.cells if cb is not None and cb[2] - cb[0] >= 8]
+                def owner(c):
+                    """the wide cell a character belongs to; chars in narrow padding slivers go to the nearest wide cell"""
+                    c = A(c)
+                    cx, cy = (c["x0"] + c["x1"]) / 2, (c["top"] + c["bottom"]) / 2
+                    for cb in wide:
+                        if cb[0] - 1 <= cx <= cb[2] + 1 and cb[1] - 1 <= cy <= cb[3] + 1: return cb
+                    if not any(cb and cb[2] - cb[0] < 8 and cb[0] - 1 <= cx <= cb[2] + 1 and cb[1] - 1 <= cy <= cb[3] + 1 for cb in row.cells):
+                        return None
+                    best, bd = None, 1e9
+                    for cb in wide:
+                        if not (cb[1] - 1 <= cy <= cb[3] + 1): continue
+                        d = 0 if cb[0] - 1 <= cx <= cb[2] + 1 else min(abs(cx - cb[0]), abs(cx - cb[2]))
+                        if d < bd: best, bd = cb, d
+                    return best if bd <= 9 else None
+                row_chars = [c for c in chars if any(cb and cb[1] - 1 <= (A(c)["top"] + A(c)["bottom"]) / 2 <= cb[3] + 1 and cb[0] - 10 <= (A(c)["x0"] + A(c)["x1"]) / 2 <= cb[2] + 10 for cb in row.cells)]
+                by_cell = {}
+                for c in row_chars:
+                    o = owner(c)
+                    if o is not None: by_cell.setdefault(o, []).append(c)
                 for ci, cb in enumerate(row.cells):
+                    if cb is not None and cb[2] - cb[0] < 8:
+                        cells.append("H"); continue          # padding sliver: never holds text
                     if cb is not None:
-                        cells.append(cell_blocks(chars_to_lines([c for c in chars if in_cell(c, cb)]), cb[2] - cb[0] - 8))
+                        cells.append(cell_blocks(chars_to_lines(by_cell.get(cb, [])), cb[2] - cb[0] - 8))
                         continue
                     # None = merged. Horizontal if another cell in this row covers this column; else vertical.
                     cx = (col_boxes[ci][0] + col_boxes[ci][2]) / 2 if ci < len(col_boxes) else None
@@ -342,7 +415,7 @@ def page_blocks(page, body_size):
                 for r in rows:            # a box, not a table: emit its contents as paragraphs and bullets
                     for para in r["cells"][0]:
                         txt = runs_text(para).strip()
-                        m = re.match(rf"^([{re.escape(BULLETS)}]|\d{{1,2}}[.)])\s*", txt)
+                        m = re.match(rf"^([{re.escape(BULLETS.replace('o', ''))}]|o(?=\s)|\d{{1,2}}[.)])\s*", txt)   # "o" is a bullet only when followed by a space ("or if…" is text)
                         if m and len(txt) > len(m.group(0)):
                             p2 = [dict(x) for x in para]; n = len(m.group(0))
                             while n > 0 and p2:

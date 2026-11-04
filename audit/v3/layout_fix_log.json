@@ -1,0 +1,20 @@
+[
+ {
+  "guideline": "pharmacokinetics~aminoglycoside-adult",
+  "replaced_blocks": [
+   1,
+   29
+  ],
+  "new_blocks": 1,
+  "words": 311
+ },
+ {
+  "guideline": "guidelines~pediatric~blood-stream-infections-pediatric",
+  "replaced_blocks": [
+   9,
+   21
+  ],
+  "new_blocks": 3,
+  "words": 57
+ }
+]

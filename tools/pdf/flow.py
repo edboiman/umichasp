@@ -6,6 +6,22 @@ import convert as C
 LAP = {"line_margin": 0.5, "char_margin": 2.0, "boxes_flow": None}
 
 
+CONT_END = re.compile(r"(?i)(\b(and|or|of|the|a|an|to|for|in|with|by|on|at|from|than|as|is|are|be|if|when|who|that|plus)|[,(/+\-–])$")
+def node_paras(lines):
+    """Flowchart boxes hold short centred statements: keep each source line separate unless it clearly continues."""
+    paras, cur = [], []
+    for L in lines:
+        t = L["text"].strip()
+        if cur:
+            prev = cur[-1]["text"].strip()
+            cont = bool(CONT_END.search(prev)) or (t[:1].islower() and not re.match(r"^o\s", t))
+            if not cont:
+                paras.append(cur); cur = []
+        cur.append(L)
+    if cur: paras.append(cur)
+    return [C.join_lines(p) for p in paras]
+
+
 def node_boxes(page):
     H = page.height
     boxes = []
@@ -29,7 +45,7 @@ def node_boxes(page):
     for b in boxes:
         lines = C.chars_to_lines(b["chars"])
         if not lines: continue
-        paras = [p for p in C.cell_blocks(lines, b["bb"][2] - b["bb"][0]) if C.runs_text(p).strip()]
+        paras = [p for p in node_paras(lines) if C.runs_text(p).strip()]
         text = " ".join(C.runs_text(p) for p in paras)
         if not text.strip() or re.fullmatch(r"(\d+ of \d+|page \d+( of \d+)?|adults?|pediatrics?|peds)", text.strip(), re.I): continue
         out.append({"bb": b["bb"], "paras": paras, "text": text})

@@ -1,0 +1,272 @@
+[
+ {
+  "guideline": "guidelines~adult~PD-Dosing-Adult",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~PST-Procedure",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~cation-interactions",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~Sertonin-Linezolid",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~Antifungal-TDM",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~Warfarin-DDI",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~bone-and-joint-adult",
+  "page": 10,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~endocarditis-algorithm",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~aspergillosis-treatment",
+  "page": 4,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~CDI-treatment",
+  "page": 6,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~intrabdominal-infections-adult",
+  "page": 10,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~bacterial-meningitis-adult",
+  "page": 3,
+  "chars": 846
+ },
+ {
+  "guideline": "guidelines~adult~ocular-infections-adult",
+  "page": 7,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~head-neck-penicillin-allergy",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~Antimicrobial-lock",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~ethanol-lock-therapy",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~Measles-PEP",
+  "page": 2,
+  "chars": 851
+ },
+ {
+  "guideline": "guidelines~adult~obstetrics-gyencologic-treatment",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~obstetrics-allergy",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~malaria-treatment",
+  "page": 7,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~covid-19-vaccination-timing",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~RSV-Treatment",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~influenza-adult",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~animal-bite-adult",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~BCx-algorithm",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~adult~hematology-prophylaxis",
+  "page": 4,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~antimicrobial-dosing-pediatrics",
+  "page": 14,
+  "chars": 732
+ },
+ {
+  "guideline": "pharmacokinetics~vancomycin-pediatrics",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "pharmacokinetics~aminoglycoside-pediatrics",
+  "page": 6,
+  "chars": 845
+ },
+ {
+  "guideline": "guidelines~pediatric~t1-pediatric",
+  "page": 7,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~t2-pediatric",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~bone-and-joint-pediatrics",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~native-valve-endocarditis-pediatrics",
+  "page": 4,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~prosthetic-valve-endocarditis-pediatrics",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~aspergillosis-and-mucormycosis-pediatrics",
+  "page": 4,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~candidiasis-pediatrics",
+  "page": 4,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~intra-abdominal-infections-pediatrics",
+  "page": 8,
+  "chars": 847
+ },
+ {
+  "guideline": "guidelines~pediatric~clostridiodies-difficile-pediatric",
+  "page": 1,
+  "chars": 736
+ },
+ {
+  "guideline": "guidelines~pediatric~deep-neck-space-infections",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~ethanol-lock-therapy-pediatrics",
+  "page": 12,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~bacterial-meningitis-pediatrics",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~perinatal-hiv-pediatrics",
+  "page": 8,
+  "chars": 847
+ },
+ {
+  "guideline": "guidelines~pediatric~necrotizing-enterocolitis-pediatrics",
+  "page": 4,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~cystic-fibrosis-pediatrics",
+  "page": 10,
+  "chars": 847
+ },
+ {
+  "guideline": "guidelines~pediatric~influenza-pediatrics",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~undifferentiated-sepsis-pediatrics",
+  "page": 2,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~animal-bite-pediatrics",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~skin-and-soft-tissue-infections-pediatrics",
+  "page": 7,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~urinary-tract-infections-pediatrics",
+  "page": 3,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~pediatric~hematologyoncology-prophylaxis-pediatrics",
+  "page": 5,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~outpatient~ambulatory-evisit-cough-and-flu",
+  "page": 1,
+  "chars": 732
+ },
+ {
+  "guideline": "guidelines~outpatient~ambulatory-diabetic-foot-protocol",
+  "page": 6,
+  "chars": 732
+ },
+ {
+  "guideline": "pharmacokinetics~pharmacokinetic-workflow",
+  "page": 1,
+  "chars": 732
+ },
+ {
+  "guideline": "pharmacokinetics~pharmacokinetic-review-pediatrics",
+  "page": 14,
+  "chars": 732
+ }
+]

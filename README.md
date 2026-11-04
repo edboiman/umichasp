@@ -10,8 +10,9 @@ Browse by condition, look up any antibiotic, and search every guideline. Works o
 
 - 124 guidelines converted from the program's PDFs into native text: headings, bullets,
   regimen tables (shown as cards on phones), wide dosing grids, footnotes, references, revision history.
-- Flowcharts (for example, the bloodstream infection pathways) shown as step-by-step pathways,
-  with the original chart one tap away. A few charts that can't be expressed as text (for example,
+- A **Flowcharts** tab listing every pathway, chart and algorithm with its guideline. Each opens with the
+  step-by-step pathway (where one could be extracted), the original chart image (tap for full size and pinch-zoom),
+  and a link to the original PDF page. A few charts that can't be expressed as text (for example,
   the BMT infection timeline or the β-lactam cross-reactivity grid) are shown as images, with their text searchable.
 - Every number and drug name in each PDF was checked automatically against the app's text.
   Where a line could not be placed in the layout, it appears verbatim as "More text from page N".
@@ -23,7 +24,8 @@ Browse by condition, look up any antibiotic, and search every guideline. Works o
 2. File → Clone repository → `edboiman/umichasp` → Clone.
 3. In File Explorer, open the cloned folder (usually Documents\GitHub\umichasp).
    **Delete everything in it except the hidden `.git` folder**, then copy in everything from this folder.
-4. Back in GitHub Desktop: type a summary such as "ASP Guide v1", click **Commit to main**, then **Push origin**.
+4. Back in GitHub Desktop: type a summary such as "ASP Guide v3", click **Commit to main**, then **Push origin**.
+   (The upload is about 60 MB because the original PDFs are included in `data/pdf/`; that is within GitHub's limits.)
 5. On github.com, open the repo → **Settings → Pages** → Source: *Deploy from a branch* →
    Branch: `main`, folder `/ (root)` → Save. After a minute or two it's live at
    https://edboiman.github.io/umichasp/
@@ -51,9 +53,11 @@ manifest.webmanifest, sw.js      home-screen install and offline cache
 icons/                           app icons
 data/content.json                all guideline content
 data/fig/                        chart and flowchart images
+data/pdf/                        the 124 original guideline PDFs (linked from every guideline and chart)
 data/drugs.json                  antibiotic names, classes, aliases
 data/taxonomy.json               conditions, body systems, resource groups
-tools/                           capture and PDF conversion scripts
+tools/                           capture and PDF conversion scripts (tools/pdf/make_final.sh documents the build order)
+audit/                           QA reports; audit/v3/ holds the v3 review report, change logs and PDF coverage table
 ```
 
 ## Mobile interface redesign
@@ -68,3 +72,16 @@ The interface has been redesigned across every route. Clinical source files in `
 - Existing search, population filters, saved items, recents, text-size settings, source links, install, and offline chart download remain available.
 
 `audit/` contains the full UI inventory, exact source-content comparison, per-page review coverage, and browser QA results. The supplied app is buildless: publish the files in this folder directly to GitHub Pages; there is no package installation or build step.
+
+
+## Version 3 (November 2026)
+
+- Content re-checked against the 124 PDFs. Clinical text was not added or removed; corrections restore what the PDF says
+  (dropped letters, split words, misplaced table headers, merged table rows, list numbers, the pocket card's disclaimer).
+  Every correction is logged with its guideline in `audit/v3/`, and `audit/v3/V3_REPORT.md` explains them.
+- Cefazolin/oxacillin wording in the endocarditis guidelines, the bloodstream-infection pathway and the *S. aureus*
+  pocket card now matches each PDF exactly, including the CNS-infection qualifier (see the report).
+- The *S. aureus* pocket card is rebuilt as numbered steps, a duration list, the MRSA table and its footnotes.
+- New **Flowcharts** tab (replaces the Saved tab; Saved is now the bookmark icon at the top right of every screen).
+- Each guideline shows its approval line and links to its original PDF.
+- Run `node tools/qa/verify-static.cjs` and open `tools/qa/browser-audit.html` (served locally) to re-run the checks.

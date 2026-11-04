@@ -75,13 +75,24 @@ def structure_table(rows, meta):
         if seg is None: new_seg()
         is_head = (seg["head"] is None and not seg["rows"] and len(cells) > 1 and all(all_bold(c) or not ctext(c) for c in cells)
                    and all(len(t) < 140 for t in texts))
+        head_like = (len(cells) > 1 and all(all_bold(c) or not ctext(c) for c in cells) and all(len(t) < 140 for t in texts))
         if is_head:
             seg["head"] = [head_text(c) for c in cells]
+            seg["_hrows"] = [[cell_paras(c) for c in cells]]
+        elif head_like and seg["head"] is not None and not seg["rows"] and len(cells) == len(seg["head"]):
+            # second line of a two-row header: join onto the first (undone below if the table turns out to have no body rows)
+            seg["head"] = [" ".join(x for x in (h, head_text(c)) if x).strip() for h, c in zip(seg["head"], cells)]
+            seg.setdefault("_hrows", []).append([cell_paras(c) for c in cells])
         else:
             seg["rows"].append([cell_paras(c) for c in cells])
+            seg.setdefault("_v", []).append(set(r.get("v", [])))
     res = []
     for s in out:
         if s["t"] != "table": res.append(s); continue
+        hrows = s.pop("_hrows", None)
+        if not s["rows"] and hrows and len(hrows) > 1:
+            # all-bold grid with no body (e.g. a contents grid): keep each source row as its own row instead of one merged header
+            s["head"] = None; s["rows"] = hrows; s["_v"] = [set() for _ in hrows]
         if not (s["rows"] or s["head"]):
             if s.get("caption"): res.append({"t": "h", "l": 3, "r": [[s["caption"], "b"]]})
             continue
@@ -90,6 +101,18 @@ def structure_table(rows, meta):
         keep = [i for i in range(n) if has(i)]
         if s["head"]: s["head"] = [s["head"][i] if i < len(s["head"]) else "" for i in keep]
         s["rows"] = [[r[i] if i < len(r) else [] for i in keep] for r in s["rows"]]
+        # A column filled only in the first row and inherited (row-spanning) by every later row applies to all rows.
+        vs = s.pop("_v", [])
+        if len(s["rows"]) > 1 and len(vs) == len(s["rows"]):
+            for i in range(len(keep)):
+                src_i = keep[i]
+                if s["rows"][0][i] and all(not r[i] for r in s["rows"][1:]) and all(src_i in v for v in vs[1:]):
+                    s.setdefault("shared", []).append({"label": s["head"][i] if s["head"] else "", "p": s["rows"][0][i]})
+                    s["rows"][0][i] = []
+            if s.get("shared"):
+                emptycols = [i for i in range(len(keep)) if all(not r[i] for r in s["rows"])]
+                if s["head"]: s["head"] = [h for i, h in enumerate(s["head"]) if i not in emptycols]
+                s["rows"] = [[c for i, c in enumerate(r) if i not in emptycols] for r in s["rows"]]
         res.append(s)
     return res
 
@@ -108,7 +131,7 @@ def render_fig(key, pg, w=1200):
 def is_flow_page(info): return info["shapes"] >= 10 and info["arrows"] >= 6
 def is_fig_page(info): return len(info["lost"]) >= 4 or is_flow_page(info)
 
-SUP = str.maketrans("0123456789,-+", "⁰¹²³⁴⁵⁶⁷⁸⁹'⁻⁺")
+SUP = str.maketrans("0123456789-+", "⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺")   # a superscript comma stays a plain comma ("³,⁴")
 def head_text(cell):
     return " ".join("".join(r["t"].translate(SUP) if r.get("s") else r["t"] for r in p) for p in cell).strip()
 
@@ -168,6 +191,7 @@ for p in src["pages"]:
                 if x.get("pg") not in (pg - 1, pg, pg + 1) or x["t"] == "rec": continue
                 if x["t"] == "table":
                     parts += (x.get("head") or []) + [x.get("caption") or ""] + [" ".join("".join(q[0] for q in para) for para in c) for r in x["rows"] for c in r]
+                    parts += [s.get("label", "") + " " + " ".join("".join(q[0] for q in para) for para in s["p"]) for s in x.get("shared", [])]
                 elif x["t"] == "flow":
                     parts += [(c.get("head") or "") + " " + " ".join("".join(q[0] for q in para) for para in n["p"]) for c in x["cols"] for n in c["nodes"]]
                 elif "r" in x: parts.append("".join(q[0] for q in x["r"]))
@@ -176,6 +200,8 @@ for p in src["pages"]:
         SUPN = str.maketrans("⁰¹²³⁴⁵⁶⁷⁸⁹", "0123456789")
         def tk(s): return set(t.lower() for t in re.findall(r"[A-Za-z]{4,}|\d+(?:[.,]\d+)*", re.sub(r"([A-Za-z])(\d{1,2})\b", r"\1 \2", s.translate(SUPN))))
         added = 0
+        def alnum(s): return re.sub(r"[^a-z0-9]", "", s.translate(SUPN).lower())
+        doc_alnum = alnum(" ".join(page_app_text(q) for q in range(1, len(pdfd) + 1)))
         for pg in range(1, len(pdfd) + 1):
             if pg in fig_pages and any(x["t"] == "fig" and x["pg"] == pg for x in blocks): continue
             have = tk(page_app_text(pg))
@@ -186,7 +212,7 @@ for p in src["pages"]:
                 if re.fullmatch(r"[-–\d.,%/ ]+", line) or re.fullmatch(r"(?i)[\d\-–<>= ]*\s*m?l/min\s*crcl\s*\d*", line): continue
                 lt = tk(line)
                 important = {t for t in lt if t in DRUGW or (re.fullmatch(r"\d+(?:[.,]\d+)*", t) and len(t) >= 2)}
-                if important - have:
+                if important - have and alnum(line) not in doc_alnum:
                     recovered.append(line); have |= lt
             if recovered:
                 at = max([i for i, x in enumerate(blocks) if x.get("pg") == pg] or [len(blocks) - 1]) + 1
@@ -197,6 +223,7 @@ for p in src["pages"]:
         merged = []
         for b in blocks:
             if (b["t"] == "table" and merged and merged[-1]["t"] == "table" and not b.get("caption")
+                    and json.dumps(b.get("shared")) == json.dumps(merged[-1].get("shared"))
                     and (b.get("head") is None or b.get("head") == merged[-1].get("head"))
                     and len(b["rows"][0]) == len(merged[-1]["rows"][0] if merged[-1]["rows"] else merged[-1]["head"] or [])):
                 merged[-1]["rows"] += b["rows"]; continue

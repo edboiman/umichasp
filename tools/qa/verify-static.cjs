@@ -2,7 +2,7 @@ const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('p
 const root=process.argv[2]?path.resolve(process.argv[2]):path.resolve(__dirname,'../..'), handlers={},added=[],deleted=[],puts=[];
 let hit=null,online=true;
 const cache={addAll:async paths=>{for(const p of paths){assert(fs.existsSync(path.join(root,p)));added.push(p);}},match:async()=>hit,put:async(...args)=>puts.push(args)};
-const context={self:{addEventListener:(type,fn)=>handlers[type]=fn,skipWaiting:async()=>{},clients:{claim:async()=>{}}},caches:{open:async()=>cache,keys:async()=>['old-version','asp-guide-ui-20261103-v2'],delete:async k=>deleted.push(k)},location:{origin:'https://example.test'},URL,fetch:async()=>{if(!online)throw Error('offline');return {ok:true,clone(){return this;},kind:'network'};}};
+const context={self:{addEventListener:(type,fn)=>handlers[type]=fn,skipWaiting:async()=>{},clients:{claim:async()=>{}}},caches:{open:async()=>cache,keys:async()=>['old-version',(fs.readFileSync(root+'/sw.js','utf8').match(/VERSION = "([^"]+)"/)||[])[1]],delete:async k=>deleted.push(k)},location:{origin:'https://example.test'},URL,fetch:async()=>{if(!online)throw Error('offline');return {ok:true,clone(){return this;},kind:'network'};}};
 vm.runInNewContext(fs.readFileSync(root+'/sw.js','utf8'),context);
 (async()=>{let pending;handlers.install({waitUntil:p=>pending=p});await pending;assert(added.includes('data/content.json'));handlers.activate({waitUntil:p=>pending=p});await pending;assert.deepStrictEqual(deleted,['old-version']);
  const request={method:'GET',url:'https://example.test/data/content.json'};
@@ -10,6 +10,7 @@ vm.runInNewContext(fs.readFileSync(root+'/sw.js','utf8'),context);
  hit={kind:'cached'};online=false;handlers.fetch({request,respondWith:p=>pending=p});assert.equal((await pending).kind,'cached');
  let handled=false;handlers.fetch({request:{method:'GET',url:'https://outside.test/'},respondWith:()=>handled=true});assert.equal(handled,false);
  const d=JSON.parse(fs.readFileSync(root+'/data/content.json'));let imgs=new Set();for(const p of d.pages)for(const b of p.guide?.blocks||[]){if(b.t==='fig')imgs.add(b.img);if(b.t==='flow'&&b.fig)imgs.add(b.fig.img);}for(const img of imgs)assert(fs.existsSync(path.join(root,img)),img);
- for(const f of ['data/taxonomy.json','data/drugs.json','manifest.webmanifest'])JSON.parse(fs.readFileSync(root+'/'+f));
- console.log(JSON.stringify({status:'passed',checks:['service-worker install core paths','service-worker activation','online response','offline cached response','external requests ignored','JSON/manifest parsing','all chart asset paths'],corePaths:added.length,chartAssets:imgs.size}));
+ let pdfs=0;for(const p of d.pages)if(p.guide){assert(fs.existsSync(path.join(root,'data/pdf',p.id+'.pdf')),'missing PDF '+p.id);pdfs++}
+for(const f of ['data/taxonomy.json','data/drugs.json','manifest.webmanifest'])JSON.parse(fs.readFileSync(root+'/'+f));
+ console.log(JSON.stringify({status:'passed',checks:['service-worker install core paths','service-worker activation','online response','offline cached response','external requests ignored','JSON/manifest parsing','all chart asset paths','original PDF for every guideline'],corePaths:added.length,chartAssets:imgs.size,pdfs}));
 })().catch(e=>{console.error(e);process.exit(1);});
