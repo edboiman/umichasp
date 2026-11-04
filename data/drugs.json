@@ -1,0 +1,622 @@
+[
+{
+"name": "Penicillin G",
+"class": "Penicillins",
+"aliases": [
+"penicillin",
+"PCN",
+"benzathine penicillin",
+"Bicillin"
+]
+},
+{
+"name": "Penicillin VK",
+"class": "Penicillins",
+"aliases": [
+"penicillin V"
+]
+},
+{
+"name": "Amoxicillin",
+"class": "Penicillins",
+"aliases": [
+"Amoxil"
+]
+},
+{
+"name": "Amoxicillin-clavulanate",
+"class": "Penicillins",
+"aliases": [
+"amox-clav",
+"amoxicillin/clavulanate",
+"Augmentin"
+]
+},
+{
+"name": "Ampicillin",
+"class": "Penicillins",
+"aliases": []
+},
+{
+"name": "Ampicillin-sulbactam",
+"class": "Penicillins",
+"aliases": [
+"ampicillin/sulbactam",
+"amp-sulbactam",
+"Unasyn"
+]
+},
+{
+"name": "Piperacillin-tazobactam",
+"class": "Penicillins",
+"aliases": [
+"piperacillin/tazobactam",
+"pip-tazo",
+"pip/tazo",
+"Zosyn"
+]
+},
+{
+"name": "Nafcillin",
+"class": "Penicillins",
+"aliases": []
+},
+{
+"name": "Oxacillin",
+"class": "Penicillins",
+"aliases": []
+},
+{
+"name": "Dicloxacillin",
+"class": "Penicillins",
+"aliases": []
+},
+{
+"name": "Cefazolin",
+"class": "Cephalosporins",
+"aliases": [
+"Ancef"
+]
+},
+{
+"name": "Cephalexin",
+"class": "Cephalosporins",
+"aliases": [
+"Keflex"
+]
+},
+{
+"name": "Cefadroxil",
+"class": "Cephalosporins",
+"aliases": []
+},
+{
+"name": "Cefuroxime",
+"class": "Cephalosporins",
+"aliases": []
+},
+{
+"name": "Cefoxitin",
+"class": "Cephalosporins",
+"aliases": []
+},
+{
+"name": "Cefotetan",
+"class": "Cephalosporins",
+"aliases": []
+},
+{
+"name": "Cefpodoxime",
+"class": "Cephalosporins",
+"aliases": []
+},
+{
+"name": "Cefdinir",
+"class": "Cephalosporins",
+"aliases": []
+},
+{
+"name": "Ceftriaxone",
+"class": "Cephalosporins",
+"aliases": [
+"Rocephin"
+]
+},
+{
+"name": "Cefotaxime",
+"class": "Cephalosporins",
+"aliases": []
+},
+{
+"name": "Ceftazidime",
+"class": "Cephalosporins",
+"aliases": [
+"Fortaz"
+]
+},
+{
+"name": "Cefepime",
+"class": "Cephalosporins",
+"aliases": [
+"Maxipime"
+]
+},
+{
+"name": "Ceftaroline",
+"class": "Cephalosporins",
+"aliases": [
+"Teflaro"
+]
+},
+{
+"name": "Ceftazidime-avibactam",
+"class": "Cephalosporins",
+"aliases": [
+"ceftazidime/avibactam",
+"Avycaz"
+]
+},
+{
+"name": "Ceftolozane-tazobactam",
+"class": "Cephalosporins",
+"aliases": [
+"ceftolozane/tazobactam",
+"Zerbaxa"
+]
+},
+{
+"name": "Cefiderocol",
+"class": "Cephalosporins",
+"aliases": [
+"Fetroja"
+]
+},
+{
+"name": "Meropenem",
+"class": "Carbapenems & monobactams",
+"aliases": [
+"Merrem"
+]
+},
+{
+"name": "Meropenem-vaborbactam",
+"class": "Carbapenems & monobactams",
+"aliases": [
+"meropenem/vaborbactam",
+"Vabomere"
+]
+},
+{
+"name": "Imipenem-cilastatin",
+"class": "Carbapenems & monobactams",
+"aliases": [
+"imipenem",
+"Primaxin"
+]
+},
+{
+"name": "Imipenem-relebactam",
+"class": "Carbapenems & monobactams",
+"aliases": [
+"Recarbrio"
+]
+},
+{
+"name": "Ertapenem",
+"class": "Carbapenems & monobactams",
+"aliases": [
+"Invanz"
+]
+},
+{
+"name": "Aztreonam",
+"class": "Carbapenems & monobactams",
+"aliases": [
+"Azactam"
+]
+},
+{
+"name": "Vancomycin",
+"class": "Glycopeptides & lipopeptides",
+"aliases": [
+"vanc",
+"Vancocin"
+]
+},
+{
+"name": "Daptomycin",
+"class": "Glycopeptides & lipopeptides",
+"aliases": [
+"Cubicin"
+]
+},
+{
+"name": "Oritavancin",
+"class": "Glycopeptides & lipopeptides",
+"aliases": []
+},
+{
+"name": "Dalbavancin",
+"class": "Glycopeptides & lipopeptides",
+"aliases": [
+"Dalvance"
+]
+},
+{
+"name": "Telavancin",
+"class": "Glycopeptides & lipopeptides",
+"aliases": []
+},
+{
+"name": "Linezolid",
+"class": "Oxazolidinones",
+"aliases": [
+"Zyvox"
+]
+},
+{
+"name": "Tedizolid",
+"class": "Oxazolidinones",
+"aliases": []
+},
+{
+"name": "Gentamicin",
+"class": "Aminoglycosides",
+"aliases": []
+},
+{
+"name": "Tobramycin",
+"class": "Aminoglycosides",
+"aliases": []
+},
+{
+"name": "Amikacin",
+"class": "Aminoglycosides",
+"aliases": []
+},
+{
+"name": "Plazomicin",
+"class": "Aminoglycosides",
+"aliases": []
+},
+{
+"name": "Ciprofloxacin",
+"class": "Fluoroquinolones",
+"aliases": [
+"cipro"
+]
+},
+{
+"name": "Levofloxacin",
+"class": "Fluoroquinolones",
+"aliases": [
+"levo",
+"Levaquin"
+]
+},
+{
+"name": "Moxifloxacin",
+"class": "Fluoroquinolones",
+"aliases": [
+"Avelox"
+]
+},
+{
+"name": "Delafloxacin",
+"class": "Fluoroquinolones",
+"aliases": []
+},
+{
+"name": "Azithromycin",
+"class": "Macrolides",
+"aliases": [
+"Zithromax",
+"azithro"
+]
+},
+{
+"name": "Clarithromycin",
+"class": "Macrolides",
+"aliases": []
+},
+{
+"name": "Erythromycin",
+"class": "Macrolides",
+"aliases": []
+},
+{
+"name": "Fidaxomicin",
+"class": "Macrolides",
+"aliases": [
+"Dificid"
+]
+},
+{
+"name": "Doxycycline",
+"class": "Tetracyclines",
+"aliases": [
+"doxy"
+]
+},
+{
+"name": "Minocycline",
+"class": "Tetracyclines",
+"aliases": []
+},
+{
+"name": "Tigecycline",
+"class": "Tetracyclines",
+"aliases": []
+},
+{
+"name": "Omadacycline",
+"class": "Tetracyclines",
+"aliases": []
+},
+{
+"name": "Eravacycline",
+"class": "Tetracyclines",
+"aliases": []
+},
+{
+"name": "Trimethoprim-sulfamethoxazole",
+"class": "Other antibacterials",
+"aliases": [
+"TMP-SMX",
+"TMP/SMX",
+"SMX-TMP",
+"co-trimoxazole",
+"Bactrim"
+]
+},
+{
+"name": "Clindamycin",
+"class": "Other antibacterials",
+"aliases": [
+"Cleocin"
+]
+},
+{
+"name": "Metronidazole",
+"class": "Other antibacterials",
+"aliases": [
+"Flagyl"
+]
+},
+{
+"name": "Nitrofurantoin",
+"class": "Other antibacterials",
+"aliases": [
+"Macrobid"
+]
+},
+{
+"name": "Fosfomycin",
+"class": "Other antibacterials",
+"aliases": []
+},
+{
+"name": "Rifampin",
+"class": "Other antibacterials",
+"aliases": [
+"rifampicin"
+]
+},
+{
+"name": "Rifaximin",
+"class": "Other antibacterials",
+"aliases": []
+},
+{
+"name": "Colistin",
+"class": "Other antibacterials",
+"aliases": []
+},
+{
+"name": "Polymyxin B",
+"class": "Other antibacterials",
+"aliases": []
+},
+{
+"name": "Chloramphenicol",
+"class": "Other antibacterials",
+"aliases": []
+},
+{
+"name": "Sulbactam-durlobactam",
+"class": "Other antibacterials",
+"aliases": [
+"Xacduro"
+]
+},
+{
+"name": "Bezlotoxumab",
+"class": "Other antibacterials",
+"aliases": []
+},
+{
+"name": "Fluconazole",
+"class": "Antifungals",
+"aliases": [
+"Diflucan"
+]
+},
+{
+"name": "Voriconazole",
+"class": "Antifungals",
+"aliases": [
+"Vfend"
+]
+},
+{
+"name": "Posaconazole",
+"class": "Antifungals",
+"aliases": []
+},
+{
+"name": "Isavuconazonium",
+"class": "Antifungals",
+"aliases": [
+"isavuconazole",
+"Cresemba"
+]
+},
+{
+"name": "Itraconazole",
+"class": "Antifungals",
+"aliases": []
+},
+{
+"name": "Micafungin",
+"class": "Antifungals",
+"aliases": [
+"Mycamine"
+]
+},
+{
+"name": "Caspofungin",
+"class": "Antifungals",
+"aliases": []
+},
+{
+"name": "Anidulafungin",
+"class": "Antifungals",
+"aliases": []
+},
+{
+"name": "Rezafungin",
+"class": "Antifungals",
+"aliases": []
+},
+{
+"name": "Amphotericin B",
+"class": "Antifungals",
+"aliases": [
+"liposomal amphotericin",
+"AmBisome",
+"L-AmB"
+]
+},
+{
+"name": "Flucytosine",
+"class": "Antifungals",
+"aliases": [
+"5-FC"
+]
+},
+{
+"name": "Nystatin",
+"class": "Antifungals",
+"aliases": []
+},
+{
+"name": "Acyclovir",
+"class": "Antivirals",
+"aliases": []
+},
+{
+"name": "Valacyclovir",
+"class": "Antivirals",
+"aliases": [
+"Valtrex"
+]
+},
+{
+"name": "Ganciclovir",
+"class": "Antivirals",
+"aliases": []
+},
+{
+"name": "Valganciclovir",
+"class": "Antivirals",
+"aliases": [
+"Valcyte"
+]
+},
+{
+"name": "Letermovir",
+"class": "Antivirals",
+"aliases": [
+"Prevymis"
+]
+},
+{
+"name": "Maribavir",
+"class": "Antivirals",
+"aliases": []
+},
+{
+"name": "Foscarnet",
+"class": "Antivirals",
+"aliases": []
+},
+{
+"name": "Cidofovir",
+"class": "Antivirals",
+"aliases": []
+},
+{
+"name": "Oseltamivir",
+"class": "Antivirals",
+"aliases": [
+"Tamiflu"
+]
+},
+{
+"name": "Baloxavir",
+"class": "Antivirals",
+"aliases": []
+},
+{
+"name": "Remdesivir",
+"class": "Antivirals",
+"aliases": [
+"Veklury"
+]
+},
+{
+"name": "Nirmatrelvir-ritonavir",
+"class": "Antivirals",
+"aliases": [
+"Paxlovid",
+"nirmatrelvir"
+]
+},
+{
+"name": "Isoniazid",
+"class": "Antimycobacterials",
+"aliases": [
+"INH"
+]
+},
+{
+"name": "Rifabutin",
+"class": "Antimycobacterials",
+"aliases": []
+},
+{
+"name": "Pyrazinamide",
+"class": "Antimycobacterials",
+"aliases": []
+},
+{
+"name": "Ethambutol",
+"class": "Antimycobacterials",
+"aliases": []
+},
+{
+"name": "Atovaquone",
+"class": "Antiparasitics",
+"aliases": []
+},
+{
+"name": "Ivermectin",
+"class": "Antiparasitics",
+"aliases": []
+},
+{
+"name": "Pentamidine",
+"class": "Antiparasitics",
+"aliases": []
+}
+]

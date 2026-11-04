@@ -1,0 +1,578 @@
+{
+ "systems": [
+  {
+   "id": "blood",
+   "name": "Bloodstream & heart"
+  },
+  {
+   "id": "bone",
+   "name": "Bone & joint"
+  },
+  {
+   "id": "cns",
+   "name": "Brain & nervous system"
+  },
+  {
+   "id": "resp",
+   "name": "Respiratory & ENT"
+  },
+  {
+   "id": "headneck",
+   "name": "Head, neck & eye"
+  },
+  {
+   "id": "gi",
+   "name": "GI & intra-abdominal"
+  },
+  {
+   "id": "uro",
+   "name": "Urinary"
+  },
+  {
+   "id": "skin",
+   "name": "Skin & soft tissue"
+  },
+  {
+   "id": "fungal",
+   "name": "Fungal"
+  },
+  {
+   "id": "viral",
+   "name": "Viral & other infections"
+  },
+  {
+   "id": "obgyn",
+   "name": "Obstetrics & gynecology"
+  },
+  {
+   "id": "immuno",
+   "name": "Immunocompromised & transplant"
+  }
+ ],
+ "conditions": [
+  {
+   "id": "bsi",
+   "name": "Bloodstream infection",
+   "system": "blood",
+   "match": "blood-stream-infections",
+   "synonyms": [
+    "bacteremia",
+    "BSI",
+    "sepsis"
+   ]
+  },
+  {
+   "id": "sab",
+   "name": "S. aureus bacteremia",
+   "system": "blood",
+   "match": "s-aureus",
+   "synonyms": [
+    "SAB",
+    "MRSA bacteremia",
+    "MSSA",
+    "staph aureus"
+   ]
+  },
+  {
+   "id": "endo",
+   "name": "Endocarditis",
+   "system": "blood",
+   "match": "endocarditis",
+   "synonyms": [
+    "IE",
+    "valve infection"
+   ]
+  },
+  {
+   "id": "vad",
+   "name": "VAD infection",
+   "system": "blood",
+   "match": "/vad$",
+   "synonyms": [
+    "LVAD",
+    "ventricular assist device"
+   ]
+  },
+  {
+   "id": "lock",
+   "name": "Catheter lock therapy",
+   "system": "blood",
+   "match": "-lock",
+   "synonyms": [
+    "ethanol lock",
+    "antibiotic lock",
+    "CLABSI"
+   ]
+  },
+  {
+   "id": "sepsis",
+   "name": "Undifferentiated sepsis",
+   "system": "blood",
+   "match": "undifferentiated-sepsis",
+   "synonyms": [
+    "sepsis",
+    "septic shock"
+   ]
+  },
+  {
+   "id": "bji",
+   "name": "Bone & joint infection",
+   "system": "bone",
+   "match": "bone-and-joint",
+   "synonyms": [
+    "osteomyelitis",
+    "septic arthritis",
+    "PJI",
+    "prosthetic joint"
+   ]
+  },
+  {
+   "id": "fracture",
+   "name": "Open fractures",
+   "system": "bone",
+   "match": "open-fractures",
+   "synonyms": [
+    "trauma"
+   ]
+  },
+  {
+   "id": "pjidental",
+   "name": "PJI dental prophylaxis",
+   "system": "bone",
+   "match": "pji-dental",
+   "synonyms": [
+    "dental prophylaxis",
+    "prosthetic joint"
+   ]
+  },
+  {
+   "id": "dfi",
+   "name": "Diabetic foot infection",
+   "system": "bone",
+   "match": "diabetic-foot",
+   "synonyms": [
+    "DFI",
+    "foot ulcer"
+   ]
+  },
+  {
+   "id": "mening",
+   "name": "Bacterial meningitis",
+   "system": "cns",
+   "match": "bacterial-meningitis",
+   "synonyms": [
+    "meningitis",
+    "CNS infection"
+   ]
+  },
+  {
+   "id": "cap",
+   "name": "Pneumonia",
+   "system": "resp",
+   "match": "pneumonia|icu-pna|amb-cap",
+   "synonyms": [
+    "CAP",
+    "HAP",
+    "VAP",
+    "lung infection"
+   ]
+  },
+  {
+   "id": "flu",
+   "name": "Influenza",
+   "system": "resp",
+   "match": "influenza|cough-and-flu",
+   "synonyms": [
+    "flu",
+    "oseltamivir"
+   ]
+  },
+  {
+   "id": "rsv",
+   "name": "RSV",
+   "system": "resp",
+   "match": "rsv|nirsevimab",
+   "synonyms": [
+    "respiratory syncytial virus"
+   ]
+  },
+  {
+   "id": "covid",
+   "name": "COVID-19",
+   "system": "resp",
+   "match": "covid|paxlovid|pemivibart",
+   "synonyms": [
+    "SARS-CoV-2",
+    "coronavirus"
+   ]
+  },
+  {
+   "id": "cf",
+   "name": "Cystic fibrosis",
+   "system": "resp",
+   "match": "cystic-fibrosis",
+   "synonyms": [
+    "CF"
+   ]
+  },
+  {
+   "id": "sinus",
+   "name": "Rhinosinusitis",
+   "system": "resp",
+   "match": "rhinosinusitis",
+   "synonyms": [
+    "sinusitis"
+   ]
+  },
+  {
+   "id": "gas",
+   "name": "Strep pharyngitis",
+   "system": "resp",
+   "match": "/gas-",
+   "synonyms": [
+    "group A strep",
+    "GAS",
+    "sore throat",
+    "pharyngitis"
+   ]
+  },
+  {
+   "id": "aom",
+   "name": "Acute otitis media",
+   "system": "resp",
+   "match": "otitis-media",
+   "synonyms": [
+    "AOM",
+    "ear infection"
+   ]
+  },
+  {
+   "id": "eye",
+   "name": "Ocular infections",
+   "system": "headneck",
+   "match": "ocular",
+   "synonyms": [
+    "endophthalmitis",
+    "keratitis",
+    "eye"
+   ]
+  },
+  {
+   "id": "dental",
+   "name": "Odontogenic infections",
+   "system": "headneck",
+   "match": "odontogenic",
+   "synonyms": [
+    "dental infection",
+    "tooth"
+   ]
+  },
+  {
+   "id": "neck",
+   "name": "Deep neck space infections",
+   "system": "headneck",
+   "match": "deep-neck",
+   "synonyms": [
+    "retropharyngeal",
+    "peritonsillar"
+   ]
+  },
+  {
+   "id": "hnallergy",
+   "name": "Head & neck surgery with penicillin allergy",
+   "system": "headneck",
+   "match": "head-neck-penicillin",
+   "synonyms": []
+  },
+  {
+   "id": "iai",
+   "name": "Intra-abdominal infection",
+   "system": "gi",
+   "match": "intra-?abdominal|intrabdominal",
+   "synonyms": [
+    "IAI",
+    "peritonitis",
+    "appendicitis",
+    "cholangitis"
+   ]
+  },
+  {
+   "id": "cdi",
+   "name": "C. difficile infection",
+   "system": "gi",
+   "match": "cdi-|clostridiodies|clostridioides",
+   "synonyms": [
+    "CDI",
+    "C diff",
+    "C. diff",
+    "clostridium"
+   ]
+  },
+  {
+   "id": "diarrhea",
+   "name": "Infectious diarrhea",
+   "system": "gi",
+   "match": "diarrhea",
+   "synonyms": [
+    "gastroenteritis",
+    "cyclospora",
+    "GIPAN"
+   ]
+  },
+  {
+   "id": "hpylori",
+   "name": "H. pylori",
+   "system": "gi",
+   "match": "h-pylori",
+   "synonyms": [
+    "helicobacter"
+   ]
+  },
+  {
+   "id": "nec",
+   "name": "Necrotizing enterocolitis",
+   "system": "gi",
+   "match": "necrotizing-enterocolitis",
+   "synonyms": [
+    "NEC"
+   ]
+  },
+  {
+   "id": "uti",
+   "name": "Urinary tract infection",
+   "system": "uro",
+   "match": "uti-|uuti|urinary-tract",
+   "synonyms": [
+    "UTI",
+    "cystitis",
+    "pyelonephritis",
+    "CAUTI"
+   ]
+  },
+  {
+   "id": "ssti",
+   "name": "Skin & soft tissue infection",
+   "system": "skin",
+   "match": "ssti|skin-and-soft-tissue",
+   "synonyms": [
+    "cellulitis",
+    "abscess",
+    "SSTI"
+   ]
+  },
+  {
+   "id": "bite",
+   "name": "Animal bites",
+   "system": "skin",
+   "match": "animal-bite",
+   "synonyms": [
+    "dog bite",
+    "cat bite"
+   ]
+  },
+  {
+   "id": "leech",
+   "name": "Medicinal leech therapy",
+   "system": "skin",
+   "match": "leech",
+   "synonyms": [
+    "leeches"
+   ]
+  },
+  {
+   "id": "dalba",
+   "name": "Outpatient dalbavancin",
+   "system": "skin",
+   "match": "dalbavancin",
+   "synonyms": []
+  },
+  {
+   "id": "asp",
+   "name": "Aspergillosis & mucormycosis",
+   "system": "fungal",
+   "match": "aspergillosis",
+   "synonyms": [
+    "aspergillus",
+    "mucor"
+   ]
+  },
+  {
+   "id": "candida",
+   "name": "Candidemia & candidiasis",
+   "system": "fungal",
+   "match": "candid",
+   "synonyms": [
+    "candida",
+    "yeast"
+   ]
+  },
+  {
+   "id": "crypto",
+   "name": "Cryptococcus",
+   "system": "fungal",
+   "match": "cryptococcus",
+   "synonyms": [
+    "cryptococcal meningitis"
+   ]
+  },
+  {
+   "id": "hiv",
+   "name": "HIV",
+   "system": "viral",
+   "match": "hiv",
+   "synonyms": [
+    "PrEP",
+    "PEP",
+    "perinatal HIV"
+   ]
+  },
+  {
+   "id": "measles",
+   "name": "Measles exposure",
+   "system": "viral",
+   "match": "measles",
+   "synonyms": [
+    "rubeola",
+    "PEP"
+   ]
+  },
+  {
+   "id": "mpox",
+   "name": "Mpox (tecovirimat)",
+   "system": "viral",
+   "match": "tpoxx",
+   "synonyms": [
+    "monkeypox",
+    "tecovirimat"
+   ]
+  },
+  {
+   "id": "malaria",
+   "name": "Malaria",
+   "system": "viral",
+   "match": "malaria",
+   "synonyms": [
+    "plasmodium"
+   ]
+  },
+  {
+   "id": "lyme",
+   "name": "Lyme disease",
+   "system": "viral",
+   "match": "lyme",
+   "synonyms": [
+    "borrelia",
+    "tick"
+   ]
+  },
+  {
+   "id": "ob",
+   "name": "Obstetric & gynecologic infection",
+   "system": "obgyn",
+   "match": "obstetrics",
+   "synonyms": [
+    "pregnancy",
+    "chorioamnionitis",
+    "endometritis",
+    "GBS"
+   ]
+  },
+  {
+   "id": "bmt",
+   "name": "BMT & cellular therapy prophylaxis",
+   "system": "immuno",
+   "match": "bmt-|car-t",
+   "synonyms": [
+    "bone marrow transplant",
+    "stem cell",
+    "CAR-T"
+   ]
+  },
+  {
+   "id": "heme",
+   "name": "Hematology/oncology prophylaxis",
+   "system": "immuno",
+   "match": "hematology",
+   "synonyms": [
+    "neutropenia",
+    "chemotherapy"
+   ]
+  },
+  {
+   "id": "txp",
+   "name": "Solid organ transplant",
+   "system": "immuno",
+   "match": "/transplant/",
+   "synonyms": [
+    "donor culture",
+    "transplant"
+   ]
+  }
+ ],
+ "resources": [
+  {
+   "id": "edu",
+   "name": "Patient education",
+   "desc": "Handouts for patients and families",
+   "match": "/patient-education/"
+  },
+  {
+   "id": "dosing",
+   "name": "Dosing & monitoring",
+   "desc": "Dosing tables, renal and obesity dosing, PK and drug levels",
+   "match": "dosing|/pharmacokinetics/|tdm|cation-interactions|warfarin|qt-prolongation|sertonin|serotonin|midline"
+  },
+  {
+   "id": "allergy",
+   "name": "β-lactam allergy",
+   "desc": "Allergy evaluation, skin testing and desensitization",
+   "match": "blaes|pst-procedure"
+  },
+  {
+   "id": "restricted",
+   "name": "Restricted antimicrobials",
+   "desc": "Tier I and Tier II approval criteria",
+   "match": "/t1-|/t2-|tier-2"
+  },
+  {
+   "id": "diag",
+   "name": "Diagnostic stewardship",
+   "desc": "Procalcitonin, blood cultures and rapid panels",
+   "match": "procalcitonin|bcx-algorithm|film-array"
+  },
+  {
+   "id": "surg",
+   "name": "Surgical prophylaxis",
+   "desc": "Pre-operative antibiotic selection",
+   "match": "/surgical-prophylaxis/"
+  },
+  {
+   "id": "other",
+   "name": "Other resources",
+   "desc": "",
+   "match": "tableau|copat"
+  }
+ ],
+ "quick": [
+  {
+   "label": "Dosing",
+   "resource": "dosing"
+  },
+  {
+   "label": "β-lactam allergy",
+   "resource": "allergy"
+  },
+  {
+   "label": "Restricted drugs",
+   "resource": "restricted"
+  },
+  {
+   "label": "Surgical prophylaxis",
+   "resource": "surg"
+  },
+  {
+   "label": "Diagnostics",
+   "resource": "diag"
+  }
+ ]
+}
