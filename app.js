@@ -13,6 +13,7 @@ const store = {
 const S = {
   data: null, drugs: [], tax: null, pages: [], byId: new Map(), byPath: new Map(),
   cond: new Map(), res: new Map(), sections: [], drugHits: new Map(), files: [], staff: [],
+  orgs: [], orgCats: [], orgHits: new Map(), unitDrugs: new Map(), unitOrgs: new Map(),
   pop: store.get("pop", "all"), saved: new Set(store.get("saved", [])), recent: store.get("recent", []),
   size: store.get("size", 1), searchQ: "",
 };
@@ -42,8 +43,9 @@ const termRe = (t) => esc(t).replace(/\\-|\s+|\//g, "[\\s/-]+");
 /* ---------- data and indexes ---------- */
 async function load() {
   const get = (u) => fetch(u).then((r) => { if (!r.ok) throw new Error(u); return r.json(); });
-  const [data, drugs, tax] = await Promise.all([get("data/content.json"), get("data/drugs.json"), get("data/taxonomy.json")]);
-  Object.assign(S, { data, drugs, tax, pages: data.pages || [] });
+  const [data, drugs, tax, orgs] = await Promise.all([get("data/content.json"), get("data/drugs.json"), get("data/taxonomy.json"),
+    get("data/organisms.json").catch(() => ({ categories: [], organisms: [] }))]);
+  Object.assign(S, { data, drugs, tax, pages: data.pages || [], orgCats: orgs.categories, orgs: orgs.organisms });
   const sectionRoots = new Set(S.pages.filter((p) => !p.parent && S.pages.some((c) => c.parent === p.path)).map((p) => p.path));
   for (const c of tax.conditions) S.cond.set(c.id, { ...c, re: new RegExp(c.match, "i"), pages: [] });
   for (const r of tax.resources) S.res.set(r.id, { ...r, re: new RegExp(r.match, "i"), pages: [] });
@@ -72,6 +74,7 @@ async function load() {
   }
   indexDrugs();
   buildCharts();
+  indexOrganisms();
 }
 
 // Single pass per block with all drug terms, longest first, so
@@ -95,6 +98,7 @@ function indexDrugs() {
         const h = hits.get(p.id);
         if (i === 0) h.inTitle = true;
         else if (!h.blocks.some((b) => b.b === i - 1)) h.blocks.push({ b: i - 1, term: m[0] });
+        if (i > 0) { const k = p.id + ":" + (i - 1); if (!S.unitDrugs.has(k)) S.unitDrugs.set(k, new Set()); S.unitDrugs.get(k).add(d.name); }
       }
     });
   }
@@ -137,6 +141,7 @@ function pushRecent(key) { S.recent = [key, ...S.recent.filter((k) => k !== key)
 function keyItem(k) {
   if (k.startsWith("drug:")) { const d = S.drugs.find((x) => x.name === k.slice(5)); return d && { href: `#/d/${enc(d.name)}`, title: d.name, sub: d.class }; }
   if (k.startsWith("cond:")) { const c = S.cond.get(k.slice(5)); return c && { href: `#/c/${c.id}`, title: c.name, sub: sysName(c.system) }; }
+  if (k.startsWith("org:")) { const o = S.orgs.find((x) => x.id === k.slice(4)); return o && { href: `#/o/${o.id}`, title: orgName(o), sub: orgCatName(o.cat) }; }
   const p = S.byId.get(k); return p && { href: `#/p/${enc(p.id)}`, title: p.title, sub: versionLabel(p) };
 }
 const sysName = (id) => S.tax.systems.find((s) => s.id === id)?.name || "";
@@ -156,7 +161,7 @@ function setBar(title, { back = false, save = null, large = false, textSize = fa
 }
 function syncSavedBtn() { const sv = $("savedbtn"); if (sv) sv.hidden = !$("star").hidden; }
 function setTab(t) { document.querySelectorAll(".tabs a").forEach((a) => a.dataset.tab === t ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")); }
-function mount(...n) { $("view").replaceChildren(...n.flat().filter(Boolean)); }
+function mount(...n) { $("view").replaceChildren(...n.flat(Infinity).filter(Boolean)); }
 let toastT;
 function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => (t.hidden = true), 1400); }
 
@@ -218,7 +223,7 @@ function viewHome() {
       el("strong", { text: "Site alert · " }), alert, S.data.alert.link ? el("span", { class: "alert-link", text: " " + S.data.alert.link + " ›" }) : null) : null,
     section("Browse guidelines", el("div",{class:"browse-grid"},
       el("a",{href:"#/conditions",class:"browse-card"},el("span",{class:"eyebrow",text:"Clinical syndrome"}),el("strong",{},"By condition"),el("span",{class:"muted",text:"Browse infections by body system"}),chev()),
-      el("a",{href:"#/organisms",class:"browse-card"},el("span",{class:"eyebrow",text:"Pathogen index"}),el("strong",{},"By organism"),el("span",{class:"muted",text:"Choose an organism, then an infection"}),chev()))),
+      el("a",{href:"#/organisms",class:"browse-card"},el("span",{class:"eyebrow",text:"Pathogen index"}),el("strong",{},"By organism"),el("span",{class:"muted",text:"Grouped by Gram stain, with a summary of each"}),chev()))),
     section("Quick access", el("div", { class: "qa-grid" }, qa)),
     section("", list(
       row({ href: "#/charts", title: "Flowcharts", sub: `${(S.charts || []).length} charts and algorithm pages` }),
@@ -387,7 +392,7 @@ function renderGuide(p, terms, genericOnly = false) {
     if (b.t === "note") { out.push(el("aside", { class: "clinical-note", "data-u": unitOf(gi) }, el("p", {}, runsEl(b.r, terms)))); return; }
     if (b.t === "fn") {
       out.push(el("section", { class: "footnotes", "aria-label": "Footnotes" }, el("h3", { class: "fn-h", text: "Footnotes" }),
-        el("ol", {}, b.items.map(([n, r], ri) => el("li", { "data-u": unitOf(gi, ri), value: n }, runsEl(r, terms))))));
+        el("ol", {}, b.items.map(([n, r], ri) => el("li", { "data-u": unitOf(gi, ri) }, el("span", { class: "fn-n", text: n }), el("span", {}, runsEl(r, terms)))))));
       return;
     }
     if (b.t === "flow") { out.push(flowEl(b, gi, unitOf, terms)); return; }
@@ -494,6 +499,7 @@ function viewPage(id, params) {
   const terms = q ? [q] : [];
   const siblings = p.cond ? S.cond.get(p.cond).pages.filter((x) => x !== p) : [];
   const agents = S.drugs.filter((d) => S.drugHits.get(d.name).has(p.id));
+  const orgsHere = S.orgs.filter((o) => S.orgHits.get(o.id).has(p.id));
   const files = (p.links || []).filter((l) => l.kind === "file" && safeUrl(l.href));
   const staff = (p.links || []).filter((l) => l.kind === "staff" && safeUrl(l.href));
   const toc = p.guide ? p.guide.blocks.map((b, gi) => [b, gi]).filter(([b]) => (b.t === "h" && (b.l || 3) <= 3 && !b.hide) || (b.t === "table" && b.caption && !b.hide))
@@ -517,6 +523,8 @@ function viewPage(id, params) {
     chartLinks(p),
     agents.length ? el("details", { class: "agents" }, el("summary", {}, `Agents mentioned (${agents.length})`),
       el("div", { class: "chips" }, agents.map((d) => el("a", { class: "chip", href: `#/d/${enc(d.name)}`, text: d.name })))) : null,
+    orgsHere.length ? el("details", { class: "agents orgs-here" }, el("summary", {}, `Organisms mentioned (${orgsHere.length})`),
+      el("div", { class: "chips" }, orgsHere.map((o) => el("a", { class: "chip cat-chip", href: `#/o/${o.id}`, "data-cat": o.cat }, orgName(o))))) : null,
     el("div", { class: "rd-body" }, p.guide ? renderGuide(p, terms) : renderBlocks(p, terms)),
     p.guide ? guideExtras(p) : null,
     !p.guide && !p.blocks.length ? el("p", { class: "muted", text: "No content was captured for this page. Open the source page below." }) : null,
@@ -561,8 +569,13 @@ function viewDrugs(params) {
 }
 
 function passages(p, h, limit = 2) {
-  return h.blocks.slice(0, limit).map((x) => el("a", { class: "psg", href: `#/p/${enc(p.id)}?q=${enc(x.term)}&b=${x.b}` },
-    highlight(snippet(p._text[x.b], x.term), [x.term])));
+  const seen = new Set(), out = [];
+  for (const x of h.blocks) {      // the same sentence printed twice in a guideline is shown once
+    const t = snippet(p._text[x.b], x.term); if (seen.has(t)) continue; seen.add(t);
+    out.push(el("a", { class: "psg", href: `#/p/${enc(p.id)}?q=${enc(x.term)}&b=${x.b}` }, highlight(t, [x.term])));
+    if (out.length >= limit) break;
+  }
+  return out;
 }
 function viewDrug(name) {
   const d = S.drugs.find((x) => x.name === name);
@@ -595,15 +608,30 @@ function viewDrug(name) {
     el("a", { class: "exp-title", href: `#/p/${enc(p.id)}?q=${enc(h.blocks[0]?.term || d.name)}` }, el("span", { text: p.title }), el("span", { class: "pill pill-s", text: popLabel(p) })),
     passages(p, h, 1))));
 
+  const nPass = hits.reduce((s, [, h]) => s + h.blocks.length, 0);
+  const orgs = tally(hits, S.unitOrgs).map(([id, n]) => [S.orgs.find((o) => o.id === id), n]).filter(([o]) => o).slice(0, 12);
+  const charts = chartsForHits(hits);
+  const jumpTo = (id) => () => { const t = $(id); if (t) t.scrollIntoView({ behavior: "smooth", block: "start" }); };
+  const synopsis = hits.length ? el("section", { class: "synopsis syn-drug", "aria-label": "Synopsis" },
+    el("div", { class: "syn-head" }, el("span", { class: "syn-cat", text: d.class }), restricted.length ? el("span", { class: "pill pill-warn", text: "Restricted" }) : null),
+    statTiles([[hits.length, hits.length === 1 ? "guideline" : "guidelines"], [conds.size, conds.size === 1 ? "condition" : "conditions"], [nPass, nPass === 1 ? "passage" : "passages"], charts.length ? [charts.length, charts.length === 1 ? "chart" : "charts"] : null]),
+    el("div", { class: "syn-jump" }, [dosing.length ? ["Dosing", "drug-dosing"] : null, conds.size ? ["Conditions", "drug-conds"] : null, orgs.length ? ["Organisms", "drug-orgs"] : null,
+      charts.length ? ["Charts", "drug-charts"] : null, other.length ? ["Other", "drug-other"] : null].filter(Boolean).map(([l, id]) => el("button", { type: "button", class: "jump-btn", onclick: jumpTo(id) }, l))),
+    el("p", { class: "syn-note", text: "A summary of where the guidelines mention this agent. Read each passage in its guideline before acting on it." })) : null;
   mount(largeTitle(d.name, d.aliases.length ? "Also: " + d.aliases.join(", ") : null),
     popSwitch(() => viewDrug(name)),
     !hits.length ? emptyState("No mentions", S.pop === "all" ? "This agent isn't mentioned in the captured guidelines." : "Switch to All to include every population.") : null,
+    synopsis,
     restricted.length ? el("div", { class: "notice" }, el("strong", { text: "Restricted · " }), "Appears on ",
       restricted.map(([p], i) => [i ? ", " : "", el("a", { href: `#/p/${enc(p.id)}?q=${enc(d.name)}`, text: p.title })]), ". Check the criteria before ordering.") : null,
-    dosing.length ? section("Dosing & monitoring", dosingRows(dosing)) : null,
-    conds.size ? el("h2", { class: "group-h", text: `Used for · ${plural(conds.size, "condition")}` }) : null,
+    dosing.length ? el("section", { class: "sec", id: "drug-dosing" }, el("h2", { class: "sec-h", text: "Dosing & monitoring" }), dosingRows(dosing)) : null,
+    conds.size ? el("h2", { class: "group-h", id: "drug-conds", text: `Used for · ${plural(conds.size, "condition")}` }) : null,
     condSection,
-    other.length ? section("Other resources", dosingRows(other)) : null);
+    orgs.length ? el("section", { class: "sec", id: "drug-orgs" }, el("h2", { class: "sec-h", text: "Organisms named with it" }),
+      el("div", { class: "chips" }, orgs.map(([o, n]) => el("a", { class: "chip chip-count", href: `#/o/${o.id}`, "data-cat": o.cat }, orgName(o), el("span", { class: "chip-n", text: String(n) })))),
+      el("p", { class: "hint", text: "Number = passages that name both." })) : null,
+    charts.length ? el("section", { class: "sec", id: "drug-charts" }, el("h2", { class: "sec-h", text: "Charts that name it" }), el("div", { class: "chart-grid" }, charts.map((c) => chartCard(c)))) : null,
+    other.length ? el("section", { class: "sec", id: "drug-other" }, el("h2", { class: "sec-h", text: "Other resources" }), dosingRows(other)) : null);
 }
 
 /* ---------- Resources ---------- */
@@ -654,6 +682,7 @@ function runSearch(q) {
   const all = (s) => terms.every((t) => s.toLowerCase().includes(t));
   const conds = [...S.cond.values()].filter((c) => condPages(c).length && all([c.name, ...c.synonyms].join(" ")));
   const drugs = S.drugs.filter((d) => drugCount(d) && all([d.name, ...d.aliases, d.class].join(" ")));
+  const orgs = S.orgs.filter((o) => orgCount(o) && all([o.name, ...o.aka, orgCatName(o.cat)].join(" ")));
   const titles = [], text = [];
   for (const p of S.pages) {
     if (!popOk(p) || p.kind === "section") continue;
@@ -662,7 +691,7 @@ function runSearch(q) {
     if (i >= 0) text.push({ p, i, n: p._text.filter((t) => all(t)).length });
   }
   text.sort((a, b) => b.n - a.n);
-  return { conds, drugs, titles, text: text.slice(0, 50), more: text.length > 50 };
+  return { conds, drugs, orgs, titles, text: text.slice(0, 50), more: text.length > 50 };
 }
 function viewSearch(params) {
   setBar("Search", { back: true }); setTab("");
@@ -674,13 +703,43 @@ function viewSearch(params) {
     const first = q.trim().split(/\s+/).find((t) => t.length > 1) || "";
     if (!r) {
       holder.replaceChildren(el("p", { class: "hint", text: "Search everything: conditions, antibiotics, brand names, organisms, and the full guideline text." }),
-        section("Try", el("div", { class: "chips" }, ["MRSA", "pyelonephritis", "cefazolin", "penicillin allergy", "Zosyn", "neutropenia"].map((t) =>
+        section("Try", el("div", { class: "chips" }, ["MRSA", "Pseudomonas", "cefazolin", "pyelonephritis", "penicillin allergy", "Zosyn", "Candida"].map((t) =>
           el("button", { type: "button", class: "chip", onclick: () => { holder.previousSibling.previousSibling.querySelector("input").value = t; paint(t); } }, t)))));
       return;
     }
     const kids = [];
+    // Best match: an antibiotic or organism whose name or abbreviation matches the query gets a summary card on top.
+    const ql = q.trim().toLowerCase();
+    const near = (names) => names.some((n) => { const x = n.toLowerCase(); return x === ql || (ql.length >= 3 && x.startsWith(ql)); });
+    const rank = (names) => { const xs = names.map((n) => n.toLowerCase()); return xs[0] === ql ? 0 : xs.includes(ql) ? 1 : near(names) ? 2 : 9; };
+    const bestDrug = r.drugs.map((d) => [rank([d.name, ...d.aliases]), d]).filter(([k]) => k < 9).sort((a, b) => a[0] - b[0])[0]?.[1];
+    const bestOrg = r.orgs.map((o) => [rank([o.name, ...o.aka, ...o.name.split(" ")]), o]).filter(([k]) => k < 9).sort((a, b) => a[0] - b[0] || orgCount(b[1]) - orgCount(a[1]))[0]?.[1];
+    const best = [];
+    if (bestDrug) {
+      const hits = [...S.drugHits.get(bestDrug.name)].map(([id, h]) => [S.byId.get(id), h]).filter(([p]) => popOk(p));
+      const condN = new Set(hits.filter(([p]) => p.cond).map(([p]) => p.cond)).size;
+      const top = tally(hits, S.unitOrgs).slice(0, 4).map(([id]) => S.orgs.find((o) => o.id === id)).filter(Boolean);
+      best.push(el("a", { class: "best-card", href: `#/d/${enc(bestDrug.name)}` },
+        el("span", { class: "best-k", text: "Antibiotic" }), el("span", { class: "best-t", text: bestDrug.name }),
+        el("span", { class: "best-s", text: `${bestDrug.class} · ${plural(hits.length, "guideline")} · ${plural(condN, "condition")}` }),
+        top.length ? el("span", { class: "best-s" }, "Often named with ", top.map((o, i) => [i ? ", " : "", orgName(o)])) : null,
+        el("span", { class: "best-go", text: "Open antibiotic summary →" })));
+    }
+    if (bestOrg) {
+      const hits = orgPagesFor(bestOrg);
+      const condN = new Set(hits.filter(([p]) => p.cond).map(([p]) => p.cond)).size;
+      const top = tally(hits, S.unitDrugs).slice(0, 4).map(([n]) => n);
+      best.push(el("a", { class: "best-card", href: `#/o/${bestOrg.id}`, "data-cat": bestOrg.cat },
+        el("span", { class: "best-k" }, el("span", { class: "org-dot", "aria-hidden": "true" }), orgCatName(bestOrg.cat)), el("span", { class: "best-t" }, orgName(bestOrg)),
+        el("span", { class: "best-s", text: `${plural(hits.length, "guideline")} · ${plural(condN, "condition")}` }),
+        top.length ? el("span", { class: "best-s", text: "Often named with " + top.join(", ") }) : null,
+        el("span", { class: "best-go", text: "Open organism summary →" })));
+    }
+    if (best.length) kids.push(el("div", { class: "best" }, best));
     if (r.conds.length) kids.push(section("Conditions", list(...r.conds.map((c) => row({ href: `#/c/${c.id}`, title: c.name, sub: sysName(c.system), terms: [first], right: popBadges(condPages(c)) })))));
     if (r.drugs.length) kids.push(section("Antibiotics", list(...r.drugs.slice(0, 8).map((d) => row({ href: `#/d/${enc(d.name)}`, title: d.name, sub: d.class, terms: [first], right: el("span", { class: "count", text: String(drugCount(d)) }) })))));
+    if (r.orgs.length) kids.push(section("Organisms", list(...r.orgs.slice(0, 8).map((o) => el("li", {}, el("a", { class: "row", href: `#/o/${o.id}` },
+      el("span", { class: "row-main" }, orgName(o, "row-title"), el("span", { class: "row-sub", text: orgCatName(o.cat) })), el("span", { class: "count", text: String(orgCount(o)) }), chev()))))));
     if (r.titles.length) kids.push(section("Guideline titles", list(...r.titles.map((p) => row({ href: `#/p/${enc(p.id)}`, title: p.title, sub: versionLabel(p), terms: [first] })))));
     if (r.text.length) kids.push(section(`Found in text · ${r.text.length}${r.more ? "+" : ""} pages`, list(...r.text.map(({ p, i, n }) => row({
       href: `#/p/${enc(p.id)}?q=${enc(first)}&b=${i}`, title: p.title, terms: [first],
@@ -727,10 +786,10 @@ function offlineButton() {
   if (!imgs.length || !("caches" in window)) { btn.disabled = true; return btn; }
   btn.addEventListener("click", async () => {
     btn.disabled = true; let done = 0, failed = 0;
-    const queue = [...imgs];
-    const worker = async () => { while (queue.length) { const u = queue.shift(); try { const r = await fetch(u); if (!r.ok) failed++; } catch { failed++; } done++; btn.textContent = `Downloading… ${done} / ${imgs.length}`; } };
+    const queue = imgs.flatMap((u) => [u, thumbOf(u)]);
+    const worker = async () => { while (queue.length) { const u = queue.shift(); try { const r = await fetch(u); if (!r.ok) failed++; } catch { failed++; } done++; btn.textContent = `Downloading… ${Math.ceil(done / 2)} / ${imgs.length}`; } };
     await Promise.all([worker(), worker(), worker(), worker()]);
-    btn.textContent = failed ? `Done, ${failed} failed. Tap to retry.` : "All pages saved for offline";
+    btn.textContent = failed ? `Done, ${failed} failed. Tap to retry.` : "All charts saved for offline";
     btn.disabled = !failed;
   });
   return btn;
@@ -738,38 +797,62 @@ function offlineButton() {
 function viewMissing() { setBar("Not found", { back: true }); mount(emptyState("Not in this capture", "Go back and try another page.")); }
 
 /* ---------- flowcharts and charts index ---------- */
-// Built only from charts already in the captured guidelines: converted pathways, chart images,
-// and guidelines whose own source title names them an algorithm or workflow.
+// Built only from charts already in the captured guidelines: chart images (with their pathway text where it could be
+// extracted) and guidelines whose own source title names them an algorithm or workflow. Each chart is labelled with
+// its guideline title and PDF page; the group it is filed under is a browsing aid assigned from what the chart shows.
+const CHART_KINDS = [
+  ["path", "Treatment pathways", "Step-by-step treatment decisions", "Pathways"],
+  ["dx", "Diagnostic algorithms", "When and how to test", "Diagnostic"],
+  ["ref", "Reference charts & tables", "Timelines, panels, grids and calculations", "Reference"],
+  ["algo", "Algorithm guidelines", "Guidelines written as a workflow, shown as text", "Algorithms"],
+  ["edu", "Patient education graphics", "Slides and posters from patient materials", "Education"],
+];
+const CHART_KIND_OF = (p, pg) => {
+  const id = p.id;
+  if (/blood-stream-infections-adult/.test(id) || /clostridiodies-difficile-pediatric/.test(id) || (/CDI-treatment/.test(id) && pg === 1)) return "path";
+  if (/BCx-algorithm|CDI-diagnostics|meningitis-film-array/.test(id) || (/CDI-treatment/.test(id) && pg === 2)) return "dx";
+  if (/^patient-education/.test(id)) return "edu";
+  return "ref";
+};
+// Small line icons (SVG built with DOM methods, no markup strings).
+const ICONS = { doc: ["M7 3h7l4 4v14H7z", "M14 3v4h4", "M10 12h5", "M10 16h5"], expand: ["M4 9V4h5", "M20 9V4h-5", "M4 15v5h5", "M20 15v5h-5"],
+  pdf: ["M6 3h9l4 4v14H6z", "M15 3v4h4", "M9 13h6", "M12 10v7"] };
+function icon(name) {
+  const NS = "http://www.w3.org/2000/svg", svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", "0 0 24 24"); svg.setAttribute("aria-hidden", "true"); svg.setAttribute("class", "act-i");
+  for (const d of ICONS[name]) { const pth = document.createElementNS(NS, "path"); pth.setAttribute("d", d); svg.append(pth); }
+  return svg;
+}
+const pageRange = (pgs) => { const out = []; for (const n of pgs) { const last = out[out.length - 1]; if (last && n === last[1] + 1) last[1] = n; else out.push([n, n]); }
+  return out.map(([a, b]) => a === b ? String(a) : `${a}–${b}`).join(", "); };
+const thumbOf = (img) => img ? img.replace("data/fig/", "data/fig/thumb/") : null;
 function buildCharts() {
-  // Every chart image and every extracted pathway, labelled only with what the source gives: the guideline title,
-  // the page number and the chart's own first line of text. No chart names or types are invented.
   S.charts = [];
   const plain = (r) => (r || []).filter((x) => !(x[1] || "").includes("s")).map((x) => x[0]).join("").replace(/^[•●▪o\-–\s]+/, "").trim();
-  const okSub = (t) => t && t.length > 3 && !/P&T|revised|subcommittee|approval|^N\/A$|^page \d/i.test(t);
+  const okSub = (t) => t && t.length > 10 && !/P&T|revised|subcommittee|approval|^N\/A$|^page \d/i.test(t);
   for (const p of S.pages) {
     const g = p.guide; if (!g) continue;
-    const blocks = g.blocks;
-    blocks.forEach((b, gi) => {
+    g.blocks.forEach((b, gi) => {
       if (b.t === "flow") {
         const heads = b.cols.map((c) => c.head).filter((h) => h && /[a-z]{3}/i.test(h) && !/^(yes|no)$/i.test(h.trim()) && okSub(h));
         const first = b.cols.flatMap((c) => c.nodes.map((n) => plain(n.p[0]))).find(okSub) || "";
-        S.charts.push({ p, gi, pg: b.pg, kind: "Chart", path: true, img: b.fig && b.fig.img,
-          sub: (heads.length > 1 ? heads.join(" → ") : first).slice(0, 90) });
+        S.charts.push({ p, gi, pg: b.pg, path: true, img: b.fig && b.fig.img, sub: (heads.length > 1 ? heads.join(" → ") : first).slice(0, 90) });
       } else if (b.t === "fig") {
-        const ft = blocks[gi + 1] && blocks[gi + 1].t === "figtext" ? blocks[gi + 1].lines : [];
-        S.charts.push({ p, gi, pg: b.pg, kind: "Chart", img: b.img,
-          sub: (ft.map((l) => l.replace(/^[•●▪\-–\s]+/, "").trim()).find(okSub) || "").slice(0, 90) });
+        const ft = g.blocks[gi + 1] && g.blocks[gi + 1].t === "figtext" ? g.blocks[gi + 1].lines : [];
+        S.charts.push({ p, gi, pg: b.pg, img: b.img, sub: (ft.map((l) => l.replace(/^[•●▪\-–\s]+/, "").trim()).find(okSub) || "").slice(0, 90) });
       }
     });
-    const own = S.charts.some((c) => c.p === p);
-    if (!own && /algorithm|workflow|pathway/i.test(p.title + " " + (g.title || "")))
-      S.charts.push({ p, gi: null, pg: null, kind: "Algorithm page", img: null, sub: g.title && g.title !== p.title ? g.title : "" });
+    if (!S.charts.some((c) => c.p === p) && /algorithm|workflow|pathway/i.test(p.title + " " + (g.title || "")))
+      S.charts.push({ p, gi: null, pg: null, img: null, sub: g.title && g.title !== p.title ? g.title : "" });
   }
-  const where = (c) => c.p.cond ? S.cond.get(c.p.cond).name : c.p.res ? S.res.get(c.p.res).name : c.p.category;
-  S.charts.forEach((c) => (c.where = where(c)));
+  for (const c of S.charts) {
+    c.kind = c.gi == null ? "algo" : CHART_KIND_OF(c.p, c.pg);
+    c.where = c.p.cond ? S.cond.get(c.p.cond).name : c.p.res ? S.res.get(c.p.res).name : c.p.category;
+  }
   S.charts.sort((a, b) => a.where.localeCompare(b.where) || a.p.title.localeCompare(b.p.title) || (a.pg || 0) - (b.pg || 0));
 }
 const chartHref = (c) => c.gi == null ? `#/p/${enc(c.p.id)}` : `#/chart/${enc(c.p.id)}/${c.gi}`;
+const chartSet = (c) => (S.charts || []).filter((x) => x.p === c.p && x.gi != null);
 async function offlineState(url) {
   if (!url || !("caches" in window)) return null;
   try { return !!(await caches.match(url, { ignoreSearch: true })); } catch { return null; }
@@ -779,74 +862,150 @@ function offlineBadge(url) {
   if (url) offlineState(url).then((ok) => { b.textContent = ok ? "Saved offline" : ok === false ? "Online only" : "Offline status unavailable"; if (ok) b.classList.add("pill-ok"); });
   return b;
 }
+function offlineDot(url) {   // small status mark on chart cards: filled when the full chart image is stored on this device
+  const d = el("span", { class: "off-dot", title: "Checking offline status", "aria-label": "Offline status" });
+  offlineState(url).then((ok) => { d.classList.toggle("on", !!ok); const t = ok ? "Saved offline" : "Needs a connection"; d.title = t; d.setAttribute("aria-label", t); });
+  return d;
+}
+// Card for one chart, or for a guideline's set of chart pages (n > 1).
+function chartCard(c, n = 1) {
+  return el("a", { class: "chart-card", href: chartHref(c) },
+    el("span", { class: "chart-thumb" }, c.img ? el("img", { src: thumbOf(c.img), alt: "", loading: "lazy", decoding: "async", width: 480, height: 326 }) : null,
+      n > 1 ? el("span", { class: "chart-count", text: `${n} pages` }) : null),
+    el("span", { class: "chart-card-body" },
+      el("span", { class: "chart-card-title", text: c.p.title }),
+      el("span", { class: "chart-card-meta" }, el("span", { text: n > 1 ? `Pages ${pageRange(chartSet(c).filter((x) => x.kind === c.kind).map((x) => x.pg))}` : `Page ${c.pg}` }),
+        el("span", { class: "pb" + (c.p.pop === "peds" ? " pb-p" : ""), text: c.p.pop === "peds" ? "P" : "A", title: popLabel(c.p) }),
+        c.img ? offlineDot(c.img) : null)));
+}
 function chartRow(c) {
   return el("li", {}, el("a", { class: "row chart-row", href: chartHref(c) },
     el("span", { class: "row-main" },
       el("span", { class: "row-title" }, c.p.title, c.pg ? el("span", { class: "row-pg", text: " · page " + c.pg }) : null),
-      c.sub ? el("span", { class: "row-sub", text: c.sub }) : null,
-      el("span", { class: "chart-meta" }, el("span", { class: "pill", text: c.kind }), c.path ? el("span", { class: "pill", text: "Step-by-step text" }) : null, el("span", { class: "pill pill-q", text: versionLabel(c.p) }), c.img ? offlineBadge(c.img) : el("span", { class: "pill pill-q", text: "Text · offline" }))),
-    chev()));
+      c.sub ? el("span", { class: "row-sub", text: c.sub }) : null),
+    el("span", { class: "pill pill-q", text: popLabel(c.p) }), chev()));
+}
+function offlinePanel() {
+  const imgs = (S.charts || []).filter((c) => c.img).map((c) => c.img);
+  const status = el("p", { class: "muted off-status", text: "Checking this device…" });
+  Promise.all(imgs.map(offlineState)).then((r) => { const n = r.filter(Boolean).length; status.textContent = n === imgs.length ? `All ${imgs.length} chart images are saved on this device.` : `${n} of ${imgs.length} chart images saved on this device. Guideline text always works offline.`; });
+  return el("section", { class: "offline-card" }, el("h2", { class: "offline-h", text: "Offline charts" }), status, offlineButton());
 }
 function viewCharts(params) {
   setBar("Flowcharts"); setTab("charts");
-  let f = params.get("f") || "";
+  let f = params.get("f") || "", kind = params.get("k") || "all";
   const holder = el("div");
+  const seg = el("div", { class: "kind-filter", role: "radiogroup", "aria-label": "Chart type" });
+  const kinds = [["all", "All"], ...CHART_KINDS.map(([k, , , short]) => [k, short])];
+  const paintSeg = () => seg.replaceChildren(...kinds.map(([k, label]) => el("button", { type: "button", role: "radio", class: "chip kind-chip", "aria-checked": String(kind === k),
+    onclick: () => { kind = k; paintSeg(); paint(); history.replaceState(null, "", "#/charts?" + new URLSearchParams({ ...(f ? { f } : {}), ...(k !== "all" ? { k } : {}) })); } }, label)));
   const paint = () => {
     const q = f.trim().toLowerCase();
-    const shown = S.charts.filter((c) => popOk(c.p) && (!q || (c.p.title + " " + c.sub + " " + c.where + " " + c.kind).toLowerCase().includes(q)));
-    const groups = new Map();
-    shown.forEach((c) => { if (!groups.has(c.where)) groups.set(c.where, []); groups.get(c.where).push(c); });
-    holder.replaceChildren(...(groups.size ? [...groups].map(([w, cs]) => section(w, el("ul", { class: "list" }, cs.map(chartRow))))
-      : [emptyState("No matching flowcharts", q ? "Try another word, or clear the filter." : "Switch to All to include every population.")]));
+    const shown = S.charts.filter((c) => popOk(c.p) && (kind === "all" || c.kind === kind) && (!q || (c.p.title + " " + c.sub + " " + c.where).toLowerCase().includes(q)));
+    const out = CHART_KINDS.map(([k, label, desc]) => {
+      const cs = shown.filter((c) => c.kind === k); if (!cs.length) return null;
+      if (k === "algo") return el("section", { class: "sec" }, el("h2", { class: "sec-h", text: label }), el("p", { class: "sec-desc", text: desc }), el("ul", { class: "list" }, cs.map(chartRow)));
+      const sets = []; const seen = new Set();
+      for (const c of cs) { if (seen.has(c.p)) continue; seen.add(c.p); sets.push([c, cs.filter((x) => x.p === c.p).length]); }
+      return el("section", { class: "sec" }, el("h2", { class: "sec-h", text: label }), el("p", { class: "sec-desc", text: desc }),
+        el("div", { class: "chart-grid" + (k === "edu" ? " chart-grid-sm" : "") }, sets.map(([c, n]) => chartCard(c, n))));
+    }).filter(Boolean);
+    holder.replaceChildren(...(out.length ? out : [emptyState("No matching charts", q ? "Try another word, or clear the filter." : "Switch to All to include every population.")]));
   };
-  paint();
-  const n = S.charts.filter((c) => c.img).length;
-  mount(largeTitle("Flowcharts", `${S.charts.length} charts and algorithm pages from the guidelines`),
-    searchField("Filter flowcharts", f, (v) => { f = v; paint(); history.replaceState(null, "", "#/charts" + (v ? "?f=" + enc(v) : "")); }),
-    popSwitch(() => viewCharts(new URLSearchParams(f ? "f=" + f : ""))),
-    el("details", { class: "extra offline-panel" }, el("summary", {}, "Use charts offline"),
-      el("p", { class: "muted", text: `Pathway and algorithm text is stored with the app and always works offline. The ${n} chart images are saved when you open them, or all at once here.` }), offlineButton()),
-    holder);
+  paintSeg(); paint();
+  mount(largeTitle("Flowcharts", "Pathways, algorithms and reference charts from the guidelines."),
+    searchField("Search charts", f, (v) => { f = v; paint(); history.replaceState(null, "", "#/charts" + (v ? "?f=" + enc(v) : "")); }),
+    el("div", { class: "hscroll kind-scroll" }, seg), popSwitch(() => viewCharts(new URLSearchParams({ ...(f ? { f } : {}), ...(kind !== "all" ? { k: kind } : {}) }))),
+    holder, offlinePanel());
+}
+// Full-screen zoom for a chart image: buttons and double-tap zoom, pan by scrolling; works offline once the image is stored.
+function openZoom(src, label) {
+  let z = 1;
+  const img = el("img", { src, alt: label, class: "zoom-img", draggable: "false" });
+  const pane = el("div", { class: "zoom-pane" }, img);
+  const set = (nz, cx, cy) => {
+    const r = pane.getBoundingClientRect(), fx = (pane.scrollLeft + (cx ?? r.width / 2)) / pane.scrollWidth, fy = (pane.scrollTop + (cy ?? r.height / 2)) / pane.scrollHeight;
+    z = Math.min(5, Math.max(1, nz)); img.style.width = z * 100 + "%"; lab.textContent = Math.round(z * 100) + "%";
+    requestAnimationFrame(() => { pane.scrollLeft = fx * pane.scrollWidth - (cx ?? r.width / 2); pane.scrollTop = fy * pane.scrollHeight - (cy ?? r.height / 2); });
+  };
+  const lab = el("span", { class: "zoom-lab", text: "100%" });
+  const close = () => { ov.remove(); document.removeEventListener("keydown", key); document.body.classList.remove("zoom-open"); };
+  const key = (e) => { if (e.key === "Escape") close(); if (e.key === "+" || e.key === "=") set(z * 1.5); if (e.key === "-") set(z / 1.5); };
+  img.addEventListener("dblclick", (e) => { const r = pane.getBoundingClientRect(); set(z > 1 ? 1 : 2.5, e.clientX - r.left, e.clientY - r.top); });
+  const ov = el("div", { class: "zoom", role: "dialog", "aria-modal": "true", "aria-label": label },
+    el("div", { class: "zoom-bar" },
+      el("button", { type: "button", class: "zoom-btn", "aria-label": "Zoom out", onclick: () => set(z / 1.5) }, "−"), lab,
+      el("button", { type: "button", class: "zoom-btn", "aria-label": "Zoom in", onclick: () => set(z * 1.5) }, "+"),
+      el("button", { type: "button", class: "zoom-btn zoom-fit", onclick: () => set(1) }, "Fit"),
+      el("button", { type: "button", class: "zoom-btn zoom-x", "aria-label": "Close", onclick: close }, "✕")),
+    pane, el("p", { class: "zoom-hint", text: "Double-tap or use + to zoom. Drag to move around." }));
+  document.body.append(ov); document.body.classList.add("zoom-open"); document.addEventListener("keydown", key);
+  ov.querySelector(".zoom-x").focus();
 }
 function viewChart(pid, gi) {
   const p = S.byId.get(pid); const c = (S.charts || []).find((x) => x.p === p && String(x.gi) === String(gi));
   if (!p || !c) return viewMissing();
-  setBar("Flowchart", { back: true }); setTab("charts");
+  setBar("Flowchart", { back: true, save: p.id }); setTab("charts");
   pushRecent(p.id);
   const g = p.guide; S.current = p;
   const idx = new Map(p._units.map((u, i) => [u.ri != null ? `${u.gi}:${u.ri}` : `${u.gi}`, i]));
   const unitOf = (a, r) => idx.get(r != null ? `${a}:${r}` : `${a}`);
   const b = g.blocks[c.gi];
-  let body;
-  if (b.t === "flow") {
-    body = flowEl(b, c.gi, unitOf, [], p);
-    // on the chart screen the original image is shown open (and fetched now, so it is kept for offline use)
-    const d = body.querySelector("details.textver"); if (d) { d.open = true; d.querySelector("img")?.setAttribute("loading", "eager"); }
-  }
-  else {
-    const sub = { ...p, guide: { ...g, blocks: g.blocks.map((x, i) => (i === c.gi || (i === c.gi + 1 && x.t === "figtext")) ? x : { t: "skip" }) } };
-    body = renderGuide(sub, [], true);
-  }
+  const set = chartSet(c), at = set.indexOf(c);
   const jump = unitOf(c.gi, 0) ?? unitOf(c.gi);
-  const others = S.charts.filter((x) => x.p === p && x !== c);
-  mount(el("article", { class: "reader chart-view" },
-    el("nav", { class: "breadcrumbs", "aria-label": "Breadcrumb" }, el("a", { href: "#/charts", text: "Flowcharts" }), el("span", { text: "/" }), el("a", { href: `#/p/${enc(p.id)}`, text: p.title })),
+  // Views: the chart image, its step-by-step pathway text, and/or the chart's own text lines.
+  let steps = null, text = null;
+  if (b.t === "flow") {
+    steps = flowEl(b, c.gi, unitOf, [], p);
+    steps.querySelector("details.textver")?.remove();          // the image is shown in the Chart view
+    steps.querySelector(".flow-top")?.remove();
+  } else {
+    const ft = g.blocks[c.gi + 1]?.t === "figtext" ? g.blocks[c.gi + 1] : null;
+    if (ft) text = el("div", { class: "rd-body fig-text" }, ft.lines.map((l, ri) => el("p", { "data-u": unitOf(c.gi + 1, ri) }, l)));
+  }
+  const img = c.img;
+  const chartView = img ? el("figure", { class: "chart-frame" },
+    el("button", { type: "button", class: "chart-zoom", onclick: () => openZoom(img, `${p.title}, page ${c.pg}`), "aria-label": "Open the chart full screen to zoom" },
+      el("img", { src: img, alt: `${p.title}, chart on page ${c.pg} of the original`, loading: "eager" }),
+      el("span", { class: "zoom-cue", "aria-hidden": "true" }, "Tap to zoom")),
+    el("figcaption", {}, `Original chart · page ${c.pg} of the PDF`)) : null;
+  const views = [["chart", "Chart", chartView], ["steps", "Steps", steps], ["text", "Chart text", text]].filter(([, , n]) => n);
+  let mode = store.get("chartView", "chart"); if (!views.some(([k]) => k === mode)) mode = views[0][0];
+  const panes = el("div", { class: "chart-panes" });
+  const tabs = el("div", { class: "seg view-seg", role: "tablist", "aria-label": "Chart view" });
+  const show = () => {
+    tabs.replaceChildren(...views.map(([k, label]) => el("button", { type: "button", role: "tab", class: "seg-btn", "aria-selected": String(mode === k),
+      onclick: () => { mode = k; store.set("chartView", k); show(); } }, label)));
+    panes.replaceChildren(views.find(([k]) => k === mode)[2]);
+  };
+  show();
+  const pager = set.length > 1 ? el("nav", { class: "pager", "aria-label": "Chart pages in this guideline" },
+    el("a", { class: "pager-btn", href: at > 0 ? chartHref(set[at - 1]) : null, "aria-disabled": at > 0 ? null : "true", "aria-label": "Previous chart page" }, "‹"),
+    el("div", { class: "pager-pages hscroll" }, set.map((x) => el("a", { class: "pager-pg", href: chartHref(x), "aria-current": x === c ? "page" : null, text: "p" + x.pg }))),
+    el("a", { class: "pager-btn", href: at < set.length - 1 ? chartHref(set[at + 1]) : null, "aria-disabled": at < set.length - 1 ? null : "true", "aria-label": "Next chart page" }, "›")) : null;
+  const related = (S.charts || []).filter((x) => x.p !== p && x.gi != null && ((p.cond && x.p.cond === p.cond) || (!p.cond && x.kind === c.kind)) && popOk(x.p));
+  const rs = []; const seen = new Set(); for (const x of related) if (!seen.has(x.p)) { seen.add(x.p); rs.push(x); }
+  mount(el("article", { class: "chart-view" },
+    el("nav", { class: "breadcrumbs", "aria-label": "Breadcrumb" }, el("a", { href: "#/charts?k=" + c.kind, text: CHART_KINDS.find(([k]) => k === c.kind)[1] })),
     el("h1", { class: "rd-title", text: p.title }),
-    el("p", { class: "rd-sub", text: `${c.kind} · page ${c.pg} of the original${c.sub ? " · " + c.sub : ""}` }),
+    el("p", { class: "rd-sub" }, `Page ${c.pg} of the original`, c.sub ? el("span", { class: "chart-subline", text: c.sub }) : null),
+    pager,
+    views.length > 1 ? tabs : null,
+    panes,
     el("div", { class: "chart-actions" },
-      el("a", { class: "btn", href: `#/p/${enc(p.id)}${jump != null ? "?b=" + jump : ""}`, text: "Open in guideline" }),
-      c.img ? el("a", { class: "btn btn-secondary", href: c.img, target: "_blank", rel: "noopener", text: "Full-size image ↗" }) : null,
-      el("a", { class: "btn btn-secondary", href: pdfHref(p, c.pg), target: "_blank", rel: "noopener", text: "Original PDF ↗" }),
-      c.img ? offlineBadge(c.img) : null),
-    el("div", { class: "rd-body" }, body),
-    others.length ? section("More from this guideline", el("ul", { class: "list" }, others.map(chartRow))) : null,
+      el("a", { class: "act", href: `#/p/${enc(p.id)}${jump != null ? "?b=" + jump : ""}` }, icon("doc"), el("span", { text: "Open in guideline" })),
+      img ? el("button", { type: "button", class: "act", onclick: () => openZoom(img, `${p.title}, page ${c.pg}`) }, icon("expand"), el("span", { text: "Full screen" })) : null,
+      el("a", { class: "act", href: pdfHref(p, c.pg), target: "_blank", rel: "noopener" }, icon("pdf"), el("span", { text: "Original PDF" }))),
+    img ? el("p", { class: "chart-off" }, offlineBadge(img)) : null,
+    rs.length ? section(p.cond ? "More charts for " + S.cond.get(p.cond).name : "More " + CHART_KINDS.find(([k]) => k === c.kind)[1].toLowerCase(), el("div", { class: "chart-grid" }, rs.slice(0, 6).map((x) => chartCard(x, chartSet(x).filter((y) => y.kind === x.kind).length)))) : null,
     el("footer", { class: "rd-foot" }, el("a", { class: "btn btn-secondary", href: `#/p/${enc(p.id)}`, text: "← Back to " + p.title }))));
 }
 function chartLinks(p) {
   const cs = (S.charts || []).filter((c) => c.p === p && c.gi != null);
   if (!cs.length) return null;
-  return el("div", { class: "chart-links" }, el("span", { class: "chart-links-h", text: `Flowcharts in this guideline (${cs.length})` }),
-    el("div", { class: "chips" }, cs.map((c) => el("a", { class: "chip", href: chartHref(c), text: `${c.kind} · page ${c.pg}` }))));
+  return el("div", { class: "chart-links" }, el("span", { class: "chart-links-h", text: `Charts in this guideline (${cs.length})` }),
+    el("div", { class: "chart-strip hscroll" }, cs.map((c) => el("a", { class: "strip-card", href: chartHref(c) },
+      c.img ? el("img", { src: thumbOf(c.img), alt: "", loading: "lazy", width: 480, height: 326 }) : null, el("span", { text: "Page " + c.pg })))));
 }
 
 /* ---------- text size ---------- */
@@ -854,41 +1013,158 @@ const SIZES = [0.94, 1, 1.12, 1.25];
 function applySize() { document.documentElement.style.setProperty("--rd-scale", SIZES[S.size] ?? 1); }
 
 /* Presentation adapters. Source JSON is read-only; original runs are rendered verbatim. */
-const ORGANISMS = [
-  { id: 'enterococcus', name: 'Enterococcus', sub: 'UTI · endocarditis', re: /enterococc/i, conditions: ['uti', 'endo'] },
-  { id: 'staph-aureus', name: 'Staphylococcus aureus', sub: 'Bacteremia · endocarditis · skin & soft tissue', re: /aureus|\bMRSA\b|\bMSSA\b/i, conditions: ['sab', 'endo', 'ssti', 'bsi'] },
-  { id: 'gas', name: 'Group A Streptococcus', sub: 'Pharyngitis', re: /group A strep|streptococcal pharyngitis/i, conditions: ['gas'] },
-  { id: 'candida', name: 'Candida', sub: 'Candidemia & candidiasis', re: /candida/i, conditions: ['candida'] },
-];
-function organismPages(o, condition) {
-  return S.pages.filter(p => popOk(p) && p.kind !== 'section' && o.conditions.includes(p.cond) && (!condition || p.cond === condition) && o.re.test(p.title + ' ' + p._text.join(' ')));
+/* ---------- organisms ---------- */
+// The organism index lists only organisms that the captured guidelines mention. Categories are standard Gram-stain and
+// morphology groups (the same top-level groups the bloodstream-infection guideline uses). Every passage shown is
+// guideline text quoted verbatim, linked to its place in the guideline; counts are counts of those passages.
+const ORG_ROMAN = new Set(["gas", "gbs", "viridans", "cons", "hacek", "anaerobes", "ntm", "mdr"]);
+function orgName(o, cls) {
+  if (["virus", "res"].includes(o.cat) || ORG_ROMAN.has(o.id)) return el("span", { class: cls, text: o.name });
+  // genus and species names are italic; connecting words and parenthetical common names are not
+  const parts = o.name.split(/( \(.*\)| & )/).filter(Boolean);
+  return el("span", { class: cls }, parts.map((t) => /^( \(| & )/.test(t) ? t : el("i", { text: t })));
 }
+const orgCatName = (id) => S.orgCats.find((c) => c.id === id)?.name || "";
+function indexOrganisms() {
+  const pats = S.orgs.map((o) => ({ o, res: [o.re ? new RegExp(o.re, "i") : null, o.cs ? new RegExp(o.cs) : null].filter(Boolean) }));
+  const any = new RegExp(S.orgs.map((o) => o.re).filter(Boolean).join("|"), "i");
+  const anyCs = new RegExp(S.orgs.map((o) => o.cs).filter(Boolean).join("|") || "$^");
+  for (const o of S.orgs) S.orgHits.set(o.id, new Map());
+  for (const p of S.pages) {
+    if (p.kind === "section") continue;
+    [p.title, ...p._text].forEach((txt, i) => {
+      if (!any.test(txt) && !anyCs.test(txt)) return;
+      for (const { o, res } of pats) {
+        let m = null;
+        for (const r of res) { m = txt.match(r); if (m) break; }
+        if (!m) continue;
+        const hits = S.orgHits.get(o.id);
+        if (!hits.has(p.id)) hits.set(p.id, { inTitle: false, blocks: [] });
+        const h = hits.get(p.id);
+        if (i === 0) { h.inTitle = true; continue; }
+        h.blocks.push({ b: i - 1, term: m[0] });
+        const k = p.id + ":" + (i - 1); if (!S.unitOrgs.has(k)) S.unitOrgs.set(k, new Set()); S.unitOrgs.get(k).add(o.id);
+      }
+    });
+  }
+  S.orgs = S.orgs.filter((o) => S.orgHits.get(o.id).size);
+}
+const orgPagesFor = (o) => [...S.orgHits.get(o.id)].map(([id, h]) => [S.byId.get(id), h]).filter(([p]) => popOk(p));
+const orgCount = (o) => orgPagesFor(o).length;
+// Charts whose own text (pathway boxes or chart text) contains one of the given passages.
+function chartsForHits(hits) {
+  const out = new Set();
+  for (const [p, h] of hits) for (const x of h.blocks) {
+    const u = p._units?.[x.b]; if (!u) continue;
+    const c = (S.charts || []).find((c) => c.p === p && c.gi != null && (c.gi === u.gi || (p.guide.blocks[u.gi]?.t === "figtext" && c.gi === u.gi - 1)));
+    if (c) out.add(c);
+  }
+  return [...out];
+}
+function tally(hits, map) {   // how many quoted passages name each co-mentioned item
+  const n = new Map();
+  for (const [p, h] of hits) for (const x of h.blocks) for (const k of map.get(p.id + ":" + x.b) || []) n.set(k, (n.get(k) || 0) + 1);
+  return [...n].sort((a, b) => b[1] - a[1]);
+}
+function statTiles(items) {
+  return el("div", { class: "stat-row" }, items.filter(Boolean).map(([n, label, href]) =>
+    el(href ? "a" : "div", { class: "stat", href }, el("span", { class: "stat-n", text: String(n) }), el("span", { class: "stat-l", text: label }))));
+}
+function chipRow(label, chips, more) {
+  if (!chips.length) return null;
+  return el("div", { class: "syn-row" }, el("div", { class: "syn-k", text: label }), el("div", { class: "chips" }, chips, more || null));
+}
+// Hits grouped by condition (in body-system order), then resources; each group expands to its quoted passages.
+function hitGroups(hits, term) {
+  const conds = new Map(), res = [];
+  for (const [p, h] of hits) {
+    if (p.kind === "cond") { if (!conds.has(p.cond)) conds.set(p.cond, []); conds.get(p.cond).push([p, h]); }
+    else res.push([p, h]);
+  }
+  const groupRow = (title, sub, ph, id) => el("li", {}, el("details", { class: "exp", id },
+    el("summary", { class: "row" }, el("span", { class: "row-main" }, el("span", { class: "row-title", text: title }),
+      el("span", { class: "row-sub", text: sub })), popBadges(ph.map(([p]) => p)), el("span", { class: "chev chev-d", "aria-hidden": "true" })),
+    el("div", { class: "exp-body" }, ph.map(([p, h]) => el("div", { class: "exp-page" },
+      el("a", { class: "exp-title", href: `#/p/${enc(p.id)}?q=${enc(h.blocks[0]?.term || term)}${h.blocks[0] ? "&b=" + h.blocks[0].b : ""}` }, `${p.title} · ${versionLabel(p)}`),
+      passages(p, h, 3),
+      h.blocks.length > 3 ? el("a", { class: "psg-more", href: `#/p/${enc(p.id)}?q=${enc(h.blocks[0].term)}` }, `${h.blocks.length - 3} more in this guideline →`) : null)))));
+  const mentions = (ph) => plural(ph.reduce((s, [, h]) => s + h.blocks.length, 0), "passage");
+  const sys = S.tax.systems.map((sy) => {
+    const items = [...conds].filter(([cid]) => S.cond.get(cid).system === sy.id).sort((a, b) => S.cond.get(a[0]).name.localeCompare(S.cond.get(b[0]).name));
+    return items.length ? section(sy.name, el("ul", { class: "list" }, items.map(([cid, ph]) => groupRow(S.cond.get(cid).name,
+      `${[...new Set(ph.map(([p]) => versionLabel(p)))].join(" · ")} · ${mentions(ph)}`, ph, "cond-" + cid)))) : null;
+  });
+  const byRes = new Map();
+  for (const [p, h] of res) { const k = p.res ? S.res.get(p.res).name : p.category || "Other"; if (!byRes.has(k)) byRes.set(k, []); byRes.get(k).push([p, h]); }
+  return { sys, res: byRes.size ? section("Dosing, resources & education", el("ul", { class: "list" },
+    [...byRes].map(([k, ph]) => groupRow(k, `${plural(ph.length, "page")} · ${mentions(ph)}`, ph)))) : null, nConds: conds.size };
+}
+function viewOrganisms(params = new URLSearchParams()) {
+  setBar("Organisms"); setTab("cond");
+  let f = params.get("f") || "";
+  const holder = el("div");
+  const paint = () => {
+    const q = f.trim().toLowerCase();
+    const match = (o) => !q || [o.name, ...o.aka].some((x) => x.toLowerCase().includes(q));
+    const groups = S.orgCats.map((c) => [c, S.orgs.filter((o) => o.cat === c.id && match(o) && orgCount(o)).sort((a, b) => orgCount(b) - orgCount(a) || a.name.localeCompare(b.name))]).filter(([, os]) => os.length);
+    const top = q ? [] : S.orgs.filter((o) => orgCount(o)).sort((a, b) => orgCount(b) - orgCount(a)).slice(0, 8);
+    holder.replaceChildren(
+      top.length ? section("Most referenced", el("div", { class: "org-tiles" }, top.map((o) => el("a", { class: "org-tile", href: `#/o/${o.id}`, "data-cat": o.cat },
+        orgName(o, "org-tile-name"), el("span", { class: "org-tile-n", text: plural(orgCount(o), "guideline") }))))) : null,
+      !q ? el("nav", { class: "cat-jump", "aria-label": "Jump to group" }, el("div", { class: "hscroll" }, groups.map(([c]) =>
+        el("button", { type: "button", class: "chip cat-chip", "data-cat": c.id, onclick: () => $("cat-" + c.id)?.scrollIntoView({ behavior: "smooth", block: "start" }) }, c.name)))) : null,
+      ...(groups.length ? groups.map(([c, os]) => el("section", { class: "sec org-sec", id: "cat-" + c.id, "data-cat": c.id },
+        el("h2", { class: "sec-h org-sec-h" }, el("span", { class: "org-dot", "aria-hidden": "true" }), c.name, el("span", { class: "org-sec-n", text: String(os.length) })),
+        list(...os.map((o) => el("li", {}, el("a", { class: "row", href: `#/o/${o.id}` },
+          el("span", { class: "row-main" }, orgName(o, "row-title"), o.aka.length ? el("span", { class: "row-sub", text: o.aka.join(" · ") }) : null),
+          el("span", { class: "count", text: String(orgCount(o)) }), chev()))))))
+        : [emptyState("No matching organisms", "Try a genus, species or abbreviation, e.g. Klebsiella, MRSA or CMV.")]));
+  };
+  paint();
+  const cat = params.get("cat");
+  if (cat) requestAnimationFrame(() => $("cat-" + cat)?.scrollIntoView({ block: "start" }));
+  mount(largeTitle("Organisms", `${S.orgs.length} organisms named in the guidelines, grouped by Gram stain and morphology.`), browseSwitch("organisms"),
+    searchField("Find an organism", f, (v) => { f = v; paint(); history.replaceState(null, "", "#/organisms" + (v ? "?f=" + enc(v) : "")); }),
+    popSwitch(() => viewOrganisms(new URLSearchParams(f ? "f=" + f : ""))), holder,
+    el("p", { class: "hint", text: "Number = guidelines that mention the organism. Groups follow standard Gram-stain and morphology classification; they are a browsing aid, not guideline text." }));
+}
+function viewOrganism(id, condition) {
+  const o = S.orgs.find((x) => x.id === id); if (!o) return viewMissing();
+  setBar(orgCatName(o.cat), { back: true, save: "org:" + o.id }); setTab("cond");
+  pushRecent("org:" + o.id);
+  let hits = orgPagesFor(o);
+  if (condition) { if (!S.cond.get(condition)) return viewMissing(); hits = hits.filter(([p]) => p.cond === condition); }
+  hits.sort((a, b) => b[1].inTitle - a[1].inTitle || b[1].blocks.length - a[1].blocks.length);
+  const nPass = hits.reduce((s, [, h]) => s + h.blocks.length, 0);
+  const g = hitGroups(hits, o.name);
+  const drugs = tally(hits, S.unitDrugs).slice(0, 12);
+  const charts = chartsForHits(hits);
+  const conds = [...new Set(hits.filter(([p]) => p.kind === "cond").map(([p]) => p.cond))];
+  const kin = S.orgs.filter((x) => x.cat === o.cat && x !== o && orgCount(x)).sort((a, b) => orgCount(b) - orgCount(a)).slice(0, 8);
+  const synopsis = el("section", { class: "synopsis", "data-cat": o.cat, "aria-label": "Synopsis" },
+    el("div", { class: "syn-head" }, el("span", { class: "org-dot", "aria-hidden": "true" }), el("span", { class: "syn-cat", text: orgCatName(o.cat) })),
+    statTiles([[hits.length, hits.length === 1 ? "guideline" : "guidelines"], [g.nConds, g.nConds === 1 ? "condition" : "conditions", g.nConds ? "#where" : null], [nPass, nPass === 1 ? "passage" : "passages"], charts.length ? [charts.length, charts.length === 1 ? "chart" : "charts", "#org-charts"] : null]),
+    chipRow("Covered in", conds.map((cid) => el("a", { class: "chip", href: `#/o/${o.id}/${cid}`, text: S.cond.get(cid).name }))),
+    chipRow("Antibiotics named with it", drugs.map(([n, k]) => el("a", { class: "chip chip-count", href: `#/d/${enc(n)}` }, el("span", { text: n }), el("span", { class: "chip-n", text: String(k) })))),
+    el("p", { class: "syn-note", text: "Counts are guideline passages that name both. Open a passage to read the recommendation in full." }));
+  mount(el("nav", { class: "breadcrumbs", "aria-label": "Breadcrumb" }, el("a", { href: "#/organisms", text: "Organisms" }), el("span", { text: "/" }),
+      condition ? el("a", { href: `#/o/${o.id}` }, orgName(o)) : el("a", { href: `#/organisms?cat=${o.cat}`, text: orgCatName(o.cat) })),
+    el("header", { class: "large" }, el("h1", {}, condition ? S.cond.get(condition).name : orgName(o)),
+      el("p", { class: "large-sub" }, condition ? orgName(o) : o.aka.length ? "Also: " + o.aka.join(", ") : null)),
+    popSwitch(() => viewOrganism(id, condition)),
+    !hits.length ? emptyState("Not mentioned for this population", "Switch to All to see every guideline.") : [
+      condition ? null : synopsis,
+      el("h2", { class: "group-h", id: "where", text: condition ? "Guidelines" : `Where it appears · ${plural(g.nConds, "condition")}` }),
+      g.sys, g.res,
+      charts.length && !condition ? section("Flowcharts that name it", el("div", { class: "chart-grid", id: "org-charts" }, charts.map(chartCard))) : null,
+      kin.length && !condition ? section("Related in " + orgCatName(o.cat), el("div", { class: "chips" }, kin.map((x) => el("a", { class: "chip", href: `#/o/${x.id}` }, orgName(x))))) : null]);
+  if (hits.length === 1 || condition) document.querySelector("#view details.exp")?.setAttribute("open", "");
+}
+
 function browseSwitch(active) {
   return el('nav', {class:'browse-switch', 'aria-label':'Browse guidelines by'},
     el('a', {href:'#/conditions', 'aria-current':active==='conditions'?'page':null}, 'By condition'),
     el('a', {href:'#/organisms', 'aria-current':active==='organisms'?'page':null}, 'By organism'));
-}
-function viewOrganisms() {
-  setBar('Organisms'); setTab('cond');
-  mount(largeTitle('Organisms', 'Choose an organism, then an infection and guideline.'), browseSwitch('organisms'),
-    popSwitch(viewOrganisms), section('Organism index', list(...ORGANISMS.map(o => row({href:'#/o/'+o.id,title:o.name,sub:o.sub,right:el('span',{class:'count',text:String(organismPages(o).length)})})))),
-    el('p',{class:'hint',text:'This index links to existing guidelines. Search the full text for other organisms.'}),
-    el('a',{class:'btn btn-secondary',href:'#/search'},'Search all guideline text'));
-}
-function viewOrganism(id, condition) {
-  const o = ORGANISMS.find(x=>x.id===id); if(!o) return viewMissing();
-  setBar(o.name,{back:true}); setTab('cond');
-  const pages = organismPages(o, condition);
-  if(condition) {
-    const c=S.cond.get(condition); if(!c || !o.conditions.includes(condition)) return viewMissing();
-    mount(el('nav',{class:'breadcrumbs','aria-label':'Breadcrumb'},el('a',{href:'#/organisms'},'Organisms'),el('span',{},'/'),el('a',{href:'#/o/'+o.id},o.name)),
-      largeTitle(c.name, o.name), popSwitch(()=>viewOrganism(id,condition)),
-      pages.length ? section('Choose a guideline',list(...pages.map(p=>row({href:`#/p/${enc(p.id)}?organism=${o.id}&infection=${condition}`,title:p.title,sub:versionLabel(p)})))) : emptyState('No guideline for this population','Switch to All to see the available guidelines.'));
-  } else {
-    mount(el('nav',{class:'breadcrumbs','aria-label':'Breadcrumb'},el('a',{href:'#/organisms'},'Organisms')),largeTitle(o.name,'Choose an infection to view the available guidelines.'),popSwitch(()=>viewOrganism(id)),
-      section('Infection',list(...o.conditions.map(cid=>{const c=S.cond.get(cid), ps=organismPages(o,cid);return row({href:`#/o/${o.id}/${cid}`,title:c.name,sub:ps.length?`${plural(ps.length,'guideline')} available`:'No guidelines for this population'});}))),
-      el('p',{class:'hint',text:'Organism mentions link to the complete source guideline, including its qualifying statements.'}));
-  }
 }
 function sourceParagraphs(cell, terms) {
   return (cell||[]).map(r=>{
@@ -901,7 +1177,7 @@ function sourceParagraphs(cell, terms) {
 function clinicalTable(b,gi,unitOf,terms) {
   const head=b.head||[], cols=Math.max(head.length,...b.rows.map(r=>r.length));
   const grid=isGrid(b), complex=b.rows.some(row=>row.some(c=>parasText(c).length>1500));
-  const result = el('section',{class:'clinical-table '+(grid||complex?'table-scroll':'table-responsive'),id:`g${gi}`},
+  const result = el('section',{class:'clinical-table '+(grid||complex?'table-scroll':'table-responsive')+(b.layout?' '+b.layout:''),id:`g${gi}`},
     b.caption?el('h3',{class:'tb-cap'},highlight(b.caption,terms)):null,
     (b.shared||[]).length?el('div',{class:'shared-note'},el('div',{class:'shared-h',text:'Applies to every row of this table'}),
       b.shared.map((sh,si)=>el('div',{class:'shared-item','data-u':unitOf(gi,'s'+si)},sh.label?el('div',{class:'shared-label',text:sh.label}):null,sourceParagraphs(sh.p,terms)))):null,
@@ -947,8 +1223,8 @@ function gasPresentation(p, terms) {
   return out;
 }
 function readerContents(article) {
-  const versions=article.querySelector('.versions'), agents=article.querySelector('.agents');
-  if(versions || agents) { const tools=el('div',{class:'reader-tools'}); const first=versions||agents; first.before(tools); if(versions) tools.append(versions); if(agents) tools.append(agents); }
+  const versions=article.querySelector('.versions'), agents=[...article.querySelectorAll('.agents')];
+  if(versions || agents.length) { const tools=el('div',{class:'reader-tools'}); const first=versions||agents[0]; first.before(tools); if(versions) tools.append(versions); agents.forEach(a=>tools.append(a)); }
   const nav=article.querySelector('.toc');
   if(nav) nav.remove();
   const headings=[...article.querySelectorAll('.rd-body h2[id],.rd-body h3[id],.rd-body .tb-cap')].filter(n=>n.textContent.length<160);
@@ -975,7 +1251,7 @@ function route(requestedHash) {
   const [, a, b, c] = path.split("/").map((x) => x && decodeURIComponent(x));
   const keep = a === "p" && params.get("b");
   if (!keep) window.scrollTo(0, 0);
-  ({ "": viewHome, undefined: viewHome, conditions: () => viewConditions(params), organisms: viewOrganisms, o: () => viewOrganism(b,c), c: () => viewCondition(b), p: () => viewPage(b, params),
+  ({ "": viewHome, undefined: viewHome, conditions: () => viewConditions(params), organisms: () => viewOrganisms(params), o: () => viewOrganism(b, c), c: () => viewCondition(b), p: () => viewPage(b, params),
     drugs: () => viewDrugs(params), d: () => viewDrug(b), res: viewResources, r: () => viewResource(b), files: () => viewLinks("files"),
     staff: () => viewLinks("staff"), search: () => viewSearch(params), saved: viewSaved, about: viewAbout,
     charts: () => viewCharts(params), chart: () => viewChart(b, c) }[a] || viewMissing)();

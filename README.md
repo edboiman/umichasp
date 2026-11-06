@@ -56,6 +56,8 @@ data/fig/                        chart and flowchart images
 data/pdf/                        the 124 original guideline PDFs (linked from every guideline and chart)
 data/drugs.json                  antibiotic names, classes, aliases
 data/taxonomy.json               conditions, body systems, resource groups
+data/organisms.json              organism index: names, abbreviations, Gram-stain group, match patterns
+data/fig/thumb/                  small chart previews for the Flowcharts tab
 tools/                           capture and PDF conversion scripts (tools/pdf/make_final.sh documents the build order)
 audit/                           QA reports; audit/v3/ holds the v3 review report, change logs and PDF coverage table
 ```
@@ -85,3 +87,19 @@ The interface has been redesigned across every route. Clinical source files in `
 - New **Flowcharts** tab (replaces the Saved tab; Saved is now the bookmark icon at the top right of every screen).
 - Each guideline shows its approval line and links to its original PDF.
 - Run `node tools/qa/verify-static.cjs` and open `tools/qa/browser-audit.html` (served locally) to re-run the checks.
+
+## Version 4 (November 2026)
+
+- **Organisms:** 94 organisms named in the guidelines, grouped by Gram stain and morphology:
+  Gram-positive cocci and bacilli, Gram-negative cocci and bacilli, anaerobes, atypicals, mycobacteria, resistant organisms,
+  yeasts, molds, viruses and parasites. Each organism has a summary card built only from guideline text: how many guidelines
+  and passages mention it, the conditions it appears in, and the antibiotics named in the same passages. Below the card, every
+  passage is quoted verbatim and links to its place in the guideline.
+- **Antibiotics:** the same summary card, plus the organisms named with each agent and the charts that mention it.
+- **Search:** typing an antibiotic or organism shows a summary card at the top, and organisms appear in the results.
+- **Flowcharts:** preview cards grouped into treatment pathways, diagnostic algorithms, reference charts, algorithm
+  guidelines and patient-education graphics. Each chart opens with page-by-page navigation, a Chart / Steps switch and a full-screen
+  zoom. The offline download now sits at the bottom of the screen.
+- **Content:** the BCID2 organism panel in both bloodstream-infection guidelines (adult p1, pediatric p2) is now a
+  three-column table (Gram positive / Gram negative / Fungus) with its lettered footnotes. It had been misread as a flowchart.
+  The words are unchanged; this is checked in `tools/pdf/layoutfix.py`.

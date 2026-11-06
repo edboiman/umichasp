@@ -9,8 +9,8 @@ vm.runInNewContext(fs.readFileSync(root+'/sw.js','utf8'),context);
  handlers.fetch({request,respondWith:p=>pending=p});assert.equal((await pending).kind,'network');
  hit={kind:'cached'};online=false;handlers.fetch({request,respondWith:p=>pending=p});assert.equal((await pending).kind,'cached');
  let handled=false;handlers.fetch({request:{method:'GET',url:'https://outside.test/'},respondWith:()=>handled=true});assert.equal(handled,false);
- const d=JSON.parse(fs.readFileSync(root+'/data/content.json'));let imgs=new Set();for(const p of d.pages)for(const b of p.guide?.blocks||[]){if(b.t==='fig')imgs.add(b.img);if(b.t==='flow'&&b.fig)imgs.add(b.fig.img);}for(const img of imgs)assert(fs.existsSync(path.join(root,img)),img);
+ const d=JSON.parse(fs.readFileSync(root+'/data/content.json'));let imgs=new Set();for(const p of d.pages)for(const b of p.guide?.blocks||[]){if(b.t==='fig')imgs.add(b.img);if(b.t==='flow'&&b.fig)imgs.add(b.fig.img);}for(const img of imgs){assert(fs.existsSync(path.join(root,img)),img);assert(fs.existsSync(path.join(root,img.replace('data/fig/','data/fig/thumb/'))),'thumbnail '+img)};
  let pdfs=0;for(const p of d.pages)if(p.guide){assert(fs.existsSync(path.join(root,'data/pdf',p.id+'.pdf')),'missing PDF '+p.id);pdfs++}
-for(const f of ['data/taxonomy.json','data/drugs.json','manifest.webmanifest'])JSON.parse(fs.readFileSync(root+'/'+f));
- console.log(JSON.stringify({status:'passed',checks:['service-worker install core paths','service-worker activation','online response','offline cached response','external requests ignored','JSON/manifest parsing','all chart asset paths','original PDF for every guideline'],corePaths:added.length,chartAssets:imgs.size,pdfs}));
+for(const f of ['data/taxonomy.json','data/drugs.json','data/organisms.json','manifest.webmanifest'])JSON.parse(fs.readFileSync(root+'/'+f));
+ console.log(JSON.stringify({status:'passed',checks:['service-worker install core paths','service-worker activation','online response','offline cached response','external requests ignored','JSON/manifest parsing','all chart asset paths and thumbnails','original PDF for every guideline','organism index'],corePaths:added.length,chartAssets:imgs.size,pdfs}));
 })().catch(e=>{console.error(e);process.exit(1);});

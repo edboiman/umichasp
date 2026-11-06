@@ -1,7 +1,7 @@
 // Offline cache. Bump VERSION whenever you replace data/content.json or app files.
-const VERSION = "asp-guide-20261104-v3";
+const VERSION = "asp-guide-20261104-v4";
 const FILES = ["./", "index.html", "app.js", "styles.css", "manifest.webmanifest",
-  "data/content.json", "data/drugs.json", "data/taxonomy.json", "icons/icon-192.png", "icons/apple-touch-icon.png"];
+  "data/content.json", "data/drugs.json", "data/taxonomy.json", "data/organisms.json", "icons/icon-192.png", "icons/apple-touch-icon.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));

@@ -133,3 +133,23 @@ v3 initially dropped the page-1 disclaimer; it was found by the coverage check a
 * Route smoke test at 320 px: 337 routes, covering all pages, conditions, organisms, antibiotics, charts and resources. No JS errors, no missing or empty pages, no overflow.
 * Interaction tests at 375 px: 30 checks, all passing. They include a real offline test with the server stopped: the app shell reloads, guideline text loads and cached chart images show.
 * Content checks: `tools/pdf/appwords.py`, `firstletter.py`, `final_check.py`, `changelog.py`.
+
+
+## v4 addendum (organisms, flowcharts, search)
+
+* **BCID2 organism panels** (Blood Stream Infections – Adult p1, Pediatric p2). The converter had read this three-column table as a
+  flowchart, which produced the uncategorised list of pathogens. It is rebuilt from the PDF as a table with the source's
+  Gram positiveᵃ / Gram negativeᵈ / Fungus headers and footnotes a–e. A check confirms no words were added. The words dropped
+  were duplicates, and the adult page's approval line and revision history, which moved to the guideline header.
+  Two glyphs missing from the text layer were restored from the page image: "Biofire™" and "β-hemolytic".
+* **Organism groups** are standard Gram-stain and morphology classes. They are a browsing aid, not guideline text, and they match the
+  bloodstream guideline's own top-level split. Organisms are found by name, abbreviation and common synonym, and the
+  patterns are in `data/organisms.json`. Ambiguous abbreviations are matched only in context: "PCP" only next to PJP or
+  prophylaxis, "GAS" and "TB" only in capitals.
+* **Summary cards** contain counts and links only, never a written clinical summary. "Antibiotics named with it" counts
+  passages that name both. It shows co-occurrence, not a recommendation.
+* **Chart groups:** treatment pathways (BSI adult p2–8, CDI treatment p1, C. difficile pediatric), diagnostic algorithms
+  (blood culture algorithm, CDI diagnostics, CDI test interpretation, meningitis panel), reference charts and tables, algorithm
+  guidelines (text) and patient-education graphics. The grouping was assigned by looking at each chart.
+* Tests: interaction suite (39 checks), route smoke test (2,332 routes at 320 px), static checks and the full browser audit.
+  Final browser audit: 0 failures across 7,630 route renders, 264,156 links, 9,648 table checks, 6,468 expandables and 14 interaction checks (`BROWSER_QA_RESULTS_v4.json`).

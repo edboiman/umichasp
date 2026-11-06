@@ -1,0 +1,984 @@
+{
+ "categories": [
+  {
+   "id": "gpc",
+   "name": "Gram-positive cocci"
+  },
+  {
+   "id": "gpb",
+   "name": "Gram-positive bacilli"
+  },
+  {
+   "id": "gnc",
+   "name": "Gram-negative cocci"
+  },
+  {
+   "id": "gnb",
+   "name": "Gram-negative bacilli"
+  },
+  {
+   "id": "ana",
+   "name": "Anaerobes"
+  },
+  {
+   "id": "atyp",
+   "name": "Atypical & spirochetes"
+  },
+  {
+   "id": "myco",
+   "name": "Mycobacteria"
+  },
+  {
+   "id": "res",
+   "name": "Resistant organisms"
+  },
+  {
+   "id": "yeast",
+   "name": "Yeasts & dimorphic fungi"
+  },
+  {
+   "id": "mold",
+   "name": "Molds"
+  },
+  {
+   "id": "virus",
+   "name": "Viruses"
+  },
+  {
+   "id": "para",
+   "name": "Parasites"
+  }
+ ],
+ "organisms": [
+  {
+   "id": "staph-aureus",
+   "name": "Staphylococcus aureus",
+   "cat": "gpc",
+   "aka": [
+    "S. aureus",
+    "MSSA",
+    "MRSA"
+   ],
+   "re": "staphylococcus aureus|staph\\.? aureus|\\bS\\. ?aureus\\b",
+   "cs": "\\bMRSA\\b|\\bMSSA\\b"
+  },
+  {
+   "id": "cons",
+   "name": "Coagulase-negative staphylococci",
+   "cat": "gpc",
+   "aka": [
+    "CoNS",
+    "S. epidermidis"
+   ],
+   "re": "coagulase[- ]negative|staphylococcus epiderm|\\bS\\. ?epidermidis\\b",
+   "cs": "\\bCoNS\\b"
+  },
+  {
+   "id": "s-lugdunensis",
+   "name": "Staphylococcus lugdunensis",
+   "cat": "gpc",
+   "aka": [
+    "S. lugdunensis"
+   ],
+   "re": "lugdunensis|lugunensis",
+   "cs": null
+  },
+  {
+   "id": "strep-pneumo",
+   "name": "Streptococcus pneumoniae",
+   "cat": "gpc",
+   "aka": [
+    "Pneumococcus"
+   ],
+   "re": "streptococcus pneumoniae|\\bS\\. ?pneumoniae\\b|pneumococc",
+   "cs": null
+  },
+  {
+   "id": "gas",
+   "name": "Group A Streptococcus",
+   "cat": "gpc",
+   "aka": [
+    "S. pyogenes",
+    "GAS"
+   ],
+   "re": "group a strep|group a β|group a beta|streptococcus pyogenes|\\bS\\. ?pyogenes\\b|streptococcal pharyngitis",
+   "cs": "\\bGAS\\b"
+  },
+  {
+   "id": "gbs",
+   "name": "Group B Streptococcus",
+   "cat": "gpc",
+   "aka": [
+    "S. agalactiae",
+    "GBS"
+   ],
+   "re": "group b strep|streptococcus agalactiae|\\bS\\. ?agalactiae\\b",
+   "cs": "\\bGBS\\b"
+  },
+  {
+   "id": "viridans",
+   "name": "Viridans group streptococci",
+   "cat": "gpc",
+   "aka": [
+    "S. mitis",
+    "S. anginosus",
+    "S. gallolyticus"
+   ],
+   "re": "viridans|streptococcus (mitis|oralis|anginosus|gallolyticus|bovis|sanguinis|salivarius|gordonii)|\\bS\\. ?(mitis|anginosus|gallolyticus|bovis)\\b",
+   "cs": null
+  },
+  {
+   "id": "enterococcus",
+   "name": "Enterococcus",
+   "cat": "gpc",
+   "aka": [
+    "E. faecalis",
+    "E. faecium",
+    "VRE"
+   ],
+   "re": "enterococc|\\bE\\. ?(faecalis|faecium|casseliflavus|gallinarum|gallinarium)\\b",
+   "cs": "\\bVRE\\b"
+  },
+  {
+   "id": "listeria",
+   "name": "Listeria monocytogenes",
+   "cat": "gpb",
+   "aka": [
+    "Listeria"
+   ],
+   "re": "listeria",
+   "cs": null
+  },
+  {
+   "id": "corynebacterium",
+   "name": "Corynebacterium",
+   "cat": "gpb",
+   "aka": [
+    "C. striatum"
+   ],
+   "re": "corynebacter",
+   "cs": null
+  },
+  {
+   "id": "bacillus",
+   "name": "Bacillus",
+   "cat": "gpb",
+   "aka": [],
+   "re": "\\bbacillus (spp|cereus|anthracis)|\\bbacillus\\b(?! calmette)",
+   "cs": null
+  },
+  {
+   "id": "nocardia",
+   "name": "Nocardia",
+   "cat": "gpb",
+   "aka": [],
+   "re": "nocardia",
+   "cs": null
+  },
+  {
+   "id": "n-meningitidis",
+   "name": "Neisseria meningitidis",
+   "cat": "gnc",
+   "aka": [
+    "Meningococcus"
+   ],
+   "re": "neisseria meningitidis|\\bN\\. ?meningitidis\\b|meningococc",
+   "cs": null
+  },
+  {
+   "id": "n-gonorrhoeae",
+   "name": "Neisseria gonorrhoeae",
+   "cat": "gnc",
+   "aka": [
+    "Gonorrhea"
+   ],
+   "re": "gonorrh|neisseria gonorrhoeae|\\bN\\. ?gonorrhoeae\\b",
+   "cs": null
+  },
+  {
+   "id": "moraxella",
+   "name": "Moraxella catarrhalis",
+   "cat": "gnc",
+   "aka": [
+    "Moraxella"
+   ],
+   "re": "moraxella",
+   "cs": null
+  },
+  {
+   "id": "e-coli",
+   "name": "Escherichia coli",
+   "cat": "gnb",
+   "aka": [
+    "E. coli"
+   ],
+   "re": "escherichia coli|\\bE\\. ?coli\\b",
+   "cs": null
+  },
+  {
+   "id": "klebsiella",
+   "name": "Klebsiella",
+   "cat": "gnb",
+   "aka": [
+    "K. pneumoniae",
+    "K. oxytoca"
+   ],
+   "re": "klebsiella|\\bK\\. ?(pneumoniae|oxytoca|aerogenes)\\b",
+   "cs": null
+  },
+  {
+   "id": "enterobacter",
+   "name": "Enterobacter",
+   "cat": "gnb",
+   "aka": [
+    "E. cloacae"
+   ],
+   "re": "enterobacter(?!al)|\\bE\\. ?cloacae\\b",
+   "cs": null
+  },
+  {
+   "id": "enterobacterales",
+   "name": "Enterobacterales",
+   "cat": "gnb",
+   "aka": [
+    "Enterobacteriaceae"
+   ],
+   "re": "enterobacterales|enterobacteriaceae",
+   "cs": null
+  },
+  {
+   "id": "proteus",
+   "name": "Proteus",
+   "cat": "gnb",
+   "aka": [],
+   "re": "\\bproteus\\b",
+   "cs": null
+  },
+  {
+   "id": "serratia",
+   "name": "Serratia",
+   "cat": "gnb",
+   "aka": [],
+   "re": "serratia",
+   "cs": null
+  },
+  {
+   "id": "citrobacter",
+   "name": "Citrobacter",
+   "cat": "gnb",
+   "aka": [],
+   "re": "citrobacter",
+   "cs": null
+  },
+  {
+   "id": "morganella",
+   "name": "Morganella",
+   "cat": "gnb",
+   "aka": [],
+   "re": "morganella",
+   "cs": null
+  },
+  {
+   "id": "salmonella",
+   "name": "Salmonella",
+   "cat": "gnb",
+   "aka": [
+    "Typhi",
+    "Non-typhoidal Salmonella"
+   ],
+   "re": "salmonella",
+   "cs": null
+  },
+  {
+   "id": "shigella",
+   "name": "Shigella",
+   "cat": "gnb",
+   "aka": [],
+   "re": "shigella",
+   "cs": null
+  },
+  {
+   "id": "pseudomonas",
+   "name": "Pseudomonas aeruginosa",
+   "cat": "gnb",
+   "aka": [
+    "Pseudomonas"
+   ],
+   "re": "pseudomonas|\\bP\\. ?aeruginosa\\b|psudomonas|anti-?pseudomonal",
+   "cs": null
+  },
+  {
+   "id": "acinetobacter",
+   "name": "Acinetobacter",
+   "cat": "gnb",
+   "aka": [
+    "A. baumannii"
+   ],
+   "re": "acinetobacter|\\bA\\. ?baumannii\\b",
+   "cs": null
+  },
+  {
+   "id": "stenotrophomonas",
+   "name": "Stenotrophomonas maltophilia",
+   "cat": "gnb",
+   "aka": [
+    "Stenotrophomonas"
+   ],
+   "re": "stenotrophomonas",
+   "cs": null
+  },
+  {
+   "id": "burkholderia",
+   "name": "Burkholderia",
+   "cat": "gnb",
+   "aka": [
+    "B. cepacia"
+   ],
+   "re": "burkholderia",
+   "cs": null
+  },
+  {
+   "id": "achromobacter",
+   "name": "Achromobacter",
+   "cat": "gnb",
+   "aka": [],
+   "re": "achromobacter",
+   "cs": null
+  },
+  {
+   "id": "h-influenzae",
+   "name": "Haemophilus influenzae",
+   "cat": "gnb",
+   "aka": [
+    "H. influenzae"
+   ],
+   "re": "haemophilus|\\bH\\. ?influenzae\\b|hemophilus",
+   "cs": null
+  },
+  {
+   "id": "hacek",
+   "name": "HACEK organisms",
+   "cat": "gnb",
+   "aka": [
+    "Aggregatibacter",
+    "Cardiobacterium",
+    "Eikenella",
+    "Kingella"
+   ],
+   "re": "\\bHACEK\\b|aggregatibacter|cardiobacterium|eikenella|kingella",
+   "cs": null
+  },
+  {
+   "id": "pasteurella",
+   "name": "Pasteurella",
+   "cat": "gnb",
+   "aka": [
+    "P. multocida"
+   ],
+   "re": "pasteurella",
+   "cs": null
+  },
+  {
+   "id": "capnocytophaga",
+   "name": "Capnocytophaga",
+   "cat": "gnb",
+   "aka": [],
+   "re": "capnocytophaga",
+   "cs": null
+  },
+  {
+   "id": "campylobacter",
+   "name": "Campylobacter",
+   "cat": "gnb",
+   "aka": [],
+   "re": "campylobacter",
+   "cs": null
+  },
+  {
+   "id": "yersinia",
+   "name": "Yersinia",
+   "cat": "gnb",
+   "aka": [],
+   "re": "yersinia",
+   "cs": null
+  },
+  {
+   "id": "vibrio",
+   "name": "Vibrio",
+   "cat": "gnb",
+   "aka": [],
+   "re": "\\bvibrio",
+   "cs": null
+  },
+  {
+   "id": "aeromonas",
+   "name": "Aeromonas & Plesiomonas",
+   "cat": "gnb",
+   "aka": [
+    "Aeromonas",
+    "Plesiomonas"
+   ],
+   "re": "aeromonas|plesiomonas",
+   "cs": null
+  },
+  {
+   "id": "h-pylori",
+   "name": "Helicobacter pylori",
+   "cat": "gnb",
+   "aka": [
+    "H. pylori"
+   ],
+   "re": "helicobacter|\\bH\\. ?pylori\\b",
+   "cs": null
+  },
+  {
+   "id": "bordetella",
+   "name": "Bordetella pertussis",
+   "cat": "gnb",
+   "aka": [
+    "Pertussis"
+   ],
+   "re": "bordetella|pertussis",
+   "cs": null
+  },
+  {
+   "id": "legionella",
+   "name": "Legionella",
+   "cat": "atyp",
+   "aka": [],
+   "re": "legionell",
+   "cs": null
+  },
+  {
+   "id": "mycoplasma",
+   "name": "Mycoplasma",
+   "cat": "atyp",
+   "aka": [
+    "M. pneumoniae"
+   ],
+   "re": "mycoplasma",
+   "cs": null
+  },
+  {
+   "id": "chlamydia",
+   "name": "Chlamydia & Chlamydophila",
+   "cat": "atyp",
+   "aka": [
+    "C. trachomatis",
+    "C. pneumoniae"
+   ],
+   "re": "chlamydi",
+   "cs": null
+  },
+  {
+   "id": "borrelia",
+   "name": "Borrelia burgdorferi",
+   "cat": "atyp",
+   "aka": [
+    "Lyme disease"
+   ],
+   "re": "borrelia|\\blyme\\b",
+   "cs": null
+  },
+  {
+   "id": "treponema",
+   "name": "Treponema pallidum",
+   "cat": "atyp",
+   "aka": [
+    "Syphilis"
+   ],
+   "re": "treponema|syphilis",
+   "cs": null
+  },
+  {
+   "id": "bartonella",
+   "name": "Bartonella",
+   "cat": "atyp",
+   "aka": [],
+   "re": "bartonella",
+   "cs": null
+  },
+  {
+   "id": "c-diff",
+   "name": "Clostridioides difficile",
+   "cat": "ana",
+   "aka": [
+    "C. difficile",
+    "C. diff"
+   ],
+   "re": "clostridi(oi)?des difficile|\\bC\\.? ?diff(icile)?\\b|clostridium difficile",
+   "cs": "\\bCDI\\b|\\bCDAD\\b"
+  },
+  {
+   "id": "bacteroides",
+   "name": "Bacteroides",
+   "cat": "ana",
+   "aka": [
+    "B. fragilis"
+   ],
+   "re": "bacteroides|\\bB\\. ?fragilis\\b",
+   "cs": null
+  },
+  {
+   "id": "clostridium",
+   "name": "Clostridium (other species)",
+   "cat": "ana",
+   "aka": [
+    "C. perfringens",
+    "C. septicum"
+   ],
+   "re": "clostridium (perfringens|septicum|tertium|spp)|clostridia spp",
+   "cs": null
+  },
+  {
+   "id": "actinomyces",
+   "name": "Actinomyces",
+   "cat": "ana",
+   "aka": [],
+   "re": "actinomyces",
+   "cs": null
+  },
+  {
+   "id": "cutibacterium",
+   "name": "Cutibacterium (Propionibacterium)",
+   "cat": "ana",
+   "aka": [
+    "C. acnes"
+   ],
+   "re": "cutibacterium|propionibacterium",
+   "cs": null
+  },
+  {
+   "id": "anaerobes",
+   "name": "Anaerobes (general)",
+   "cat": "ana",
+   "aka": [
+    "Oral anaerobes"
+   ],
+   "re": "\\banaerob",
+   "cs": null
+  },
+  {
+   "id": "mtb",
+   "name": "Mycobacterium tuberculosis",
+   "cat": "myco",
+   "aka": [
+    "Tuberculosis",
+    "TB"
+   ],
+   "re": "tuberculosis|mycobacterium tuberculosis",
+   "cs": "\\bTB\\b"
+  },
+  {
+   "id": "ntm",
+   "name": "Nontuberculous mycobacteria",
+   "cat": "myco",
+   "aka": [
+    "NTM",
+    "MAC",
+    "M. abscessus"
+   ],
+   "re": "nontuberculous|non-tuberculous|mycobacterium avium|\\bM\\. ?(abscessus|avium)\\b|mycobacteri(a|al)(?! tuberculosis)",
+   "cs": "\\bNTM\\b|\\bMAC\\b"
+  },
+  {
+   "id": "mrsa",
+   "name": "MRSA",
+   "cat": "res",
+   "aka": [
+    "Methicillin-resistant S. aureus"
+   ],
+   "re": "methicillin[- ]resistant",
+   "cs": "\\bMRSA\\b"
+  },
+  {
+   "id": "vre",
+   "name": "VRE",
+   "cat": "res",
+   "aka": [
+    "Vancomycin-resistant Enterococcus"
+   ],
+   "re": "vancomycin[- ]resistant enterococ",
+   "cs": "\\bVRE\\b"
+  },
+  {
+   "id": "esbl",
+   "name": "ESBL-producing organisms",
+   "cat": "res",
+   "aka": [
+    "ESBL"
+   ],
+   "re": "extended[- ]spectrum beta|extended[- ]spectrum β",
+   "cs": "\\bESBL"
+  },
+  {
+   "id": "cre",
+   "name": "Carbapenem-resistant organisms",
+   "cat": "res",
+   "aka": [
+    "CRE",
+    "KPC",
+    "OXA-48",
+    "Carbapenemase"
+   ],
+   "re": "carbapenem[- ]resistant|carbapenemase",
+   "cs": "\\bCRE\\b|\\bKPC\\b|\\bOXA-?48\\b|\\bNDM\\b|\\bCRAB\\b"
+  },
+  {
+   "id": "ampc",
+   "name": "AmpC-producing organisms",
+   "cat": "res",
+   "aka": [
+    "AmpC"
+   ],
+   "re": "\\bampc\\b",
+   "cs": null
+  },
+  {
+   "id": "mdr",
+   "name": "Multidrug-resistant organisms",
+   "cat": "res",
+   "aka": [
+    "MDRO",
+    "MDR"
+   ],
+   "re": "multi-?drug[- ]resistant|multidrug resistant",
+   "cs": "\\bMDRO?s?\\b"
+  },
+  {
+   "id": "candida",
+   "name": "Candida",
+   "cat": "yeast",
+   "aka": [
+    "C. albicans",
+    "C. glabrata",
+    "C. parapsilosis"
+   ],
+   "re": "candida|candidemia|candidiasis|candiduria",
+   "cs": null
+  },
+  {
+   "id": "candida-auris",
+   "name": "Candida auris",
+   "cat": "yeast",
+   "aka": [
+    "C. auris"
+   ],
+   "re": "candida auris|\\bC\\. ?auris\\b",
+   "cs": null
+  },
+  {
+   "id": "cryptococcus",
+   "name": "Cryptococcus",
+   "cat": "yeast",
+   "aka": [],
+   "re": "cryptococc",
+   "cs": null
+  },
+  {
+   "id": "pneumocystis",
+   "name": "Pneumocystis jirovecii",
+   "cat": "yeast",
+   "aka": [
+    "PJP",
+    "PCP"
+   ],
+   "re": "pneumocystis",
+   "cs": "\\bPJP\\b|\\bPCP(?=/PJP| prophylaxis| pneumonia)"
+  },
+  {
+   "id": "histoplasma",
+   "name": "Histoplasma",
+   "cat": "yeast",
+   "aka": [
+    "Histoplasmosis"
+   ],
+   "re": "histoplasm",
+   "cs": null
+  },
+  {
+   "id": "blastomyces",
+   "name": "Blastomyces",
+   "cat": "yeast",
+   "aka": [
+    "Blastomycosis"
+   ],
+   "re": "blastomyc",
+   "cs": null
+  },
+  {
+   "id": "aspergillus",
+   "name": "Aspergillus",
+   "cat": "mold",
+   "aka": [
+    "Aspergillosis"
+   ],
+   "re": "aspergill",
+   "cs": null
+  },
+  {
+   "id": "mucorales",
+   "name": "Mucorales",
+   "cat": "mold",
+   "aka": [
+    "Mucor",
+    "Rhizopus",
+    "Mucormycosis"
+   ],
+   "re": "mucor|rhizopus",
+   "cs": null
+  },
+  {
+   "id": "fusarium",
+   "name": "Fusarium & Scedosporium",
+   "cat": "mold",
+   "aka": [
+    "Fusarium",
+    "Scedosporium"
+   ],
+   "re": "fusarium|scedospor|lomentospor",
+   "cs": null
+  },
+  {
+   "id": "influenza",
+   "name": "Influenza virus",
+   "cat": "virus",
+   "aka": [
+    "Influenza"
+   ],
+   "re": "\\binfluenza\\b(?!e)",
+   "cs": null
+  },
+  {
+   "id": "sars-cov-2",
+   "name": "SARS-CoV-2",
+   "cat": "virus",
+   "aka": [
+    "COVID-19"
+   ],
+   "re": "covid|sars-cov-2|coronavirus",
+   "cs": null
+  },
+  {
+   "id": "rsv",
+   "name": "Respiratory syncytial virus",
+   "cat": "virus",
+   "aka": [
+    "RSV"
+   ],
+   "re": "respiratory syncytial",
+   "cs": "\\bRSV\\b"
+  },
+  {
+   "id": "cmv",
+   "name": "Cytomegalovirus",
+   "cat": "virus",
+   "aka": [
+    "CMV"
+   ],
+   "re": "cytomegalovirus",
+   "cs": "\\bCMV\\b"
+  },
+  {
+   "id": "hsv",
+   "name": "Herpes simplex virus",
+   "cat": "virus",
+   "aka": [
+    "HSV"
+   ],
+   "re": "herpes simplex",
+   "cs": "\\bHSV\\b"
+  },
+  {
+   "id": "vzv",
+   "name": "Varicella-zoster virus",
+   "cat": "virus",
+   "aka": [
+    "VZV",
+    "Shingles"
+   ],
+   "re": "varicella|zoster|shingles",
+   "cs": "\\bVZV\\b"
+  },
+  {
+   "id": "ebv",
+   "name": "Epstein-Barr virus",
+   "cat": "virus",
+   "aka": [
+    "EBV"
+   ],
+   "re": "epstein[- ]barr",
+   "cs": "\\bEBV\\b"
+  },
+  {
+   "id": "hhv6",
+   "name": "HHV-6 and HHV-7",
+   "cat": "virus",
+   "aka": [
+    "HHV-6",
+    "HHV-7"
+   ],
+   "re": "\\bHHV-?[67]\\b|human herpesvirus [67]|human herpes virus [67]",
+   "cs": null
+  },
+  {
+   "id": "bk",
+   "name": "BK polyomavirus",
+   "cat": "virus",
+   "aka": [
+    "BK virus"
+   ],
+   "re": "\\bBK (virus|viremia|viruria|polyoma)|polyomavirus",
+   "cs": null
+  },
+  {
+   "id": "adenovirus",
+   "name": "Adenovirus",
+   "cat": "virus",
+   "aka": [],
+   "re": "adenovir",
+   "cs": null
+  },
+  {
+   "id": "enterovirus",
+   "name": "Enterovirus & parechovirus",
+   "cat": "virus",
+   "aka": [
+    "Enterovirus"
+   ],
+   "re": "enterovir|parechovir",
+   "cs": null
+  },
+  {
+   "id": "hiv",
+   "name": "HIV",
+   "cat": "virus",
+   "aka": [
+    "Human immunodeficiency virus"
+   ],
+   "re": "human immunodeficiency virus",
+   "cs": "\\bHIV\\b"
+  },
+  {
+   "id": "hbv",
+   "name": "Hepatitis B virus",
+   "cat": "virus",
+   "aka": [
+    "HBV"
+   ],
+   "re": "hepatitis b\\b",
+   "cs": "\\bHBV\\b|\\bHBsAg\\b"
+  },
+  {
+   "id": "hcv",
+   "name": "Hepatitis C virus",
+   "cat": "virus",
+   "aka": [
+    "HCV"
+   ],
+   "re": "hepatitis c\\b",
+   "cs": "\\bHCV\\b"
+  },
+  {
+   "id": "measles",
+   "name": "Measles virus",
+   "cat": "virus",
+   "aka": [
+    "Measles"
+   ],
+   "re": "measles|rubeola",
+   "cs": null
+  },
+  {
+   "id": "mpox",
+   "name": "Mpox virus",
+   "cat": "virus",
+   "aka": [
+    "Mpox",
+    "Monkeypox"
+   ],
+   "re": "mpox|monkeypox|orthopox",
+   "cs": null
+  },
+  {
+   "id": "parvovirus",
+   "name": "Parvovirus B19",
+   "cat": "virus",
+   "aka": [],
+   "re": "parvovirus|parvo b-?19",
+   "cs": null
+  },
+  {
+   "id": "norovirus",
+   "name": "Norovirus & rotavirus",
+   "cat": "virus",
+   "aka": [
+    "Norovirus",
+    "Rotavirus"
+   ],
+   "re": "norovirus|rotavirus",
+   "cs": null
+  },
+  {
+   "id": "plasmodium",
+   "name": "Plasmodium (malaria)",
+   "cat": "para",
+   "aka": [
+    "Malaria",
+    "P. falciparum"
+   ],
+   "re": "plasmodium|malaria|\\bP\\. ?(falciparum|vivax|ovale|malariae|knowlesi)\\b",
+   "cs": null
+  },
+  {
+   "id": "toxoplasma",
+   "name": "Toxoplasma gondii",
+   "cat": "para",
+   "aka": [
+    "Toxoplasmosis"
+   ],
+   "re": "toxoplasm",
+   "cs": null
+  },
+  {
+   "id": "giardia",
+   "name": "Giardia",
+   "cat": "para",
+   "aka": [],
+   "re": "giardia",
+   "cs": null
+  },
+  {
+   "id": "cryptosporidium",
+   "name": "Cryptosporidium",
+   "cat": "para",
+   "aka": [],
+   "re": "cryptosporid",
+   "cs": null
+  },
+  {
+   "id": "cyclospora",
+   "name": "Cyclospora",
+   "cat": "para",
+   "aka": [],
+   "re": "cyclospora|cyclosporiasis",
+   "cs": null
+  },
+  {
+   "id": "entamoeba",
+   "name": "Entamoeba histolytica",
+   "cat": "para",
+   "aka": [],
+   "re": "entamoeba",
+   "cs": null
+  },
+  {
+   "id": "strongyloides",
+   "name": "Strongyloides",
+   "cat": "para",
+   "aka": [],
+   "re": "strongyloid",
+   "cs": null
+  }
+ ]
+}

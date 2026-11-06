@@ -16,5 +16,37 @@
   ],
   "new_blocks": 3,
   "words": 57
+ },
+ {
+  "guideline": "guidelines~adult~blood-stream-infections-adult",
+  "replaced_blocks": [
+   0,
+   1
+  ],
+  "new_blocks": 7,
+  "words": 449
+ },
+ {
+  "guideline": "guidelines~pediatric~blood-stream-infections-pediatric",
+  "replaced_blocks": [
+   13,
+   14
+  ],
+  "new_blocks": 4,
+  "words": 265
+ },
+ {
+  "guideline": "guidelines~adult~blood-stream-infections-adult",
+  "glyph": [
+   "This guideline is intended to help guide",
+   "This guideline is intended to help guide"
+  ]
+ },
+ {
+  "guideline": "guidelines~adult~blood-stream-infections-adult",
+  "glyph": [
+   "non-Group A/non-Group B ?-hemolytic ",
+   "non-Group A/non-Group B \u03b2-hemolytic "
+  ]
  }
 ]
